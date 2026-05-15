@@ -9,7 +9,7 @@ export function useKeyboardControls(runner: Runner) {
       if (e.key === 'ArrowLeft')  { e.preventDefault(); runner.stepBack(); }
       if (e.key === ' ') {
         e.preventDefault();
-        runner.state === 'playing' ? runner.pause() : runner.play();
+        if (runner.state === 'playing') { runner.pause(); } else { runner.play(); }
       }
     };
     window.addEventListener('keydown', handler);
