@@ -24,7 +24,8 @@
       "Bash(grep -E \"Page\\\\.tsx$\")",
       "Skill(superpowers:finishing-a-development-branch)",
       "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp test --run)",
-      "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp typecheck)"
+      "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp typecheck)",
+      "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp test -- ComplexityBadge)"
     ]
   }
 }
