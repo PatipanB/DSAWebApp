@@ -37,3 +37,13 @@ export const DEFAULT_TWO_POINTERS_INPUT: TwoPointersInput = {
   values: [1, 2, 3, 4, 6, 8, 11, 15],
   target: 11,
 };
+
+export interface SlidingWindowInput {
+  values: number[];
+  k: number;
+}
+
+export const DEFAULT_SLIDING_WINDOW_INPUT: SlidingWindowInput = {
+  values: [2, 1, 5, 1, 3, 2],
+  k: 3,
+};
