@@ -1882,3 +1882,56 @@ Expected: all green; the curl finds the title in the preview HTML.
 - Framer Motion is installed but unused — first appearance is in Session 2a's `ArrayVisualizer`
 
 If a task tempts you toward any of the above, stop and end Session 1.
+
+---
+
+## Session 1 Outcome (filled in at session end)
+
+- Dependencies resolved:
+  - @fontsource-variable/inter 5.2.8
+  - @fontsource-variable/jetbrains-mono 5.2.8
+  - clsx 2.1.1
+  - framer-motion 12.38.0
+  - react 18.3.1
+  - react-dom 18.3.1
+  - react-router-dom 7.15.1
+  - zustand 5.0.13
+  - @eslint/js 9.39.4
+  - @testing-library/jest-dom 6.9.1
+  - @testing-library/react 16.3.2
+  - @testing-library/user-event 14.6.1
+  - @types/node 25.8.0
+  - @types/react 18.3.28
+  - @types/react-dom 18.3.7
+  - @typescript-eslint/eslint-plugin 8.59.3
+  - @typescript-eslint/parser 8.59.3
+  - @vitejs/plugin-react 4.7.0
+  - autoprefixer 10.5.0
+  - eslint 9.39.4
+  - eslint-plugin-react 7.37.5
+  - eslint-plugin-react-hooks 5.2.0
+  - eslint-plugin-react-refresh 0.4.26
+  - globals 15.15.0
+  - jsdom 24.1.3
+  - postcss 8.5.14
+  - prettier 3.8.3
+  - tailwindcss 3.4.19
+  - typescript 5.6.3
+  - typescript-eslint 8.59.3
+  - vite 5.4.21
+  - vitest 1.6.1
+- Deviations from this plan:
+  - Tailwind pinned to v3.4.x (v4 lacks the `init -p` CLI the plan relied on)
+  - Vitest pinned to v1.6.1 (v4 requires Vite v6; project uses Vite v5)
+  - jsdom pinned to v24.x (v29 incompatible with vitest v1.6.x)
+  - ESLint v9 flat config used (`.eslintrc.cjs` deprecated in v9)
+- State for Session 2a:
+  - Engine: not present
+  - Algorithms: not present
+  - Visualizers: not present
+  - Visualizer slots: `data-testid="visualizer-slot"` in every topic page
+  - Shared panels present: `TopicHeader` only
+  - Primitives present: `Button`, `Badge`, `Tabs`, `Tooltip`, `Slider`
+  - Stores present: `topicStore`, `prefsStore` (both wired, used)
+  - Tests passing: 25
+  - CI: workflow present at `.github/workflows/ci.yml`
