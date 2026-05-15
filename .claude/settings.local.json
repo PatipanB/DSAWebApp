@@ -20,7 +20,8 @@
       "Bash(pnpm format *)",
       "Bash(node *)",
       "Bash(pnpm ls *)",
-      "Bash(npm ls *)"
+      "Bash(npm ls *)",
+      "Bash(grep -E \"Page\\\\.tsx$\")"
     ]
   }
 }
