@@ -47,3 +47,27 @@ export const DEFAULT_SLIDING_WINDOW_INPUT: SlidingWindowInput = {
   values: [2, 1, 5, 1, 3, 2],
   k: 3,
 };
+
+export interface BalancedBracketsInput {
+  expression: string;
+}
+
+export const DEFAULT_BALANCED_BRACKETS_INPUT: BalancedBracketsInput = {
+  expression: '([{}])',
+};
+
+export interface MonotonicStackInput {
+  values: number[];
+}
+
+export const DEFAULT_MONOTONIC_STACK_INPUT: MonotonicStackInput = {
+  values: [2, 1, 2, 4, 3],
+};
+
+export interface QueueDemoInput {
+  values: number[];
+}
+
+export const DEFAULT_QUEUE_DEMO_INPUT: QueueDemoInput = {
+  values: [3, 1, 2, 4],
+};
