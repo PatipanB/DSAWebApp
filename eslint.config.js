@@ -29,6 +29,7 @@ export default [
     settings: { react: { version: 'detect' } },
     rules: {
       ...tseslint.configs.recommended.rules,
+      'no-undef': 'off',
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
