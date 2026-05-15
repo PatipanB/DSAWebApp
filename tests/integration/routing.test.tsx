@@ -26,7 +26,7 @@ describe('routing', () => {
   it('home page → arrays page sets topicStore', async () => {
     render(<RouterProvider router={buildRouter('/')} />);
     await userEvent.click(screen.getByRole('link', { name: /Open Arrays/ }));
-    await waitFor(() => expect(screen.getByText('Coming soon. Engine and visualizer ship in Session 2a.')).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByTestId('visualizer-slot')).toBeInTheDocument());
     expect(useTopicStore.getState().selectedTopicId).toBe('arrays');
   });
 
