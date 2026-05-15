@@ -50,11 +50,13 @@ DSAWebApp/
 ## Task 1: Initialize Vite + React + TypeScript
 
 **Files:**
+
 - Create: `package.json`, `tsconfig.json`, `tsconfig.node.json`, `vite.config.ts`, `index.html`, `src/main.tsx`, `src/App.tsx`, `src/index.css`, `.gitignore`
 
 - [ ] **Step 1.1: Scaffold with current-stable Vite**
 
 Run (working directory `/Users/patipanb/Obsidian/DSAWebApp`):
+
 ```bash
 pnpm create vite@latest . --template react-ts
 ```
@@ -72,6 +74,7 @@ pnpm install
 ```bash
 pnpm dev
 ```
+
 Expected: Vite logs a local URL and serves without errors. Kill with Ctrl-C.
 
 - [ ] **Step 1.4: Strict TypeScript**
@@ -84,6 +87,7 @@ Open `tsconfig.json` and ensure `compilerOptions` contains: `"strict": true`, `"
 ```
 
 Mirror the alias in `vite.config.ts`:
+
 ```ts
 import path from 'node:path';
 // ...
@@ -95,6 +99,7 @@ resolve: { alias: { '@': path.resolve(__dirname, './src') } }
 ```bash
 pnpm tsc -b --noEmit
 ```
+
 Expected: zero errors.
 
 - [ ] **Step 1.6: Initialize git + commit scaffold**
@@ -151,6 +156,7 @@ git commit -m "chore: install runtime, test, and tooling deps"
 ## Task 3: Configure Tailwind with semantic tokens + fonts
 
 **Files:**
+
 - Modify: `tailwind.config.ts` (rename from `.js` if scaffold generated `.js`)
 - Modify: `postcss.config.js`
 - Modify: `src/index.css`
@@ -168,9 +174,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg:     { base: '#020617', surface: '#0f172a', elevated: '#1e293b' },
+        bg: { base: '#020617', surface: '#0f172a', elevated: '#1e293b' },
         border: { subtle: '#1e293b', strong: '#334155' },
-        text:   { primary: '#f1f5f9', secondary: '#cbd5e1', muted: '#94a3b8' },
+        text: { primary: '#f1f5f9', secondary: '#cbd5e1', muted: '#94a3b8' },
         accent: { primary: '#fbbf24', secondary: '#22d3ee' },
         status: { success: '#34d399', warn: '#fb923c', danger: '#fb7185', info: '#60a5fa' },
       },
@@ -194,7 +200,11 @@ Delete `tailwind.config.js` if present.
 @tailwind utilities;
 
 @layer base {
-  html, body, #root { height: 100%; }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
   body {
     @apply bg-bg-base text-text-primary font-sans antialiased;
   }
@@ -217,6 +227,7 @@ import '@fontsource-variable/jetbrains-mono';
 - [ ] **Step 3.5: Verify Tailwind compiles**
 
 Edit `src/App.tsx` to:
+
 ```tsx
 export default function App() {
   return <div className="p-8 text-accent-primary font-mono">DSA Visualizer</div>;
@@ -237,6 +248,7 @@ git commit -m "feat: tailwind tokens, dark theme, variable fonts"
 ## Task 4: Configure Vitest
 
 **Files:**
+
 - Create: `tests/setup.ts`
 - Modify: `vite.config.ts` (add `test` block)
 - Modify: `package.json` (add scripts)
@@ -287,6 +299,7 @@ export default defineConfig({
 - [ ] **Step 4.4: Write smoke test**
 
 Create `tests/smoke.test.ts`:
+
 ```ts
 import { describe, it, expect } from 'vitest';
 
@@ -302,6 +315,7 @@ describe('smoke', () => {
 ```bash
 pnpm test
 ```
+
 Expected: 1 passed.
 
 - [ ] **Step 4.6: Commit**
@@ -316,6 +330,7 @@ git commit -m "chore: configure vitest with jsdom and jest-dom matchers"
 ## Task 5: ESLint + Prettier
 
 **Files:**
+
 - Create: `.eslintrc.cjs`, `.prettierrc`, `.eslintignore`, `.prettierignore`
 
 - [ ] **Step 5.1: `.eslintrc.cjs`**
@@ -359,6 +374,7 @@ module.exports = {
 - [ ] **Step 5.3: `.eslintignore` and `.prettierignore`**
 
 Both files, identical content:
+
 ```
 dist
 node_modules
@@ -371,6 +387,7 @@ pnpm-lock.yaml
 pnpm lint
 pnpm format
 ```
+
 Expected: lint passes; format rewrites any non-conforming files.
 
 - [ ] **Step 5.5: Commit**
@@ -385,6 +402,7 @@ git commit -m "chore: eslint + prettier config"
 ## Task 6: Types, constants, and utilities
 
 **Files:**
+
 - Create: `src/types/topic.ts`, `src/data/topics.ts`, `src/utils/classNames.ts`, `src/constants/colors.ts`
 
 - [ ] **Step 6.1: `src/types/topic.ts`**
@@ -418,42 +436,96 @@ export interface TopicMeta {
 import type { TopicMeta } from '@/types/topic';
 
 export const TOPICS: TopicMeta[] = [
-  { id: 'arrays', number: 1, emoji: '📊', title: 'Arrays',
+  {
+    id: 'arrays',
+    number: 1,
+    emoji: '📊',
+    title: 'Arrays',
     path: '/arrays',
     shortDescription: 'Two pointers, sliding window',
-    longDescription: 'Visualize pointer-based traversals and sliding windows on arrays. Step through index movement, window expansion, and running aggregates.' },
-  { id: 'stack-queue', number: 2, emoji: '🥞', title: 'Stack & Queue',
+    longDescription:
+      'Visualize pointer-based traversals and sliding windows on arrays. Step through index movement, window expansion, and running aggregates.',
+  },
+  {
+    id: 'stack-queue',
+    number: 2,
+    emoji: '🥞',
+    title: 'Stack & Queue',
     path: '/stack-queue',
     shortDescription: 'Brackets, monotonic stack, FIFO',
-    longDescription: 'Push, pop, and monotonic stack patterns. See how balanced brackets validate, and how a monotonic stack solves next-greater-element problems.' },
-  { id: 'linked-list', number: 3, emoji: '🔗', title: 'Linked List',
+    longDescription:
+      'Push, pop, and monotonic stack patterns. See how balanced brackets validate, and how a monotonic stack solves next-greater-element problems.',
+  },
+  {
+    id: 'linked-list',
+    number: 3,
+    emoji: '🔗',
+    title: 'Linked List',
     path: '/linked-list',
     shortDescription: 'Singly & doubly linked',
-    longDescription: 'Singly and doubly linked lists with animated pointer rewiring. Watch traverse, insert, delete, and reverse operations build intuition for pointer manipulation.' },
-  { id: 'binary-tree', number: 4, emoji: '🌲', title: 'Binary Tree',
+    longDescription:
+      'Singly and doubly linked lists with animated pointer rewiring. Watch traverse, insert, delete, and reverse operations build intuition for pointer manipulation.',
+  },
+  {
+    id: 'binary-tree',
+    number: 4,
+    emoji: '🌲',
+    title: 'Binary Tree',
     path: '/binary-tree',
     shortDescription: 'In/pre/post/level-order traversals',
-    longDescription: 'All four traversal orders with a live call-stack and visited list. Builds the recursion mental model needed for tree problems.' },
-  { id: 'bst', number: 5, emoji: '🌳', title: 'Binary Search Tree',
+    longDescription:
+      'All four traversal orders with a live call-stack and visited list. Builds the recursion mental model needed for tree problems.',
+  },
+  {
+    id: 'bst',
+    number: 5,
+    emoji: '🌳',
+    title: 'Binary Search Tree',
     path: '/bst',
     shortDescription: 'Insert, search, delete',
-    longDescription: 'BST operations with comparison highlights. Delete handles all three cases (leaf, one child, two children with in-order successor) visibly.' },
-  { id: 'graph', number: 6, emoji: '🕸️', title: 'Graph',
+    longDescription:
+      'BST operations with comparison highlights. Delete handles all three cases (leaf, one child, two children with in-order successor) visibly.',
+  },
+  {
+    id: 'graph',
+    number: 6,
+    emoji: '🕸️',
+    title: 'Graph',
     path: '/graph',
     shortDescription: 'BFS & DFS (grid + adjacency)',
-    longDescription: 'Run BFS and DFS on both a grid and an adjacency-list graph. Edit walls or graph topology and watch the frontier expand step by step.' },
-  { id: 'sorting', number: 7, emoji: '📈', title: 'Sorting',
+    longDescription:
+      'Run BFS and DFS on both a grid and an adjacency-list graph. Edit walls or graph topology and watch the frontier expand step by step.',
+  },
+  {
+    id: 'sorting',
+    number: 7,
+    emoji: '📈',
+    title: 'Sorting',
     path: '/sorting',
     shortDescription: 'Bubble, merge, quick, heap',
-    longDescription: 'Four sorts side-by-side with race mode — wall-clock-synced so the asymptotic complexity differences are visually obvious.' },
-  { id: 'hash-table', number: 8, emoji: '🗂️', title: 'Hash Table',
+    longDescription:
+      'Four sorts side-by-side with race mode — wall-clock-synced so the asymptotic complexity differences are visually obvious.',
+  },
+  {
+    id: 'hash-table',
+    number: 8,
+    emoji: '🗂️',
+    title: 'Hash Table',
     path: '/hash-table',
     shortDescription: 'Chaining + open addressing',
-    longDescription: 'Two collision strategies, both animated: chaining grows buckets, open addressing probes for the next slot. Hash computation shown live.' },
-  { id: 'dp', number: 9, emoji: '🧮', title: 'Dynamic Programming',
+    longDescription:
+      'Two collision strategies, both animated: chaining grows buckets, open addressing probes for the next slot. Hash computation shown live.',
+  },
+  {
+    id: 'dp',
+    number: 9,
+    emoji: '🧮',
+    title: 'Dynamic Programming',
     path: '/dp',
     shortDescription: 'Fib, 0/1 knapsack, LCS',
-    longDescription: 'Memoization tables fill in real time. Recurrence reads light up the cells they consult, current-fill cells are highlighted, and LCS shows the final traceback path.' },
+    longDescription:
+      'Memoization tables fill in real time. Recurrence reads light up the cells they consult, current-fill cells are highlighted, and LCS shows the final traceback path.',
+  },
 ];
 ```
 
@@ -461,7 +533,9 @@ export const TOPICS: TopicMeta[] = [
 
 ```ts
 import clsx, { type ClassValue } from 'clsx';
-export function cn(...inputs: ClassValue[]): string { return clsx(...inputs); }
+export function cn(...inputs: ClassValue[]): string {
+  return clsx(...inputs);
+}
 ```
 
 - [ ] **Step 6.4: `src/constants/colors.ts`**
@@ -482,6 +556,7 @@ export const COLORS = {
 ```bash
 pnpm typecheck && pnpm lint
 ```
+
 Expected: zero errors.
 
 - [ ] **Step 6.6: Commit**
@@ -496,12 +571,14 @@ git commit -m "feat: topic types, registry, color tokens, cn helper"
 ## Task 7: Zustand stores (TDD)
 
 **Files:**
+
 - Test: `tests/store/topicStore.test.ts`, `tests/store/prefsStore.test.ts`
 - Create: `src/store/topicStore.ts`, `src/store/prefsStore.ts`
 
 - [ ] **Step 7.1: Failing test for `topicStore`**
 
 `tests/store/topicStore.test.ts`:
+
 ```ts
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useTopicStore } from '@/store/topicStore';
@@ -531,11 +608,13 @@ describe('topicStore', () => {
 ```bash
 pnpm test -- topicStore
 ```
+
 Expected: FAIL with "Cannot find module '@/store/topicStore'".
 
 - [ ] **Step 7.3: Implement `topicStore`**
 
 `src/store/topicStore.ts`:
+
 ```ts
 import { create } from 'zustand';
 import type { TopicId } from '@/types/topic';
@@ -556,11 +635,13 @@ export const useTopicStore = create<TopicState>((set) => ({
 ```bash
 pnpm test -- topicStore
 ```
+
 Expected: 3 passed.
 
 - [ ] **Step 7.5: Failing test for `prefsStore`**
 
 `tests/store/prefsStore.test.ts`:
+
 ```ts
 import { describe, it, expect, beforeEach } from 'vitest';
 import { usePrefsStore } from '@/store/prefsStore';
@@ -591,11 +672,13 @@ describe('prefsStore', () => {
 ```bash
 pnpm test -- prefsStore
 ```
+
 Expected: FAIL.
 
 - [ ] **Step 7.7: Implement `prefsStore`**
 
 `src/store/prefsStore.ts`:
+
 ```ts
 import { create } from 'zustand';
 
@@ -617,6 +700,7 @@ export const usePrefsStore = create<PrefsState>((set) => ({
 ```bash
 pnpm test
 ```
+
 Expected: 6 passed total.
 
 - [ ] **Step 7.9: Commit**
@@ -631,6 +715,7 @@ git commit -m "feat(store): topicStore + prefsStore with bounded speed index"
 ## Task 8: `Button` primitive (TDD)
 
 **Files:**
+
 - Test: `tests/components/Button.test.tsx`
 - Create: `src/components/primitives/Button.tsx`
 
@@ -720,6 +805,7 @@ Button.displayName = 'Button';
 ```bash
 pnpm test -- Button
 ```
+
 Expected: 4 passed.
 
 - [ ] **Step 8.5: Commit**
@@ -734,6 +820,7 @@ git commit -m "feat(ui): Button primitive with primary/secondary/ghost variants"
 ## Task 9: `Badge` primitive (TDD)
 
 **Files:**
+
 - Test: `tests/components/Badge.test.tsx`
 - Create: `src/components/primitives/Badge.tsx`
 
@@ -766,16 +853,21 @@ import type { ReactNode } from 'react';
 
 type Tone = 'info' | 'success' | 'warn' | 'danger' | 'neutral';
 const toneClass: Record<Tone, string> = {
-  info:    'bg-status-info/15  text-status-info  border-status-info/30',
+  info: 'bg-status-info/15  text-status-info  border-status-info/30',
   success: 'bg-status-success/15 text-status-success border-status-success/30',
-  warn:    'bg-status-warn/15 text-status-warn border-status-warn/30',
-  danger:  'bg-status-danger/15 text-status-danger border-status-danger/30',
+  warn: 'bg-status-warn/15 text-status-warn border-status-warn/30',
+  danger: 'bg-status-danger/15 text-status-danger border-status-danger/30',
   neutral: 'bg-bg-elevated text-text-secondary border-border-strong',
 };
 
 export function Badge({ tone = 'neutral', children }: { tone?: Tone; children: ReactNode }) {
   return (
-    <span className={cn('inline-flex items-center px-2 py-0.5 text-xs font-mono rounded-md border', toneClass[tone])}>
+    <span
+      className={cn(
+        'inline-flex items-center px-2 py-0.5 text-xs font-mono rounded-md border',
+        toneClass[tone],
+      )}
+    >
       {children}
     </span>
   );
@@ -798,6 +890,7 @@ git commit -m "feat(ui): Badge primitive"
 These three are used by Session 2a/2b — we build minimal accessible shells now so their imports exist.
 
 **Files:**
+
 - Test: `tests/components/Primitives.test.tsx`
 - Create: `src/components/primitives/{Tabs,Tooltip,Slider}.tsx`
 
@@ -814,12 +907,28 @@ import { Slider } from '@/components/primitives/Slider';
 describe('Tabs', () => {
   it('renders tabs and switches active on click', async () => {
     const { rerender } = render(
-      <Tabs value="a" onChange={() => {}} options={[{ value: 'a', label: 'A' }, { value: 'b', label: 'B' }]} />
+      <Tabs
+        value="a"
+        onChange={() => {}}
+        options={[
+          { value: 'a', label: 'A' },
+          { value: 'b', label: 'B' },
+        ]}
+      />,
     );
     expect(screen.getByRole('tab', { name: 'A' })).toHaveAttribute('aria-selected', 'true');
     let v = 'a';
     rerender(
-      <Tabs value={v} onChange={(x) => { v = x; }} options={[{ value: 'a', label: 'A' }, { value: 'b', label: 'B' }]} />
+      <Tabs
+        value={v}
+        onChange={(x) => {
+          v = x;
+        }}
+        options={[
+          { value: 'a', label: 'A' },
+          { value: 'b', label: 'B' },
+        ]}
+      />,
     );
     await userEvent.click(screen.getByRole('tab', { name: 'B' }));
   });
@@ -827,7 +936,11 @@ describe('Tabs', () => {
 
 describe('Tooltip', () => {
   it('renders trigger and tooltip text', () => {
-    render(<Tooltip label="help"><button>btn</button></Tooltip>);
+    render(
+      <Tooltip label="help">
+        <button>btn</button>
+      </Tooltip>,
+    );
     expect(screen.getByRole('button', { name: 'btn' })).toBeInTheDocument();
     expect(screen.getByText('help')).toBeInTheDocument();
   });
@@ -836,13 +949,31 @@ describe('Tooltip', () => {
 describe('Slider', () => {
   it('renders with given value and responds to arrow keys', async () => {
     let v = 2;
-    const { rerender } = render(<Slider min={0} max={4} value={v} onChange={(x) => { v = x; }} />);
+    const { rerender } = render(
+      <Slider
+        min={0}
+        max={4}
+        value={v}
+        onChange={(x) => {
+          v = x;
+        }}
+      />,
+    );
     const slider = screen.getByRole('slider');
     expect(slider).toHaveAttribute('aria-valuenow', '2');
     slider.focus();
     await userEvent.keyboard('{ArrowRight}');
     expect(v).toBe(3);
-    rerender(<Slider min={0} max={4} value={v} onChange={(x) => { v = x; }} />);
+    rerender(
+      <Slider
+        min={0}
+        max={4}
+        value={v}
+        onChange={(x) => {
+          v = x;
+        }}
+      />,
+    );
     expect(screen.getByRole('slider')).toHaveAttribute('aria-valuenow', '3');
   });
 });
@@ -855,13 +986,25 @@ describe('Slider', () => {
 ```tsx
 import { cn } from '@/utils/classNames';
 
-interface Option<T extends string> { value: T; label: string }
+interface Option<T extends string> {
+  value: T;
+  label: string;
+}
 
 export function Tabs<T extends string>({
-  value, onChange, options,
-}: { value: T; onChange: (v: T) => void; options: Option<T>[] }) {
+  value,
+  onChange,
+  options,
+}: {
+  value: T;
+  onChange: (v: T) => void;
+  options: Option<T>[];
+}) {
   return (
-    <div role="tablist" className="inline-flex gap-1 p-1 bg-bg-elevated rounded-lg border border-border-subtle">
+    <div
+      role="tablist"
+      className="inline-flex gap-1 p-1 bg-bg-elevated rounded-lg border border-border-subtle"
+    >
       {options.map((o) => {
         const active = o.value === value;
         return (
@@ -872,7 +1015,9 @@ export function Tabs<T extends string>({
             onClick={() => onChange(o.value)}
             className={cn(
               'px-3 h-8 text-sm rounded-md transition',
-              active ? 'bg-accent-primary text-bg-base font-medium' : 'text-text-secondary hover:text-text-primary',
+              active
+                ? 'bg-accent-primary text-bg-base font-medium'
+                : 'text-text-secondary hover:text-text-primary',
             )}
           >
             {o.label}
@@ -903,7 +1048,8 @@ export function Tooltip({ label, children }: { label: string; children: ReactNod
   );
 }
 ```
-Note: test asserts the label is *in the DOM* (not visible) — opacity-0 still renders, which is correct.
+
+Note: test asserts the label is _in the DOM_ (not visible) — opacity-0 still renders, which is correct.
 
 - [ ] **Step 10.5: Implement `Slider`** (discrete, 5-position)
 
@@ -912,17 +1058,32 @@ import { cn } from '@/utils/classNames';
 import { useId, type KeyboardEvent } from 'react';
 
 interface Props {
-  min: number; max: number; value: number; onChange: (v: number) => void;
+  min: number;
+  max: number;
+  value: number;
+  onChange: (v: number) => void;
   label?: string;
 }
 
 export function Slider({ min, max, value, onChange, label }: Props) {
   const id = useId();
   const handleKey = (e: KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'ArrowRight' || e.key === 'ArrowUp') { e.preventDefault(); onChange(Math.min(max, value + 1)); }
-    if (e.key === 'ArrowLeft'  || e.key === 'ArrowDown') { e.preventDefault(); onChange(Math.max(min, value - 1)); }
-    if (e.key === 'Home') { e.preventDefault(); onChange(min); }
-    if (e.key === 'End')  { e.preventDefault(); onChange(max); }
+    if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      onChange(Math.min(max, value + 1));
+    }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      onChange(Math.max(min, value - 1));
+    }
+    if (e.key === 'Home') {
+      e.preventDefault();
+      onChange(min);
+    }
+    if (e.key === 'End') {
+      e.preventDefault();
+      onChange(max);
+    }
   };
   const ticks = max - min + 1;
   return (
@@ -939,7 +1100,7 @@ export function Slider({ min, max, value, onChange, label }: Props) {
       >
         <div
           className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-accent-primary"
-          style={{ left: `calc(${(value - min) / (ticks - 1) * 100}% - 6px)` }}
+          style={{ left: `calc(${((value - min) / (ticks - 1)) * 100}% - 6px)` }}
         />
       </div>
     </div>
@@ -965,6 +1126,7 @@ git commit -m "feat(ui): Tabs, Tooltip, Slider primitives"
 ## Task 11: `TopicHeader` panel (TDD)
 
 **Files:**
+
 - Test: `tests/components/TopicHeader.test.tsx`
 - Create: `src/components/panels/TopicHeader.tsx`
 
@@ -1002,10 +1164,14 @@ export function TopicHeader({ topicId }: { topicId: TopicId }) {
   if (!topic) return null;
   return (
     <header className="flex items-baseline gap-3 px-8 py-6 border-b border-border-subtle">
-      <span className="font-mono text-text-muted text-sm">#{String(topic.number).padStart(2, '0')}</span>
+      <span className="font-mono text-text-muted text-sm">
+        #{String(topic.number).padStart(2, '0')}
+      </span>
       <span className="text-3xl">{topic.emoji}</span>
       <h1 className="text-2xl font-semibold text-text-primary">{topic.title}</h1>
-      <p className="text-sm text-text-muted ml-auto max-w-md text-right">{topic.shortDescription}</p>
+      <p className="text-sm text-text-muted ml-auto max-w-md text-right">
+        {topic.shortDescription}
+      </p>
     </header>
   );
 }
@@ -1025,6 +1191,7 @@ git commit -m "feat(ui): TopicHeader panel"
 ## Task 12: `TopBar`, `TopicNav`, `Sidebar`, `AppShell` (TDD layout)
 
 **Files:**
+
 - Test: `tests/components/Sidebar.test.tsx`, `tests/components/TopicNav.test.tsx`, `tests/components/AppShell.test.tsx`
 - Create: `src/components/layout/{TopBar,TopicNav,Sidebar,AppShell}.tsx`
 
@@ -1039,9 +1206,16 @@ import { TOPICS } from '@/data/topics';
 
 describe('TopicNav', () => {
   it('renders a link for every topic', () => {
-    render(<MemoryRouter><TopicNav /></MemoryRouter>);
+    render(
+      <MemoryRouter>
+        <TopicNav />
+      </MemoryRouter>,
+    );
     for (const t of TOPICS) {
-      expect(screen.getByRole('link', { name: new RegExp(t.title) })).toHaveAttribute('href', t.path);
+      expect(screen.getByRole('link', { name: new RegExp(t.title) })).toHaveAttribute(
+        'href',
+        t.path,
+      );
     }
   });
 });
@@ -1070,7 +1244,9 @@ export function TopicNav() {
             )
           }
         >
-          <span className="font-mono text-xs text-text-muted w-6">#{String(t.number).padStart(2, '0')}</span>
+          <span className="font-mono text-xs text-text-muted w-6">
+            #{String(t.number).padStart(2, '0')}
+          </span>
           <span className="text-base">{t.emoji}</span>
           <span className="text-sm font-medium">{t.title}</span>
         </NavLink>
@@ -1090,7 +1266,11 @@ import { Sidebar } from '@/components/layout/Sidebar';
 
 describe('Sidebar', () => {
   it('renders the Topics heading and the topic nav', () => {
-    render(<MemoryRouter><Sidebar /></MemoryRouter>);
+    render(
+      <MemoryRouter>
+        <Sidebar />
+      </MemoryRouter>,
+    );
     expect(screen.getByText(/Topics/i)).toBeInTheDocument();
     expect(screen.getByRole('navigation', { name: 'Topics' })).toBeInTheDocument();
   });
@@ -1105,7 +1285,9 @@ import { TopicNav } from './TopicNav';
 export function Sidebar() {
   return (
     <aside className="h-full bg-bg-surface border-r border-border-subtle overflow-y-auto">
-      <h2 className="px-6 pt-6 pb-2 text-xs font-mono uppercase tracking-wider text-text-muted">Topics</h2>
+      <h2 className="px-6 pt-6 pb-2 text-xs font-mono uppercase tracking-wider text-text-muted">
+        Topics
+      </h2>
       <TopicNav />
     </aside>
   );
@@ -1167,7 +1349,9 @@ export function AppShell() {
       <TopBar />
       <div className="grid grid-cols-[260px_1fr] min-h-0">
         <Sidebar />
-        <main className="overflow-y-auto"><Outlet /></main>
+        <main className="overflow-y-auto">
+          <Outlet />
+        </main>
       </div>
     </div>
   );
@@ -1192,6 +1376,7 @@ git commit -m "feat(layout): TopBar, Sidebar, TopicNav, AppShell"
 ## Task 13: `HomePage` with 9 topic cards (TDD)
 
 **Files:**
+
 - Test: `tests/components/HomePage.test.tsx`
 - Create: `src/routes/HomePage.tsx`
 
@@ -1206,14 +1391,22 @@ import { TOPICS } from '@/data/topics';
 
 describe('HomePage', () => {
   it('renders a card for every topic with a link to its path', () => {
-    render(<MemoryRouter><HomePage /></MemoryRouter>);
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
     for (const t of TOPICS) {
       const link = screen.getByRole('link', { name: new RegExp(t.title) });
       expect(link).toHaveAttribute('href', t.path);
     }
   });
   it('shows the long description for each card', () => {
-    render(<MemoryRouter><HomePage /></MemoryRouter>);
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
     for (const t of TOPICS) {
       expect(screen.getByText(t.longDescription)).toBeInTheDocument();
     }
@@ -1235,8 +1428,8 @@ export function HomePage() {
       <div className="mb-8">
         <h1 className="text-3xl font-semibold text-text-primary">Visualize a data structure.</h1>
         <p className="mt-2 text-text-muted max-w-2xl">
-          Nine topics. Step-through animations, your own input, the executing code highlighted in real time,
-          Big-O at a glance, and curated NeetCode problems for each pattern.
+          Nine topics. Step-through animations, your own input, the executing code highlighted in
+          real time, Big-O at a glance, and curated NeetCode problems for each pattern.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -1248,12 +1441,16 @@ export function HomePage() {
             className="group bg-bg-surface border border-border-subtle rounded-2xl p-6 hover:border-accent-primary transition flex flex-col gap-3"
           >
             <div className="flex items-baseline gap-3">
-              <span className="font-mono text-text-muted text-sm">#{String(t.number).padStart(2, '0')}</span>
+              <span className="font-mono text-text-muted text-sm">
+                #{String(t.number).padStart(2, '0')}
+              </span>
               <span className="text-2xl">{t.emoji}</span>
               <span className="text-lg font-semibold text-text-primary">{t.title}</span>
             </div>
             <p className="text-sm text-text-secondary">{t.longDescription}</p>
-            <span className="mt-auto text-sm font-mono text-accent-primary group-hover:translate-x-0.5 transition">Open →</span>
+            <span className="mt-auto text-sm font-mono text-accent-primary group-hover:translate-x-0.5 transition">
+              Open →
+            </span>
           </Link>
         ))}
       </div>
@@ -1277,17 +1474,17 @@ git commit -m "feat(home): topic grid with 9 cards"
 
 **Files (Create all nine):**
 
-| File | Component name | `topicId` argument |
-|---|---|---|
-| `src/routes/ArraysPage.tsx` | `ArraysPage` | `'arrays'` |
-| `src/routes/StackQueuePage.tsx` | `StackQueuePage` | `'stack-queue'` |
-| `src/routes/LinkedListPage.tsx` | `LinkedListPage` | `'linked-list'` |
-| `src/routes/BinaryTreePage.tsx` | `BinaryTreePage` | `'binary-tree'` |
-| `src/routes/BSTPage.tsx` | `BSTPage` | `'bst'` |
-| `src/routes/GraphPage.tsx` | `GraphPage` | `'graph'` |
-| `src/routes/SortingPage.tsx` | `SortingPage` | `'sorting'` |
-| `src/routes/HashTablePage.tsx` | `HashTablePage` | `'hash-table'` |
-| `src/routes/DPPage.tsx` | `DPPage` | `'dp'` |
+| File                            | Component name   | `topicId` argument |
+| ------------------------------- | ---------------- | ------------------ |
+| `src/routes/ArraysPage.tsx`     | `ArraysPage`     | `'arrays'`         |
+| `src/routes/StackQueuePage.tsx` | `StackQueuePage` | `'stack-queue'`    |
+| `src/routes/LinkedListPage.tsx` | `LinkedListPage` | `'linked-list'`    |
+| `src/routes/BinaryTreePage.tsx` | `BinaryTreePage` | `'binary-tree'`    |
+| `src/routes/BSTPage.tsx`        | `BSTPage`        | `'bst'`            |
+| `src/routes/GraphPage.tsx`      | `GraphPage`      | `'graph'`          |
+| `src/routes/SortingPage.tsx`    | `SortingPage`    | `'sorting'`        |
+| `src/routes/HashTablePage.tsx`  | `HashTablePage`  | `'hash-table'`     |
+| `src/routes/DPPage.tsx`         | `DPPage`         | `'dp'`             |
 
 - [ ] **Step 14.1: Write all nine files using the template below.**
 
@@ -1320,7 +1517,10 @@ export function ArraysPage() {
       <TopicHeader topicId="arrays" />
       <div className="p-8 text-text-muted">
         <p>Coming soon. Engine and visualizer ship in Session 2a.</p>
-        <div data-testid="visualizer-slot" className="mt-6 h-64 bg-bg-surface border border-dashed border-border-strong rounded-2xl" />
+        <div
+          data-testid="visualizer-slot"
+          className="mt-6 h-64 bg-bg-surface border border-dashed border-border-strong rounded-2xl"
+        />
       </div>
     </>
   );
@@ -1334,6 +1534,7 @@ export function ArraysPage() {
 ```bash
 pnpm typecheck
 ```
+
 Expected: zero errors. (No tests for these — they're trivial wrappers and the integration test in Task 15 exercises them.)
 
 - [ ] **Step 14.3: Commit**
@@ -1348,6 +1549,7 @@ git commit -m "feat(routes): stub pages for all 9 topics"
 ## Task 15: Router + wiring `topicStore` to active route (TDD)
 
 **Files:**
+
 - Create: `src/router.tsx`
 - Modify: `src/App.tsx`, `src/main.tsx`, `src/components/layout/AppShell.tsx`
 - Test: `tests/integration/routing.test.tsx`
@@ -1423,7 +1625,9 @@ export function AppShell() {
       <TopBar />
       <div className="grid grid-cols-[260px_1fr] min-h-0">
         <Sidebar />
-        <main className="overflow-y-auto"><Outlet /></main>
+        <main className="overflow-y-auto">
+          <Outlet />
+        </main>
       </div>
     </div>
   );
@@ -1433,6 +1637,7 @@ export function AppShell() {
 - [ ] **Step 15.4: Routing integration test**
 
 `tests/integration/routing.test.tsx`:
+
 ```tsx
 import { describe, it, expect } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
@@ -1446,14 +1651,16 @@ import { useTopicStore } from '@/store/topicStore';
 
 function buildRouter(initial: string) {
   return createMemoryRouter(
-    [{
-      element: <AppShell />,
-      children: [
-        { index: true, element: <HomePage /> },
-        { path: 'arrays', element: <ArraysPage /> },
-        { path: 'graph', element: <GraphPage /> },
-      ],
-    }],
+    [
+      {
+        element: <AppShell />,
+        children: [
+          { index: true, element: <HomePage /> },
+          { path: 'arrays', element: <ArraysPage /> },
+          { path: 'graph', element: <GraphPage /> },
+        ],
+      },
+    ],
     { initialEntries: [initial] },
   );
 }
@@ -1462,7 +1669,11 @@ describe('routing', () => {
   it('home page → arrays page sets topicStore', async () => {
     render(<RouterProvider router={buildRouter('/')} />);
     await userEvent.click(screen.getByRole('link', { name: /Open Arrays/ }));
-    await waitFor(() => expect(screen.getByText('Coming soon. Engine and visualizer ship in Session 2a.')).toBeInTheDocument());
+    await waitFor(() =>
+      expect(
+        screen.getByText('Coming soon. Engine and visualizer ship in Session 2a.'),
+      ).toBeInTheDocument(),
+    );
     expect(useTopicStore.getState().selectedTopicId).toBe('arrays');
   });
 
@@ -1478,6 +1689,7 @@ describe('routing', () => {
 ```bash
 pnpm test
 ```
+
 Expected: every test passes.
 
 - [ ] **Step 15.6: Manual browser check**
@@ -1485,7 +1697,9 @@ Expected: every test passes.
 ```bash
 pnpm dev
 ```
+
 Open the URL. Verify:
+
 1. Home shows 9 cards, dark theme, amber accents.
 2. Clicking each card navigates to the right placeholder page.
 3. Sidebar TopicNav highlights the active topic.
@@ -1504,6 +1718,7 @@ git commit -m "feat: react-router wiring + active-topic sync to store"
 ## Task 16: GitHub Actions CI
 
 **Files:**
+
 - Create: `.github/workflows/ci.yml`
 
 - [ ] **Step 16.1: Workflow file**
@@ -1548,6 +1763,7 @@ pnpm typecheck
 pnpm test
 pnpm build
 ```
+
 Expected: all four succeed. If `--frozen-lockfile` fails, drop the flag locally but keep it in CI — the lockfile was just regenerated by `pnpm install` in Task 2.
 
 - [ ] **Step 16.3: Commit**
@@ -1562,12 +1778,13 @@ git commit -m "ci: add GitHub Actions workflow for lint/typecheck/test/build"
 ## Task 17: README + handoff note
 
 **Files:**
+
 - Create: `README.md`
 - Modify: `docs/superpowers/plans/session-1-skeleton.md` (this file — add a "Session 1 outcome" appendix)
 
 - [ ] **Step 17.1: `README.md`**
 
-```markdown
+````markdown
 # DSA Visualizer
 
 Interactive visualizations of data structures and algorithms with play/pause/step controls, real-time code highlighting, Big-O badges, and mapped NeetCode practice problems.
@@ -1582,6 +1799,7 @@ Vite · React · TypeScript (strict) · Tailwind CSS · Framer Motion · Zustand
 pnpm install
 pnpm dev
 ```
+````
 
 ## Verify
 
@@ -1595,7 +1813,8 @@ pnpm build
 ## Architecture
 
 See `docs/superpowers/plans/2026-05-14-dsa-visualizer-master-plan.md` for the canonical design document. Each implementation session has its own plan under `docs/superpowers/plans/session-N-*.md`.
-```
+
+````
 
 - [ ] **Step 17.2: Append handoff appendix to this file**
 
@@ -1620,7 +1839,7 @@ Append to `docs/superpowers/plans/session-1-skeleton.md`:
   - Stores present: `topicStore`, `prefsStore` (both wired, used)
   - Tests passing: <N>
   - CI: green on commit <sha>
-```
+````
 
 - [ ] **Step 17.3: Final commit**
 
@@ -1645,6 +1864,7 @@ pnpm preview &
 sleep 2 && curl -s http://localhost:4173 | grep -i "dsa visualizer"
 kill %1
 ```
+
 Expected: all green; the curl finds the title in the preview HTML.
 
 - [ ] Use `superpowers:verification-before-completion` before declaring Session 1 done — paste real command output, not summaries.
