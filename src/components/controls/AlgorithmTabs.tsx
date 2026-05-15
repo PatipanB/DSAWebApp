@@ -1,18 +1,18 @@
 import { Tabs } from '@/components/primitives/Tabs';
 import type { AlgorithmId } from '@/types/algorithm';
 
-interface AlgorithmTab {
-  id: AlgorithmId;
+interface AlgorithmTab<T extends AlgorithmId> {
+  id: T;
   label: string;
 }
 
-interface Props {
-  tabs: AlgorithmTab[];
-  selectedId: AlgorithmId;
-  onSelect: (id: AlgorithmId) => void;
+interface Props<T extends AlgorithmId> {
+  tabs: AlgorithmTab<T>[];
+  selectedId: T;
+  onSelect: (id: T) => void;
 }
 
-export function AlgorithmTabs({ tabs, selectedId, onSelect }: Props) {
+export function AlgorithmTabs<T extends AlgorithmId>({ tabs, selectedId, onSelect }: Props<T>) {
   return (
     <Tabs
       value={selectedId}
