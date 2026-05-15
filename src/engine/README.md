@@ -64,3 +64,18 @@ Never write a result-only test without the trace snapshot test. The trace catche
 ## Line number alignment
 
 The `line` field in each step references the DISPLAYED snippet (the comment block), not the instrumented source code. Keep them aligned — count from line 1 at the top of the displayed function.
+
+## Data-file checklist (add for each new algorithm)
+
+When adding algorithm `my-algo` to topic `my-topic`, update all four data files:
+
+| File | What to add |
+|------|-------------|
+| `src/data/codeSnippets.ts` | `'my-algo': { ts: [...], py: [...] }` — line arrays matching the DISPLAYED SNIPPET |
+| `src/data/complexities.ts` | `'my-algo': { time: { best, average, worst }, space, notes? }` |
+| `src/data/neetcodeProblems.ts` | `'my-topic': [...]` — array of `Problem` objects (`title, slug, difficulty, hint`) |
+| `src/data/keyInsights.ts` | `'my-algo': '...'` — one sentence on the key insight |
+
+Also update `src/types/algorithm.ts`:
+- Add the new `AlgorithmId` to the union
+- Export `MyAlgoInput` interface and `DEFAULT_MY_ALGO_INPUT` constant
