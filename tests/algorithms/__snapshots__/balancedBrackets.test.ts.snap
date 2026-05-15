@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`balancedBrackets > trace > matches snapshot for default input 1`] = `
+"algorithmId: balanced-brackets
+steps: 8
+finalResult: true
+
+step 0: line=1 narration="Start scanning "([{}])""
+  vars: expr="([{}])", stackSize=0
+  items: []
+  inputCursor: 0
+  inputTokens: [(,[,{,},],)]
+step 1: line=5 narration="'(' is an opening bracket — push onto stack"
+  vars: char="(", stackSize=1
+  items: [[object Object]]
+  inputCursor: 1
+  inputTokens: [(,[,{,},],)]
+step 2: line=5 narration="'[' is an opening bracket — push onto stack"
+  vars: char="[", stackSize=2
+  items: [[object Object],[object Object]]
+  inputCursor: 2
+  inputTokens: [(,[,{,},],)]
+step 3: line=5 narration="'{' is an opening bracket — push onto stack"
+  vars: char="{", stackSize=3
+  items: [[object Object],[object Object],[object Object]]
+  inputCursor: 3
+  inputTokens: [(,[,{,},],)]
+step 4: line=6 narration="'}' matches '{' — pop stack"
+  vars: char="}", matched="{}", stackSize=2
+  items: [[object Object],[object Object]]
+  inputCursor: 4
+  inputTokens: [(,[,{,},],)]
+  matched: {"open":"{","close":"}"}
+step 5: line=6 narration="']' matches '[' — pop stack"
+  vars: char="]", matched="[]", stackSize=1
+  items: [[object Object]]
+  inputCursor: 5
+  inputTokens: [(,[,{,},],)]
+  matched: {"open":"[","close":"]"}
+step 6: line=6 narration="')' matches '(' — pop stack"
+  vars: char=")", matched="()", stackSize=0
+  items: []
+  inputCursor: 6
+  inputTokens: [(,[,{,},],)]
+  matched: {"open":"(","close":")"}
+step 7: line=8 narration="Stack is empty — "([{}])" is balanced ✓"
+  vars: result=true, stackSize=0
+  items: []
+  inputCursor: 6
+  inputTokens: [(,[,{,},],)]"
+`;

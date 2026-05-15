@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`monotonicStack > trace > matches snapshot for default input 1`] = `
+"algorithmId: monotonic-stack
+steps: 10
+finalResult: [4,2,4,-1,-1]
+
+step 0: line=2 narration="Initialize result=[-1,…,-1] and empty stack"
+  vars: result="[-1,-1,-1,-1,-1]"
+  items: []
+  inputTokens: [2,1,2,4,3]
+  inputCursor: 0
+  result: [-1,-1,-1,-1,-1]
+step 1: line=8 narration="Push 2 (index 0) onto stack"
+  vars: i=0, curr=2, stackSize=1
+  items: [[object Object]]
+  inputCursor: 1
+  inputTokens: [2,1,2,4,3]
+  result: [-1,-1,-1,-1,-1]
+step 2: line=8 narration="Push 1 (index 1) onto stack"
+  vars: i=1, curr=1, stackSize=2
+  items: [[object Object],[object Object]]
+  inputCursor: 2
+  inputTokens: [2,1,2,4,3]
+  result: [-1,-1,-1,-1,-1]
+step 3: line=6 narration="1 < 2: pop index 1, set result[1]=2"
+  vars: i=2, curr=2, popped=1, result[1]=2
+  items: [[object Object]]
+  inputCursor: 2
+  inputTokens: [2,1,2,4,3]
+  result: [-1,2,-1,-1,-1]
+step 4: line=8 narration="Push 2 (index 2) onto stack"
+  vars: i=2, curr=2, stackSize=2
+  items: [[object Object],[object Object]]
+  inputCursor: 3
+  inputTokens: [2,1,2,4,3]
+  result: [-1,2,-1,-1,-1]
+step 5: line=6 narration="2 < 4: pop index 2, set result[2]=4"
+  vars: i=3, curr=4, popped=2, result[2]=4
+  items: [[object Object]]
+  inputCursor: 3
+  inputTokens: [2,1,2,4,3]
+  result: [-1,2,4,-1,-1]
+step 6: line=6 narration="2 < 4: pop index 0, set result[0]=4"
+  vars: i=3, curr=4, popped=0, result[0]=4
+  items: []
+  inputCursor: 3
+  inputTokens: [2,1,2,4,3]
+  result: [4,2,4,-1,-1]
+step 7: line=8 narration="Push 4 (index 3) onto stack"
+  vars: i=3, curr=4, stackSize=1
+  items: [[object Object]]
+  inputCursor: 4
+  inputTokens: [2,1,2,4,3]
+  result: [4,2,4,-1,-1]
+step 8: line=8 narration="Push 3 (index 4) onto stack"
+  vars: i=4, curr=3, stackSize=2
+  items: [[object Object],[object Object]]
+  inputCursor: 5
+  inputTokens: [2,1,2,4,3]
+  result: [4,2,4,-1,-1]
+step 9: line=10 narration="Done — 2 element(s) have no next greater (already -1)"
+  vars: result="[4,2,4,-1,-1]"
+  items: []
+  inputCursor: 5
+  inputTokens: [2,1,2,4,3]
+  result: [4,2,4,-1,-1]"
+`;

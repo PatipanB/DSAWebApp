@@ -64,4 +64,66 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
       hint: 'Window grows/shrinks; the "need" map is shown live.',
     },
   ],
+  'stack-queue': [
+    {
+      title: 'Baseball Game',
+      slug: 'baseball-game',
+      difficulty: 'beginner',
+      hint: 'Push scores; D doubles top, C removes top — pure stack operations.',
+    },
+    {
+      title: 'Valid Parentheses',
+      slug: 'validate-parentheses',
+      difficulty: 'beginner',
+      hint: 'Default balanced-brackets example — watch open brackets push and matching ones pop.',
+    },
+    {
+      title: 'Min Stack',
+      slug: 'minimum-stack',
+      difficulty: 'beginner',
+      hint: 'Auxiliary min-tracking stack shown side-by-side with the main one.',
+    },
+    {
+      title: 'Implement Queue using Stacks',
+      slug: 'implement-queue-using-stacks',
+      difficulty: 'beginner',
+      hint: 'Two-stack queue trick: fill from stack 1 into stack 2 when dequeuing.',
+    },
+    {
+      title: 'Evaluate Reverse Polish Notation',
+      slug: 'evaluate-reverse-polish-notation',
+      difficulty: 'beginner',
+      hint: 'Operand stack — operator pops two, computes, pushes result.',
+    },
+    {
+      title: 'Daily Temperatures',
+      slug: 'daily-temperatures',
+      difficulty: 'advanced',
+      hint: 'Monotonic stack default example — decreasing-temperature variant.',
+    },
+    {
+      title: 'Online Stock Span',
+      slug: 'online-stock-span',
+      difficulty: 'advanced',
+      hint: 'Monotonic stack accumulating spans — pop while top price ≤ current.',
+    },
+    {
+      title: 'Car Fleet',
+      slug: 'car-fleet',
+      difficulty: 'advanced',
+      hint: 'Stack of arrival times; a car that catches the one ahead joins its fleet.',
+    },
+    {
+      title: 'Largest Rectangle in Histogram',
+      slug: 'largest-rectangle-in-histogram',
+      difficulty: 'advanced',
+      hint: 'Monotonic stack tracks pending widths; area computed when a bar is popped.',
+    },
+    {
+      title: 'Sliding Window Maximum',
+      slug: 'sliding-window-maximum',
+      difficulty: 'advanced',
+      hint: 'Monotonic deque — front is window max, stale front is evicted when out of window.',
+    },
+  ],
 };
