@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:writing-plans)",
+      "Skill(superpowers:subagent-driven-development)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm tsc *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(pnpm add *)",
+      "Bash(git *)"
+    ]
+  }
+}
