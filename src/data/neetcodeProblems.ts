@@ -5,31 +5,31 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
   arrays: [
     {
       title: 'Two Sum',
-      slug: 'two-sum',
+      slug: 'two-integer-sum',
       difficulty: 'beginner',
       hint: 'Cross-references the Hash Table topic.',
     },
     {
-      title: 'Valid Palindrome',
-      slug: 'valid-palindrome',
+      title: 'Is Palindrome',
+      slug: 'is-palindrome',
       difficulty: 'beginner',
       hint: 'Two cyan/amber pointers converging is exactly the trace you need.',
     },
     {
       title: 'Two Sum II – Input Array Is Sorted',
-      slug: 'two-sum-ii-input-array-is-sorted',
+      slug: 'two-integer-sum-ii',
       difficulty: 'beginner',
       hint: 'Mirrors the default two-pointer example directly.',
     },
     {
       title: 'Best Time to Buy and Sell Stock',
-      slug: 'best-time-to-buy-and-sell-stock',
+      slug: 'buy-and-sell-crypto',
       difficulty: 'beginner',
       hint: "Visualizer's sliding-window mode shows the running min/max.",
     },
     {
       title: 'Contains Duplicate',
-      slug: 'contains-duplicate',
+      slug: 'duplicate-integer',
       difficulty: 'beginner',
       hint: 'Cross-references the Hash Table topic.',
     },
@@ -53,13 +53,13 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
     },
     {
       title: 'Longest Substring Without Repeating Characters',
-      slug: 'longest-substring-without-repeating-characters',
+      slug: 'longest-substring-without-duplicates',
       difficulty: 'advanced',
       hint: 'Variable-size window with a set highlighted in VariableInspector.',
     },
     {
       title: 'Minimum Window Substring',
-      slug: 'minimum-window-substring',
+      slug: 'minimum-window-with-characters',
       difficulty: 'advanced',
       hint: 'Window grows/shrinks; the "need" map is shown live.',
     },

@@ -17,8 +17,8 @@ describe('ProblemsSidebar', () => {
 
   it('links point to neetcode.io with the correct slug', () => {
     render(<ProblemsSidebar topicId="arrays" />);
-    const link = screen.getByRole('link', { name: /valid palindrome/i });
-    expect(link).toHaveAttribute('href', 'https://neetcode.io/problems/valid-palindrome');
+    const link = screen.getByRole('link', { name: /is palindrome/i });
+    expect(link).toHaveAttribute('href', 'https://neetcode.io/problems/is-palindrome');
   });
 
   it('links open in a new tab with noopener noreferrer', () => {
