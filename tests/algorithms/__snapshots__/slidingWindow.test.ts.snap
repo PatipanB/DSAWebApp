@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`slidingWindow > trace > matches snapshot for default input 1`] = `
+"algorithmId: sliding-window
+steps: 7
+finalResult: 9
+
+step 0: line=3 narration="Build initial window [0..2]: sum = 8"
+  vars: sum=8, max=8, l=0, r=2, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":0,"end":2}
+  sum: 8
+step 1: line=4 narration="Initial max = 8"
+  vars: sum=8, max=8, l=0, r=2, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":0,"end":2}
+  sum: 8
+  result: 8
+step 2: line=6 narration="Slide: add 1, drop 2 → window [1..3], sum = 7"
+  vars: sum=7, max=8, l=1, r=3, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":1,"end":3}
+  sum: 7
+step 3: line=6 narration="Slide: add 3, drop 1 → window [2..4], sum = 9"
+  vars: sum=9, max=8, l=2, r=4, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":2,"end":4}
+  sum: 9
+step 4: line=7 narration="New max found: 9"
+  vars: sum=9, max=9, l=2, r=4, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":2,"end":4}
+  sum: 9
+  result: 9
+step 5: line=6 narration="Slide: add 2, drop 5 → window [3..5], sum = 6"
+  vars: sum=6, max=9, l=3, r=5, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":3,"end":5}
+  sum: 6
+step 6: line=9 narration="Return max = 9"
+  vars: sum=9, max=9, k=3
+  values: [2,1,5,1,3,2]
+  pointers: []
+  window: {"start":3,"end":5}
+  sum: 9
+  result: 9"
+`;
