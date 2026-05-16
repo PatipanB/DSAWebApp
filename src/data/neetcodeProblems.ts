@@ -64,6 +64,44 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
       hint: 'Window grows/shrinks; the "need" map is shown live.',
     },
   ],
+  'linked-list': [
+    {
+      title: 'Reverse Linked List',
+      slug: 'reverse-a-linked-list',
+      difficulty: 'beginner',
+      hint: 'Mirrors the reverse() step in the Insert/Delete demo — watch prev/curr flip.',
+    },
+    {
+      title: 'Merge Two Sorted Lists',
+      slug: 'merge-two-sorted-linked-lists',
+      difficulty: 'beginner',
+      hint: 'Two curr pointers advance through each list; the smaller value is linked next.',
+    },
+    {
+      title: 'Linked List Cycle',
+      slug: 'linked-list-cycle-detection',
+      difficulty: 'beginner',
+      hint: 'Fast pointer moves two steps, slow one — they meet only if a cycle exists.',
+    },
+    {
+      title: 'Reorder List',
+      slug: 'reorder-linked-list',
+      difficulty: 'advanced',
+      hint: 'Find the midpoint, reverse the second half, then interleave the two halves.',
+    },
+    {
+      title: 'Remove Nth Node From End of List',
+      slug: 'remove-node-from-end-of-linked-list',
+      difficulty: 'advanced',
+      hint: 'Two pointers n apart — when the leader hits null, the trailer is at the target.',
+    },
+    {
+      title: 'Add Two Numbers',
+      slug: 'add-two-numbers',
+      difficulty: 'advanced',
+      hint: 'Traverse both lists simultaneously, carry the overflow digit to the next node.',
+    },
+  ],
   'stack-queue': [
     {
       title: 'Baseball Game',

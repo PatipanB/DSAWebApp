@@ -46,4 +46,19 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(min(n, k))',
     notes: 'Each character enters and leaves the window at most once. k = size of character set.',
   },
+  'singly-traverse': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(1)',
+    notes: 'Visit each node once; only the curr pointer is needed as extra space.',
+  },
+  'singly-insert-delete': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(1)',
+    notes: 'Head insert is O(1); tail insert and deleteByValue need traversal O(n); reversal is O(n).',
+  },
+  'doubly-traverse': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(1)',
+    notes: 'Forward and backward traversals each visit n nodes; only the curr pointer is used as extra space.',
+  },
 };
