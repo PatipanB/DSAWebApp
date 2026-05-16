@@ -34,3 +34,24 @@ export interface QueueSnapshot {
   inputCursor?: number;
   phase?: 'enqueue' | 'dequeue';
 }
+
+export type ArrayOperation = 'idle' | 'push' | 'insert' | 'delete' | 'pop';
+
+export interface ArrayOpsSnapshot {
+  values: number[];
+  operation: ArrayOperation;
+  activeIndex?: number;
+  shiftStart?: number;
+  shiftEnd?: number;
+  cost?: 'O(1)' | 'O(n)';
+}
+
+export interface StringWindowSnapshot {
+  chars: string[];
+  left: number;
+  right: number;
+  windowSet: string[];
+  maxLen: number;
+  currentLen: number;
+  phase: 'init' | 'shrink' | 'expand' | 'done';
+}

@@ -18,17 +18,28 @@ import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
 import { twoPointers } from '@/algorithms/arrays/twoPointers';
 import { slidingWindow } from '@/algorithms/arrays/slidingWindow';
+import { arrayOps } from '@/algorithms/arrays/arrayOps';
+import { dynamicWindow } from '@/algorithms/arrays/dynamicWindow';
+import { ArrayOpsVisualizer } from '@/components/visualizers/ArrayOpsVisualizer';
+import { StringVisualizer } from '@/components/visualizers/StringVisualizer';
 import { COMPLEXITIES } from '@/data/complexities';
-import { DEFAULT_TWO_POINTERS_INPUT, DEFAULT_SLIDING_WINDOW_INPUT } from '@/types/algorithm';
-import type { ArraySnapshot } from '@/types/snapshots';
+import {
+  DEFAULT_TWO_POINTERS_INPUT,
+  DEFAULT_SLIDING_WINDOW_INPUT,
+  DEFAULT_ARRAY_OPS_INPUT,
+  DEFAULT_DYNAMIC_WINDOW_INPUT,
+} from '@/types/algorithm';
+import type { ArraySnapshot, ArrayOpsSnapshot, StringWindowSnapshot } from '@/types/snapshots';
 import type { AlgorithmRun } from '@/engine/types';
 
 const ALGO_TABS = [
   { id: 'two-pointers' as const, label: 'Two Pointers' },
   { id: 'sliding-window' as const, label: 'Sliding Window' },
+  { id: 'array-ops' as const, label: 'Array Operations' },
+  { id: 'dynamic-window' as const, label: 'Dynamic Window' },
 ];
 
-type ArraysAlgorithmId = 'two-pointers' | 'sliding-window';
+type ArraysAlgorithmId = 'two-pointers' | 'sliding-window' | 'array-ops' | 'dynamic-window';
 
 export function ArraysPage() {
   const [activeId, setActiveId] = useState<ArraysAlgorithmId>('two-pointers');
@@ -39,12 +50,15 @@ export function ArraysPage() {
   const [swValues, setSwValues] = useState(DEFAULT_SLIDING_WINDOW_INPUT.values.join(', '));
   const [swK, setSwK] = useState(String(DEFAULT_SLIDING_WINDOW_INPUT.k));
 
-  const [run, setRun] = useState<AlgorithmRun<ArraySnapshot> | null>(() =>
-    twoPointers(DEFAULT_TWO_POINTERS_INPUT),
+  const [aoValues, setAoValues] = useState(DEFAULT_ARRAY_OPS_INPUT.values.join(', '));
+  const [dwString, setDwString] = useState(DEFAULT_DYNAMIC_WINDOW_INPUT.s);
+
+  const [run, setRun] = useState<AlgorithmRun<unknown> | null>(() =>
+    twoPointers(DEFAULT_TWO_POINTERS_INPUT) as AlgorithmRun<unknown>,
   );
   const [parseError, setParseError] = useState<string | null>(null);
 
-  const runner = useAlgorithmRun(run as AlgorithmRun<unknown> | null);
+  const runner = useAlgorithmRun(run);
   useKeyboardControls(runner);
 
   const stepIndex = useRunStore((s) => s.stepIndex);
@@ -56,9 +70,13 @@ export function ArraysPage() {
       setParseError(null);
       runner.reset();
       if (id === 'two-pointers') {
-        setRun(twoPointers(DEFAULT_TWO_POINTERS_INPUT) as AlgorithmRun<ArraySnapshot>);
+        setRun(twoPointers(DEFAULT_TWO_POINTERS_INPUT) as AlgorithmRun<unknown>);
+      } else if (id === 'sliding-window') {
+        setRun(slidingWindow(DEFAULT_SLIDING_WINDOW_INPUT) as AlgorithmRun<unknown>);
+      } else if (id === 'array-ops') {
+        setRun(arrayOps(DEFAULT_ARRAY_OPS_INPUT) as AlgorithmRun<unknown>);
       } else {
-        setRun(slidingWindow(DEFAULT_SLIDING_WINDOW_INPUT) as AlgorithmRun<ArraySnapshot>);
+        setRun(dynamicWindow(DEFAULT_DYNAMIC_WINDOW_INPUT) as AlgorithmRun<unknown>);
       }
     },
     [runner],
@@ -77,8 +95,8 @@ export function ArraysPage() {
       if (values.length > 30) { setParseError('Maximum 30 values.'); return; }
       if (isNaN(target)) { setParseError('Target must be a number.'); return; }
       runner.reset();
-      setRun(twoPointers({ values, target }) as AlgorithmRun<ArraySnapshot>);
-    } else {
+      setRun(twoPointers({ values, target }) as AlgorithmRun<unknown>);
+    } else if (activeId === 'sliding-window') {
       const values = swValues
         .split(',')
         .map((s) => parseInt(s.trim(), 10))
@@ -89,14 +107,39 @@ export function ArraysPage() {
       if (isNaN(k) || k < 1) { setParseError('k must be a positive number.'); return; }
       if (k > values.length) { setParseError('k cannot exceed array length.'); return; }
       runner.reset();
-      setRun(slidingWindow({ values, k }) as AlgorithmRun<ArraySnapshot>);
+      setRun(slidingWindow({ values, k }) as AlgorithmRun<unknown>);
+    } else if (activeId === 'array-ops') {
+      const values = aoValues
+        .split(',')
+        .map((s) => parseInt(s.trim(), 10))
+        .filter((n) => !isNaN(n));
+      if (values.length < 1) { setParseError('Enter at least 1 number.'); return; }
+      if (values.length > 20) { setParseError('Maximum 20 values.'); return; }
+      runner.reset();
+      setRun(arrayOps({ values }) as AlgorithmRun<unknown>);
+    } else {
+      const s = dwString.trim();
+      if (s.length > 50) { setParseError('String too long (max 50 characters).'); return; }
+      if (!/^[a-zA-Z]*$/.test(s)) { setParseError('Only letters a-z and A-Z allowed.'); return; }
+      runner.reset();
+      setRun(dynamicWindow({ s }) as AlgorithmRun<unknown>);
     }
-  }, [activeId, tpValues, tpTarget, swValues, swK, runner]);
+  }, [activeId, tpValues, tpTarget, swValues, swK, aoValues, dwString, runner]);
 
   const currentStep = run?.steps[stepIndex];
-  const currentSnap = (currentStep?.snapshot as ArraySnapshot) ?? null;
   const currentVars = currentStep?.variables;
-  const callStack = (currentSnap as unknown as { callStack?: string[] })?.callStack;
+
+  const arraySnap = (activeId === 'two-pointers' || activeId === 'sliding-window')
+    ? (currentStep?.snapshot as ArraySnapshot | undefined) ?? null
+    : null;
+  const arrayOpsSnap = activeId === 'array-ops'
+    ? (currentStep?.snapshot as ArrayOpsSnapshot | undefined) ?? null
+    : null;
+  const stringSnap = activeId === 'dynamic-window'
+    ? (currentStep?.snapshot as StringWindowSnapshot | undefined) ?? null
+    : null;
+
+  const callStack = (arraySnap as unknown as { callStack?: string[] })?.callStack;
   const totalSteps = run?.steps.length ?? 0;
   const complexityEntry = COMPLEXITIES[activeId];
 
@@ -119,7 +162,13 @@ export function ArraysPage() {
           data-testid="visualizer-slot"
           className="min-h-64 bg-bg-surface border border-border-subtle rounded-2xl flex items-center justify-center"
         >
-          <ArrayVisualizer snapshot={currentSnap} />
+          {activeId === 'array-ops' ? (
+            <ArrayOpsVisualizer snapshot={arrayOpsSnap} />
+          ) : activeId === 'dynamic-window' ? (
+            <StringVisualizer snapshot={stringSnap} />
+          ) : (
+            <ArrayVisualizer snapshot={arraySnap} />
+          )}
         </div>
 
         <StepNarration narration={currentStep?.narration} />
@@ -142,7 +191,7 @@ export function ArraysPage() {
 
         {/* Algorithm-specific inputs */}
         <InputPanel onRun={handleRun} error={parseError}>
-          {activeId === 'two-pointers' ? (
+          {activeId === 'two-pointers' && (
             <>
               <div className="flex flex-col gap-1">
                 <label className="text-xs font-mono text-text-muted">Array (sorted, comma-separated)</label>
@@ -165,7 +214,8 @@ export function ArraysPage() {
                 />
               </div>
             </>
-          ) : (
+          )}
+          {activeId === 'sliding-window' && (
             <>
               <div className="flex flex-col gap-1">
                 <label className="text-xs font-mono text-text-muted">Array (comma-separated)</label>
@@ -188,6 +238,30 @@ export function ArraysPage() {
                 />
               </div>
             </>
+          )}
+          {activeId === 'array-ops' && (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-mono text-text-muted">Array (comma-separated)</label>
+              <input
+                type="text"
+                value={aoValues}
+                onChange={(e) => setAoValues(e.target.value)}
+                className="bg-bg-elevated border border-border-strong rounded-lg px-3 py-2 text-sm font-mono text-text-primary w-72 focus:outline-none focus:ring-2 focus:ring-accent-primary"
+                placeholder="1, 2, 3, 4"
+              />
+            </div>
+          )}
+          {activeId === 'dynamic-window' && (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-mono text-text-muted">String input</label>
+              <input
+                type="text"
+                value={dwString}
+                onChange={(e) => setDwString(e.target.value)}
+                className="bg-bg-elevated border border-border-strong rounded-lg px-3 py-2 text-sm font-mono text-text-primary w-72 focus:outline-none focus:ring-2 focus:ring-accent-primary"
+                placeholder="abcabcbb"
+              />
+            </div>
           )}
         </InputPanel>
 

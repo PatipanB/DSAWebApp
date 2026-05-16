@@ -26,7 +26,10 @@ export type AlgorithmId =
   | 'open-addressing'
   | 'fibonacci'
   | 'knapsack-01'
-  | 'lcs';
+  | 'lcs'
+  | 'stack-demo'
+  | 'array-ops'
+  | 'dynamic-window';
 
 export interface TwoPointersInput {
   values: number[];
@@ -70,4 +73,28 @@ export interface QueueDemoInput {
 
 export const DEFAULT_QUEUE_DEMO_INPUT: QueueDemoInput = {
   values: [3, 1, 2, 4],
+};
+
+export interface StackDemoInput {
+  values: number[];
+}
+
+export const DEFAULT_STACK_DEMO_INPUT: StackDemoInput = {
+  values: [3, 1, 2, 4],
+};
+
+export interface ArrayOpsInput {
+  values: number[];
+}
+
+export const DEFAULT_ARRAY_OPS_INPUT: ArrayOpsInput = {
+  values: [1, 2, 3, 4],
+};
+
+export interface DynamicWindowInput {
+  s: string;
+}
+
+export const DEFAULT_DYNAMIC_WINDOW_INPUT: DynamicWindowInput = {
+  s: 'abcabcbb',
 };

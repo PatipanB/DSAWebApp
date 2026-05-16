@@ -1,0 +1,161 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`dynamicWindow > trace > trace matches snapshot for "abcabcbb" 1`] = `
+"algorithmId: dynamic-window
+steps: 17
+finalResult: 3
+
+step 0: line=1 narration="Initialize window: left=0, right=0, seen={}."
+  vars: left=0, right=0, maxLen=0, seen="{}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 0
+  right: 0
+  windowSet: []
+  maxLen: 0
+  currentLen: 0
+  phase: init
+step 1: line=4 narration="Add 'a' to window. Window: [0, 0], length=1."
+  vars: left=0, right=0, maxLen=1, seen="{a}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 0
+  right: 0
+  windowSet: [a]
+  maxLen: 1
+  currentLen: 1
+  phase: expand
+step 2: line=4 narration="Add 'b' to window. Window: [0, 1], length=2."
+  vars: left=0, right=1, maxLen=2, seen="{a, b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 0
+  right: 1
+  windowSet: [a,b]
+  maxLen: 2
+  currentLen: 2
+  phase: expand
+step 3: line=4 narration="Add 'c' to window. Window: [0, 2], length=3."
+  vars: left=0, right=2, maxLen=3, seen="{a, b, c}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 0
+  right: 2
+  windowSet: [a,b,c]
+  maxLen: 3
+  currentLen: 3
+  phase: expand
+step 4: line=3 narration="Duplicate 'a' found — remove 'a' from window, shrink left to 1."
+  vars: left=1, right=3, maxLen=3, seen="{b, c}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 1
+  right: 3
+  windowSet: [b,c]
+  maxLen: 3
+  currentLen: 2
+  phase: shrink
+step 5: line=4 narration="Add 'a' to window. Window: [1, 3], length=3."
+  vars: left=1, right=3, maxLen=3, seen="{b, c, a}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 1
+  right: 3
+  windowSet: [b,c,a]
+  maxLen: 3
+  currentLen: 3
+  phase: expand
+step 6: line=3 narration="Duplicate 'b' found — remove 'b' from window, shrink left to 2."
+  vars: left=2, right=4, maxLen=3, seen="{c, a}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 2
+  right: 4
+  windowSet: [c,a]
+  maxLen: 3
+  currentLen: 2
+  phase: shrink
+step 7: line=4 narration="Add 'b' to window. Window: [2, 4], length=3."
+  vars: left=2, right=4, maxLen=3, seen="{c, a, b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 2
+  right: 4
+  windowSet: [c,a,b]
+  maxLen: 3
+  currentLen: 3
+  phase: expand
+step 8: line=3 narration="Duplicate 'c' found — remove 'c' from window, shrink left to 3."
+  vars: left=3, right=5, maxLen=3, seen="{a, b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 3
+  right: 5
+  windowSet: [a,b]
+  maxLen: 3
+  currentLen: 2
+  phase: shrink
+step 9: line=4 narration="Add 'c' to window. Window: [3, 5], length=3."
+  vars: left=3, right=5, maxLen=3, seen="{a, b, c}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 3
+  right: 5
+  windowSet: [a,b,c]
+  maxLen: 3
+  currentLen: 3
+  phase: expand
+step 10: line=3 narration="Duplicate 'b' found — remove 'a' from window, shrink left to 4."
+  vars: left=4, right=6, maxLen=3, seen="{b, c}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 4
+  right: 6
+  windowSet: [b,c]
+  maxLen: 3
+  currentLen: 2
+  phase: shrink
+step 11: line=3 narration="Duplicate 'b' found — remove 'b' from window, shrink left to 5."
+  vars: left=5, right=6, maxLen=3, seen="{c}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 5
+  right: 6
+  windowSet: [c]
+  maxLen: 3
+  currentLen: 1
+  phase: shrink
+step 12: line=4 narration="Add 'b' to window. Window: [5, 6], length=2."
+  vars: left=5, right=6, maxLen=3, seen="{c, b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 5
+  right: 6
+  windowSet: [c,b]
+  maxLen: 3
+  currentLen: 2
+  phase: expand
+step 13: line=3 narration="Duplicate 'b' found — remove 'c' from window, shrink left to 6."
+  vars: left=6, right=7, maxLen=3, seen="{b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 6
+  right: 7
+  windowSet: [b]
+  maxLen: 3
+  currentLen: 1
+  phase: shrink
+step 14: line=3 narration="Duplicate 'b' found — remove 'b' from window, shrink left to 7."
+  vars: left=7, right=7, maxLen=3, seen="{}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 7
+  right: 7
+  windowSet: []
+  maxLen: 3
+  currentLen: 0
+  phase: shrink
+step 15: line=4 narration="Add 'b' to window. Window: [7, 7], length=1."
+  vars: left=7, right=7, maxLen=3, seen="{b}"
+  chars: [a,b,c,a,b,c,b,b]
+  left: 7
+  right: 7
+  windowSet: [b]
+  maxLen: 3
+  currentLen: 1
+  phase: expand
+step 16: line=5 narration="Longest substring without repeating characters: 3."
+  vars: maxLen=3, result=3
+  chars: [a,b,c,a,b,c,b,b]
+  left: 7
+  right: 7
+  windowSet: [b]
+  maxLen: 3
+  currentLen: 0
+  phase: done"
+`;

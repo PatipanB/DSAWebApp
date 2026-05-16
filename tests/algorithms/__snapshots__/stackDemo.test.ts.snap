@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`stackDemo > trace > trace matches snapshot for [3,1,2,4] 1`] = `
+"algorithmId: stack-demo
+steps: 9
+finalResult: [4,2,1,3]
+
+step 0: line=1 narration="Initializing stack demo."
+  vars: stack="[]"
+  items: []
+  inputCursor: 0
+  inputTokens: [3,1,2,4]
+step 1: line=3 narration="Push 3 onto stack."
+  vars: stack="[3]"
+  items: [[object Object]]
+  inputCursor: 1
+  inputTokens: [3,1,2,4]
+step 2: line=3 narration="Push 1 onto stack."
+  vars: stack="[3, 1]"
+  items: [[object Object],[object Object]]
+  inputCursor: 2
+  inputTokens: [3,1,2,4]
+step 3: line=3 narration="Push 2 onto stack."
+  vars: stack="[3, 1, 2]"
+  items: [[object Object],[object Object],[object Object]]
+  inputCursor: 3
+  inputTokens: [3,1,2,4]
+step 4: line=3 narration="Push 4 onto stack."
+  vars: stack="[3, 1, 2, 4]"
+  items: [[object Object],[object Object],[object Object],[object Object]]
+  inputCursor: 4
+  inputTokens: [3,1,2,4]
+step 5: line=4 narration="Pop 4 from stack (LIFO)."
+  vars: stack="[3, 1, 2]", popped="[4]"
+  items: [[object Object],[object Object],[object Object]]
+  inputCursor: 4
+  inputTokens: [3,1,2,4]
+step 6: line=4 narration="Pop 2 from stack (LIFO)."
+  vars: stack="[3, 1]", popped="[4, 2]"
+  items: [[object Object],[object Object]]
+  inputCursor: 4
+  inputTokens: [3,1,2,4]
+step 7: line=4 narration="Pop 1 from stack (LIFO)."
+  vars: stack="[3]", popped="[4, 2, 1]"
+  items: [[object Object]]
+  inputCursor: 4
+  inputTokens: [3,1,2,4]
+step 8: line=4 narration="Pop 3 from stack (LIFO)."
+  vars: stack="[]", popped="[4, 2, 1, 3]"
+  items: []
+  inputCursor: 4
+  inputTokens: [3,1,2,4]"
+`;

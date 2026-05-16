@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`arrayOps > trace > trace matches snapshot for [1,2,3,4] 1`] = `
+"algorithmId: array-ops
+steps: 8
+finalResult: [1,99,3,4]
+
+step 0: line=1 narration="Starting array operations demo."
+  vars: array="[1, 2, 3, 4]"
+  values: [1,2,3,4]
+  operation: idle
+step 1: line=2 narration="Push 5 to end — O(1)."
+  vars: array="[1, 2, 3, 4, 5]", pushVal=5
+  values: [1,2,3,4,5]
+  operation: push
+  activeIndex: 4
+  cost: O(1)
+step 2: line=3 narration="Insert 99 at index 2 — shifting 3 elements right (O(n))."
+  vars: array="[1, 2, 3, 4, 5]", insertIdx=2, insertVal=99
+  values: [1,2,3,4,5]
+  operation: insert
+  shiftStart: 2
+  shiftEnd: 4
+  cost: O(n)
+step 3: line=3 narration="Inserted 99 at index 2."
+  vars: array="[1, 2, 99, 3, 4, 5]"
+  values: [1,2,99,3,4,5]
+  operation: insert
+  activeIndex: 2
+  cost: O(n)
+step 4: line=4 narration="Delete at index 1 — shifting 4 elements left (O(n))."
+  vars: array="[1, 2, 99, 3, 4, 5]", deleteIdx=1
+  values: [1,2,99,3,4,5]
+  operation: delete
+  shiftStart: 1
+  shiftEnd: 4
+  cost: O(n)
+step 5: line=4 narration="Deleted element at index 1."
+  vars: array="[1, 99, 3, 4, 5]"
+  values: [1,99,3,4,5]
+  operation: delete
+  activeIndex: 1
+  cost: O(n)
+step 6: line=5 narration="Pop 5 from end — O(1)."
+  vars: array="[1, 99, 3, 4]", popped=5
+  values: [1,99,3,4]
+  operation: pop
+  cost: O(1)
+step 7: line=6 narration="Array operations complete."
+  vars: array="[1, 99, 3, 4]"
+  values: [1,99,3,4]
+  operation: idle"
+`;

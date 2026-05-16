@@ -19,21 +19,24 @@ import { useRunStore } from '@/store/runStore';
 import { balancedBrackets } from '@/algorithms/stackQueue/balancedBrackets';
 import { monotonicStack } from '@/algorithms/stackQueue/monotonicStack';
 import { queueDemo } from '@/algorithms/stackQueue/queueDemo';
+import { stackDemo } from '@/algorithms/stackQueue/stackDemo';
 import { COMPLEXITIES } from '@/data/complexities';
 import {
   DEFAULT_BALANCED_BRACKETS_INPUT,
   DEFAULT_MONOTONIC_STACK_INPUT,
   DEFAULT_QUEUE_DEMO_INPUT,
+  DEFAULT_STACK_DEMO_INPUT,
 } from '@/types/algorithm';
 import type { StackSnapshot, QueueSnapshot } from '@/types/snapshots';
 import type { AlgorithmRun } from '@/engine/types';
 
-type StackQueueAlgorithmId = 'balanced-brackets' | 'monotonic-stack' | 'queue-demo';
+type StackQueueAlgorithmId = 'balanced-brackets' | 'monotonic-stack' | 'queue-demo' | 'stack-demo';
 
 const ALGO_TABS = [
   { id: 'balanced-brackets' as const, label: 'Balanced Brackets' },
   { id: 'monotonic-stack' as const, label: 'Monotonic Stack' },
   { id: 'queue-demo' as const, label: 'Queue Demo' },
+  { id: 'stack-demo' as const, label: 'Stack Demo' },
 ];
 
 export function StackQueuePage() {
@@ -42,6 +45,7 @@ export function StackQueuePage() {
   const [bbExpr, setBbExpr] = useState(DEFAULT_BALANCED_BRACKETS_INPUT.expression);
   const [msValues, setMsValues] = useState(DEFAULT_MONOTONIC_STACK_INPUT.values.join(', '));
   const [qdValues, setQdValues] = useState(DEFAULT_QUEUE_DEMO_INPUT.values.join(', '));
+  const [sdValues, setSdValues] = useState(DEFAULT_STACK_DEMO_INPUT.values.join(', '));
 
   const [run, setRun] = useState<AlgorithmRun<unknown> | null>(() =>
     balancedBrackets(DEFAULT_BALANCED_BRACKETS_INPUT) as AlgorithmRun<unknown>,
@@ -63,8 +67,10 @@ export function StackQueuePage() {
         setRun(balancedBrackets(DEFAULT_BALANCED_BRACKETS_INPUT) as AlgorithmRun<unknown>);
       } else if (id === 'monotonic-stack') {
         setRun(monotonicStack(DEFAULT_MONOTONIC_STACK_INPUT) as AlgorithmRun<unknown>);
-      } else {
+      } else if (id === 'queue-demo') {
         setRun(queueDemo(DEFAULT_QUEUE_DEMO_INPUT) as AlgorithmRun<unknown>);
+      } else {
+        setRun(stackDemo(DEFAULT_STACK_DEMO_INPUT) as AlgorithmRun<unknown>);
       }
     },
     [runner],
@@ -85,13 +91,18 @@ export function StackQueuePage() {
       if (values.length < 1) { setParseError('Enter at least 1 number.'); return; }
       if (values.length > 20) { setParseError('Maximum 20 values.'); return; }
       setRun(monotonicStack({ values }) as AlgorithmRun<unknown>);
+    } else if (activeId === 'stack-demo') {
+      const values = sdValues.split(',').map((s) => parseInt(s.trim(), 10)).filter((n) => !isNaN(n));
+      if (values.length < 1) { setParseError('Enter at least 1 number.'); return; }
+      if (values.length > 20) { setParseError('Maximum 20 values.'); return; }
+      setRun(stackDemo({ values }) as AlgorithmRun<unknown>);
     } else {
       const values = qdValues.split(',').map((s) => parseInt(s.trim(), 10)).filter((n) => !isNaN(n));
       if (values.length < 1) { setParseError('Enter at least 1 number.'); return; }
       if (values.length > 20) { setParseError('Maximum 20 values.'); return; }
       setRun(queueDemo({ values }) as AlgorithmRun<unknown>);
     }
-  }, [activeId, bbExpr, msValues, qdValues, runner]);
+  }, [activeId, bbExpr, msValues, qdValues, sdValues, runner]);
 
   const currentStep = run?.steps[stepIndex];
   const currentVars = currentStep?.variables;
@@ -180,6 +191,20 @@ export function StackQueuePage() {
                 type="text"
                 value={qdValues}
                 onChange={(e) => setQdValues(e.target.value)}
+                className="bg-bg-elevated border border-border-strong rounded-lg px-3 py-2 text-sm font-mono text-text-primary w-72 focus:outline-none focus:ring-2 focus:ring-accent-primary"
+                placeholder="3, 1, 2, 4"
+              />
+            </div>
+          )}
+          {activeId === 'stack-demo' && (
+            <div className="flex flex-col gap-1">
+              <label className="text-xs font-mono text-text-muted">
+                Values to push (comma-separated)
+              </label>
+              <input
+                type="text"
+                value={sdValues}
+                onChange={(e) => setSdValues(e.target.value)}
                 className="bg-bg-elevated border border-border-strong rounded-lg px-3 py-2 text-sm font-mono text-text-primary w-72 focus:outline-none focus:ring-2 focus:ring-accent-primary"
                 placeholder="3, 1, 2, 4"
               />

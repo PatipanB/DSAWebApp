@@ -31,4 +31,19 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(n)',
     notes: 'Enqueue is O(1). Array-based dequeue (shift) is O(n); deque-based is O(1).',
   },
+  'stack-demo': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(n)',
+    notes: 'Each push and pop is O(1); the full demo processes all n elements.',
+  },
+  'array-ops': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(1)',
+    notes: 'Push/pop are O(1); insert/delete at arbitrary index are O(n) due to element shifting.',
+  },
+  'dynamic-window': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(min(n, k))',
+    notes: 'Each character enters and leaves the window at most once. k = size of character set.',
+  },
 };
