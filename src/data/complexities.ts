@@ -61,4 +61,39 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(1)',
     notes: 'Forward and backward traversals each visit n nodes; only the curr pointer is used as extra space.',
   },
+  'inorder': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'h = tree height; O(log n) balanced, O(n) skewed. Space is the recursion call stack.',
+  },
+  'preorder': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'Same as inorder — every node is visited exactly once regardless of traversal order.',
+  },
+  'postorder': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'Useful when children must be processed before parent (e.g., deleting a tree).',
+  },
+  'level-order': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(w)',
+    notes: 'w = max width of the tree. Queue holds at most one full level at a time.',
+  },
+  'bst-insert': {
+    time: { best: 'O(log n)', average: 'O(log n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'Worst case O(n) on a degenerate (sorted-input) tree. Balanced BST guarantees O(log n).',
+  },
+  'bst-search': {
+    time: { best: 'O(1)', average: 'O(log n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'Best case: target is root. Worst: degenerate tree — every node is visited.',
+  },
+  'bst-delete': {
+    time: { best: 'O(log n)', average: 'O(log n)', worst: 'O(n)' },
+    space: 'O(h)',
+    notes: 'Two-children deletion finds the inorder successor in O(h) then removes it in O(h).',
+  },
 };

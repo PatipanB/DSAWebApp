@@ -23,4 +23,18 @@ export const KEY_INSIGHTS: Partial<Record<AlgorithmId, string>> = {
     'Head insert is O(1) (redirect head); tail insert needs the tail pointer; delete requires tracking prev so prev.next can skip the removed node; reversal flips every next pointer in one pass.',
   'doubly-traverse':
     'The extra prev pointer enables O(1) backward navigation — forward: curr=curr.next; backward: curr=curr.prev. No copying or reversal needed.',
+  'inorder':
+    'Inorder (left → root → right) visits BST nodes in sorted order — the key invariant that makes inorder traversal the canonical way to list BST contents.',
+  'preorder':
+    'Preorder (root → left → right) visits the root before its subtrees — ideal for serialization since the root always comes first in the output.',
+  'postorder':
+    'Postorder (left → right → root) visits the root last — every child is fully processed before the parent, making it natural for deletion and bottom-up computation.',
+  'level-order':
+    'Level-order (BFS) uses a queue: enqueue the root, then for each dequeued node enqueue its children — processes the tree level by level without recursion.',
+  'bst-insert':
+    'Compare each node: go left if smaller, right if larger — follow this until you find a null slot, then attach the new node there.',
+  'bst-search':
+    'At every node, the BST invariant halves the search space: go left if target < current, right if larger — O(log n) on balanced trees.',
+  'bst-delete':
+    'Three cases: leaf → remove directly; one child → replace with it; two children → swap with inorder successor (leftmost in right subtree) then delete the successor.',
 };
