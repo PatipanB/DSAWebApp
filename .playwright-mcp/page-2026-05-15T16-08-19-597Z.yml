@@ -1,0 +1,21 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - link "NeetCode.io Logo" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - img "NeetCode.io Logo" [ref=e6]
+    - button [ref=e7] [cursor=pointer]:
+      - img [ref=e9]
+      - img [ref=e12]
+    - button [ref=e14] [cursor=pointer]:
+      - img [ref=e16]
+    - button [ref=e18] [cursor=pointer]:
+      - img [ref=e20]
+  - generic [ref=e22]:
+    - button "Timer" [ref=e26] [cursor=pointer]:
+      - img [ref=e28]
+    - link "Pro" [ref=e30] [cursor=pointer]:
+      - /url: /pro
+      - generic [ref=e31]: Pro
+    - button [ref=e33] [cursor=pointer]:
+      - img [ref=e35]
+    - button "Sign in" [ref=e39] [cursor=pointer]

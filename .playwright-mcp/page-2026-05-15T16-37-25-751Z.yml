@@ -1,0 +1,244 @@
+- generic [active]:
+  - generic [ref=e1659]:
+    - generic [ref=e1661]:
+      - generic [ref=e1662]:
+        - link "NeetCode.io Logo" [ref=e1663] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e1664]
+        - button "NeetCode 150" [ref=e1665] [cursor=pointer]:
+          - img [ref=e1667]
+          - generic [ref=e1669]: NeetCode 150
+          - img [ref=e1671]
+        - button [ref=e1673] [cursor=pointer]:
+          - img [ref=e1675]
+        - button [ref=e1677] [cursor=pointer]:
+          - img [ref=e1679]
+      - generic [ref=e1681]:
+        - button "Timer" [ref=e1685] [cursor=pointer]:
+          - img [ref=e1687]
+        - link "Pro" [ref=e1689] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e1690]: Pro
+        - button [ref=e1692] [cursor=pointer]:
+          - img [ref=e1694]
+        - button "Sign in" [ref=e1698] [cursor=pointer]
+    - generic [ref=e1699]:
+      - generic [ref=e1701]:
+        - list [ref=e1703]:
+          - listitem [ref=e1704]:
+            - link "Question" [ref=e1705] [cursor=pointer]:
+              - /url: /problems/minimum-stack/question
+              - generic [ref=e1706]:
+                - img [ref=e1708]
+                - text: Question
+          - listitem [ref=e1710]:
+            - link "Solution" [ref=e1711] [cursor=pointer]:
+              - /url: /problems/minimum-stack/solution
+              - generic [ref=e1712]:
+                - img [ref=e1714]
+                - text: Solution
+          - listitem [ref=e1716]:
+            - link "Submissions" [ref=e1717] [cursor=pointer]:
+              - /url: /problems/minimum-stack/history
+              - generic [ref=e1718]:
+                - img [ref=e1720]
+                - text: Submissions
+          - listitem [ref=e1722]:
+            - link "Discuss (64)" [ref=e1723] [cursor=pointer]:
+              - /url: /problems/minimum-stack/discuss
+              - generic [ref=e1724]:
+                - img [ref=e1726]
+                - text: Discuss
+                - generic [ref=e1728]: (64)
+        - generic [ref=e1730]:
+          - heading "Min Stack" [level=1] [ref=e1732]
+          - generic [ref=e1733]:
+            - generic [ref=e1734]: Medium
+            - generic [ref=e1735] [cursor=pointer]: Topics
+            - generic [ref=e1736] [cursor=pointer]: Company Tags
+            - generic [ref=e1737] [cursor=pointer]:
+              - img [ref=e1739]
+              - text: Hints
+          - main [ref=e1742]:
+            - generic [ref=e1743]:
+              - paragraph [ref=e1744]:
+                - text: Design a stack class that supports the
+                - code [ref=e1745]: push
+                - text: ","
+                - code [ref=e1746]: pop
+                - text: ","
+                - code [ref=e1747]: top
+                - text: ", and"
+                - code [ref=e1748]: getMin
+                - text: operations.
+              - list [ref=e1749]:
+                - listitem [ref=e1750]:
+                  - code [ref=e1751]: MinStack()
+                  - text: initializes the stack object.
+                - listitem [ref=e1752]:
+                  - code [ref=e1753]: void push(int val)
+                  - text: pushes the element
+                  - code [ref=e1754]: val
+                  - text: onto the stack.
+                - listitem [ref=e1755]:
+                  - code [ref=e1756]: void pop()
+                  - text: removes the element on the top of the stack.
+                - listitem [ref=e1757]:
+                  - code [ref=e1758]: int top()
+                  - text: gets the top element of the stack.
+                - listitem [ref=e1759]:
+                  - code [ref=e1760]: int getMin()
+                  - text: retrieves the minimum element in the stack.
+              - paragraph [ref=e1761]:
+                - text: Each function should run in
+                - generic [ref=e1762]:
+                  - math [ref=e1764]:
+                    - generic [ref=e1766]:
+                      - generic [ref=e1767]: O
+                      - generic [ref=e1768]: (
+                      - generic [ref=e1769]: "1"
+                      - generic [ref=e1770]: )
+                  - generic [ref=e1772]: O(1)
+                - text: time.
+              - paragraph [ref=e1773]:
+                - strong [ref=e1774]: "Example 1:"
+              - code [ref=e1776]: "Input: [\"MinStack\", \"push\", 1, \"push\", 2, \"push\", 0, \"getMin\", \"pop\", \"top\", \"getMin\"] Output: [null,null,null,null,0,null,2,1] Explanation: MinStack minStack = new MinStack(); minStack.push(1); minStack.push(2); minStack.push(0); minStack.getMin(); // return 0 minStack.pop(); minStack.top(); // return 2 minStack.getMin(); // return 1"
+              - paragraph [ref=e1777]:
+                - strong [ref=e1778]: "Constraints:"
+              - list [ref=e1779]:
+                - listitem [ref=e1780]:
+                  - code [ref=e1781]: "-2^31 <= val <= 2^31 - 1"
+                  - text: .
+                - listitem [ref=e1782]:
+                  - code [ref=e1783]: pop
+                  - text: ","
+                  - code [ref=e1784]: top
+                  - text: and
+                  - code [ref=e1785]: getMin
+                  - text: will always be called on
+                  - strong [ref=e1786]: non-empty
+                  - text: stacks.
+              - group [ref=e1787]:
+                - generic "Topics" [ref=e1788]
+              - group [ref=e1789]:
+                - generic "Recommended Time & Space Complexity" [ref=e1790]
+              - group [ref=e1791]:
+                - generic "Hint 1" [ref=e1792]
+              - group [ref=e1793]:
+                - generic "Hint 2" [ref=e1794]
+              - group [ref=e1795]:
+                - generic "Hint 3" [ref=e1796]
+              - group [ref=e1797]:
+                - generic "Company Tags" [ref=e1798]
+          - generic [ref=e1799]:
+            - generic [ref=e1801]:
+              - generic [ref=e1802]: Seen this question in a real interview?
+              - generic [ref=e1803]:
+                - button "Yes" [ref=e1804] [cursor=pointer]
+                - button "No" [ref=e1805] [cursor=pointer]
+            - generic [ref=e1806]:
+              - generic [ref=e1807]: Acceptance Rate
+              - generic [ref=e1808]: 61.8%
+      - generic [ref=e1812]:
+        - generic [ref=e1813]:
+          - generic [ref=e1814]:
+            - button "Python" [ref=e1818] [cursor=pointer]:
+              - generic [ref=e1819]: Python
+              - img [ref=e1821]
+            - button [ref=e1823] [cursor=pointer]:
+              - img [ref=e1824]
+            - button "Auto" [ref=e1826] [cursor=pointer]: Auto
+          - generic [ref=e1828]:
+            - link [ref=e1829] [cursor=pointer]:
+              - /url: /problems/minimum-stack/notes
+              - img [ref=e1831]
+            - link [ref=e1833] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20minimum-stack&body=Bug%20Report%20for%20https://neetcode.io/problems/minimum-stack%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e1835]
+            - button "Format Code (⌥⇧F)" [ref=e1837] [cursor=pointer]:
+              - img [ref=e1839]
+            - button [ref=e1841] [cursor=pointer]:
+              - img [ref=e1843]
+            - button [ref=e1845] [cursor=pointer]:
+              - img [ref=e1847]
+            - button [ref=e1849] [cursor=pointer]:
+              - img [ref=e1851]
+            - button [ref=e1853] [cursor=pointer]:
+              - img [ref=e1855]
+        - generic [ref=e1857]:
+          - generic [ref=e1858]:
+            - generic [ref=e1860] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e1861] [cursor=pointer]: +
+          - generic [ref=e1862]:
+            - button "NeetBot" [ref=e1863] [cursor=pointer]:
+              - img [ref=e1865]
+              - generic [ref=e1867]: NeetBot
+            - generic [ref=e1868]: "|"
+            - button "Hint" [ref=e1870] [cursor=pointer]:
+              - img [ref=e1872]
+              - generic [ref=e1874]: Hint
+            - generic [ref=e1875]: "|"
+            - img [ref=e1878] [cursor=pointer]
+            - generic [ref=e1880]: "|"
+            - generic [ref=e1881]: Ln 1, Col 1
+        - code [ref=e1885]:
+          - generic [ref=e1886]:
+            - textbox "Editor content"
+            - textbox [ref=e1887]
+            - generic [ref=e1889]:
+              - generic [ref=e1890]:
+                - generic [ref=e1892] [cursor=pointer]: 
+                - generic [ref=e1893]: "1"
+              - generic [ref=e1895]: "2"
+              - generic [ref=e1897]: "3"
+              - generic [ref=e1899]: "4"
+              - generic [ref=e1901]: "5"
+              - generic [ref=e1903]: "6"
+              - generic [ref=e1905]: "7"
+              - generic [ref=e1907]: "8"
+              - generic [ref=e1909]: "9"
+              - generic [ref=e1911]: "10"
+              - generic [ref=e1913]: "11"
+              - generic [ref=e1915]: "12"
+              - generic [ref=e1917]: "13"
+              - generic [ref=e1919]: "14"
+              - generic [ref=e1921]: "15"
+              - generic [ref=e1923]: "16"
+              - generic [ref=e1925]: "17"
+            - generic [ref=e1959]:
+              - generic [ref=e1961]: "class MinStack:"
+              - generic [ref=e1964]: "def __init__(self):"
+              - generic [ref=e1969]: "def push(self, val: int) -> None:"
+              - generic [ref=e1974]: "def pop(self) -> None:"
+              - generic [ref=e1979]: "def top(self) -> int:"
+              - generic [ref=e1984]: "def getMin(self) -> int:"
+        - generic [ref=e1992]:
+          - generic:
+            - list [ref=e1994]:
+              - listitem [ref=e1995]:
+                - button "Test Case" [ref=e1996] [cursor=pointer]:
+                  - generic [ref=e1997]:
+                    - img [ref=e1999]
+                    - text: Test Case
+              - listitem [ref=e2001]:
+                - button "Output" [ref=e2002] [cursor=pointer]:
+                  - generic [ref=e2003]:
+                    - img [ref=e2005]
+                    - text: Output
+            - generic [ref=e2007]:
+              - generic [ref=e2009]:
+                - button "Case 1" [ref=e2010] [cursor=pointer]
+                - button [disabled] [ref=e2011]:
+                  - img [ref=e2013]
+              - paragraph [ref=e2015]: Input 1 =
+              - textbox [ref=e2016]: "[\"MinStack\", \"push\", 1, \"push\", 2, \"push\", 0, \"getMin\", \"pop\", \"top\", \"getMin\"]"
+          - generic [ref=e2017]:
+            - button "Console" [ref=e2018] [cursor=pointer]:
+              - text: Console
+              - img [ref=e2020]
+            - generic [ref=e2022]:
+              - button "Run" [disabled] [ref=e2023] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e2024] [cursor=pointer]
+  - generic [ref=e2025]:
+    - alert
+    - alert

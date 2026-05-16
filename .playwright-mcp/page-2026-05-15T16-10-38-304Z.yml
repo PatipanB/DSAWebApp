@@ -1,0 +1,109 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - heading [level=1] [ref=e4]
+        - button "Get Pro" [ref=e5] [cursor=pointer]:
+          - generic [ref=e6]: Get Pro
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "NeetCode.io Logo" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e10]
+        - generic [ref=e11]:
+          - link "Courses" [ref=e12] [cursor=pointer]:
+            - /url: /courses
+            - generic [ref=e13]: Courses
+          - link "Practice" [ref=e14] [cursor=pointer]:
+            - /url: /practice
+            - generic [ref=e15]: Practice
+          - link "Roadmap" [ref=e16] [cursor=pointer]:
+            - /url: /roadmap
+            - generic [ref=e17]: Roadmap
+      - generic [ref=e18]:
+        - link "Pro" [ref=e19] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e20]: Pro
+        - button [ref=e22] [cursor=pointer]:
+          - img [ref=e24]
+        - button "Sign in" [ref=e28] [cursor=pointer]
+  - generic [ref=e31]:
+    - generic [ref=e33]:
+      - heading "Menu" [level=2] [ref=e34]
+      - button [ref=e35] [cursor=pointer]:
+        - img [ref=e37]
+    - generic [ref=e40]:
+      - generic [ref=e42] [cursor=pointer]:
+        - generic [ref=e43]:
+          - img [ref=e45]
+          - generic [ref=e47]: Coding Interviews
+        - img [ref=e49]
+      - generic [ref=e51] [cursor=pointer]:
+        - img [ref=e53]
+        - generic [ref=e55]: AI Coding
+        - generic [ref=e56]: BETA
+      - generic [ref=e57] [cursor=pointer]:
+        - img [ref=e59]
+        - generic [ref=e61]: System Design
+      - generic [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]:
+          - img [ref=e66]
+          - generic [ref=e68]: Machine Learning
+        - img [ref=e70]
+      - generic [ref=e72] [cursor=pointer]:
+        - img [ref=e74]
+        - generic [ref=e76]: Low Level Design
+      - generic [ref=e77] [cursor=pointer]:
+        - img [ref=e79]
+        - generic [ref=e81]: Databases
+  - contentinfo [ref=e84]:
+    - generic [ref=e85]:
+      - separator [ref=e86]
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - heading "Links" [level=3] [ref=e89]
+          - list [ref=e90]:
+            - listitem [ref=e91]:
+              - link "Blind 75" [ref=e92] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/blind75
+            - listitem [ref=e93]:
+              - link "NeetCode 150" [ref=e94] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode150
+            - listitem [ref=e95]:
+              - link "NeetCode 250" [ref=e96] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode250
+            - listitem [ref=e97]:
+              - link "How to use NeetCode Effectively" [ref=e98] [cursor=pointer]:
+                - /url: https://neetcode.io/courses/lessons/how-to-use-neetcode-effectively
+        - generic [ref=e99]:
+          - heading "Social" [level=3] [ref=e100]
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "YouTube" [ref=e103] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/neetcode
+                - img [ref=e105]
+                - text: YouTube
+            - listitem [ref=e107]:
+              - link "LinkedIn" [ref=e108] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/navdeep-singh-3aaa14161/
+                - img [ref=e110]
+                - text: LinkedIn
+            - listitem [ref=e112]:
+              - link "Twitter" [ref=e113] [cursor=pointer]:
+                - /url: https://twitter.com/neetcode1
+                - img [ref=e115]
+                - text: Twitter
+        - generic [ref=e117]:
+          - heading "Contact" [level=3] [ref=e118]
+          - list [ref=e119]:
+            - listitem [ref=e120]: support@neetcode.io
+        - generic [ref=e121]:
+          - heading "Legal" [level=3] [ref=e122]
+          - list [ref=e123]:
+            - listitem [ref=e124]:
+              - link "Privacy Policy" [ref=e125] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e126]:
+              - link "Terms of Service" [ref=e127] [cursor=pointer]:
+                - /url: /terms
+      - paragraph [ref=e129]: Copyright © 2026 neetcode.io All rights reserved.

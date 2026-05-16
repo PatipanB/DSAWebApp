@@ -1,0 +1,213 @@
+- generic [active]:
+  - generic [ref=e1]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "NeetCode.io Logo" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e6]
+        - button "NeetCode 150" [ref=e7] [cursor=pointer]:
+          - img [ref=e9]
+          - generic [ref=e11]: NeetCode 150
+          - img [ref=e13]
+        - button [ref=e15] [cursor=pointer]:
+          - img [ref=e17]
+        - button [ref=e19] [cursor=pointer]:
+          - img [ref=e21]
+      - generic [ref=e23]:
+        - button "Timer" [ref=e27] [cursor=pointer]:
+          - img [ref=e29]
+        - link "Pro" [ref=e31] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e32]: Pro
+        - button [ref=e34] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Sign in" [ref=e40] [cursor=pointer]
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - list [ref=e45]:
+          - listitem [ref=e46]:
+            - link "Question" [ref=e47] [cursor=pointer]:
+              - /url: /problems/buy-and-sell-crypto/question
+              - generic [ref=e48]:
+                - img [ref=e50]
+                - text: Question
+          - listitem [ref=e52]:
+            - link "Solution" [ref=e53] [cursor=pointer]:
+              - /url: /problems/buy-and-sell-crypto/solution
+              - generic [ref=e54]:
+                - img [ref=e56]
+                - text: Solution
+          - listitem [ref=e58]:
+            - link "Submissions" [ref=e59] [cursor=pointer]:
+              - /url: /problems/buy-and-sell-crypto/history
+              - generic [ref=e60]:
+                - img [ref=e62]
+                - text: Submissions
+          - listitem [ref=e64]:
+            - link "Discuss" [ref=e65] [cursor=pointer]:
+              - /url: /problems/buy-and-sell-crypto/discuss
+              - generic [ref=e66]:
+                - img [ref=e68]
+                - text: Discuss
+        - generic [ref=e71]:
+          - heading "Best Time to Buy and Sell Stock" [level=1] [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]: Easy
+            - generic [ref=e76] [cursor=pointer]: Topics
+            - generic [ref=e77] [cursor=pointer]: Company Tags
+            - generic [ref=e78] [cursor=pointer]:
+              - img [ref=e80]
+              - text: Hints
+          - main [ref=e83]:
+            - generic [ref=e84]:
+              - paragraph [ref=e85]:
+                - text: You are given an integer array
+                - code [ref=e86]: prices
+                - text: where
+                - code [ref=e87]: prices[i]
+                - text: is the price of NeetCoin on the
+                - code [ref=e88]: ith
+                - text: day.
+              - paragraph [ref=e89]:
+                - text: You may choose a
+                - strong [ref=e90]: single day
+                - text: to buy one NeetCoin and choose a
+                - strong [ref=e91]: different day in the future
+                - text: to sell it.
+              - paragraph [ref=e92]:
+                - text: Return the maximum profit you can achieve. You may choose to
+                - strong [ref=e93]: not make any transactions
+                - text: ", in which case the profit would be"
+                - code [ref=e94]: "0"
+                - text: .
+              - paragraph [ref=e95]:
+                - strong [ref=e96]: "Example 1:"
+              - code [ref=e98]: "Input: prices = [10,1,5,6,7,1] Output: 6"
+              - paragraph [ref=e99]:
+                - text: "Explanation: Buy"
+                - code [ref=e100]: prices[1]
+                - text: and sell
+                - code [ref=e101]: prices[4]
+                - text: ","
+                - code [ref=e102]: profit = 7 - 1 = 6
+                - text: .
+              - paragraph [ref=e103]:
+                - strong [ref=e104]: "Example 2:"
+              - code [ref=e106]: "Input: prices = [10,8,7,5,2] Output: 0"
+              - paragraph [ref=e107]: "Explanation: No profitable transactions can be made, thus the max profit is 0."
+              - paragraph [ref=e108]:
+                - strong [ref=e109]: "Constraints:"
+              - list [ref=e110]:
+                - listitem [ref=e111]:
+                  - code [ref=e112]: 1 <= prices.length <= 100
+                - listitem [ref=e113]:
+                  - code [ref=e114]: 0 <= prices[i] <= 100
+              - group [ref=e115]:
+                - generic "Topics" [ref=e116]
+              - group [ref=e117]:
+                - generic "Recommended Time & Space Complexity" [ref=e118]
+              - group [ref=e119]:
+                - generic "Hint 1" [ref=e120]
+              - group [ref=e121]:
+                - generic "Hint 2" [ref=e122]
+              - group [ref=e123]:
+                - generic "Hint 3" [ref=e124]
+              - group [ref=e125]:
+                - generic "Hint 4" [ref=e126]
+              - group [ref=e127]:
+                - generic "Company Tags" [ref=e128]
+          - generic [ref=e129]:
+            - generic [ref=e131]:
+              - generic [ref=e132]: Seen this question in a real interview?
+              - generic [ref=e133]:
+                - button "Yes" [ref=e134] [cursor=pointer]
+                - button "No" [ref=e135] [cursor=pointer]
+            - generic [ref=e136]:
+              - generic [ref=e137]: Acceptance Rate
+              - generic [ref=e138]: 67.3%
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - button "Python" [ref=e148] [cursor=pointer]:
+              - generic [ref=e149]: Python
+              - img [ref=e151]
+            - button [ref=e153] [cursor=pointer]:
+              - img [ref=e154]
+            - button "Auto" [ref=e156] [cursor=pointer]: Auto
+          - generic [ref=e158]:
+            - link [ref=e159] [cursor=pointer]:
+              - /url: /problems/buy-and-sell-crypto/notes
+              - img [ref=e161]
+            - link [ref=e163] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20buy-and-sell-crypto&body=Bug%20Report%20for%20https://neetcode.io/problems/buy-and-sell-crypto%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e165]
+            - button "Format Code (⌥⇧F)" [ref=e167] [cursor=pointer]:
+              - img [ref=e169]
+            - button [ref=e171] [cursor=pointer]:
+              - img [ref=e173]
+            - button [ref=e175] [cursor=pointer]:
+              - img [ref=e177]
+            - button [ref=e179] [cursor=pointer]:
+              - img [ref=e181]
+            - button [ref=e183] [cursor=pointer]:
+              - img [ref=e185]
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e190] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e191] [cursor=pointer]: +
+          - generic [ref=e192]:
+            - button "NeetBot" [ref=e193] [cursor=pointer]:
+              - img [ref=e195]
+              - generic [ref=e197]: NeetBot
+            - generic [ref=e198]: "|"
+            - button "Hint" [ref=e200] [cursor=pointer]:
+              - img [ref=e202]
+              - generic [ref=e204]: Hint
+            - generic [ref=e205]: "|"
+            - img [ref=e208] [cursor=pointer]
+            - generic [ref=e210]: "|"
+            - generic [ref=e211]: Ln 1, Col 1
+        - code [ref=e215]:
+          - generic [ref=e216]:
+            - textbox "Editor content"
+            - textbox [ref=e217]
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e222] [cursor=pointer]: 
+                - generic [ref=e223]: "1"
+              - generic [ref=e225]: "2"
+              - generic [ref=e227]: "3"
+            - generic [ref=e234]:
+              - generic [ref=e236]: "class Solution:"
+              - generic [ref=e238]: "def maxProfit(self, prices: List[int]) -> int:"
+        - generic [ref=e245]:
+          - generic:
+            - list [ref=e247]:
+              - listitem [ref=e248]:
+                - button "Test Case" [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250]:
+                    - img [ref=e252]
+                    - text: Test Case
+              - listitem [ref=e254]:
+                - button "Output" [ref=e255] [cursor=pointer]:
+                  - generic [ref=e256]:
+                    - img [ref=e258]
+                    - text: Output
+            - generic [ref=e260]:
+              - generic [ref=e262]:
+                - button "Case 1" [ref=e263] [cursor=pointer]
+                - button "Case 2" [ref=e264] [cursor=pointer]
+                - button [ref=e265] [cursor=pointer]:
+                  - img [ref=e267]
+              - paragraph [ref=e269]: prices =
+              - textbox [ref=e270]: "[7,1,5,3,6,4]"
+          - generic [ref=e271]:
+            - button "Console" [ref=e272] [cursor=pointer]:
+              - text: Console
+              - img [ref=e274]
+            - generic [ref=e276]:
+              - button "Run" [disabled] [ref=e277] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e278] [cursor=pointer]
+  - generic [ref=e279]:
+    - alert
+    - alert

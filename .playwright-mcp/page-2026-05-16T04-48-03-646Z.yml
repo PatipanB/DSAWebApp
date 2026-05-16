@@ -1,0 +1,227 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "DSA Visualizer" [ref=e5] [cursor=pointer]:
+      - /url: /
+  - generic [ref=e6]:
+    - complementary [ref=e7]:
+      - heading "Topics" [level=2] [ref=e8]
+      - navigation "Topics" [ref=e9]:
+        - link "#01 📊 Arrays" [ref=e10] [cursor=pointer]:
+          - /url: /arrays
+          - generic [ref=e11]: "#01"
+          - generic [ref=e12]: 📊
+          - generic [ref=e13]: Arrays
+        - link "#02 🥞 Stack & Queue" [ref=e14] [cursor=pointer]:
+          - /url: /stack-queue
+          - generic [ref=e15]: "#02"
+          - generic [ref=e16]: 🥞
+          - generic [ref=e17]: Stack & Queue
+        - link "#03 🔗 Linked List" [ref=e18] [cursor=pointer]:
+          - /url: /linked-list
+          - generic [ref=e19]: "#03"
+          - generic [ref=e20]: 🔗
+          - generic [ref=e21]: Linked List
+        - link "#04 🌲 Binary Tree" [ref=e22] [cursor=pointer]:
+          - /url: /binary-tree
+          - generic [ref=e23]: "#04"
+          - generic [ref=e24]: 🌲
+          - generic [ref=e25]: Binary Tree
+        - link "#05 🌳 Binary Search Tree" [ref=e26] [cursor=pointer]:
+          - /url: /bst
+          - generic [ref=e27]: "#05"
+          - generic [ref=e28]: 🌳
+          - generic [ref=e29]: Binary Search Tree
+        - link "#06 🕸️ Graph" [ref=e30] [cursor=pointer]:
+          - /url: /graph
+          - generic [ref=e31]: "#06"
+          - generic [ref=e32]: 🕸️
+          - generic [ref=e33]: Graph
+        - link "#07 📈 Sorting" [ref=e34] [cursor=pointer]:
+          - /url: /sorting
+          - generic [ref=e35]: "#07"
+          - generic [ref=e36]: 📈
+          - generic [ref=e37]: Sorting
+        - link "#08 🗂️ Hash Table" [ref=e38] [cursor=pointer]:
+          - /url: /hash-table
+          - generic [ref=e39]: "#08"
+          - generic [ref=e40]: 🗂️
+          - generic [ref=e41]: Hash Table
+        - link "#09 🧮 Dynamic Programming" [ref=e42] [cursor=pointer]:
+          - /url: /dp
+          - generic [ref=e43]: "#09"
+          - generic [ref=e44]: 🧮
+          - generic [ref=e45]: Dynamic Programming
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - main [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: "#01"
+            - generic [ref=e51]: 📊
+            - heading "Arrays" [level=1] [ref=e52]
+            - paragraph [ref=e53]: Two pointers, sliding window
+          - generic [ref=e54]:
+            - button "Key insight" [ref=e55] [cursor=pointer]:
+              - generic [ref=e56]: Key Insight
+              - generic [ref=e57]: ▲
+            - paragraph [ref=e58]: Move the pointer with the smaller contribution inward — since the array is sorted, this is the only move guaranteed to shift the sum toward the target.
+          - tablist [ref=e59]:
+            - tab "Two Pointers" [selected] [ref=e60] [cursor=pointer]
+            - tab "Sliding Window" [ref=e61] [cursor=pointer]
+            - tab "Array Operations" [ref=e62] [cursor=pointer]
+            - tab "Dynamic Window" [ref=e63] [cursor=pointer]
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - generic [ref=e68]: l
+              - generic [ref=e77]: r
+            - generic [ref=e79]:
+              - generic [ref=e80]: "1"
+              - generic [ref=e81]: "2"
+              - generic [ref=e82]: "3"
+              - generic [ref=e83]: "4"
+              - generic [ref=e84]: "6"
+              - generic [ref=e85]: "8"
+              - generic [ref=e86]: "11"
+              - generic [ref=e87]: "15"
+            - generic [ref=e88]:
+              - generic [ref=e89]: "0"
+              - generic [ref=e90]: "1"
+              - generic [ref=e91]: "2"
+              - generic [ref=e92]: "3"
+              - generic [ref=e93]: "4"
+              - generic [ref=e94]: "5"
+              - generic [ref=e95]: "6"
+              - generic [ref=e96]: "7"
+          - status [ref=e97]: Initialize l=0 (1) and r=7 (15)
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]: 1 / 11
+              - progressbar [ref=e101]
+              - generic [ref=e102]: 0%
+            - generic [ref=e103]:
+              - group "Playback controls" [ref=e104]:
+                - button "Reset" [ref=e105] [cursor=pointer]: ↩ Reset
+                - button "Step back" [disabled] [ref=e106]: ⏮ Step back
+                - button "Play" [ref=e107] [cursor=pointer]: ▶ Play
+                - button "Step forward" [ref=e108] [cursor=pointer]: ⏭ Step forward
+              - generic [ref=e109]:
+                - generic [ref=e110]: Speed
+                - slider [ref=e112]
+                - generic [ref=e114]: 1×
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]: Array (sorted, comma-separated)
+              - textbox "1, 2, 3, 4, 6, 8, 11, 15" [ref=e119]
+            - generic [ref=e120]:
+              - generic [ref=e121]: Target
+              - spinbutton [ref=e122]: "11"
+            - button "Run" [ref=e123] [cursor=pointer]
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: Code
+                - tablist [ref=e128]:
+                  - tab "TS" [selected] [ref=e129] [cursor=pointer]
+                  - tab "Python" [ref=e130] [cursor=pointer]
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: "1"
+                  - generic [ref=e135]: "function twoPointers(values: number[], target: number) {"
+                - generic [ref=e136]:
+                  - generic [ref=e137]: "2"
+                  - generic [ref=e138]: let l = 0, r = values.length - 1;
+                - generic [ref=e139]:
+                  - generic [ref=e140]: "3"
+                  - generic [ref=e141]: "while (l < r) {"
+                - generic [ref=e142]:
+                  - generic [ref=e143]: "4"
+                  - generic [ref=e144]: const sum = values[l] + values[r];
+                - generic [ref=e145]:
+                  - generic [ref=e146]: "5"
+                  - generic [ref=e147]: if (sum === target) return [l, r];
+                - generic [ref=e148]:
+                  - generic [ref=e149]: "6"
+                  - generic [ref=e150]: if (sum < target) l++;
+                - generic [ref=e151]:
+                  - generic [ref=e152]: "7"
+                  - generic [ref=e153]: else r--;
+                - generic [ref=e154]:
+                  - generic [ref=e155]: "8"
+                  - generic [ref=e156]: "}"
+                - generic [ref=e157]:
+                  - generic [ref=e158]: "9"
+                  - generic [ref=e159]: return null;
+                - generic [ref=e160]:
+                  - generic [ref=e161]: "10"
+                  - generic [ref=e162]: "}"
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - paragraph [ref=e165]: Complexity
+                - generic [ref=e166]:
+                  - paragraph [ref=e167]: Time
+                  - generic [ref=e168]:
+                    - generic [ref=e169]:
+                      - generic [ref=e170]: Best
+                      - generic [ref=e171]: O(1)
+                    - generic [ref=e172]:
+                      - generic [ref=e173]: Avg
+                      - generic [ref=e174]: O(n)
+                    - generic [ref=e175]:
+                      - generic [ref=e176]: Worst
+                      - generic [ref=e177]: O(n)
+                - generic [ref=e178]:
+                  - paragraph [ref=e179]: Space
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: Space
+                    - generic [ref=e182]: O(1)
+                - paragraph [ref=e183]: "Best case: target pair sits at the outermost positions (immediate match)."
+              - generic [ref=e184]:
+                - paragraph [ref=e185]: Variables
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: l
+                    - generic [ref=e189]: "0"
+                  - generic [ref=e190]:
+                    - generic [ref=e191]: r
+                    - generic [ref=e192]: "7"
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: target
+                    - generic [ref=e195]: "11"
+        - complementary [ref=e196]:
+          - generic [ref=e197]:
+            - heading "NeetCode Problems" [level=2] [ref=e198]
+            - generic [ref=e199]:
+              - heading "Beginner" [level=3] [ref=e200]
+              - list [ref=e201]:
+                - listitem [ref=e202]:
+                  - link "Two Sum" [ref=e203] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/two-integer-sum
+                - listitem [ref=e204]:
+                  - link "Is Palindrome" [ref=e205] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/is-palindrome
+                - listitem [ref=e206]:
+                  - link "Two Sum II – Input Array Is Sorted" [ref=e207] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/two-integer-sum-ii
+                - listitem [ref=e208]:
+                  - link "Best Time to Buy and Sell Stock" [ref=e209] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/buy-and-sell-crypto
+                - listitem [ref=e210]:
+                  - link "Contains Duplicate" [ref=e211] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/duplicate-integer
+            - generic [ref=e212]:
+              - heading "Advanced" [level=3] [ref=e213]
+              - list [ref=e214]:
+                - listitem [ref=e215]:
+                  - link "Container With Most Water" [ref=e216] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/container-with-most-water
+                - listitem [ref=e217]:
+                  - link "3Sum" [ref=e218] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/3sum
+                - listitem [ref=e219]:
+                  - link "Trapping Rain Water" [ref=e220] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/trapping-rain-water
+                - listitem [ref=e221]:
+                  - link "Longest Substring Without Repeating Characters" [ref=e222] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/longest-substring-without-duplicates
+                - listitem [ref=e223]:
+                  - link "Minimum Window Substring" [ref=e224] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/minimum-window-with-characters

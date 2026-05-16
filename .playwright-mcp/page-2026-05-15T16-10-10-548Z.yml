@@ -1,0 +1,1467 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - heading [level=1] [ref=e4]
+        - button "Get Pro" [ref=e5] [cursor=pointer]:
+          - generic [ref=e6]: Get Pro
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "NeetCode.io Logo" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e10]
+        - generic [ref=e11]:
+          - link "Courses" [ref=e12] [cursor=pointer]:
+            - /url: /courses
+            - generic [ref=e13]: Courses
+          - link "Practice" [ref=e14] [cursor=pointer]:
+            - /url: /practice
+            - generic [ref=e15]: Practice
+          - link "Roadmap" [ref=e16] [cursor=pointer]:
+            - /url: /roadmap
+            - generic [ref=e17]: Roadmap
+      - generic [ref=e18]:
+        - link "Pro" [ref=e19] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e20]: Pro
+        - button [ref=e22] [cursor=pointer]:
+          - img [ref=e24]
+        - button "Sign in" [ref=e28] [cursor=pointer]
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "Menu" [level=2] [ref=e34]
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e37]
+      - generic [ref=e40]:
+        - generic [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - img [ref=e45]
+            - generic [ref=e47]: Coding Interviews
+          - img [ref=e49]
+        - generic [ref=e51] [cursor=pointer]:
+          - img [ref=e53]
+          - generic [ref=e55]: AI Coding
+          - generic [ref=e56]: BETA
+        - generic [ref=e57] [cursor=pointer]:
+          - img [ref=e59]
+          - generic [ref=e61]: System Design
+        - generic [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]:
+            - img [ref=e66]
+            - generic [ref=e68]: Machine Learning
+          - img [ref=e70]
+        - generic [ref=e72] [cursor=pointer]:
+          - img [ref=e74]
+          - generic [ref=e76]: Low Level Design
+        - generic [ref=e77] [cursor=pointer]:
+          - img [ref=e79]
+          - generic [ref=e81]: Databases
+    - generic [ref=e83]:
+      - generic [ref=e84] [cursor=pointer]:
+        - img [ref=e86]
+        - generic [ref=e88]: Back
+      - generic [ref=e89]:
+        - heading "Two Pointers" [level=1] [ref=e90]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: Easy
+              - generic [ref=e97]: 0/22
+            - generic [ref=e98]:
+              - generic [ref=e99]: Med
+              - generic [ref=e100]: 0/39
+            - generic [ref=e101]:
+              - generic [ref=e102]: Hard
+              - generic [ref=e103]: 0/3
+          - generic [ref=e105]:
+            - img [ref=e106]
+            - generic [ref=e113]:
+              - generic [ref=e114]: 0/64
+              - generic [ref=e115]: Solved
+      - generic [ref=e118]:
+        - textbox "Search problems..." [ref=e119]
+        - generic:
+          - generic:
+            - img
+      - table [ref=e122]:
+        - rowgroup [ref=e123]:
+          - row "Status Star Problem Difficulty Solution" [ref=e124]:
+            - columnheader "Status" [ref=e125]:
+              - generic [ref=e126]: Status
+            - columnheader "Star" [ref=e127]:
+              - generic [ref=e128]: Star
+            - columnheader "Problem" [ref=e129]:
+              - generic [ref=e130] [cursor=pointer]:
+                - text: Problem
+                - img [ref=e132]
+            - columnheader "Difficulty" [ref=e134]:
+              - generic [ref=e135]:
+                - text: Difficulty
+                - img [ref=e137]
+            - columnheader "Solution" [ref=e139]:
+              - generic [ref=e140]: Solution
+        - rowgroup [ref=e141]:
+          - row "Is Subsequence Easy" [ref=e142]:
+            - cell [ref=e143]:
+              - checkbox [ref=e146] [cursor=pointer]
+            - cell [ref=e148]:
+              - generic [ref=e150] [cursor=pointer]:
+                - checkbox [ref=e151]
+                - img [ref=e154]
+            - cell "Is Subsequence" [ref=e156]:
+              - link "Is Subsequence" [ref=e157] [cursor=pointer]:
+                - /url: /problems/is-subsequence/question?list=neetcode150
+              - link [ref=e159] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/is-subsequence/
+                - img [ref=e161]
+            - cell "Easy" [ref=e163]:
+              - button "Easy" [ref=e165] [cursor=pointer]:
+                - generic [ref=e166]: Easy
+            - cell [ref=e167]:
+              - link [ref=e169] [cursor=pointer]:
+                - /url: /solutions/is-subsequence
+                - img [ref=e171]
+          - row "Append Characters to String to Make Subsequence Medium" [ref=e173]:
+            - cell [ref=e174]:
+              - checkbox [ref=e177] [cursor=pointer]
+            - cell [ref=e179]:
+              - generic [ref=e181] [cursor=pointer]:
+                - checkbox [ref=e182]
+                - img [ref=e185]
+            - cell "Append Characters to String to Make Subsequence" [ref=e187]:
+              - link "Append Characters to String to Make Subsequence" [ref=e188] [cursor=pointer]:
+                - /url: /problems/append-characters-to-string-to-make-subsequence/question?list=neetcode150
+              - link [ref=e190] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/
+                - img [ref=e192]
+            - cell "Medium" [ref=e194]:
+              - button "Medium" [ref=e196] [cursor=pointer]:
+                - generic [ref=e197]: Medium
+            - cell [ref=e198]:
+              - link [ref=e200] [cursor=pointer]:
+                - /url: /solutions/append-characters-to-string-to-make-subsequence
+                - img [ref=e202]
+          - row "Candy Crush Medium" [ref=e204]:
+            - cell [ref=e205]:
+              - checkbox [ref=e208] [cursor=pointer]
+            - cell [ref=e210]:
+              - generic [ref=e212] [cursor=pointer]:
+                - checkbox [ref=e213]
+                - img [ref=e216]
+            - cell "Candy Crush" [ref=e218]:
+              - link "Candy Crush" [ref=e219] [cursor=pointer]:
+                - /url: /problems/candy-crush/question?list=neetcode150
+              - generic [ref=e220]:
+                - img [ref=e223] [cursor=pointer]
+                - link [ref=e225] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/candy-crush/
+                  - img [ref=e227]
+            - cell "Medium" [ref=e229]:
+              - button "Medium" [ref=e231] [cursor=pointer]:
+                - generic [ref=e232]: Medium
+            - cell [ref=e233]:
+              - link [ref=e235] [cursor=pointer]:
+                - /url: /solutions/candy-crush
+                - img [ref=e237]
+          - row "One Edit Distance Medium" [ref=e239]:
+            - cell [ref=e240]:
+              - checkbox [ref=e243] [cursor=pointer]
+            - cell [ref=e245]:
+              - generic [ref=e247] [cursor=pointer]:
+                - checkbox [ref=e248]
+                - img [ref=e251]
+            - cell "One Edit Distance" [ref=e253]:
+              - link "One Edit Distance" [ref=e254] [cursor=pointer]:
+                - /url: /problems/one-edit-distance/question?list=neetcode150
+              - generic [ref=e255]:
+                - img [ref=e258] [cursor=pointer]
+                - link [ref=e260] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/one-edit-distance/
+                  - img [ref=e262]
+            - cell "Medium" [ref=e264]:
+              - button "Medium" [ref=e266] [cursor=pointer]:
+                - generic [ref=e267]: Medium
+            - cell [ref=e268]:
+              - link [ref=e270] [cursor=pointer]:
+                - /url: /solutions/one-edit-distance
+                - img [ref=e272]
+          - row "Reverse Words in a String II Medium" [ref=e274]:
+            - cell [ref=e275]:
+              - checkbox [ref=e278] [cursor=pointer]
+            - cell [ref=e280]:
+              - generic [ref=e282] [cursor=pointer]:
+                - checkbox [ref=e283]
+                - img [ref=e286]
+            - cell "Reverse Words in a String II" [ref=e288]:
+              - link "Reverse Words in a String II" [ref=e289] [cursor=pointer]:
+                - /url: /problems/reverse-words-in-a-string-ii/question?list=neetcode150
+              - generic [ref=e290]:
+                - img [ref=e293] [cursor=pointer]
+                - link [ref=e295] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/reverse-words-in-a-string-ii/
+                  - img [ref=e297]
+            - cell "Medium" [ref=e299]:
+              - button "Medium" [ref=e301] [cursor=pointer]:
+                - generic [ref=e302]: Medium
+            - cell [ref=e303]:
+              - link [ref=e305] [cursor=pointer]:
+                - /url: /solutions/reverse-words-in-a-string-ii
+                - img [ref=e307]
+          - row "Shortest Way to Form String Medium" [ref=e309]:
+            - cell [ref=e310]:
+              - checkbox [ref=e313] [cursor=pointer]
+            - cell [ref=e315]:
+              - generic [ref=e317] [cursor=pointer]:
+                - checkbox [ref=e318]
+                - img [ref=e321]
+            - cell "Shortest Way to Form String" [ref=e323]:
+              - link "Shortest Way to Form String" [ref=e324] [cursor=pointer]:
+                - /url: /problems/shortest-way-to-form-string/question?list=neetcode150
+              - generic [ref=e325]:
+                - img [ref=e328] [cursor=pointer]
+                - link [ref=e330] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/shortest-way-to-form-string/
+                  - img [ref=e332]
+            - cell "Medium" [ref=e334]:
+              - button "Medium" [ref=e336] [cursor=pointer]:
+                - generic [ref=e337]: Medium
+            - cell [ref=e338]:
+              - link [ref=e340] [cursor=pointer]:
+                - /url: /solutions/shortest-way-to-form-string
+                - img [ref=e342]
+          - row "Remove Element Easy" [ref=e344]:
+            - cell [ref=e345]:
+              - checkbox [ref=e348] [cursor=pointer]
+            - cell [ref=e350]:
+              - generic [ref=e352] [cursor=pointer]:
+                - checkbox [ref=e353]
+                - img [ref=e356]
+            - cell "Remove Element" [ref=e358]:
+              - link "Remove Element" [ref=e359] [cursor=pointer]:
+                - /url: /problems/remove-element/question?list=neetcode150
+              - link [ref=e361] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-element/
+                - img [ref=e363]
+            - cell "Easy" [ref=e365]:
+              - button "Easy" [ref=e367] [cursor=pointer]:
+                - generic [ref=e368]: Easy
+            - cell [ref=e369]:
+              - link [ref=e371] [cursor=pointer]:
+                - /url: /solutions/remove-element
+                - img [ref=e373]
+          - row "Intersection of Two Arrays Easy" [ref=e375]:
+            - cell [ref=e376]:
+              - checkbox [ref=e379] [cursor=pointer]
+            - cell [ref=e381]:
+              - generic [ref=e383] [cursor=pointer]:
+                - checkbox [ref=e384]
+                - img [ref=e387]
+            - cell "Intersection of Two Arrays" [ref=e389]:
+              - link "Intersection of Two Arrays" [ref=e390] [cursor=pointer]:
+                - /url: /problems/intersection-of-two-arrays/question?list=neetcode150
+              - link [ref=e392] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/intersection-of-two-arrays/
+                - img [ref=e394]
+            - cell "Easy" [ref=e396]:
+              - button "Easy" [ref=e398] [cursor=pointer]:
+                - generic [ref=e399]: Easy
+            - cell [ref=e400]:
+              - link [ref=e402] [cursor=pointer]:
+                - /url: /solutions/intersection-of-two-arrays
+                - img [ref=e404]
+          - row "Sort Colors Medium" [ref=e406]:
+            - cell [ref=e407]:
+              - checkbox [ref=e410] [cursor=pointer]
+            - cell [ref=e412]:
+              - generic [ref=e414] [cursor=pointer]:
+                - checkbox [ref=e415]
+                - img [ref=e418]
+            - cell "Sort Colors" [ref=e420]:
+              - link "Sort Colors" [ref=e421] [cursor=pointer]:
+                - /url: /problems/sort-colors/question?list=neetcode150
+              - link [ref=e423] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sort-colors/
+                - img [ref=e425]
+            - cell "Medium" [ref=e427]:
+              - button "Medium" [ref=e429] [cursor=pointer]:
+                - generic [ref=e430]: Medium
+            - cell [ref=e431]:
+              - link [ref=e433] [cursor=pointer]:
+                - /url: /solutions/sort-colors
+                - img [ref=e435]
+          - row "Find The Index of The First Occurrence in a String Easy" [ref=e437]:
+            - cell [ref=e438]:
+              - checkbox [ref=e441] [cursor=pointer]
+            - cell [ref=e443]:
+              - generic [ref=e445] [cursor=pointer]:
+                - checkbox [ref=e446]
+                - img [ref=e449]
+            - cell "Find The Index of The First Occurrence in a String" [ref=e451]:
+              - link "Find The Index of The First Occurrence in a String" [ref=e452] [cursor=pointer]:
+                - /url: /problems/find-the-index-of-the-first-occurrence-in-a-string/question?list=neetcode150
+              - link [ref=e454] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+                - img [ref=e456]
+            - cell "Easy" [ref=e458]:
+              - button "Easy" [ref=e460] [cursor=pointer]:
+                - generic [ref=e461]: Easy
+            - cell [ref=e462]:
+              - link [ref=e464] [cursor=pointer]:
+                - /url: /solutions/find-the-index-of-the-first-occurrence-in-a-string
+                - img [ref=e466]
+          - row "Shortest Word Distance II Medium" [ref=e468]:
+            - cell [ref=e469]:
+              - checkbox [ref=e472] [cursor=pointer]
+            - cell [ref=e474]:
+              - generic [ref=e476] [cursor=pointer]:
+                - checkbox [ref=e477]
+                - img [ref=e480]
+            - cell "Shortest Word Distance II" [ref=e482]:
+              - link "Shortest Word Distance II" [ref=e483] [cursor=pointer]:
+                - /url: /problems/shortest-word-distance-ii/question?list=neetcode150
+              - generic [ref=e484]:
+                - img [ref=e487] [cursor=pointer]
+                - link [ref=e489] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/shortest-word-distance-ii/
+                  - img [ref=e491]
+            - cell "Medium" [ref=e493]:
+              - button "Medium" [ref=e495] [cursor=pointer]:
+                - generic [ref=e496]: Medium
+            - cell [ref=e497]:
+              - link [ref=e499] [cursor=pointer]:
+                - /url: /solutions/shortest-word-distance-ii
+                - img [ref=e501]
+          - row "Dot Product of Two Sparse Vectors Medium" [ref=e503]:
+            - cell [ref=e504]:
+              - checkbox [ref=e507] [cursor=pointer]
+            - cell [ref=e509]:
+              - generic [ref=e511] [cursor=pointer]:
+                - checkbox [ref=e512]
+                - img [ref=e515]
+            - cell "Dot Product of Two Sparse Vectors" [ref=e517]:
+              - link "Dot Product of Two Sparse Vectors" [ref=e518] [cursor=pointer]:
+                - /url: /problems/dot-product-of-two-sparse-vectors/question?list=neetcode150
+              - generic [ref=e519]:
+                - img [ref=e522] [cursor=pointer]
+                - link [ref=e524] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
+                  - img [ref=e526]
+            - cell "Medium" [ref=e528]:
+              - button "Medium" [ref=e530] [cursor=pointer]:
+                - generic [ref=e531]: Medium
+            - cell [ref=e532]:
+              - link [ref=e534] [cursor=pointer]:
+                - /url: /solutions/dot-product-of-two-sparse-vectors
+                - img [ref=e536]
+          - row "Reverse String Easy" [ref=e538]:
+            - cell [ref=e539]:
+              - checkbox [ref=e542] [cursor=pointer]
+            - cell [ref=e544]:
+              - generic [ref=e546] [cursor=pointer]:
+                - checkbox [ref=e547]
+                - img [ref=e550]
+            - cell "Reverse String" [ref=e552]:
+              - link "Reverse String" [ref=e553] [cursor=pointer]:
+                - /url: /problems/reverse-string/question?list=neetcode150
+              - link [ref=e555] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reverse-string/
+                - img [ref=e557]
+            - cell "Easy" [ref=e559]:
+              - button "Easy" [ref=e561] [cursor=pointer]:
+                - generic [ref=e562]: Easy
+            - cell [ref=e563]:
+              - link [ref=e565] [cursor=pointer]:
+                - /url: /solutions/reverse-string
+                - img [ref=e567]
+          - row "Valid Palindrome Easy" [ref=e569]:
+            - cell [ref=e570]:
+              - checkbox [ref=e573] [cursor=pointer]
+            - cell [ref=e575]:
+              - generic [ref=e577] [cursor=pointer]:
+                - checkbox [ref=e578]
+                - img [ref=e581]
+            - cell "Valid Palindrome" [ref=e583]:
+              - link "Valid Palindrome" [ref=e584] [cursor=pointer]:
+                - /url: /problems/is-palindrome/question?list=neetcode150
+              - link [ref=e586] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/valid-palindrome/
+                - img [ref=e588]
+            - cell "Easy" [ref=e590]:
+              - button "Easy" [ref=e592] [cursor=pointer]:
+                - generic [ref=e593]: Easy
+            - cell [ref=e594]:
+              - link [ref=e596] [cursor=pointer]:
+                - /url: /solutions/valid-palindrome
+                - img [ref=e598]
+          - row "Valid Palindrome II Easy" [ref=e600]:
+            - cell [ref=e601]:
+              - checkbox [ref=e604] [cursor=pointer]
+            - cell [ref=e606]:
+              - generic [ref=e608] [cursor=pointer]:
+                - checkbox [ref=e609]
+                - img [ref=e612]
+            - cell "Valid Palindrome II" [ref=e614]:
+              - link "Valid Palindrome II" [ref=e615] [cursor=pointer]:
+                - /url: /problems/valid-palindrome-ii/question?list=neetcode150
+              - link [ref=e617] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/valid-palindrome-ii/
+                - img [ref=e619]
+            - cell "Easy" [ref=e621]:
+              - button "Easy" [ref=e623] [cursor=pointer]:
+                - generic [ref=e624]: Easy
+            - cell [ref=e625]:
+              - link [ref=e627] [cursor=pointer]:
+                - /url: /solutions/valid-palindrome-ii
+                - img [ref=e629]
+          - row "Valid Word Abbreviation Easy" [ref=e631]:
+            - cell [ref=e632]:
+              - checkbox [ref=e635] [cursor=pointer]
+            - cell [ref=e637]:
+              - generic [ref=e639] [cursor=pointer]:
+                - checkbox [ref=e640]
+                - img [ref=e643]
+            - cell "Valid Word Abbreviation" [ref=e645]:
+              - link "Valid Word Abbreviation" [ref=e646] [cursor=pointer]:
+                - /url: /problems/valid-word-abbreviation/question?list=neetcode150
+              - link [ref=e648] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/valid-word-abbreviation/
+                - img [ref=e650]
+            - cell "Easy" [ref=e652]:
+              - button "Easy" [ref=e654] [cursor=pointer]:
+                - generic [ref=e655]: Easy
+            - cell [ref=e656]:
+              - link [ref=e658] [cursor=pointer]:
+                - /url: /solutions/valid-word-abbreviation
+                - img [ref=e660]
+          - row "Merge Strings Alternately Easy" [ref=e662]:
+            - cell [ref=e663]:
+              - checkbox [ref=e666] [cursor=pointer]
+            - cell [ref=e668]:
+              - generic [ref=e670] [cursor=pointer]:
+                - checkbox [ref=e671]
+                - img [ref=e674]
+            - cell "Merge Strings Alternately" [ref=e676]:
+              - link "Merge Strings Alternately" [ref=e677] [cursor=pointer]:
+                - /url: /problems/merge-strings-alternately/question?list=neetcode150
+              - link [ref=e679] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-strings-alternately/
+                - img [ref=e681]
+            - cell "Easy" [ref=e683]:
+              - button "Easy" [ref=e685] [cursor=pointer]:
+                - generic [ref=e686]: Easy
+            - cell [ref=e687]:
+              - link [ref=e689] [cursor=pointer]:
+                - /url: /solutions/merge-strings-alternately
+                - img [ref=e691]
+          - row "Merge Sorted Array Easy" [ref=e693]:
+            - cell [ref=e694]:
+              - checkbox [ref=e697] [cursor=pointer]
+            - cell [ref=e699]:
+              - generic [ref=e701] [cursor=pointer]:
+                - checkbox [ref=e702]
+                - img [ref=e705]
+            - cell "Merge Sorted Array" [ref=e707]:
+              - link "Merge Sorted Array" [ref=e708] [cursor=pointer]:
+                - /url: /problems/merge-sorted-array/question?list=neetcode150
+              - link [ref=e710] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/merge-sorted-array/
+                - img [ref=e712]
+            - cell "Easy" [ref=e714]:
+              - button "Easy" [ref=e716] [cursor=pointer]:
+                - generic [ref=e717]: Easy
+            - cell [ref=e718]:
+              - link [ref=e720] [cursor=pointer]:
+                - /url: /solutions/merge-sorted-array
+                - img [ref=e722]
+          - row "Move Zeroes Easy" [ref=e724]:
+            - cell [ref=e725]:
+              - checkbox [ref=e728] [cursor=pointer]
+            - cell [ref=e730]:
+              - generic [ref=e732] [cursor=pointer]:
+                - checkbox [ref=e733]
+                - img [ref=e736]
+            - cell "Move Zeroes" [ref=e738]:
+              - link "Move Zeroes" [ref=e739] [cursor=pointer]:
+                - /url: /problems/move-zeroes/question?list=neetcode150
+              - link [ref=e741] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/move-zeroes/
+                - img [ref=e743]
+            - cell "Easy" [ref=e745]:
+              - button "Easy" [ref=e747] [cursor=pointer]:
+                - generic [ref=e748]: Easy
+            - cell [ref=e749]:
+              - link [ref=e751] [cursor=pointer]:
+                - /url: /solutions/move-zeroes
+                - img [ref=e753]
+          - row "Remove Duplicates From Sorted Array Easy" [ref=e755]:
+            - cell [ref=e756]:
+              - checkbox [ref=e759] [cursor=pointer]
+            - cell [ref=e761]:
+              - generic [ref=e763] [cursor=pointer]:
+                - checkbox [ref=e764]
+                - img [ref=e767]
+            - cell "Remove Duplicates From Sorted Array" [ref=e769]:
+              - link "Remove Duplicates From Sorted Array" [ref=e770] [cursor=pointer]:
+                - /url: /problems/remove-duplicates-from-sorted-array/question?list=neetcode150
+              - link [ref=e772] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+                - img [ref=e774]
+            - cell "Easy" [ref=e776]:
+              - button "Easy" [ref=e778] [cursor=pointer]:
+                - generic [ref=e779]: Easy
+            - cell [ref=e780]:
+              - link [ref=e782] [cursor=pointer]:
+                - /url: /solutions/remove-duplicates-from-sorted-array
+                - img [ref=e784]
+          - row "Squares of a Sorted Array Easy" [ref=e786]:
+            - cell [ref=e787]:
+              - checkbox [ref=e790] [cursor=pointer]
+            - cell [ref=e792]:
+              - generic [ref=e794] [cursor=pointer]:
+                - checkbox [ref=e795]
+                - img [ref=e798]
+            - cell "Squares of a Sorted Array" [ref=e800]:
+              - link "Squares of a Sorted Array" [ref=e801] [cursor=pointer]:
+                - /url: /problems/squares-of-a-sorted-array/question?list=neetcode150
+              - link [ref=e803] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/squares-of-a-sorted-array/
+                - img [ref=e805]
+            - cell "Easy" [ref=e807]:
+              - button "Easy" [ref=e809] [cursor=pointer]:
+                - generic [ref=e810]: Easy
+            - cell [ref=e811]:
+              - link [ref=e813] [cursor=pointer]:
+                - /url: /solutions/squares-of-a-sorted-array
+                - img [ref=e815]
+          - row "Assign Cookies Easy" [ref=e817]:
+            - cell [ref=e818]:
+              - checkbox [ref=e821] [cursor=pointer]
+            - cell [ref=e823]:
+              - generic [ref=e825] [cursor=pointer]:
+                - checkbox [ref=e826]
+                - img [ref=e829]
+            - cell "Assign Cookies" [ref=e831]:
+              - link "Assign Cookies" [ref=e832] [cursor=pointer]:
+                - /url: /problems/assign-cookies/question?list=neetcode150
+              - link [ref=e834] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/assign-cookies/
+                - img [ref=e836]
+            - cell "Easy" [ref=e838]:
+              - button "Easy" [ref=e840] [cursor=pointer]:
+                - generic [ref=e841]: Easy
+            - cell [ref=e842]:
+              - link [ref=e844] [cursor=pointer]:
+                - /url: /solutions/assign-cookies
+                - img [ref=e846]
+          - row "Sort Array by Parity Easy" [ref=e848]:
+            - cell [ref=e849]:
+              - checkbox [ref=e852] [cursor=pointer]
+            - cell [ref=e854]:
+              - generic [ref=e856] [cursor=pointer]:
+                - checkbox [ref=e857]
+                - img [ref=e860]
+            - cell "Sort Array by Parity" [ref=e862]:
+              - link "Sort Array by Parity" [ref=e863] [cursor=pointer]:
+                - /url: /problems/sort-array-by-parity/question?list=neetcode150
+              - link [ref=e865] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/sort-array-by-parity/
+                - img [ref=e867]
+            - cell "Easy" [ref=e869]:
+              - button "Easy" [ref=e871] [cursor=pointer]:
+                - generic [ref=e872]: Easy
+            - cell [ref=e873]:
+              - link [ref=e875] [cursor=pointer]:
+                - /url: /solutions/sort-array-by-parity
+                - img [ref=e877]
+          - row "Strobogrammatic Number Easy" [ref=e879]:
+            - cell [ref=e880]:
+              - checkbox [ref=e883] [cursor=pointer]
+            - cell [ref=e885]:
+              - generic [ref=e887] [cursor=pointer]:
+                - checkbox [ref=e888]
+                - img [ref=e891]
+            - cell "Strobogrammatic Number" [ref=e893]:
+              - link "Strobogrammatic Number" [ref=e894] [cursor=pointer]:
+                - /url: /problems/strobogrammatic-number/question?list=neetcode150
+              - generic [ref=e895]:
+                - img [ref=e898] [cursor=pointer]
+                - link [ref=e900] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/strobogrammatic-number/
+                  - img [ref=e902]
+            - cell "Easy" [ref=e904]:
+              - button "Easy" [ref=e906] [cursor=pointer]:
+                - generic [ref=e907]: Easy
+            - cell [ref=e908]:
+              - link [ref=e910] [cursor=pointer]:
+                - /url: /solutions/strobogrammatic-number
+                - img [ref=e912]
+          - row "Two Sum Less Than K Easy" [ref=e914]:
+            - cell [ref=e915]:
+              - checkbox [ref=e918] [cursor=pointer]
+            - cell [ref=e920]:
+              - generic [ref=e922] [cursor=pointer]:
+                - checkbox [ref=e923]
+                - img [ref=e926]
+            - cell "Two Sum Less Than K" [ref=e928]:
+              - link "Two Sum Less Than K" [ref=e929] [cursor=pointer]:
+                - /url: /problems/two-sum-less-than-k/question?list=neetcode150
+              - generic [ref=e930]:
+                - img [ref=e933] [cursor=pointer]
+                - link [ref=e935] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/two-sum-less-than-k/
+                  - img [ref=e937]
+            - cell "Easy" [ref=e939]:
+              - button "Easy" [ref=e941] [cursor=pointer]:
+                - generic [ref=e942]: Easy
+            - cell [ref=e943]:
+              - link [ref=e945] [cursor=pointer]:
+                - /url: /solutions/two-sum-less-than-k
+                - img [ref=e947]
+          - row "String Compression Medium" [ref=e949]:
+            - cell [ref=e950]:
+              - checkbox [ref=e953] [cursor=pointer]
+            - cell [ref=e955]:
+              - generic [ref=e957] [cursor=pointer]:
+                - checkbox [ref=e958]
+                - img [ref=e961]
+            - cell "String Compression" [ref=e963]:
+              - link "String Compression" [ref=e964] [cursor=pointer]:
+                - /url: /problems/string-compression/question?list=neetcode150
+              - link [ref=e966] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/string-compression/
+                - img [ref=e968]
+            - cell "Medium" [ref=e970]:
+              - button "Medium" [ref=e972] [cursor=pointer]:
+                - generic [ref=e973]: Medium
+            - cell [ref=e974]:
+              - link [ref=e976] [cursor=pointer]:
+                - /url: /solutions/string-compression
+                - img [ref=e978]
+          - row "Two Sum II Input Array Is Sorted Medium" [ref=e980]:
+            - cell [ref=e981]:
+              - checkbox [ref=e984] [cursor=pointer]
+            - cell [ref=e986]:
+              - generic [ref=e988] [cursor=pointer]:
+                - checkbox [ref=e989]
+                - img [ref=e992]
+            - cell "Two Sum II Input Array Is Sorted" [ref=e994]:
+              - link "Two Sum II Input Array Is Sorted" [ref=e995] [cursor=pointer]:
+                - /url: /problems/two-integer-sum-ii/question?list=neetcode150
+              - link [ref=e997] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+                - img [ref=e999]
+            - cell "Medium" [ref=e1001]:
+              - button "Medium" [ref=e1003] [cursor=pointer]:
+                - generic [ref=e1004]: Medium
+            - cell [ref=e1005]:
+              - link [ref=e1007] [cursor=pointer]:
+                - /url: /solutions/two-sum-ii-input-array-is-sorted
+                - img [ref=e1009]
+          - row "3Sum Medium" [ref=e1011]:
+            - cell [ref=e1012]:
+              - checkbox [ref=e1015] [cursor=pointer]
+            - cell [ref=e1017]:
+              - generic [ref=e1019] [cursor=pointer]:
+                - checkbox [ref=e1020]
+                - img [ref=e1023]
+            - cell "3Sum" [ref=e1025]:
+              - link "3Sum" [ref=e1026] [cursor=pointer]:
+                - /url: /problems/three-integer-sum/question?list=neetcode150
+              - link [ref=e1028] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/3sum/
+                - img [ref=e1030]
+            - cell "Medium" [ref=e1032]:
+              - button "Medium" [ref=e1034] [cursor=pointer]:
+                - generic [ref=e1035]: Medium
+            - cell [ref=e1036]:
+              - link [ref=e1038] [cursor=pointer]:
+                - /url: /solutions/3sum
+                - img [ref=e1040]
+          - row "4Sum Medium" [ref=e1042]:
+            - cell [ref=e1043]:
+              - checkbox [ref=e1046] [cursor=pointer]
+            - cell [ref=e1048]:
+              - generic [ref=e1050] [cursor=pointer]:
+                - checkbox [ref=e1051]
+                - img [ref=e1054]
+            - cell "4Sum" [ref=e1056]:
+              - link "4Sum" [ref=e1057] [cursor=pointer]:
+                - /url: /problems/4sum/question?list=neetcode150
+              - link [ref=e1059] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/4sum/
+                - img [ref=e1061]
+            - cell "Medium" [ref=e1063]:
+              - button "Medium" [ref=e1065] [cursor=pointer]:
+                - generic [ref=e1066]: Medium
+            - cell [ref=e1067]:
+              - link [ref=e1069] [cursor=pointer]:
+                - /url: /solutions/4sum
+                - img [ref=e1071]
+          - row "Rotate Array Medium" [ref=e1073]:
+            - cell [ref=e1074]:
+              - checkbox [ref=e1077] [cursor=pointer]
+            - cell [ref=e1079]:
+              - generic [ref=e1081] [cursor=pointer]:
+                - checkbox [ref=e1082]
+                - img [ref=e1085]
+            - cell "Rotate Array" [ref=e1087]:
+              - link "Rotate Array" [ref=e1088] [cursor=pointer]:
+                - /url: /problems/rotate-array/question?list=neetcode150
+              - link [ref=e1090] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rotate-array/
+                - img [ref=e1092]
+            - cell "Medium" [ref=e1094]:
+              - button "Medium" [ref=e1096] [cursor=pointer]:
+                - generic [ref=e1097]: Medium
+            - cell [ref=e1098]:
+              - link [ref=e1100] [cursor=pointer]:
+                - /url: /solutions/rotate-array
+                - img [ref=e1102]
+          - row "Container With Most Water Medium" [ref=e1104]:
+            - cell [ref=e1105]:
+              - checkbox [ref=e1108] [cursor=pointer]
+            - cell [ref=e1110]:
+              - generic [ref=e1112] [cursor=pointer]:
+                - checkbox [ref=e1113]
+                - img [ref=e1116]
+            - cell "Container With Most Water" [ref=e1118]:
+              - link "Container With Most Water" [ref=e1119] [cursor=pointer]:
+                - /url: /problems/max-water-container/question?list=neetcode150
+              - link [ref=e1121] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/container-with-most-water/
+                - img [ref=e1123]
+            - cell "Medium" [ref=e1125]:
+              - button "Medium" [ref=e1127] [cursor=pointer]:
+                - generic [ref=e1128]: Medium
+            - cell [ref=e1129]:
+              - link [ref=e1131] [cursor=pointer]:
+                - /url: /solutions/container-with-most-water
+                - img [ref=e1133]
+          - row "Number of Subsequences That Satisfy The Given Sum Condition Medium" [ref=e1135]:
+            - cell [ref=e1136]:
+              - checkbox [ref=e1139] [cursor=pointer]
+            - cell [ref=e1141]:
+              - generic [ref=e1143] [cursor=pointer]:
+                - checkbox [ref=e1144]
+                - img [ref=e1147]
+            - cell "Number of Subsequences That Satisfy The Given Sum Condition" [ref=e1149]:
+              - link "Number of Subsequences That Satisfy The Given Sum Condition" [ref=e1150] [cursor=pointer]:
+                - /url: /problems/number-of-subsequences-that-satisfy-the-given-sum-condition/question?list=neetcode150
+              - link [ref=e1152] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
+                - img [ref=e1154]
+            - cell "Medium" [ref=e1156]:
+              - button "Medium" [ref=e1158] [cursor=pointer]:
+                - generic [ref=e1159]: Medium
+            - cell [ref=e1160]:
+              - link [ref=e1162] [cursor=pointer]:
+                - /url: /solutions/number-of-subsequences-that-satisfy-the-given-sum-condition
+                - img [ref=e1164]
+          - row "Boats to Save People Medium" [ref=e1166]:
+            - cell [ref=e1167]:
+              - checkbox [ref=e1170] [cursor=pointer]
+            - cell [ref=e1172]:
+              - generic [ref=e1174] [cursor=pointer]:
+                - checkbox [ref=e1175]
+                - img [ref=e1178]
+            - cell "Boats to Save People" [ref=e1180]:
+              - link "Boats to Save People" [ref=e1181] [cursor=pointer]:
+                - /url: /problems/boats-to-save-people/question?list=neetcode150
+              - link [ref=e1183] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/boats-to-save-people/
+                - img [ref=e1185]
+            - cell "Medium" [ref=e1187]:
+              - button "Medium" [ref=e1189] [cursor=pointer]:
+                - generic [ref=e1190]: Medium
+            - cell [ref=e1191]:
+              - link [ref=e1193] [cursor=pointer]:
+                - /url: /solutions/boats-to-save-people
+                - img [ref=e1195]
+          - row "Rearrange Array Elements by Sign Medium" [ref=e1197]:
+            - cell [ref=e1198]:
+              - checkbox [ref=e1201] [cursor=pointer]
+            - cell [ref=e1203]:
+              - generic [ref=e1205] [cursor=pointer]:
+                - checkbox [ref=e1206]
+                - img [ref=e1209]
+            - cell "Rearrange Array Elements by Sign" [ref=e1211]:
+              - link "Rearrange Array Elements by Sign" [ref=e1212] [cursor=pointer]:
+                - /url: /problems/rearrange-array-elements-by-sign/question?list=neetcode150
+              - link [ref=e1214] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rearrange-array-elements-by-sign/
+                - img [ref=e1216]
+            - cell "Medium" [ref=e1218]:
+              - button "Medium" [ref=e1220] [cursor=pointer]:
+                - generic [ref=e1221]: Medium
+            - cell [ref=e1222]:
+              - link [ref=e1224] [cursor=pointer]:
+                - /url: /solutions/rearrange-array-elements-by-sign
+                - img [ref=e1226]
+          - row "Meeting Scheduler Medium" [ref=e1228]:
+            - cell [ref=e1229]:
+              - checkbox [ref=e1232] [cursor=pointer]
+            - cell [ref=e1234]:
+              - generic [ref=e1236] [cursor=pointer]:
+                - checkbox [ref=e1237]
+                - img [ref=e1240]
+            - cell "Meeting Scheduler" [ref=e1242]:
+              - link "Meeting Scheduler" [ref=e1243] [cursor=pointer]:
+                - /url: /problems/meeting-scheduler/question?list=neetcode150
+              - generic [ref=e1244]:
+                - img [ref=e1247] [cursor=pointer]
+                - link [ref=e1249] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/meeting-scheduler/
+                  - img [ref=e1251]
+            - cell "Medium" [ref=e1253]:
+              - button "Medium" [ref=e1255] [cursor=pointer]:
+                - generic [ref=e1256]: Medium
+            - cell [ref=e1257]:
+              - link [ref=e1259] [cursor=pointer]:
+                - /url: /solutions/meeting-scheduler
+                - img [ref=e1261]
+          - row "Product of Two Run Length Encoded Arrays Medium" [ref=e1263]:
+            - cell [ref=e1264]:
+              - checkbox [ref=e1267] [cursor=pointer]
+            - cell [ref=e1269]:
+              - generic [ref=e1271] [cursor=pointer]:
+                - checkbox [ref=e1272]
+                - img [ref=e1275]
+            - cell "Product of Two Run Length Encoded Arrays" [ref=e1277]:
+              - link "Product of Two Run Length Encoded Arrays" [ref=e1278] [cursor=pointer]:
+                - /url: /problems/product-of-two-run-length-encoded-arrays/question?list=neetcode150
+              - generic [ref=e1279]:
+                - img [ref=e1282] [cursor=pointer]
+                - link [ref=e1284] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/product-of-two-run-length-encoded-arrays/
+                  - img [ref=e1286]
+            - cell "Medium" [ref=e1288]:
+              - button "Medium" [ref=e1290] [cursor=pointer]:
+                - generic [ref=e1291]: Medium
+            - cell [ref=e1292]:
+              - link [ref=e1294] [cursor=pointer]:
+                - /url: /solutions/product-of-two-run-length-encoded-arrays
+                - img [ref=e1296]
+          - row "Sort Transformed Array Medium" [ref=e1298]:
+            - cell [ref=e1299]:
+              - checkbox [ref=e1302] [cursor=pointer]
+            - cell [ref=e1304]:
+              - generic [ref=e1306] [cursor=pointer]:
+                - checkbox [ref=e1307]
+                - img [ref=e1310]
+            - cell "Sort Transformed Array" [ref=e1312]:
+              - link "Sort Transformed Array" [ref=e1313] [cursor=pointer]:
+                - /url: /problems/sort-transformed-array/question?list=neetcode150
+              - generic [ref=e1314]:
+                - img [ref=e1317] [cursor=pointer]
+                - link [ref=e1319] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/sort-transformed-array/
+                  - img [ref=e1321]
+            - cell "Medium" [ref=e1323]:
+              - button "Medium" [ref=e1325] [cursor=pointer]:
+                - generic [ref=e1326]: Medium
+            - cell [ref=e1327]:
+              - link [ref=e1329] [cursor=pointer]:
+                - /url: /solutions/sort-transformed-array
+                - img [ref=e1331]
+          - row "3Sum Smaller Medium" [ref=e1333]:
+            - cell [ref=e1334]:
+              - checkbox [ref=e1337] [cursor=pointer]
+            - cell [ref=e1339]:
+              - generic [ref=e1341] [cursor=pointer]:
+                - checkbox [ref=e1342]
+                - img [ref=e1345]
+            - cell "3Sum Smaller" [ref=e1347]:
+              - link "3Sum Smaller" [ref=e1348] [cursor=pointer]:
+                - /url: /problems/3sum-smaller/question?list=neetcode150
+              - generic [ref=e1349]:
+                - img [ref=e1352] [cursor=pointer]
+                - link [ref=e1354] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/3sum-smaller/
+                  - img [ref=e1356]
+            - cell "Medium" [ref=e1358]:
+              - button "Medium" [ref=e1360] [cursor=pointer]:
+                - generic [ref=e1361]: Medium
+            - cell [ref=e1362]:
+              - link [ref=e1364] [cursor=pointer]:
+                - /url: /solutions/3sum-smaller
+                - img [ref=e1366]
+          - row "Trapping Rain Water Hard" [ref=e1368]:
+            - cell [ref=e1369]:
+              - checkbox [ref=e1372] [cursor=pointer]
+            - cell [ref=e1374]:
+              - generic [ref=e1376] [cursor=pointer]:
+                - checkbox [ref=e1377]
+                - img [ref=e1380]
+            - cell "Trapping Rain Water" [ref=e1382]:
+              - link "Trapping Rain Water" [ref=e1383] [cursor=pointer]:
+                - /url: /problems/trapping-rain-water/question?list=neetcode150
+              - link [ref=e1385] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/trapping-rain-water/
+                - img [ref=e1387]
+            - cell "Hard" [ref=e1389]:
+              - button "Hard" [ref=e1391] [cursor=pointer]:
+                - generic [ref=e1392]: Hard
+            - cell [ref=e1393]:
+              - link [ref=e1395] [cursor=pointer]:
+                - /url: /solutions/trapping-rain-water
+                - img [ref=e1397]
+          - row "Permutation In String Medium" [ref=e1399]:
+            - cell [ref=e1400]:
+              - checkbox [ref=e1403] [cursor=pointer]
+            - cell [ref=e1405]:
+              - generic [ref=e1407] [cursor=pointer]:
+                - checkbox [ref=e1408]
+                - img [ref=e1411]
+            - cell "Permutation In String" [ref=e1413]:
+              - link "Permutation In String" [ref=e1414] [cursor=pointer]:
+                - /url: /problems/permutation-string/question?list=neetcode150
+              - link [ref=e1416] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/permutation-in-string/
+                - img [ref=e1418]
+            - cell "Medium" [ref=e1420]:
+              - button "Medium" [ref=e1422] [cursor=pointer]:
+                - generic [ref=e1423]: Medium
+            - cell [ref=e1424]:
+              - link [ref=e1426] [cursor=pointer]:
+                - /url: /solutions/permutation-in-string
+                - img [ref=e1428]
+          - row "Find K Closest Elements Medium" [ref=e1430]:
+            - cell [ref=e1431]:
+              - checkbox [ref=e1434] [cursor=pointer]
+            - cell [ref=e1436]:
+              - generic [ref=e1438] [cursor=pointer]:
+                - checkbox [ref=e1439]
+                - img [ref=e1442]
+            - cell "Find K Closest Elements" [ref=e1444]:
+              - link "Find K Closest Elements" [ref=e1445] [cursor=pointer]:
+                - /url: /problems/find-k-closest-elements/question?list=neetcode150
+              - link [ref=e1447] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-k-closest-elements/
+                - img [ref=e1449]
+            - cell "Medium" [ref=e1451]:
+              - button "Medium" [ref=e1453] [cursor=pointer]:
+                - generic [ref=e1454]: Medium
+            - cell [ref=e1455]:
+              - link [ref=e1457] [cursor=pointer]:
+                - /url: /solutions/find-k-closest-elements
+                - img [ref=e1459]
+          - row "Linked List Cycle Easy" [ref=e1461]:
+            - cell [ref=e1462]:
+              - checkbox [ref=e1465] [cursor=pointer]
+            - cell [ref=e1467]:
+              - generic [ref=e1469] [cursor=pointer]:
+                - checkbox [ref=e1470]
+                - img [ref=e1473]
+            - cell "Linked List Cycle" [ref=e1475]:
+              - link "Linked List Cycle" [ref=e1476] [cursor=pointer]:
+                - /url: /problems/linked-list-cycle-detection/question?list=neetcode150
+              - link [ref=e1478] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/linked-list-cycle/
+                - img [ref=e1480]
+            - cell "Easy" [ref=e1482]:
+              - button "Easy" [ref=e1484] [cursor=pointer]:
+                - generic [ref=e1485]: Easy
+            - cell [ref=e1486]:
+              - link [ref=e1488] [cursor=pointer]:
+                - /url: /solutions/linked-list-cycle
+                - img [ref=e1490]
+          - row "Palindrome Linked List Easy" [ref=e1492]:
+            - cell [ref=e1493]:
+              - checkbox [ref=e1496] [cursor=pointer]
+            - cell [ref=e1498]:
+              - generic [ref=e1500] [cursor=pointer]:
+                - checkbox [ref=e1501]
+                - img [ref=e1504]
+            - cell "Palindrome Linked List" [ref=e1506]:
+              - link "Palindrome Linked List" [ref=e1507] [cursor=pointer]:
+                - /url: /problems/palindrome-linked-list/question?list=neetcode150
+              - link [ref=e1509] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindrome-linked-list/
+                - img [ref=e1511]
+            - cell "Easy" [ref=e1513]:
+              - button "Easy" [ref=e1515] [cursor=pointer]:
+                - generic [ref=e1516]: Easy
+            - cell [ref=e1517]:
+              - link [ref=e1519] [cursor=pointer]:
+                - /url: /solutions/palindrome-linked-list
+                - img [ref=e1521]
+          - row "Middle of the Linked List Easy" [ref=e1523]:
+            - cell [ref=e1524]:
+              - checkbox [ref=e1527] [cursor=pointer]
+            - cell [ref=e1529]:
+              - generic [ref=e1531] [cursor=pointer]:
+                - checkbox [ref=e1532]
+                - img [ref=e1535]
+            - cell "Middle of the Linked List" [ref=e1537]:
+              - link "Middle of the Linked List" [ref=e1538] [cursor=pointer]:
+                - /url: /problems/middle-of-the-linked-list/question?list=neetcode150
+              - link [ref=e1540] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/middle-of-the-linked-list/
+                - img [ref=e1542]
+            - cell "Easy" [ref=e1544]:
+              - button "Easy" [ref=e1546] [cursor=pointer]:
+                - generic [ref=e1547]: Easy
+            - cell [ref=e1548]:
+              - link [ref=e1550] [cursor=pointer]:
+                - /url: /solutions/middle-of-the-linked-list
+                - img [ref=e1552]
+          - row "Intersection of Two Linked Lists Easy" [ref=e1554]:
+            - cell [ref=e1555]:
+              - checkbox [ref=e1558] [cursor=pointer]
+            - cell [ref=e1560]:
+              - generic [ref=e1562] [cursor=pointer]:
+                - checkbox [ref=e1563]
+                - img [ref=e1566]
+            - cell "Intersection of Two Linked Lists" [ref=e1568]:
+              - link "Intersection of Two Linked Lists" [ref=e1569] [cursor=pointer]:
+                - /url: /problems/intersection-of-two-linked-lists/question?list=neetcode150
+              - link [ref=e1571] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/intersection-of-two-linked-lists/
+                - img [ref=e1573]
+            - cell "Easy" [ref=e1575]:
+              - button "Easy" [ref=e1577] [cursor=pointer]:
+                - generic [ref=e1578]: Easy
+            - cell [ref=e1579]:
+              - link [ref=e1581] [cursor=pointer]:
+                - /url: /solutions/intersection-of-two-linked-lists
+                - img [ref=e1583]
+          - row "Print Immutable Linked List in Reverse Medium" [ref=e1585]:
+            - cell [ref=e1586]:
+              - checkbox [ref=e1589] [cursor=pointer]
+            - cell [ref=e1591]:
+              - generic [ref=e1593] [cursor=pointer]:
+                - checkbox [ref=e1594]
+                - img [ref=e1597]
+            - cell "Print Immutable Linked List in Reverse" [ref=e1599]:
+              - link "Print Immutable Linked List in Reverse" [ref=e1600] [cursor=pointer]:
+                - /url: /problems/print-immutable-linked-list-in-reverse/question?list=neetcode150
+              - generic [ref=e1601]:
+                - img [ref=e1604] [cursor=pointer]
+                - link [ref=e1606] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/print-immutable-linked-list-in-reverse/
+                  - img [ref=e1608]
+            - cell "Medium" [ref=e1610]:
+              - button "Medium" [ref=e1612] [cursor=pointer]:
+                - generic [ref=e1613]: Medium
+            - cell [ref=e1614]:
+              - link [ref=e1616] [cursor=pointer]:
+                - /url: /solutions/print-immutable-linked-list-in-reverse
+                - img [ref=e1618]
+          - row "Reorder List Medium" [ref=e1620]:
+            - cell [ref=e1621]:
+              - checkbox [ref=e1624] [cursor=pointer]
+            - cell [ref=e1626]:
+              - generic [ref=e1628] [cursor=pointer]:
+                - checkbox [ref=e1629]
+                - img [ref=e1632]
+            - cell "Reorder List" [ref=e1634]:
+              - link "Reorder List" [ref=e1635] [cursor=pointer]:
+                - /url: /problems/reorder-linked-list/question?list=neetcode150
+              - link [ref=e1637] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/reorder-list/
+                - img [ref=e1639]
+            - cell "Medium" [ref=e1641]:
+              - button "Medium" [ref=e1643] [cursor=pointer]:
+                - generic [ref=e1644]: Medium
+            - cell [ref=e1645]:
+              - link [ref=e1647] [cursor=pointer]:
+                - /url: /solutions/reorder-list
+                - img [ref=e1649]
+          - row "Maximum Twin Sum Of A Linked List Medium" [ref=e1651]:
+            - cell [ref=e1652]:
+              - checkbox [ref=e1655] [cursor=pointer]
+            - cell [ref=e1657]:
+              - generic [ref=e1659] [cursor=pointer]:
+                - checkbox [ref=e1660]
+                - img [ref=e1663]
+            - cell "Maximum Twin Sum Of A Linked List" [ref=e1665]:
+              - link "Maximum Twin Sum Of A Linked List" [ref=e1666] [cursor=pointer]:
+                - /url: /problems/maximum-twin-sum-of-a-linked-list/question?list=neetcode150
+              - link [ref=e1668] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
+                - img [ref=e1670]
+            - cell "Medium" [ref=e1672]:
+              - button "Medium" [ref=e1674] [cursor=pointer]:
+                - generic [ref=e1675]: Medium
+            - cell [ref=e1676]:
+              - link [ref=e1678] [cursor=pointer]:
+                - /url: /solutions/maximum-twin-sum-of-a-linked-list
+                - img [ref=e1680]
+          - row "Remove Nth Node From End of List Medium" [ref=e1682]:
+            - cell [ref=e1683]:
+              - checkbox [ref=e1686] [cursor=pointer]
+            - cell [ref=e1688]:
+              - generic [ref=e1690] [cursor=pointer]:
+                - checkbox [ref=e1691]
+                - img [ref=e1694]
+            - cell "Remove Nth Node From End of List" [ref=e1696]:
+              - link "Remove Nth Node From End of List" [ref=e1697] [cursor=pointer]:
+                - /url: /problems/remove-node-from-end-of-linked-list/question?list=neetcode150
+              - link [ref=e1699] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+                - img [ref=e1701]
+            - cell "Medium" [ref=e1703]:
+              - button "Medium" [ref=e1705] [cursor=pointer]:
+                - generic [ref=e1706]: Medium
+            - cell [ref=e1707]:
+              - link [ref=e1709] [cursor=pointer]:
+                - /url: /solutions/remove-nth-node-from-end-of-list
+                - img [ref=e1711]
+          - row "Find The Duplicate Number Medium" [ref=e1713]:
+            - cell [ref=e1714]:
+              - checkbox [ref=e1717] [cursor=pointer]
+            - cell [ref=e1719]:
+              - generic [ref=e1721] [cursor=pointer]:
+                - checkbox [ref=e1722]
+                - img [ref=e1725]
+            - cell "Find The Duplicate Number" [ref=e1727]:
+              - link "Find The Duplicate Number" [ref=e1728] [cursor=pointer]:
+                - /url: /problems/find-duplicate-integer/question?list=neetcode150
+              - link [ref=e1730] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-the-duplicate-number/
+                - img [ref=e1732]
+            - cell "Medium" [ref=e1734]:
+              - button "Medium" [ref=e1736] [cursor=pointer]:
+                - generic [ref=e1737]: Medium
+            - cell [ref=e1738]:
+              - link [ref=e1740] [cursor=pointer]:
+                - /url: /solutions/find-the-duplicate-number
+                - img [ref=e1742]
+          - row "Rotate List Medium" [ref=e1744]:
+            - cell [ref=e1745]:
+              - checkbox [ref=e1748] [cursor=pointer]
+            - cell [ref=e1750]:
+              - generic [ref=e1752] [cursor=pointer]:
+                - checkbox [ref=e1753]
+                - img [ref=e1756]
+            - cell "Rotate List" [ref=e1758]:
+              - link "Rotate List" [ref=e1759] [cursor=pointer]:
+                - /url: /problems/rotate-list/question?list=neetcode150
+              - link [ref=e1761] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rotate-list/
+                - img [ref=e1763]
+            - cell "Medium" [ref=e1765]:
+              - button "Medium" [ref=e1767] [cursor=pointer]:
+                - generic [ref=e1768]: Medium
+            - cell [ref=e1769]:
+              - link [ref=e1771] [cursor=pointer]:
+                - /url: /solutions/rotate-list
+                - img [ref=e1773]
+          - row "Two Sum BSTs Medium" [ref=e1775]:
+            - cell [ref=e1776]:
+              - checkbox [ref=e1779] [cursor=pointer]
+            - cell [ref=e1781]:
+              - generic [ref=e1783] [cursor=pointer]:
+                - checkbox [ref=e1784]
+                - img [ref=e1787]
+            - cell "Two Sum BSTs" [ref=e1789]:
+              - link "Two Sum BSTs" [ref=e1790] [cursor=pointer]:
+                - /url: /problems/two-sum-bsts/question?list=neetcode150
+              - generic [ref=e1791]:
+                - img [ref=e1794] [cursor=pointer]
+                - link [ref=e1796] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/two-sum-bsts/
+                  - img [ref=e1798]
+            - cell "Medium" [ref=e1800]:
+              - button "Medium" [ref=e1802] [cursor=pointer]:
+                - generic [ref=e1803]: Medium
+            - cell [ref=e1804]:
+              - link [ref=e1806] [cursor=pointer]:
+                - /url: /solutions/two-sum-bsts
+                - img [ref=e1808]
+          - row "Closest Binary Search Tree Value II Hard" [ref=e1810]:
+            - cell [ref=e1811]:
+              - checkbox [ref=e1814] [cursor=pointer]
+            - cell [ref=e1816]:
+              - generic [ref=e1818] [cursor=pointer]:
+                - checkbox [ref=e1819]
+                - img [ref=e1822]
+            - cell "Closest Binary Search Tree Value II" [ref=e1824]:
+              - link "Closest Binary Search Tree Value II" [ref=e1825] [cursor=pointer]:
+                - /url: /problems/closest-binary-search-tree-value-ii/question?list=neetcode150
+              - generic [ref=e1826]:
+                - img [ref=e1829] [cursor=pointer]
+                - link [ref=e1831] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/closest-binary-search-tree-value-ii/
+                  - img [ref=e1833]
+            - cell "Hard" [ref=e1835]:
+              - button "Hard" [ref=e1837] [cursor=pointer]:
+                - generic [ref=e1838]: Hard
+            - cell [ref=e1839]:
+              - link [ref=e1841] [cursor=pointer]:
+                - /url: /solutions/closest-binary-search-tree-value-ii
+                - img [ref=e1843]
+          - row "Lowest Common Ancestor of a Binary Tree III Medium" [ref=e1845]:
+            - cell [ref=e1846]:
+              - checkbox [ref=e1849] [cursor=pointer]
+            - cell [ref=e1851]:
+              - generic [ref=e1853] [cursor=pointer]:
+                - checkbox [ref=e1854]
+                - img [ref=e1857]
+            - cell "Lowest Common Ancestor of a Binary Tree III" [ref=e1859]:
+              - link "Lowest Common Ancestor of a Binary Tree III" [ref=e1860] [cursor=pointer]:
+                - /url: /problems/lowest-common-ancestor-of-a-binary-tree-iii/question?list=neetcode150
+              - link [ref=e1862] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
+                - img [ref=e1864]
+            - cell "Medium" [ref=e1866]:
+              - button "Medium" [ref=e1868] [cursor=pointer]:
+                - generic [ref=e1869]: Medium
+            - cell [ref=e1870]:
+              - link [ref=e1872] [cursor=pointer]:
+                - /url: /solutions/lowest-common-ancestor-of-a-binary-tree-iii
+                - img [ref=e1874]
+          - row "Find Median From Data Stream Hard" [ref=e1876]:
+            - cell [ref=e1877]:
+              - checkbox [ref=e1880] [cursor=pointer]
+            - cell [ref=e1882]:
+              - generic [ref=e1884] [cursor=pointer]:
+                - checkbox [ref=e1885]
+                - img [ref=e1888]
+            - cell "Find Median From Data Stream" [ref=e1890]:
+              - link "Find Median From Data Stream" [ref=e1891] [cursor=pointer]:
+                - /url: /problems/find-median-in-a-data-stream/question?list=neetcode150
+              - link [ref=e1893] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/find-median-from-data-stream/
+                - img [ref=e1895]
+            - cell "Hard" [ref=e1897]:
+              - button "Hard" [ref=e1899] [cursor=pointer]:
+                - generic [ref=e1900]: Hard
+            - cell [ref=e1901]:
+              - link [ref=e1903] [cursor=pointer]:
+                - /url: /solutions/find-median-from-data-stream
+                - img [ref=e1905]
+          - row "Find the Celebrity Medium" [ref=e1907]:
+            - cell [ref=e1908]:
+              - checkbox [ref=e1911] [cursor=pointer]
+            - cell [ref=e1913]:
+              - generic [ref=e1915] [cursor=pointer]:
+                - checkbox [ref=e1916]
+                - img [ref=e1919]
+            - cell "Find the Celebrity" [ref=e1921]:
+              - link "Find the Celebrity" [ref=e1922] [cursor=pointer]:
+                - /url: /problems/find-the-celebrity/question?list=neetcode150
+              - generic [ref=e1923]:
+                - img [ref=e1926] [cursor=pointer]
+                - link [ref=e1928] [cursor=pointer]:
+                  - /url: https://leetcode.com/problems/find-the-celebrity/
+                  - img [ref=e1930]
+            - cell "Medium" [ref=e1932]:
+              - button "Medium" [ref=e1934] [cursor=pointer]:
+                - generic [ref=e1935]: Medium
+            - cell [ref=e1936]:
+              - link [ref=e1938] [cursor=pointer]:
+                - /url: /solutions/find-the-celebrity
+                - img [ref=e1940]
+          - row "Longest Palindromic Substring Medium" [ref=e1942]:
+            - cell [ref=e1943]:
+              - checkbox [ref=e1946] [cursor=pointer]
+            - cell [ref=e1948]:
+              - generic [ref=e1950] [cursor=pointer]:
+                - checkbox [ref=e1951]
+                - img [ref=e1954]
+            - cell "Longest Palindromic Substring" [ref=e1956]:
+              - link "Longest Palindromic Substring" [ref=e1957] [cursor=pointer]:
+                - /url: /problems/longest-palindromic-substring/question?list=neetcode150
+              - link [ref=e1959] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/longest-palindromic-substring/
+                - img [ref=e1961]
+            - cell "Medium" [ref=e1963]:
+              - button "Medium" [ref=e1965] [cursor=pointer]:
+                - generic [ref=e1966]: Medium
+            - cell [ref=e1967]:
+              - link [ref=e1969] [cursor=pointer]:
+                - /url: /solutions/longest-palindromic-substring
+                - img [ref=e1971]
+          - row "Palindromic Substrings Medium" [ref=e1973]:
+            - cell [ref=e1974]:
+              - checkbox [ref=e1977] [cursor=pointer]
+            - cell [ref=e1979]:
+              - generic [ref=e1981] [cursor=pointer]:
+                - checkbox [ref=e1982]
+                - img [ref=e1985]
+            - cell "Palindromic Substrings" [ref=e1987]:
+              - link "Palindromic Substrings" [ref=e1988] [cursor=pointer]:
+                - /url: /problems/palindromic-substrings/question?list=neetcode150
+              - link [ref=e1990] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/palindromic-substrings/
+                - img [ref=e1992]
+            - cell "Medium" [ref=e1994]:
+              - button "Medium" [ref=e1996] [cursor=pointer]:
+                - generic [ref=e1997]: Medium
+            - cell [ref=e1998]:
+              - link [ref=e2000] [cursor=pointer]:
+                - /url: /solutions/palindromic-substrings
+                - img [ref=e2002]
+          - row "Partition Labels Medium" [ref=e2004]:
+            - cell [ref=e2005]:
+              - checkbox [ref=e2008] [cursor=pointer]
+            - cell [ref=e2010]:
+              - generic [ref=e2012] [cursor=pointer]:
+                - checkbox [ref=e2013]
+                - img [ref=e2016]
+            - cell "Partition Labels" [ref=e2018]:
+              - link "Partition Labels" [ref=e2019] [cursor=pointer]:
+                - /url: /problems/partition-labels/question?list=neetcode150
+              - link [ref=e2021] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/partition-labels/
+                - img [ref=e2023]
+            - cell "Medium" [ref=e2025]:
+              - button "Medium" [ref=e2027] [cursor=pointer]:
+                - generic [ref=e2028]: Medium
+            - cell [ref=e2029]:
+              - link [ref=e2031] [cursor=pointer]:
+                - /url: /solutions/partition-labels
+                - img [ref=e2033]
+          - row "Next Permutation Medium" [ref=e2035]:
+            - cell [ref=e2036]:
+              - checkbox [ref=e2039] [cursor=pointer]
+            - cell [ref=e2041]:
+              - generic [ref=e2043] [cursor=pointer]:
+                - checkbox [ref=e2044]
+                - img [ref=e2047]
+            - cell "Next Permutation" [ref=e2049]:
+              - link "Next Permutation" [ref=e2050] [cursor=pointer]:
+                - /url: /problems/next-permutation/question?list=neetcode150
+              - link [ref=e2052] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/next-permutation/
+                - img [ref=e2054]
+            - cell "Medium" [ref=e2056]:
+              - button "Medium" [ref=e2058] [cursor=pointer]:
+                - generic [ref=e2059]: Medium
+            - cell [ref=e2060]:
+              - link [ref=e2062] [cursor=pointer]:
+                - /url: /solutions/next-permutation
+                - img [ref=e2064]
+          - row "Interval List Intersections Medium" [ref=e2066]:
+            - cell [ref=e2067]:
+              - checkbox [ref=e2070] [cursor=pointer]
+            - cell [ref=e2072]:
+              - generic [ref=e2074] [cursor=pointer]:
+                - checkbox [ref=e2075]
+                - img [ref=e2078]
+            - cell "Interval List Intersections" [ref=e2080]:
+              - link "Interval List Intersections" [ref=e2081] [cursor=pointer]:
+                - /url: /problems/interval-list-intersections/question?list=neetcode150
+              - link [ref=e2083] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/interval-list-intersections/
+                - img [ref=e2085]
+            - cell "Medium" [ref=e2087]:
+              - button "Medium" [ref=e2089] [cursor=pointer]:
+                - generic [ref=e2090]: Medium
+            - cell [ref=e2091]:
+              - link [ref=e2093] [cursor=pointer]:
+                - /url: /solutions/interval-list-intersections
+                - img [ref=e2095]
+          - row "Meeting Rooms II Medium" [ref=e2097]:
+            - cell [ref=e2098]:
+              - checkbox [ref=e2101] [cursor=pointer]
+            - cell [ref=e2103]:
+              - generic [ref=e2105] [cursor=pointer]:
+                - checkbox [ref=e2106]
+                - img [ref=e2109]
+            - cell "Meeting Rooms II" [ref=e2111]:
+              - link "Meeting Rooms II" [ref=e2112] [cursor=pointer]:
+                - /url: /problems/meeting-schedule-ii/question?list=neetcode150
+              - link [ref=e2114] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/meeting-rooms-ii/
+                - img [ref=e2116]
+            - cell "Medium" [ref=e2118]:
+              - button "Medium" [ref=e2120] [cursor=pointer]:
+                - generic [ref=e2121]: Medium
+            - cell [ref=e2122]:
+              - link [ref=e2124] [cursor=pointer]:
+                - /url: /solutions/meeting-rooms-ii
+                - img [ref=e2126]
+          - row "Happy Number Easy" [ref=e2128]:
+            - cell [ref=e2129]:
+              - checkbox [ref=e2132] [cursor=pointer]
+            - cell [ref=e2134]:
+              - generic [ref=e2136] [cursor=pointer]:
+                - checkbox [ref=e2137]
+                - img [ref=e2140]
+            - cell "Happy Number" [ref=e2142]:
+              - link "Happy Number" [ref=e2143] [cursor=pointer]:
+                - /url: /problems/non-cyclical-number/question?list=neetcode150
+              - link [ref=e2145] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/happy-number/
+                - img [ref=e2147]
+            - cell "Easy" [ref=e2149]:
+              - button "Easy" [ref=e2151] [cursor=pointer]:
+                - generic [ref=e2152]: Easy
+            - cell [ref=e2153]:
+              - link [ref=e2155] [cursor=pointer]:
+                - /url: /solutions/happy-number
+                - img [ref=e2157]
+          - row "Rotating the Box Medium" [ref=e2159]:
+            - cell [ref=e2160]:
+              - checkbox [ref=e2163] [cursor=pointer]
+            - cell [ref=e2165]:
+              - generic [ref=e2167] [cursor=pointer]:
+                - checkbox [ref=e2168]
+                - img [ref=e2171]
+            - cell "Rotating the Box" [ref=e2173]:
+              - link "Rotating the Box" [ref=e2174] [cursor=pointer]:
+                - /url: /problems/rotating-the-box/question?list=neetcode150
+              - link [ref=e2176] [cursor=pointer]:
+                - /url: https://leetcode.com/problems/rotating-the-box/
+                - img [ref=e2178]
+            - cell "Medium" [ref=e2180]:
+              - button "Medium" [ref=e2182] [cursor=pointer]:
+                - generic [ref=e2183]: Medium
+            - cell [ref=e2184]:
+              - link [ref=e2186] [cursor=pointer]:
+                - /url: /solutions/rotating-the-box
+                - img [ref=e2188]
+  - contentinfo [ref=e2191]:
+    - generic [ref=e2192]:
+      - separator [ref=e2193]
+      - generic [ref=e2194]:
+        - generic [ref=e2195]:
+          - heading "Links" [level=3] [ref=e2196]
+          - list [ref=e2197]:
+            - listitem [ref=e2198]:
+              - link "Blind 75" [ref=e2199] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/blind75
+            - listitem [ref=e2200]:
+              - link "NeetCode 150" [ref=e2201] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode150
+            - listitem [ref=e2202]:
+              - link "NeetCode 250" [ref=e2203] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode250
+            - listitem [ref=e2204]:
+              - link "How to use NeetCode Effectively" [ref=e2205] [cursor=pointer]:
+                - /url: https://neetcode.io/courses/lessons/how-to-use-neetcode-effectively
+        - generic [ref=e2206]:
+          - heading "Social" [level=3] [ref=e2207]
+          - list [ref=e2208]:
+            - listitem [ref=e2209]:
+              - link "YouTube" [ref=e2210] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/neetcode
+                - img [ref=e2212]
+                - text: YouTube
+            - listitem [ref=e2214]:
+              - link "LinkedIn" [ref=e2215] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/navdeep-singh-3aaa14161/
+                - img [ref=e2217]
+                - text: LinkedIn
+            - listitem [ref=e2219]:
+              - link "Twitter" [ref=e2220] [cursor=pointer]:
+                - /url: https://twitter.com/neetcode1
+                - img [ref=e2222]
+                - text: Twitter
+        - generic [ref=e2224]:
+          - heading "Contact" [level=3] [ref=e2225]
+          - list [ref=e2226]:
+            - listitem [ref=e2227]: support@neetcode.io
+        - generic [ref=e2228]:
+          - heading "Legal" [level=3] [ref=e2229]
+          - list [ref=e2230]:
+            - listitem [ref=e2231]:
+              - link "Privacy Policy" [ref=e2232] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e2233]:
+              - link "Terms of Service" [ref=e2234] [cursor=pointer]:
+                - /url: /terms
+      - paragraph [ref=e2236]: Copyright © 2026 neetcode.io All rights reserved.

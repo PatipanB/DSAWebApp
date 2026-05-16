@@ -1,0 +1,229 @@
+- generic [active]:
+  - generic [ref=e2237]:
+    - generic [ref=e2239]:
+      - generic [ref=e2240]:
+        - link "NeetCode.io Logo" [ref=e2241] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e2242]
+        - button "NeetCode 150" [ref=e2243] [cursor=pointer]:
+          - img [ref=e2245]
+          - generic [ref=e2247]: NeetCode 150
+          - img [ref=e2249]
+        - button [ref=e2251] [cursor=pointer]:
+          - img [ref=e2253]
+        - button [ref=e2255] [cursor=pointer]:
+          - img [ref=e2257]
+      - generic [ref=e2259]:
+        - button "Timer" [ref=e2263] [cursor=pointer]:
+          - img [ref=e2265]
+        - link "Pro" [ref=e2267] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e2268]: Pro
+        - button [ref=e2270] [cursor=pointer]:
+          - img [ref=e2272]
+        - button "Sign in" [ref=e2276] [cursor=pointer]
+    - generic [ref=e2277]:
+      - generic [ref=e2279]:
+        - list [ref=e2281]:
+          - listitem [ref=e2282]:
+            - link "Question" [ref=e2283] [cursor=pointer]:
+              - /url: /problems/two-integer-sum-ii/question
+              - generic [ref=e2284]:
+                - img [ref=e2286]
+                - text: Question
+          - listitem [ref=e2288]:
+            - link "Solution" [ref=e2289] [cursor=pointer]:
+              - /url: /problems/two-integer-sum-ii/solution
+              - generic [ref=e2290]:
+                - img [ref=e2292]
+                - text: Solution
+          - listitem [ref=e2294]:
+            - link "Submissions" [ref=e2295] [cursor=pointer]:
+              - /url: /problems/two-integer-sum-ii/history
+              - generic [ref=e2296]:
+                - img [ref=e2298]
+                - text: Submissions
+          - listitem [ref=e2300]:
+            - link "Discuss (67)" [ref=e2301] [cursor=pointer]:
+              - /url: /problems/two-integer-sum-ii/discuss
+              - generic [ref=e2302]:
+                - img [ref=e2304]
+                - text: Discuss
+                - generic [ref=e2306]: (67)
+        - generic [ref=e2308]:
+          - heading "Two Integer Sum II" [level=1] [ref=e2310]
+          - generic [ref=e2311]:
+            - generic [ref=e2312]: Medium
+            - generic [ref=e2313] [cursor=pointer]: Topics
+            - generic [ref=e2314] [cursor=pointer]: Company Tags
+            - generic [ref=e2315] [cursor=pointer]:
+              - img [ref=e2317]
+              - text: Hints
+          - main [ref=e2320]:
+            - generic [ref=e2321]:
+              - paragraph [ref=e2322]:
+                - text: Given an array of integers
+                - code [ref=e2323]: numbers
+                - text: that is sorted in
+                - strong [ref=e2324]: non-decreasing order
+                - text: .
+              - paragraph [ref=e2325]:
+                - text: Return the indices (
+                - strong [ref=e2326]: 1-indexed
+                - text: ) of two numbers,
+                - code [ref=e2327]: "[index1, index2]"
+                - text: ", such that they add up to a given target number"
+                - code [ref=e2328]: target
+                - text: and
+                - code [ref=e2329]: index1 < index2
+                - text: . Note that
+                - code [ref=e2330]: index1
+                - text: and
+                - code [ref=e2331]: index2
+                - text: cannot be equal, therefore you may not use the same element twice.
+              - paragraph [ref=e2332]:
+                - text: There will always be
+                - strong [ref=e2333]: exactly one valid solution
+                - text: .
+              - paragraph [ref=e2334]:
+                - text: Your solution must use
+                - generic [ref=e2335]:
+                  - math [ref=e2337]:
+                    - generic [ref=e2339]:
+                      - generic [ref=e2340]: O
+                      - generic [ref=e2341]: (
+                      - generic [ref=e2342]: "1"
+                      - generic [ref=e2343]: )
+                  - generic [ref=e2345]: O(1)
+                - text: additional space.
+              - paragraph [ref=e2346]:
+                - strong [ref=e2347]: "Example 1:"
+              - code [ref=e2349]: "Input: numbers = [1,2,3,4], target = 3 Output: [1,2]"
+              - paragraph [ref=e2350]:
+                - text: "Explanation:"
+                - text: The sum of 1 and 2 is 3. Since we are assuming a 1-indexed array,
+                - code [ref=e2351]: index1
+                - text: = 1,
+                - code [ref=e2352]: index2
+                - text: = 2. We return
+                - code [ref=e2353]: "[1, 2]"
+                - text: .
+              - paragraph [ref=e2354]:
+                - strong [ref=e2355]: "Constraints:"
+              - list [ref=e2356]:
+                - listitem [ref=e2357]:
+                  - code [ref=e2358]: 2 <= numbers.length <= 1000
+                - listitem [ref=e2359]:
+                  - code [ref=e2360]: "-1000 <= numbers[i] <= 1000"
+                - listitem [ref=e2361]:
+                  - code [ref=e2362]: "-1000 <= target <= 1000"
+              - group [ref=e2363]:
+                - generic "Topics" [ref=e2364]
+              - group [ref=e2365]:
+                - generic "Recommended Time & Space Complexity" [ref=e2366]
+              - group [ref=e2367]:
+                - generic "Hint 1" [ref=e2368]
+              - group [ref=e2369]:
+                - generic "Hint 2" [ref=e2370]
+              - group [ref=e2371]:
+                - generic "Hint 3" [ref=e2372]
+              - group [ref=e2373]:
+                - generic "Hint 4" [ref=e2374]
+              - group [ref=e2375]:
+                - generic "Company Tags" [ref=e2376]
+          - generic [ref=e2377]:
+            - generic [ref=e2379]:
+              - generic [ref=e2380]: Seen this question in a real interview?
+              - generic [ref=e2381]:
+                - button "Yes" [ref=e2382] [cursor=pointer]
+                - button "No" [ref=e2383] [cursor=pointer]
+            - generic [ref=e2384]:
+              - generic [ref=e2385]: Acceptance Rate
+              - generic [ref=e2386]: 62.1%
+      - generic [ref=e2390]:
+        - generic [ref=e2391]:
+          - generic [ref=e2392]:
+            - button "Python" [ref=e2396] [cursor=pointer]:
+              - generic [ref=e2397]: Python
+              - img [ref=e2399]
+            - button [ref=e2401] [cursor=pointer]:
+              - img [ref=e2402]
+            - button "Auto" [ref=e2404] [cursor=pointer]: Auto
+          - generic [ref=e2406]:
+            - link [ref=e2407] [cursor=pointer]:
+              - /url: /problems/two-integer-sum-ii/notes
+              - img [ref=e2409]
+            - link [ref=e2411] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20two-integer-sum-ii&body=Bug%20Report%20for%20https://neetcode.io/problems/two-integer-sum-ii%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e2413]
+            - button "Format Code (⌥⇧F)" [ref=e2415] [cursor=pointer]:
+              - img [ref=e2417]
+            - button [ref=e2419] [cursor=pointer]:
+              - img [ref=e2421]
+            - button [ref=e2423] [cursor=pointer]:
+              - img [ref=e2425]
+            - button [ref=e2427] [cursor=pointer]:
+              - img [ref=e2429]
+            - button [ref=e2431] [cursor=pointer]:
+              - img [ref=e2433]
+        - generic [ref=e2435]:
+          - generic [ref=e2436]:
+            - generic [ref=e2438] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e2439] [cursor=pointer]: +
+          - generic [ref=e2440]:
+            - button "NeetBot" [ref=e2441] [cursor=pointer]:
+              - img [ref=e2443]
+              - generic [ref=e2445]: NeetBot
+            - generic [ref=e2446]: "|"
+            - button "Hint" [ref=e2448] [cursor=pointer]:
+              - img [ref=e2450]
+              - generic [ref=e2452]: Hint
+            - generic [ref=e2453]: "|"
+            - img [ref=e2456] [cursor=pointer]
+            - generic [ref=e2458]: "|"
+            - generic [ref=e2459]: Ln 1, Col 1
+        - code [ref=e2463]:
+          - generic [ref=e2464]:
+            - textbox "Editor content"
+            - textbox [ref=e2465]
+            - generic [ref=e2467]:
+              - generic [ref=e2468]:
+                - generic [ref=e2470] [cursor=pointer]: 
+                - generic [ref=e2471]: "1"
+              - generic [ref=e2473]: "2"
+              - generic [ref=e2475]: "3"
+            - generic [ref=e2482]:
+              - generic [ref=e2484]: "class Solution:"
+              - generic [ref=e2486]: "def twoSum(self, numbers: List[int], target: int) -> List[int]:"
+        - generic [ref=e2495]:
+          - generic:
+            - list [ref=e2497]:
+              - listitem [ref=e2498]:
+                - button "Test Case" [ref=e2499] [cursor=pointer]:
+                  - generic [ref=e2500]:
+                    - img [ref=e2502]
+                    - text: Test Case
+              - listitem [ref=e2504]:
+                - button "Output" [ref=e2505] [cursor=pointer]:
+                  - generic [ref=e2506]:
+                    - img [ref=e2508]
+                    - text: Output
+            - generic [ref=e2510]:
+              - generic [ref=e2512]:
+                - button "Case 1" [ref=e2513] [cursor=pointer]
+                - button [ref=e2514] [cursor=pointer]:
+                  - img [ref=e2516]
+              - paragraph [ref=e2518]: numbers =
+              - textbox [ref=e2519]: "[1,2,3,4]"
+              - paragraph [ref=e2520]: target =
+              - textbox [ref=e2521]: "3"
+          - generic [ref=e2522]:
+            - button "Console" [ref=e2523] [cursor=pointer]:
+              - text: Console
+              - img [ref=e2525]
+            - generic [ref=e2527]:
+              - button "Run" [disabled] [ref=e2528] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e2529] [cursor=pointer]
+  - generic [ref=e2530]:
+    - alert
+    - alert

@@ -1,0 +1,131 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "DSA Visualizer" [ref=e5] [cursor=pointer]:
+      - /url: /
+  - generic [ref=e6]:
+    - complementary [ref=e7]:
+      - heading "Topics" [level=2] [ref=e8]
+      - navigation "Topics" [ref=e9]:
+        - link "#01 📊 Arrays" [ref=e10] [cursor=pointer]:
+          - /url: /arrays
+          - generic [ref=e11]: "#01"
+          - generic [ref=e12]: 📊
+          - generic [ref=e13]: Arrays
+        - link "#02 🥞 Stack & Queue" [ref=e14] [cursor=pointer]:
+          - /url: /stack-queue
+          - generic [ref=e15]: "#02"
+          - generic [ref=e16]: 🥞
+          - generic [ref=e17]: Stack & Queue
+        - link "#03 🔗 Linked List" [ref=e18] [cursor=pointer]:
+          - /url: /linked-list
+          - generic [ref=e19]: "#03"
+          - generic [ref=e20]: 🔗
+          - generic [ref=e21]: Linked List
+        - link "#04 🌲 Binary Tree" [ref=e22] [cursor=pointer]:
+          - /url: /binary-tree
+          - generic [ref=e23]: "#04"
+          - generic [ref=e24]: 🌲
+          - generic [ref=e25]: Binary Tree
+        - link "#05 🌳 Binary Search Tree" [ref=e26] [cursor=pointer]:
+          - /url: /bst
+          - generic [ref=e27]: "#05"
+          - generic [ref=e28]: 🌳
+          - generic [ref=e29]: Binary Search Tree
+        - link "#06 🕸️ Graph" [ref=e30] [cursor=pointer]:
+          - /url: /graph
+          - generic [ref=e31]: "#06"
+          - generic [ref=e32]: 🕸️
+          - generic [ref=e33]: Graph
+        - link "#07 📈 Sorting" [ref=e34] [cursor=pointer]:
+          - /url: /sorting
+          - generic [ref=e35]: "#07"
+          - generic [ref=e36]: 📈
+          - generic [ref=e37]: Sorting
+        - link "#08 🗂️ Hash Table" [ref=e38] [cursor=pointer]:
+          - /url: /hash-table
+          - generic [ref=e39]: "#08"
+          - generic [ref=e40]: 🗂️
+          - generic [ref=e41]: Hash Table
+        - link "#09 🧮 Dynamic Programming" [ref=e42] [cursor=pointer]:
+          - /url: /dp
+          - generic [ref=e43]: "#09"
+          - generic [ref=e44]: 🧮
+          - generic [ref=e45]: Dynamic Programming
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Visualize a data structure." [level=1] [ref=e49]
+          - paragraph [ref=e50]: Nine topics. Step-through animations, your own input, the executing code highlighted in real time, Big-O at a glance, and curated NeetCode problems for each pattern.
+        - generic [ref=e51]:
+          - link "Open Arrays" [ref=e52] [cursor=pointer]:
+            - /url: /arrays
+            - generic [ref=e53]:
+              - generic [ref=e54]: "#01"
+              - generic [ref=e55]: 📊
+              - generic [ref=e56]: Arrays
+            - paragraph [ref=e57]: Visualize pointer-based traversals and sliding windows on arrays. Step through index movement, window expansion, and running aggregates.
+            - generic [ref=e58]: Open →
+          - link "Open Stack & Queue" [ref=e59] [cursor=pointer]:
+            - /url: /stack-queue
+            - generic [ref=e60]:
+              - generic [ref=e61]: "#02"
+              - generic [ref=e62]: 🥞
+              - generic [ref=e63]: Stack & Queue
+            - paragraph [ref=e64]: Push, pop, and monotonic stack patterns. See how balanced brackets validate, and how a monotonic stack solves next-greater-element problems.
+            - generic [ref=e65]: Open →
+          - link "Open Linked List" [ref=e66] [cursor=pointer]:
+            - /url: /linked-list
+            - generic [ref=e67]:
+              - generic [ref=e68]: "#03"
+              - generic [ref=e69]: 🔗
+              - generic [ref=e70]: Linked List
+            - paragraph [ref=e71]: Singly and doubly linked lists with animated pointer rewiring. Watch traverse, insert, delete, and reverse operations build intuition for pointer manipulation.
+            - generic [ref=e72]: Open →
+          - link "Open Binary Tree" [ref=e73] [cursor=pointer]:
+            - /url: /binary-tree
+            - generic [ref=e74]:
+              - generic [ref=e75]: "#04"
+              - generic [ref=e76]: 🌲
+              - generic [ref=e77]: Binary Tree
+            - paragraph [ref=e78]: All four traversal orders with a live call-stack and visited list. Builds the recursion mental model needed for tree problems.
+            - generic [ref=e79]: Open →
+          - link "Open Binary Search Tree" [ref=e80] [cursor=pointer]:
+            - /url: /bst
+            - generic [ref=e81]:
+              - generic [ref=e82]: "#05"
+              - generic [ref=e83]: 🌳
+              - generic [ref=e84]: Binary Search Tree
+            - paragraph [ref=e85]: BST operations with comparison highlights. Delete handles all three cases (leaf, one child, two children with in-order successor) visibly.
+            - generic [ref=e86]: Open →
+          - link "Open Graph" [ref=e87] [cursor=pointer]:
+            - /url: /graph
+            - generic [ref=e88]:
+              - generic [ref=e89]: "#06"
+              - generic [ref=e90]: 🕸️
+              - generic [ref=e91]: Graph
+            - paragraph [ref=e92]: Run BFS and DFS on both a grid and an adjacency-list graph. Edit walls or graph topology and watch the frontier expand step by step.
+            - generic [ref=e93]: Open →
+          - link "Open Sorting" [ref=e94] [cursor=pointer]:
+            - /url: /sorting
+            - generic [ref=e95]:
+              - generic [ref=e96]: "#07"
+              - generic [ref=e97]: 📈
+              - generic [ref=e98]: Sorting
+            - paragraph [ref=e99]: Four sorts side-by-side with race mode — wall-clock-synced so the asymptotic complexity differences are visually obvious.
+            - generic [ref=e100]: Open →
+          - link "Open Hash Table" [ref=e101] [cursor=pointer]:
+            - /url: /hash-table
+            - generic [ref=e102]:
+              - generic [ref=e103]: "#08"
+              - generic [ref=e104]: 🗂️
+              - generic [ref=e105]: Hash Table
+            - paragraph [ref=e106]: "Two collision strategies, both animated: chaining grows buckets, open addressing probes for the next slot. Hash computation shown live."
+            - generic [ref=e107]: Open →
+          - link "Open Dynamic Programming" [ref=e108] [cursor=pointer]:
+            - /url: /dp
+            - generic [ref=e109]:
+              - generic [ref=e110]: "#09"
+              - generic [ref=e111]: 🧮
+              - generic [ref=e112]: Dynamic Programming
+            - paragraph [ref=e113]: Memoization tables fill in real time. Recurrence reads light up the cells they consult, current-fill cells are highlighted, and LCS shows the final traceback path.
+            - generic [ref=e114]: Open →

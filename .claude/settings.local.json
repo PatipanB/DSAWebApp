@@ -25,7 +25,19 @@
       "Skill(superpowers:finishing-a-development-branch)",
       "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp test --run)",
       "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp typecheck)",
-      "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp test -- ComplexityBadge)"
+      "Bash(pnpm --dir /Users/patipanb/Obsidian/DSAWebApp test -- ComplexityBadge)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "Bash(claude plugin *)",
+      "mcp__playwright__browser_evaluate",
+      "Skill(superpowers:executing-plans)",
+      "Bash(npx vitest *)",
+      "WebFetch(domain:neetcode.io)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(npx vite *)"
     ]
   }
 }

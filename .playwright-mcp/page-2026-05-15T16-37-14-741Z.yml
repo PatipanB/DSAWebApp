@@ -1,0 +1,217 @@
+- generic [active]:
+  - generic [ref=e1668]:
+    - generic [ref=e1670]:
+      - generic [ref=e1671]:
+        - link "NeetCode.io Logo" [ref=e1672] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e1673]
+        - button "NeetCode 150" [ref=e1674] [cursor=pointer]:
+          - img [ref=e1676]
+          - generic [ref=e1678]: NeetCode 150
+          - img [ref=e1680]
+        - button [ref=e1682] [cursor=pointer]:
+          - img [ref=e1684]
+        - button [ref=e1686] [cursor=pointer]:
+          - img [ref=e1688]
+      - generic [ref=e1690]:
+        - button "Timer" [ref=e1694] [cursor=pointer]:
+          - img [ref=e1696]
+        - link "Pro" [ref=e1698] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e1699]: Pro
+        - button [ref=e1701] [cursor=pointer]:
+          - img [ref=e1703]
+        - button "Sign in" [ref=e1707] [cursor=pointer]
+    - generic [ref=e1708]:
+      - generic [ref=e1710]:
+        - list [ref=e1712]:
+          - listitem [ref=e1713]:
+            - link "Question" [ref=e1714] [cursor=pointer]:
+              - /url: /problems/validate-parentheses/question
+              - generic [ref=e1715]:
+                - img [ref=e1717]
+                - text: Question
+          - listitem [ref=e1719]:
+            - link "Solution" [ref=e1720] [cursor=pointer]:
+              - /url: /problems/validate-parentheses/solution
+              - generic [ref=e1721]:
+                - img [ref=e1723]
+                - text: Solution
+          - listitem [ref=e1725]:
+            - link "Submissions" [ref=e1726] [cursor=pointer]:
+              - /url: /problems/validate-parentheses/history
+              - generic [ref=e1727]:
+                - img [ref=e1729]
+                - text: Submissions
+          - listitem [ref=e1731]:
+            - link "Discuss (74)" [ref=e1732] [cursor=pointer]:
+              - /url: /problems/validate-parentheses/discuss
+              - generic [ref=e1733]:
+                - img [ref=e1735]
+                - text: Discuss
+                - generic [ref=e1737]: (74)
+        - generic [ref=e1739]:
+          - heading "Valid Parentheses" [level=1] [ref=e1741]
+          - generic [ref=e1742]:
+            - generic [ref=e1743]: Easy
+            - generic [ref=e1744] [cursor=pointer]: Topics
+            - generic [ref=e1745] [cursor=pointer]: Company Tags
+            - generic [ref=e1746] [cursor=pointer]:
+              - img [ref=e1748]
+              - text: Hints
+          - main [ref=e1751]:
+            - generic [ref=e1752]:
+              - paragraph [ref=e1753]:
+                - text: You are given a string
+                - code [ref=e1754]: s
+                - text: "consisting of the following characters:"
+                - code [ref=e1755]: "'('"
+                - text: ","
+                - code [ref=e1756]: "')'"
+                - text: ","
+                - code [ref=e1757]: "'{'"
+                - text: ","
+                - code [ref=e1758]: "'}'"
+                - text: ","
+                - code [ref=e1759]: "'['"
+                - text: and
+                - code [ref=e1760]: "']'"
+                - text: .
+              - paragraph [ref=e1761]:
+                - text: The input string
+                - code [ref=e1762]: s
+                - text: "is valid if and only if:"
+              - list [ref=e1763]:
+                - listitem [ref=e1764]: Every open bracket is closed by the same type of close bracket.
+                - listitem [ref=e1765]: Open brackets are closed in the correct order.
+                - listitem [ref=e1766]: Every close bracket has a corresponding open bracket of the same type.
+              - paragraph [ref=e1767]:
+                - text: Return
+                - code [ref=e1768]: "true"
+                - text: if
+                - code [ref=e1769]: s
+                - text: is a valid string, and
+                - code [ref=e1770]: "false"
+                - text: otherwise.
+              - paragraph [ref=e1771]:
+                - strong [ref=e1772]: "Example 1:"
+              - code [ref=e1774]: "Input: s = \"[]\" Output: true"
+              - paragraph [ref=e1775]:
+                - strong [ref=e1776]: "Example 2:"
+              - code [ref=e1778]: "Input: s = \"([{}])\" Output: true"
+              - paragraph [ref=e1779]:
+                - strong [ref=e1780]: "Example 3:"
+              - code [ref=e1782]: "Input: s = \"[(])\" Output: false"
+              - paragraph [ref=e1783]: "Explanation: The brackets are not closed in the correct order."
+              - paragraph [ref=e1784]:
+                - strong [ref=e1785]: "Constraints:"
+              - list [ref=e1786]:
+                - listitem [ref=e1787]:
+                  - code [ref=e1788]: 1 <= s.length <= 1000
+              - group [ref=e1789]:
+                - generic "Topics" [ref=e1790]
+              - group [ref=e1791]:
+                - generic "Recommended Time & Space Complexity" [ref=e1792]
+              - group [ref=e1793]:
+                - generic "Hint 1" [ref=e1794]
+              - group [ref=e1795]:
+                - generic "Hint 2" [ref=e1796]
+              - group [ref=e1797]:
+                - generic "Hint 3" [ref=e1798]
+              - group [ref=e1799]:
+                - generic "Company Tags" [ref=e1800]
+          - generic [ref=e1801]:
+            - generic [ref=e1803]:
+              - generic [ref=e1804]: Seen this question in a real interview?
+              - generic [ref=e1805]:
+                - button "Yes" [ref=e1806] [cursor=pointer]
+                - button "No" [ref=e1807] [cursor=pointer]
+            - generic [ref=e1808]:
+              - generic [ref=e1809]: Acceptance Rate
+              - generic [ref=e1810]: 41.3%
+      - generic [ref=e1814]:
+        - generic [ref=e1815]:
+          - generic [ref=e1816]:
+            - button "Python" [ref=e1820] [cursor=pointer]:
+              - generic [ref=e1821]: Python
+              - img [ref=e1823]
+            - button [ref=e1825] [cursor=pointer]:
+              - img [ref=e1826]
+            - button "Auto" [ref=e1828] [cursor=pointer]: Auto
+          - generic [ref=e1830]:
+            - link [ref=e1831] [cursor=pointer]:
+              - /url: /problems/validate-parentheses/notes
+              - img [ref=e1833]
+            - link [ref=e1835] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20validate-parentheses&body=Bug%20Report%20for%20https://neetcode.io/problems/validate-parentheses%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e1837]
+            - button "Format Code (⌥⇧F)" [ref=e1839] [cursor=pointer]:
+              - img [ref=e1841]
+            - button [ref=e1843] [cursor=pointer]:
+              - img [ref=e1845]
+            - button [ref=e1847] [cursor=pointer]:
+              - img [ref=e1849]
+            - button [ref=e1851] [cursor=pointer]:
+              - img [ref=e1853]
+            - button [ref=e1855] [cursor=pointer]:
+              - img [ref=e1857]
+        - generic [ref=e1859]:
+          - generic [ref=e1860]:
+            - generic [ref=e1862] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e1863] [cursor=pointer]: +
+          - generic [ref=e1864]:
+            - button "NeetBot" [ref=e1865] [cursor=pointer]:
+              - img [ref=e1867]
+              - generic [ref=e1869]: NeetBot
+            - generic [ref=e1870]: "|"
+            - button "Hint" [ref=e1872] [cursor=pointer]:
+              - img [ref=e1874]
+              - generic [ref=e1876]: Hint
+            - generic [ref=e1877]: "|"
+            - img [ref=e1880] [cursor=pointer]
+            - generic [ref=e1882]: "|"
+            - generic [ref=e1883]: Ln 1, Col 1
+        - code [ref=e1887]:
+          - generic [ref=e1888]:
+            - textbox "Editor content"
+            - textbox [ref=e1889]
+            - generic [ref=e1891]:
+              - generic [ref=e1892]:
+                - generic [ref=e1894] [cursor=pointer]: 
+                - generic [ref=e1895]: "1"
+              - generic [ref=e1897]: "2"
+              - generic [ref=e1899]: "3"
+            - generic [ref=e1906]:
+              - generic [ref=e1908]: "class Solution:"
+              - generic [ref=e1910]: "def isValid(self, s: str) -> bool:"
+        - generic [ref=e1917]:
+          - generic:
+            - list [ref=e1919]:
+              - listitem [ref=e1920]:
+                - button "Test Case" [ref=e1921] [cursor=pointer]:
+                  - generic [ref=e1922]:
+                    - img [ref=e1924]
+                    - text: Test Case
+              - listitem [ref=e1926]:
+                - button "Output" [ref=e1927] [cursor=pointer]:
+                  - generic [ref=e1928]:
+                    - img [ref=e1930]
+                    - text: Output
+            - generic [ref=e1932]:
+              - generic [ref=e1934]:
+                - button "Case 1" [ref=e1935] [cursor=pointer]
+                - button "Case 2" [ref=e1936] [cursor=pointer]
+                - button [ref=e1937] [cursor=pointer]:
+                  - img [ref=e1939]
+              - paragraph [ref=e1941]: s =
+              - textbox [ref=e1942]: "\"[]\""
+          - generic [ref=e1943]:
+            - button "Console" [ref=e1944] [cursor=pointer]:
+              - text: Console
+              - img [ref=e1946]
+            - generic [ref=e1948]:
+              - button "Run" [disabled] [ref=e1949] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e1950] [cursor=pointer]
+  - generic [ref=e1951]:
+    - alert
+    - alert

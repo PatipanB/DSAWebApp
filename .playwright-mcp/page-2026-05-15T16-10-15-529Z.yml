@@ -1,0 +1,191 @@
+- generic [active]:
+  - generic [ref=e2237]:
+    - generic [ref=e2239]:
+      - generic [ref=e2240]:
+        - link "NeetCode.io Logo" [ref=e2241] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e2242]
+        - button "NeetCode 150" [ref=e2243] [cursor=pointer]:
+          - img [ref=e2245]
+          - generic [ref=e2247]: NeetCode 150
+          - img [ref=e2249]
+        - button [ref=e2251] [cursor=pointer]:
+          - img [ref=e2253]
+        - button [ref=e2255] [cursor=pointer]:
+          - img [ref=e2257]
+      - generic [ref=e2259]:
+        - button "Timer" [ref=e2263] [cursor=pointer]:
+          - img [ref=e2265]
+        - link "Pro" [ref=e2267] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e2268]: Pro
+        - button [ref=e2270] [cursor=pointer]:
+          - img [ref=e2272]
+        - button "Sign in" [ref=e2276] [cursor=pointer]
+    - generic [ref=e2277]:
+      - generic [ref=e2279]:
+        - list [ref=e2281]:
+          - listitem [ref=e2282]:
+            - link "Question" [ref=e2283] [cursor=pointer]:
+              - /url: /problems/trapping-rain-water/question
+              - generic [ref=e2284]:
+                - img [ref=e2286]
+                - text: Question
+          - listitem [ref=e2288]:
+            - link "Solution" [ref=e2289] [cursor=pointer]:
+              - /url: /problems/trapping-rain-water/solution
+              - generic [ref=e2290]:
+                - img [ref=e2292]
+                - text: Solution
+          - listitem [ref=e2294]:
+            - link "Submissions" [ref=e2295] [cursor=pointer]:
+              - /url: /problems/trapping-rain-water/history
+              - generic [ref=e2296]:
+                - img [ref=e2298]
+                - text: Submissions
+          - listitem [ref=e2300]:
+            - link "Discuss (47)" [ref=e2301] [cursor=pointer]:
+              - /url: /problems/trapping-rain-water/discuss
+              - generic [ref=e2302]:
+                - img [ref=e2304]
+                - text: Discuss
+                - generic [ref=e2306]: (47)
+        - generic [ref=e2308]:
+          - heading "Trapping Rain Water" [level=1] [ref=e2310]
+          - generic [ref=e2311]:
+            - generic [ref=e2312]: Hard
+            - generic [ref=e2313] [cursor=pointer]: Topics
+            - generic [ref=e2314] [cursor=pointer]: Company Tags
+            - generic [ref=e2315] [cursor=pointer]:
+              - img [ref=e2317]
+              - text: Hints
+          - main [ref=e2320]:
+            - generic [ref=e2321]:
+              - paragraph [ref=e2322]:
+                - text: You are given an array of non-negative integers
+                - code [ref=e2323]: height
+                - text: which represent an elevation map. Each value
+                - code [ref=e2324]: height[i]
+                - text: represents the height of a bar, which has a width of
+                - code [ref=e2325]: "1"
+                - text: .
+              - paragraph [ref=e2326]: Return the maximum area of water that can be trapped between the bars.
+              - paragraph [ref=e2327]:
+                - strong [ref=e2328]: "Example 1:"
+              - paragraph [ref=e2329]
+              - code [ref=e2331]: "Input: height = [0,2,0,3,1,0,1,3,2,1] Output: 9"
+              - paragraph [ref=e2332]:
+                - strong [ref=e2333]: "Constraints:"
+              - list [ref=e2334]:
+                - listitem [ref=e2335]:
+                  - code [ref=e2336]: 1 <= height.length <= 1000
+                - listitem [ref=e2337]:
+                  - code [ref=e2338]: 0 <= height[i] <= 1000
+              - group [ref=e2339]:
+                - generic "Topics" [ref=e2340]
+              - group [ref=e2341]:
+                - generic "Recommended Time & Space Complexity" [ref=e2342]
+              - group [ref=e2343]:
+                - generic "Hint 1" [ref=e2344]
+              - group [ref=e2345]:
+                - generic "Hint 2" [ref=e2346]
+              - group [ref=e2347]:
+                - generic "Hint 3" [ref=e2348]
+              - group [ref=e2349]:
+                - generic "Hint 4" [ref=e2350]
+              - group [ref=e2351]:
+                - generic "Company Tags" [ref=e2352]
+          - generic [ref=e2353]:
+            - generic [ref=e2355]:
+              - generic [ref=e2356]: Seen this question in a real interview?
+              - generic [ref=e2357]:
+                - button "Yes" [ref=e2358] [cursor=pointer]
+                - button "No" [ref=e2359] [cursor=pointer]
+            - generic [ref=e2360]:
+              - generic [ref=e2361]: Acceptance Rate
+              - generic [ref=e2362]: 59.8%
+      - generic [ref=e2366]:
+        - generic [ref=e2367]:
+          - generic [ref=e2368]:
+            - button "Python" [ref=e2372] [cursor=pointer]:
+              - generic [ref=e2373]: Python
+              - img [ref=e2375]
+            - button [ref=e2377] [cursor=pointer]:
+              - img [ref=e2378]
+            - button "Auto" [ref=e2380] [cursor=pointer]: Auto
+          - generic [ref=e2382]:
+            - link [ref=e2383] [cursor=pointer]:
+              - /url: /problems/trapping-rain-water/notes
+              - img [ref=e2385]
+            - link [ref=e2387] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20trapping-rain-water&body=Bug%20Report%20for%20https://neetcode.io/problems/trapping-rain-water%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e2389]
+            - button "Format Code (⌥⇧F)" [ref=e2391] [cursor=pointer]:
+              - img [ref=e2393]
+            - button [ref=e2395] [cursor=pointer]:
+              - img [ref=e2397]
+            - button [ref=e2399] [cursor=pointer]:
+              - img [ref=e2401]
+            - button [ref=e2403] [cursor=pointer]:
+              - img [ref=e2405]
+            - button [ref=e2407] [cursor=pointer]:
+              - img [ref=e2409]
+        - generic [ref=e2411]:
+          - generic [ref=e2412]:
+            - generic [ref=e2414] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e2415] [cursor=pointer]: +
+          - generic [ref=e2416]:
+            - button "NeetBot" [ref=e2417] [cursor=pointer]:
+              - img [ref=e2419]
+              - generic [ref=e2421]: NeetBot
+            - generic [ref=e2422]: "|"
+            - button "Hint" [ref=e2424] [cursor=pointer]:
+              - img [ref=e2426]
+              - generic [ref=e2428]: Hint
+            - generic [ref=e2429]: "|"
+            - img [ref=e2432] [cursor=pointer]
+            - generic [ref=e2434]: "|"
+            - generic [ref=e2435]: Ln 1, Col 1
+        - code [ref=e2439]:
+          - generic [ref=e2440]:
+            - textbox "Editor content"
+            - textbox [ref=e2441]
+            - generic [ref=e2443]:
+              - generic [ref=e2444]:
+                - generic [ref=e2446] [cursor=pointer]: 
+                - generic [ref=e2447]: "1"
+              - generic [ref=e2449]: "2"
+              - generic [ref=e2451]: "3"
+            - generic [ref=e2458]:
+              - generic [ref=e2460]: "class Solution:"
+              - generic [ref=e2462]: "def trap(self, height: List[int]) -> int:"
+        - generic [ref=e2469]:
+          - generic:
+            - list [ref=e2471]:
+              - listitem [ref=e2472]:
+                - button "Test Case" [ref=e2473] [cursor=pointer]:
+                  - generic [ref=e2474]:
+                    - img [ref=e2476]
+                    - text: Test Case
+              - listitem [ref=e2478]:
+                - button "Output" [ref=e2479] [cursor=pointer]:
+                  - generic [ref=e2480]:
+                    - img [ref=e2482]
+                    - text: Output
+            - generic [ref=e2484]:
+              - generic [ref=e2486]:
+                - button "Case 1" [ref=e2487] [cursor=pointer]
+                - button [ref=e2488] [cursor=pointer]:
+                  - img [ref=e2490]
+              - paragraph [ref=e2492]: height =
+              - textbox [ref=e2493]: "[0,2,0,3,1,0,1,3,2,1]"
+          - generic [ref=e2494]:
+            - button "Console" [ref=e2495] [cursor=pointer]:
+              - text: Console
+              - img [ref=e2497]
+            - generic [ref=e2499]:
+              - button "Run" [disabled] [ref=e2500] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e2501] [cursor=pointer]
+  - generic [ref=e2502]:
+    - alert
+    - alert

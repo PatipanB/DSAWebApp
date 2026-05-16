@@ -1,0 +1,414 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - heading [level=1] [ref=e4]
+        - button "Get Pro" [ref=e5] [cursor=pointer]:
+          - generic [ref=e6]: Get Pro
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "NeetCode.io Logo" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e10]
+        - generic [ref=e11]:
+          - link "Courses" [ref=e12] [cursor=pointer]:
+            - /url: /courses
+            - generic [ref=e13]: Courses
+          - link "Practice" [ref=e14] [cursor=pointer]:
+            - /url: /practice
+            - generic [ref=e15]: Practice
+          - link "Roadmap" [ref=e16] [cursor=pointer]:
+            - /url: /roadmap
+            - generic [ref=e17]: Roadmap
+      - generic [ref=e18]:
+        - link "Pro" [ref=e19] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e20]: Pro
+        - button [ref=e22] [cursor=pointer]:
+          - img [ref=e24]
+        - button "Sign in" [ref=e28] [cursor=pointer]
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - heading "Menu" [level=2] [ref=e34]
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e37]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]:
+              - img [ref=e45]
+              - generic [ref=e47]: Coding Interviews
+            - img [ref=e49]
+          - generic [ref=e51]:
+            - generic [ref=e53] [cursor=pointer]: Problems
+            - generic [ref=e55] [cursor=pointer]: Company Tagged
+            - generic [ref=e57] [cursor=pointer]: Cheatsheets
+            - generic [ref=e59] [cursor=pointer]: Quizzes
+        - generic [ref=e60] [cursor=pointer]:
+          - img [ref=e62]
+          - generic [ref=e64]: AI Coding
+          - generic [ref=e65]: BETA
+        - generic [ref=e66] [cursor=pointer]:
+          - img [ref=e68]
+          - generic [ref=e70]: System Design
+        - generic [ref=e72] [cursor=pointer]:
+          - generic [ref=e73]:
+            - img [ref=e75]
+            - generic [ref=e77]: Machine Learning
+          - img [ref=e79]
+        - generic [ref=e81] [cursor=pointer]:
+          - img [ref=e83]
+          - generic [ref=e85]: Low Level Design
+        - generic [ref=e86] [cursor=pointer]:
+          - img [ref=e88]
+          - generic [ref=e90]: Databases
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93] [cursor=pointer]:
+          - img [ref=e96]
+          - paragraph [ref=e99]: Algorithms & Data Structures for Beginners
+        - generic [ref=e100] [cursor=pointer]:
+          - img [ref=e103]
+          - paragraph [ref=e106]: Advanced Algorithms
+        - generic [ref=e107] [cursor=pointer]:
+          - img [ref=e110]
+          - paragraph [ref=e113]: Python for Coding Interviews
+      - list [ref=e115]:
+        - listitem [ref=e116]:
+          - generic [ref=e118] [cursor=pointer]: 📚 Core Skills
+        - listitem [ref=e119]:
+          - generic [ref=e121] [cursor=pointer]:
+            - text: 🚀 NeetCode 150
+            - img [ref=e123]
+      - generic [ref=e125]:
+        - paragraph [ref=e127]:
+          - img [ref=e129]
+          - text: Implement common data structures and algorithms for coding interviews.
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Easy
+              - generic [ref=e137]: 0/4
+            - generic [ref=e138]:
+              - generic [ref=e139]: Med
+              - generic [ref=e140]: 0/12
+            - generic [ref=e141]:
+              - generic [ref=e142]: Hard
+              - generic [ref=e143]: 0/4
+          - generic [ref=e145]:
+            - img [ref=e146]
+            - generic [ref=e153]:
+              - generic [ref=e154]: 0/20
+              - generic [ref=e155]: Solved
+      - generic [ref=e157] [cursor=pointer]:
+        - generic [ref=e159]:
+          - textbox "Search" [ref=e160]
+          - img [ref=e163]
+        - button [ref=e165]:
+          - img [ref=e167]
+        - button [ref=e169]:
+          - img [ref=e171]
+        - button [ref=e173]:
+          - img [ref=e175]
+        - button [ref=e177]:
+          - img [ref=e179]
+      - generic [ref=e181]:
+        - generic [ref=e182] [cursor=pointer]:
+          - img [ref=e184]
+          - text: Algorithms
+        - generic [ref=e186] [cursor=pointer]:
+          - img [ref=e188]
+          - text: Data Structures
+      - generic [ref=e191]:
+        - paragraph [ref=e192]: Implement Data Structures
+        - table [ref=e193]:
+          - rowgroup [ref=e194]:
+            - row "Status Problem Difficulty" [ref=e195]:
+              - columnheader "Status" [ref=e196]:
+                - generic [ref=e197]: Status
+              - columnheader "Problem" [ref=e198]:
+                - generic [ref=e199]: Problem
+              - columnheader "Difficulty" [ref=e200]:
+                - generic [ref=e201]: Difficulty
+          - rowgroup [ref=e202]:
+            - row "Design Dynamic Array (Resizable Array) Easy" [ref=e203]:
+              - cell [ref=e204]:
+                - checkbox [disabled] [ref=e208]
+              - cell "Design Dynamic Array (Resizable Array)" [ref=e210]:
+                - link "Design Dynamic Array (Resizable Array)" [ref=e211] [cursor=pointer]:
+                  - /url: /problems/dynamicArray/question
+              - cell "Easy" [ref=e212]:
+                - button "Easy" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e215]: Easy
+            - row "Design Singly Linked List Easy" [ref=e216]:
+              - cell [ref=e217]:
+                - checkbox [disabled] [ref=e221]
+              - cell "Design Singly Linked List" [ref=e223]:
+                - link "Design Singly Linked List" [ref=e224] [cursor=pointer]:
+                  - /url: /problems/singlyLinkedList/question
+              - cell "Easy" [ref=e225]:
+                - button "Easy" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e228]: Easy
+            - row "Design Double-ended Queue Easy" [ref=e229]:
+              - cell [ref=e230]:
+                - checkbox [disabled] [ref=e234]
+              - cell "Design Double-ended Queue" [ref=e236]:
+                - link "Design Double-ended Queue" [ref=e237] [cursor=pointer]:
+                  - /url: /problems/queue/question
+                - img [ref=e240] [cursor=pointer]
+              - cell "Easy" [ref=e242]:
+                - button "Easy" [ref=e244] [cursor=pointer]:
+                  - generic [ref=e245]: Easy
+            - row "Design Binary Search Tree Medium" [ref=e246]:
+              - cell [ref=e247]:
+                - checkbox [disabled] [ref=e251]
+              - cell "Design Binary Search Tree" [ref=e253]:
+                - link "Design Binary Search Tree" [ref=e254] [cursor=pointer]:
+                  - /url: /problems/binarySearchTree/question
+                - img [ref=e257] [cursor=pointer]
+              - cell "Medium" [ref=e259]:
+                - button "Medium" [ref=e261] [cursor=pointer]:
+                  - generic [ref=e262]: Medium
+            - row "Design Hash Table Medium" [ref=e263]:
+              - cell [ref=e264]:
+                - checkbox [disabled] [ref=e268]
+              - cell "Design Hash Table" [ref=e270]:
+                - link "Design Hash Table" [ref=e271] [cursor=pointer]:
+                  - /url: /problems/hashTable/question
+                - img [ref=e274] [cursor=pointer]
+              - cell "Medium" [ref=e276]:
+                - button "Medium" [ref=e278] [cursor=pointer]:
+                  - generic [ref=e279]: Medium
+            - row "Design Heap Medium" [ref=e280]:
+              - cell [ref=e281]:
+                - checkbox [disabled] [ref=e285]
+              - cell "Design Heap" [ref=e287]:
+                - link "Design Heap" [ref=e288] [cursor=pointer]:
+                  - /url: /problems/heap/question
+                - img [ref=e291] [cursor=pointer]
+              - cell "Medium" [ref=e293]:
+                - button "Medium" [ref=e295] [cursor=pointer]:
+                  - generic [ref=e296]: Medium
+            - row "Design Graph Medium" [ref=e297]:
+              - cell [ref=e298]:
+                - checkbox [disabled] [ref=e302]
+              - cell "Design Graph" [ref=e304]:
+                - link "Design Graph" [ref=e305] [cursor=pointer]:
+                  - /url: /problems/graph/question
+                - img [ref=e308] [cursor=pointer]
+              - cell "Medium" [ref=e310]:
+                - button "Medium" [ref=e312] [cursor=pointer]:
+                  - generic [ref=e313]: Medium
+            - row "Design Disjoint Set (Union-Find) Medium" [ref=e314]:
+              - cell [ref=e315]:
+                - checkbox [disabled] [ref=e319]
+              - cell "Design Disjoint Set (Union-Find)" [ref=e321]:
+                - link "Design Disjoint Set (Union-Find)" [ref=e322] [cursor=pointer]:
+                  - /url: /problems/unionFind/question
+                - img [ref=e325] [cursor=pointer]
+              - cell "Medium" [ref=e327]:
+                - button "Medium" [ref=e329] [cursor=pointer]:
+                  - generic [ref=e330]: Medium
+            - row "Design Segment Tree Hard" [ref=e331]:
+              - cell [ref=e332]:
+                - checkbox [disabled] [ref=e336]
+              - cell "Design Segment Tree" [ref=e338]:
+                - link "Design Segment Tree" [ref=e339] [cursor=pointer]:
+                  - /url: /problems/segmentTree/question
+                - img [ref=e342] [cursor=pointer]
+              - cell "Hard" [ref=e344]:
+                - button "Hard" [ref=e346] [cursor=pointer]:
+                  - generic [ref=e347]: Hard
+        - paragraph [ref=e348]: Sorting
+        - table [ref=e349]:
+          - rowgroup [ref=e350]:
+            - row "Status Problem Difficulty" [ref=e351]:
+              - columnheader "Status" [ref=e352]:
+                - generic [ref=e353]: Status
+              - columnheader "Problem" [ref=e354]:
+                - generic [ref=e355]: Problem
+              - columnheader "Difficulty" [ref=e356]:
+                - generic [ref=e357]: Difficulty
+          - rowgroup [ref=e358]:
+            - row "Insertion Sort Easy" [ref=e359]:
+              - cell [ref=e360]:
+                - checkbox [disabled] [ref=e364]
+              - cell "Insertion Sort" [ref=e366]:
+                - link "Insertion Sort" [ref=e367] [cursor=pointer]:
+                  - /url: /problems/insertionSort/question
+              - cell "Easy" [ref=e368]:
+                - button "Easy" [ref=e370] [cursor=pointer]:
+                  - generic [ref=e371]: Easy
+            - row "Merge Sort Medium" [ref=e372]:
+              - cell [ref=e373]:
+                - checkbox [disabled] [ref=e377]
+              - cell "Merge Sort" [ref=e379]:
+                - link "Merge Sort" [ref=e380] [cursor=pointer]:
+                  - /url: /problems/mergeSort/question
+                - img [ref=e383] [cursor=pointer]
+              - cell "Medium" [ref=e385]:
+                - button "Medium" [ref=e387] [cursor=pointer]:
+                  - generic [ref=e388]: Medium
+            - row "Quick Sort Medium" [ref=e389]:
+              - cell [ref=e390]:
+                - checkbox [disabled] [ref=e394]
+              - cell "Quick Sort" [ref=e396]:
+                - link "Quick Sort" [ref=e397] [cursor=pointer]:
+                  - /url: /problems/quickSort/question
+                - img [ref=e400] [cursor=pointer]
+              - cell "Medium" [ref=e402]:
+                - button "Medium" [ref=e404] [cursor=pointer]:
+                  - generic [ref=e405]: Medium
+        - paragraph [ref=e406]: Graphs
+        - table [ref=e407]:
+          - rowgroup [ref=e408]:
+            - row "Status Problem Difficulty" [ref=e409]:
+              - columnheader "Status" [ref=e410]:
+                - generic [ref=e411]: Status
+              - columnheader "Problem" [ref=e412]:
+                - generic [ref=e413]: Problem
+              - columnheader "Difficulty" [ref=e414]:
+                - generic [ref=e415]: Difficulty
+          - rowgroup [ref=e416]:
+            - row "Matrix Depth-First Search Medium" [ref=e417]:
+              - cell [ref=e418]:
+                - checkbox [disabled] [ref=e422]
+              - cell "Matrix Depth-First Search" [ref=e424]:
+                - link "Matrix Depth-First Search" [ref=e425] [cursor=pointer]:
+                  - /url: /problems/matrixDFS/question
+                - img [ref=e428] [cursor=pointer]
+              - cell "Medium" [ref=e430]:
+                - button "Medium" [ref=e432] [cursor=pointer]:
+                  - generic [ref=e433]: Medium
+            - row "Matrix Breadth-First Search Medium" [ref=e434]:
+              - cell [ref=e435]:
+                - checkbox [disabled] [ref=e439]
+              - cell "Matrix Breadth-First Search" [ref=e441]:
+                - link "Matrix Breadth-First Search" [ref=e442] [cursor=pointer]:
+                  - /url: /problems/matrixBFS/question
+                - img [ref=e445] [cursor=pointer]
+              - cell "Medium" [ref=e447]:
+                - button "Medium" [ref=e449] [cursor=pointer]:
+                  - generic [ref=e450]: Medium
+            - row "Dijkstra's Algorithm Medium" [ref=e451]:
+              - cell [ref=e452]:
+                - checkbox [disabled] [ref=e456]
+              - cell "Dijkstra's Algorithm" [ref=e458]:
+                - link "Dijkstra's Algorithm" [ref=e459] [cursor=pointer]:
+                  - /url: /problems/dijkstra/question
+              - cell "Medium" [ref=e460]:
+                - button "Medium" [ref=e462] [cursor=pointer]:
+                  - generic [ref=e463]: Medium
+            - row "Prim's Algorithm Hard" [ref=e464]:
+              - cell [ref=e465]:
+                - checkbox [disabled] [ref=e469]
+              - cell "Prim's Algorithm" [ref=e471]:
+                - link "Prim's Algorithm" [ref=e472] [cursor=pointer]:
+                  - /url: /problems/prim/question
+                - img [ref=e475] [cursor=pointer]
+              - cell "Hard" [ref=e477]:
+                - button "Hard" [ref=e479] [cursor=pointer]:
+                  - generic [ref=e480]: Hard
+            - row "Kruskal's Algorithm Hard" [ref=e481]:
+              - cell [ref=e482]:
+                - checkbox [disabled] [ref=e486]
+              - cell "Kruskal's Algorithm" [ref=e488]:
+                - link "Kruskal's Algorithm" [ref=e489] [cursor=pointer]:
+                  - /url: /problems/kruskal/question
+                - img [ref=e492] [cursor=pointer]
+              - cell "Hard" [ref=e494]:
+                - button "Hard" [ref=e496] [cursor=pointer]:
+                  - generic [ref=e497]: Hard
+            - row "Topological Sort Hard" [ref=e498]:
+              - cell [ref=e499]:
+                - checkbox [disabled] [ref=e503]
+              - cell "Topological Sort" [ref=e505]:
+                - link "Topological Sort" [ref=e506] [cursor=pointer]:
+                  - /url: /problems/topologicalSort/question
+                - img [ref=e509] [cursor=pointer]
+              - cell "Hard" [ref=e511]:
+                - button "Hard" [ref=e513] [cursor=pointer]:
+                  - generic [ref=e514]: Hard
+        - paragraph [ref=e515]: Dynamic Programming
+        - table [ref=e516]:
+          - rowgroup [ref=e517]:
+            - row "Status Problem Difficulty" [ref=e518]:
+              - columnheader "Status" [ref=e519]:
+                - generic [ref=e520]: Status
+              - columnheader "Problem" [ref=e521]:
+                - generic [ref=e522]: Problem
+              - columnheader "Difficulty" [ref=e523]:
+                - generic [ref=e524]: Difficulty
+          - rowgroup [ref=e525]:
+            - row "0 / 1 Knapsack Medium" [ref=e526]:
+              - cell [ref=e527]:
+                - checkbox [disabled] [ref=e531]
+              - cell "0 / 1 Knapsack" [ref=e533]:
+                - link "0 / 1 Knapsack" [ref=e534] [cursor=pointer]:
+                  - /url: /problems/zeroOneKnapsack/question
+                - img [ref=e537] [cursor=pointer]
+              - cell "Medium" [ref=e539]:
+                - button "Medium" [ref=e541] [cursor=pointer]:
+                  - generic [ref=e542]: Medium
+            - row "Unbounded Knapsack Medium" [ref=e543]:
+              - cell [ref=e544]:
+                - checkbox [disabled] [ref=e548]
+              - cell "Unbounded Knapsack" [ref=e550]:
+                - link "Unbounded Knapsack" [ref=e551] [cursor=pointer]:
+                  - /url: /problems/unboundedKnapsack/question
+                - img [ref=e554] [cursor=pointer]
+              - cell "Medium" [ref=e556]:
+                - button "Medium" [ref=e558] [cursor=pointer]:
+                  - generic [ref=e559]: Medium
+  - contentinfo [ref=e561]:
+    - generic [ref=e562]:
+      - separator [ref=e563]
+      - generic [ref=e564]:
+        - generic [ref=e565]:
+          - heading "Links" [level=3] [ref=e566]
+          - list [ref=e567]:
+            - listitem [ref=e568]:
+              - link "Blind 75" [ref=e569] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/blind75
+            - listitem [ref=e570]:
+              - link "NeetCode 150" [ref=e571] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode150
+            - listitem [ref=e572]:
+              - link "NeetCode 250" [ref=e573] [cursor=pointer]:
+                - /url: https://neetcode.io/practice/practice/neetcode250
+            - listitem [ref=e574]:
+              - link "How to use NeetCode Effectively" [ref=e575] [cursor=pointer]:
+                - /url: https://neetcode.io/courses/lessons/how-to-use-neetcode-effectively
+        - generic [ref=e576]:
+          - heading "Social" [level=3] [ref=e577]
+          - list [ref=e578]:
+            - listitem [ref=e579]:
+              - link "YouTube" [ref=e580] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/neetcode
+                - img [ref=e582]
+                - text: YouTube
+            - listitem [ref=e584]:
+              - link "LinkedIn" [ref=e585] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/navdeep-singh-3aaa14161/
+                - img [ref=e587]
+                - text: LinkedIn
+            - listitem [ref=e589]:
+              - link "Twitter" [ref=e590] [cursor=pointer]:
+                - /url: https://twitter.com/neetcode1
+                - img [ref=e592]
+                - text: Twitter
+        - generic [ref=e594]:
+          - heading "Contact" [level=3] [ref=e595]
+          - list [ref=e596]:
+            - listitem [ref=e597]: support@neetcode.io
+        - generic [ref=e598]:
+          - heading "Legal" [level=3] [ref=e599]
+          - list [ref=e600]:
+            - listitem [ref=e601]:
+              - link "Privacy Policy" [ref=e602] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e603]:
+              - link "Terms of Service" [ref=e604] [cursor=pointer]:
+                - /url: /terms
+      - paragraph [ref=e606]: Copyright © 2026 neetcode.io All rights reserved.

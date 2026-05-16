@@ -1,0 +1,196 @@
+- generic [active]:
+  - generic [ref=e130]:
+    - generic [ref=e132]:
+      - generic [ref=e133]:
+        - link "NeetCode.io Logo" [ref=e134] [cursor=pointer]:
+          - /url: /
+          - img "NeetCode.io Logo" [ref=e135]
+        - button "NeetCode 150" [ref=e136] [cursor=pointer]:
+          - img [ref=e138]
+          - generic [ref=e140]: NeetCode 150
+          - img [ref=e142]
+        - button [ref=e144] [cursor=pointer]:
+          - img [ref=e146]
+        - button [ref=e148] [cursor=pointer]:
+          - img [ref=e150]
+      - generic [ref=e152]:
+        - button "Timer" [ref=e156] [cursor=pointer]:
+          - img [ref=e158]
+        - link "Pro" [ref=e160] [cursor=pointer]:
+          - /url: /pro
+          - generic [ref=e161]: Pro
+        - button [ref=e163] [cursor=pointer]:
+          - img [ref=e165]
+        - button "Sign in" [ref=e169] [cursor=pointer]
+    - generic [ref=e170]:
+      - generic [ref=e172]:
+        - list [ref=e174]:
+          - listitem [ref=e175]:
+            - link "Question" [ref=e176] [cursor=pointer]:
+              - /url: /problems/longest-substring-without-duplicates/question
+              - generic [ref=e177]:
+                - img [ref=e179]
+                - text: Question
+          - listitem [ref=e181]:
+            - link "Solution" [ref=e182] [cursor=pointer]:
+              - /url: /problems/longest-substring-without-duplicates/solution
+              - generic [ref=e183]:
+                - img [ref=e185]
+                - text: Solution
+          - listitem [ref=e187]:
+            - link "Submissions" [ref=e188] [cursor=pointer]:
+              - /url: /problems/longest-substring-without-duplicates/history
+              - generic [ref=e189]:
+                - img [ref=e191]
+                - text: Submissions
+          - listitem [ref=e193]:
+            - link "Discuss (59)" [ref=e194] [cursor=pointer]:
+              - /url: /problems/longest-substring-without-duplicates/discuss
+              - generic [ref=e195]:
+                - img [ref=e197]
+                - text: Discuss
+                - generic [ref=e199]: (59)
+        - generic [ref=e201]:
+          - heading "Longest Substring Without Repeating Characters" [level=1] [ref=e203]
+          - generic [ref=e204]:
+            - generic [ref=e205]: Medium
+            - generic [ref=e206] [cursor=pointer]: Topics
+            - generic [ref=e207] [cursor=pointer]: Company Tags
+            - generic [ref=e208] [cursor=pointer]:
+              - img [ref=e210]
+              - text: Hints
+          - main [ref=e213]:
+            - generic [ref=e214]:
+              - paragraph [ref=e215]:
+                - text: Given a string
+                - code [ref=e216]: s
+                - text: ", find the"
+                - emphasis [ref=e217]: length of the longest substring
+                - text: without duplicate characters.
+              - paragraph [ref=e218]:
+                - text: A
+                - strong [ref=e219]: substring
+                - text: is a contiguous sequence of characters within a string.
+              - paragraph [ref=e220]:
+                - strong [ref=e221]: "Example 1:"
+              - code [ref=e223]: "Input: s = \"zxyzxyz\" Output: 3"
+              - paragraph [ref=e224]: "Explanation: The string \"xyz\" is the longest without duplicate characters."
+              - paragraph [ref=e225]:
+                - strong [ref=e226]: "Example 2:"
+              - code [ref=e228]: "Input: s = \"xxxx\" Output: 1"
+              - paragraph [ref=e229]:
+                - strong [ref=e230]: "Constraints:"
+              - list [ref=e231]:
+                - listitem [ref=e232]:
+                  - code [ref=e233]: 0 <= s.length <= 1000
+                - listitem [ref=e234]:
+                  - code [ref=e235]: s
+                  - text: may consist of printable ASCII characters.
+              - group [ref=e236]:
+                - generic "Topics" [ref=e237]
+              - group [ref=e238]:
+                - generic "Recommended Time & Space Complexity" [ref=e239]
+              - group [ref=e240]:
+                - generic "Hint 1" [ref=e241]
+              - group [ref=e242]:
+                - generic "Hint 2" [ref=e243]
+              - group [ref=e244]:
+                - generic "Hint 3" [ref=e245]
+              - group [ref=e246]:
+                - generic "Company Tags" [ref=e247]
+          - generic [ref=e248]:
+            - generic [ref=e250]:
+              - generic [ref=e251]: Seen this question in a real interview?
+              - generic [ref=e252]:
+                - button "Yes" [ref=e253] [cursor=pointer]
+                - button "No" [ref=e254] [cursor=pointer]
+            - generic [ref=e255]:
+              - generic [ref=e256]: Acceptance Rate
+              - generic [ref=e257]: 43.6%
+      - generic [ref=e261]:
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - button "Python" [ref=e267] [cursor=pointer]:
+              - generic [ref=e268]: Python
+              - img [ref=e270]
+            - button [ref=e272] [cursor=pointer]:
+              - img [ref=e273]
+            - button "Auto" [ref=e275] [cursor=pointer]: Auto
+          - generic [ref=e277]:
+            - link [ref=e278] [cursor=pointer]:
+              - /url: /problems/longest-substring-without-duplicates/notes
+              - img [ref=e280]
+            - link [ref=e282] [cursor=pointer]:
+              - /url: https://github.com/neetcode-gh/leetcode/issues/new?title=Bug%20Report%20for%20longest-substring-without-duplicates&body=Bug%20Report%20for%20https://neetcode.io/problems/longest-substring-without-duplicates%0D%0A%0D%0APlease%20describe%20the%20bug%20below%20and%20include%20any%20steps%20to%20reproduce%20the%20bug%20or%20screenshots%20if%20possible.
+              - img [ref=e284]
+            - button "Format Code (⌥⇧F)" [ref=e286] [cursor=pointer]:
+              - img [ref=e288]
+            - button [ref=e290] [cursor=pointer]:
+              - img [ref=e292]
+            - button [ref=e294] [cursor=pointer]:
+              - img [ref=e296]
+            - button [ref=e298] [cursor=pointer]:
+              - img [ref=e300]
+            - button [ref=e302] [cursor=pointer]:
+              - img [ref=e304]
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - generic [ref=e309] [cursor=pointer]: Solution 1
+            - button "Add new tab" [ref=e310] [cursor=pointer]: +
+          - generic [ref=e311]:
+            - button "NeetBot" [ref=e312] [cursor=pointer]:
+              - img [ref=e314]
+              - generic [ref=e316]: NeetBot
+            - generic [ref=e317]: "|"
+            - button "Hint" [ref=e319] [cursor=pointer]:
+              - img [ref=e321]
+              - generic [ref=e323]: Hint
+            - generic [ref=e324]: "|"
+            - img [ref=e327] [cursor=pointer]
+            - generic [ref=e329]: "|"
+            - generic [ref=e330]: Ln 1, Col 1
+        - code [ref=e334]:
+          - generic [ref=e335]:
+            - textbox "Editor content"
+            - textbox [ref=e336]
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - generic [ref=e341] [cursor=pointer]: 
+                - generic [ref=e342]: "1"
+              - generic [ref=e344]: "2"
+              - generic [ref=e346]: "3"
+            - generic [ref=e353]:
+              - generic [ref=e355]: "class Solution:"
+              - generic [ref=e357]: "def lengthOfLongestSubstring(self, s: str) -> int:"
+        - generic [ref=e364]:
+          - generic:
+            - list [ref=e366]:
+              - listitem [ref=e367]:
+                - button "Test Case" [ref=e368] [cursor=pointer]:
+                  - generic [ref=e369]:
+                    - img [ref=e371]
+                    - text: Test Case
+              - listitem [ref=e373]:
+                - button "Output" [ref=e374] [cursor=pointer]:
+                  - generic [ref=e375]:
+                    - img [ref=e377]
+                    - text: Output
+            - generic [ref=e379]:
+              - generic [ref=e381]:
+                - button "Case 1" [ref=e382] [cursor=pointer]
+                - button "Case 2" [ref=e383] [cursor=pointer]
+                - button "Case 3" [ref=e384] [cursor=pointer]
+                - button [ref=e385] [cursor=pointer]:
+                  - img [ref=e387]
+              - paragraph [ref=e389]: s =
+              - textbox [ref=e390]: "\"abcabcbb\""
+          - generic [ref=e391]:
+            - button "Console" [ref=e392] [cursor=pointer]:
+              - text: Console
+              - img [ref=e394]
+            - generic [ref=e396]:
+              - button "Run" [disabled] [ref=e397] [cursor=pointer]
+              - button "Submit" [disabled] [ref=e398] [cursor=pointer]
+  - generic [ref=e399]:
+    - alert
+    - alert

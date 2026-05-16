@@ -1,0 +1,201 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "DSA Visualizer" [ref=e5] [cursor=pointer]:
+      - /url: /
+  - generic [ref=e6]:
+    - complementary [ref=e7]:
+      - heading "Topics" [level=2] [ref=e8]
+      - navigation "Topics" [ref=e9]:
+        - link "#01 📊 Arrays" [ref=e10] [cursor=pointer]:
+          - /url: /arrays
+          - generic [ref=e11]: "#01"
+          - generic [ref=e12]: 📊
+          - generic [ref=e13]: Arrays
+        - link "#02 🥞 Stack & Queue" [ref=e14] [cursor=pointer]:
+          - /url: /stack-queue
+          - generic [ref=e15]: "#02"
+          - generic [ref=e16]: 🥞
+          - generic [ref=e17]: Stack & Queue
+        - link "#03 🔗 Linked List" [ref=e18] [cursor=pointer]:
+          - /url: /linked-list
+          - generic [ref=e19]: "#03"
+          - generic [ref=e20]: 🔗
+          - generic [ref=e21]: Linked List
+        - link "#04 🌲 Binary Tree" [ref=e22] [cursor=pointer]:
+          - /url: /binary-tree
+          - generic [ref=e23]: "#04"
+          - generic [ref=e24]: 🌲
+          - generic [ref=e25]: Binary Tree
+        - link "#05 🌳 Binary Search Tree" [ref=e26] [cursor=pointer]:
+          - /url: /bst
+          - generic [ref=e27]: "#05"
+          - generic [ref=e28]: 🌳
+          - generic [ref=e29]: Binary Search Tree
+        - link "#06 🕸️ Graph" [ref=e30] [cursor=pointer]:
+          - /url: /graph
+          - generic [ref=e31]: "#06"
+          - generic [ref=e32]: 🕸️
+          - generic [ref=e33]: Graph
+        - link "#07 📈 Sorting" [ref=e34] [cursor=pointer]:
+          - /url: /sorting
+          - generic [ref=e35]: "#07"
+          - generic [ref=e36]: 📈
+          - generic [ref=e37]: Sorting
+        - link "#08 🗂️ Hash Table" [ref=e38] [cursor=pointer]:
+          - /url: /hash-table
+          - generic [ref=e39]: "#08"
+          - generic [ref=e40]: 🗂️
+          - generic [ref=e41]: Hash Table
+        - link "#09 🧮 Dynamic Programming" [ref=e42] [cursor=pointer]:
+          - /url: /dp
+          - generic [ref=e43]: "#09"
+          - generic [ref=e44]: 🧮
+          - generic [ref=e45]: Dynamic Programming
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - main [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: "#02"
+            - generic [ref=e51]: 🥞
+            - heading "Stack & Queue" [level=1] [ref=e52]
+            - paragraph [ref=e53]: Brackets, monotonic stack, FIFO
+          - generic [ref=e54]:
+            - button "Key insight" [ref=e55] [cursor=pointer]:
+              - generic [ref=e56]: Key Insight
+              - generic [ref=e57]: ▲
+            - paragraph [ref=e58]: "Use a stack: push opening brackets, and for every closing bracket verify it matches the top — if it does, pop; if not (or stack is empty), the string is unbalanced."
+          - tablist [ref=e59]:
+            - tab "Balanced Brackets" [selected] [ref=e60] [cursor=pointer]
+            - tab "Monotonic Stack" [ref=e61] [cursor=pointer]
+            - tab "Queue Demo" [ref=e62] [cursor=pointer]
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: Input
+              - generic [ref=e67]:
+                - generic [ref=e68]: (
+                - generic [ref=e69]: "["
+                - generic [ref=e70]: "{"
+                - generic [ref=e71]: "}"
+                - generic [ref=e72]: "]"
+                - generic [ref=e73]: )
+            - generic [ref=e74]:
+              - paragraph [ref=e75]: Stack
+              - generic [ref=e77]: empty
+          - status [ref=e78]: "Start scanning \"([{}])\""
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: 1 / 8
+              - progressbar [ref=e82]
+              - generic [ref=e83]: 0%
+            - generic [ref=e84]:
+              - group "Playback controls" [ref=e85]:
+                - button "Reset" [ref=e86] [cursor=pointer]: ↩ Reset
+                - button "Step back" [disabled] [ref=e87]: ⏮ Step back
+                - button "Play" [ref=e88] [cursor=pointer]: ▶ Play
+                - button "Step forward" [ref=e89] [cursor=pointer]: ⏭ Step forward
+              - generic [ref=e90]:
+                - generic [ref=e91]: Speed
+                - slider [ref=e93]
+                - generic [ref=e95]: 1×
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: "Bracket expression (only ( ) [ ] { })"
+              - 'textbox "([{}])" [ref=e100]'
+            - button "Run" [ref=e101] [cursor=pointer]
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - paragraph [ref=e105]: Code
+                - tablist [ref=e106]:
+                  - tab "TS" [selected] [ref=e107] [cursor=pointer]
+                  - tab "Python" [ref=e108] [cursor=pointer]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: "1"
+                  - generic [ref=e113]: "function balancedBrackets(s: string): boolean {"
+                - generic [ref=e114]:
+                  - generic [ref=e115]: "2"
+                  - generic [ref=e116]: "const stack: string[] = [];"
+                - generic [ref=e117]:
+                  - generic [ref=e118]: "3"
+                  - generic [ref=e119]: "const map: Record<string,string> = { ')':'(', ']':'[', '}':'{' };"
+                - generic [ref=e120]:
+                  - generic [ref=e121]: "4"
+                  - generic [ref=e122]: "for (const c of s) {"
+                - generic [ref=e123]:
+                  - generic [ref=e124]: "5"
+                  - generic [ref=e125]: "if ('([{'.includes(c)) stack.push(c);"
+                - generic [ref=e126]:
+                  - generic [ref=e127]: "6"
+                  - generic [ref=e128]: else if (stack.pop() !== map[c]) return false;
+                - generic [ref=e129]:
+                  - generic [ref=e130]: "7"
+                  - generic [ref=e131]: "}"
+                - generic [ref=e132]:
+                  - generic [ref=e133]: "8"
+                  - generic [ref=e134]: return stack.length === 0;
+                - generic [ref=e135]:
+                  - generic [ref=e136]: "9"
+                  - generic [ref=e137]: "}"
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - paragraph [ref=e140]: Complexity
+                - generic [ref=e141]:
+                  - paragraph [ref=e142]: Time
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: All cases
+                    - generic [ref=e146]: O(n)
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: Space
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: Space
+                    - generic [ref=e151]: O(n)
+                - paragraph [ref=e152]: Space is O(n) in the worst case when all brackets are opening (full stack).
+              - generic [ref=e153]:
+                - paragraph [ref=e154]: Variables
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: expr
+                    - generic [ref=e158]: "([{}])"
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: stackSize
+                    - generic [ref=e161]: "0"
+        - complementary [ref=e162]:
+          - generic [ref=e163]:
+            - heading "NeetCode Problems" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - heading "Beginner" [level=3] [ref=e166]
+              - list [ref=e167]:
+                - listitem [ref=e168]:
+                  - link "Baseball Game" [ref=e169] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/baseball-game
+                - listitem [ref=e170]:
+                  - link "Valid Parentheses" [ref=e171] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/validate-parentheses
+                - listitem [ref=e172]:
+                  - link "Min Stack" [ref=e173] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/minimum-stack
+                - listitem [ref=e174]:
+                  - link "Implement Queue using Stacks" [ref=e175] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/implement-queue-using-stacks
+                - listitem [ref=e176]:
+                  - link "Evaluate Reverse Polish Notation" [ref=e177] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/evaluate-reverse-polish-notation
+            - generic [ref=e178]:
+              - heading "Advanced" [level=3] [ref=e179]
+              - list [ref=e180]:
+                - listitem [ref=e181]:
+                  - link "Daily Temperatures" [ref=e182] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/daily-temperatures
+                - listitem [ref=e183]:
+                  - link "Online Stock Span" [ref=e184] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/online-stock-span
+                - listitem [ref=e185]:
+                  - link "Car Fleet" [ref=e186] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/car-fleet
+                - listitem [ref=e187]:
+                  - link "Largest Rectangle in Histogram" [ref=e188] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/largest-rectangle-in-histogram
+                - listitem [ref=e189]:
+                  - link "Sliding Window Maximum" [ref=e190] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/sliding-window-maximum

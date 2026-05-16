@@ -1,0 +1,187 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "DSA Visualizer" [ref=e5] [cursor=pointer]:
+      - /url: /
+  - generic [ref=e6]:
+    - complementary [ref=e7]:
+      - heading "Topics" [level=2] [ref=e8]
+      - navigation "Topics" [ref=e9]:
+        - link "#01 📊 Arrays" [ref=e10] [cursor=pointer]:
+          - /url: /arrays
+          - generic [ref=e11]: "#01"
+          - generic [ref=e12]: 📊
+          - generic [ref=e13]: Arrays
+        - link "#02 🥞 Stack & Queue" [ref=e14] [cursor=pointer]:
+          - /url: /stack-queue
+          - generic [ref=e15]: "#02"
+          - generic [ref=e16]: 🥞
+          - generic [ref=e17]: Stack & Queue
+        - link "#03 🔗 Linked List" [ref=e18] [cursor=pointer]:
+          - /url: /linked-list
+          - generic [ref=e19]: "#03"
+          - generic [ref=e20]: 🔗
+          - generic [ref=e21]: Linked List
+        - link "#04 🌲 Binary Tree" [ref=e22] [cursor=pointer]:
+          - /url: /binary-tree
+          - generic [ref=e23]: "#04"
+          - generic [ref=e24]: 🌲
+          - generic [ref=e25]: Binary Tree
+        - link "#05 🌳 Binary Search Tree" [ref=e26] [cursor=pointer]:
+          - /url: /bst
+          - generic [ref=e27]: "#05"
+          - generic [ref=e28]: 🌳
+          - generic [ref=e29]: Binary Search Tree
+        - link "#06 🕸️ Graph" [ref=e30] [cursor=pointer]:
+          - /url: /graph
+          - generic [ref=e31]: "#06"
+          - generic [ref=e32]: 🕸️
+          - generic [ref=e33]: Graph
+        - link "#07 📈 Sorting" [ref=e34] [cursor=pointer]:
+          - /url: /sorting
+          - generic [ref=e35]: "#07"
+          - generic [ref=e36]: 📈
+          - generic [ref=e37]: Sorting
+        - link "#08 🗂️ Hash Table" [ref=e38] [cursor=pointer]:
+          - /url: /hash-table
+          - generic [ref=e39]: "#08"
+          - generic [ref=e40]: 🗂️
+          - generic [ref=e41]: Hash Table
+        - link "#09 🧮 Dynamic Programming" [ref=e42] [cursor=pointer]:
+          - /url: /dp
+          - generic [ref=e43]: "#09"
+          - generic [ref=e44]: 🧮
+          - generic [ref=e45]: Dynamic Programming
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - main [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: "#02"
+            - generic [ref=e51]: 🥞
+            - heading "Stack & Queue" [level=1] [ref=e52]
+            - paragraph [ref=e53]: Brackets, monotonic stack, FIFO
+          - generic [ref=e54]:
+            - button "Key insight" [ref=e55] [cursor=pointer]:
+              - generic [ref=e56]: Key Insight
+              - generic [ref=e57]: ▲
+            - paragraph [ref=e58]: "A stack is LIFO (last in, first out): push adds to the top, pop removes from the top — the opposite end from where you inserted in a queue."
+          - tablist [ref=e59]:
+            - tab "Balanced Brackets" [ref=e60] [cursor=pointer]
+            - tab "Monotonic Stack" [ref=e61] [cursor=pointer]
+            - tab "Queue Demo" [ref=e62] [cursor=pointer]
+            - tab "Stack Demo" [active] [selected] [ref=e63] [cursor=pointer]
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - paragraph [ref=e67]: Input
+              - generic [ref=e68]:
+                - generic [ref=e69]: "3"
+                - generic [ref=e70]: "1"
+                - generic [ref=e71]: "2"
+                - generic [ref=e72]: "4"
+            - generic [ref=e75]:
+              - paragraph [ref=e76]: Stack
+              - generic [ref=e78]: empty
+          - status [ref=e79]: Initializing stack demo.
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: 1 / 9
+              - progressbar [ref=e83]
+              - generic [ref=e84]: 0%
+            - generic [ref=e85]:
+              - group "Playback controls" [ref=e86]:
+                - button "Reset" [ref=e87] [cursor=pointer]: ↩ Reset
+                - button "Step back" [disabled] [ref=e88]: ⏮ Step back
+                - button "Play" [ref=e89] [cursor=pointer]: ▶ Play
+                - button "Step forward" [ref=e90] [cursor=pointer]: ⏭ Step forward
+              - generic [ref=e91]:
+                - generic [ref=e92]: Speed
+                - slider [ref=e94]
+                - generic [ref=e96]: 1×
+          - generic [ref=e98]:
+            - generic [ref=e192]:
+              - generic [ref=e193]: Values to push (comma-separated)
+              - textbox "3, 1, 2, 4" [ref=e194]
+            - button "Run" [ref=e102] [cursor=pointer]
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - paragraph [ref=e106]: Code
+                - tablist [ref=e107]:
+                  - tab "TS" [selected] [ref=e108] [cursor=pointer]
+                  - tab "Python" [ref=e109] [cursor=pointer]
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - generic [ref=e113]: "1"
+                  - generic [ref=e114]: "class Stack {"
+                - generic [ref=e115]:
+                  - generic [ref=e116]: "2"
+                  - generic [ref=e117]: "constructor() { this.items = []; }"
+                - generic [ref=e118]:
+                  - generic [ref=e119]: "3"
+                  - generic [ref=e120]: "push(val) { this.items.push(val); }"
+                - generic [ref=e121]:
+                  - generic [ref=e122]: "4"
+                  - generic [ref=e123]: "pop() { return this.items.pop(); }"
+                - generic [ref=e124]:
+                  - generic [ref=e125]: "5"
+                  - generic [ref=e126]: "}"
+                - generic [ref=e127]:
+                  - generic [ref=e128]: "6"
+                  - generic [ref=e129]: // Push all values, then pop to show LIFO
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - paragraph [ref=e141]: Complexity
+                - generic [ref=e142]:
+                  - paragraph [ref=e143]: Time
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: All cases
+                    - generic [ref=e147]: O(n)
+                - generic [ref=e148]:
+                  - paragraph [ref=e149]: Space
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: Space
+                    - generic [ref=e152]: O(n)
+                - paragraph [ref=e153]: Each push and pop is O(1); the full demo processes all n elements.
+              - generic [ref=e154]:
+                - paragraph [ref=e155]: Variables
+                - generic [ref=e195]:
+                  - generic [ref=e196]: stack
+                  - generic [ref=e197]: "[]"
+        - complementary [ref=e163]:
+          - generic [ref=e164]:
+            - heading "NeetCode Problems" [level=2] [ref=e165]
+            - generic [ref=e166]:
+              - heading "Beginner" [level=3] [ref=e167]
+              - list [ref=e168]:
+                - listitem [ref=e169]:
+                  - link "Baseball Game" [ref=e170] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/baseball-game
+                - listitem [ref=e171]:
+                  - link "Valid Parentheses" [ref=e172] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/validate-parentheses
+                - listitem [ref=e173]:
+                  - link "Min Stack" [ref=e174] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/minimum-stack
+                - listitem [ref=e175]:
+                  - link "Implement Queue using Stacks" [ref=e176] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/implement-queue-using-stacks
+                - listitem [ref=e177]:
+                  - link "Evaluate Reverse Polish Notation" [ref=e178] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/evaluate-reverse-polish-notation
+            - generic [ref=e179]:
+              - heading "Advanced" [level=3] [ref=e180]
+              - list [ref=e181]:
+                - listitem [ref=e182]:
+                  - link "Daily Temperatures" [ref=e183] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/daily-temperatures
+                - listitem [ref=e184]:
+                  - link "Online Stock Span" [ref=e185] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/online-stock-span
+                - listitem [ref=e186]:
+                  - link "Car Fleet" [ref=e187] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/car-fleet
+                - listitem [ref=e188]:
+                  - link "Largest Rectangle in Histogram" [ref=e189] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/largest-rectangle-in-histogram
+                - listitem [ref=e190]:
+                  - link "Sliding Window Maximum" [ref=e191] [cursor=pointer]:
+                    - /url: https://neetcode.io/problems/sliding-window-maximum
