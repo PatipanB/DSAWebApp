@@ -18,11 +18,11 @@ export function parseTree(values: (number | null)[]): ParsedTree {
 
   for (let i = 0; i < values.length; i++) {
     const parentId = ids[i];
-    if (parentId === null) continue;
+    if (parentId == null) continue;
     const leftIdx = 2 * i + 1;
     const rightIdx = 2 * i + 2;
-    nodes[parentId].leftId = leftIdx < ids.length ? ids[leftIdx] ?? null : null;
-    nodes[parentId].rightId = rightIdx < ids.length ? ids[rightIdx] ?? null : null;
+    nodes[parentId]!.leftId = leftIdx < ids.length ? ids[leftIdx] ?? null : null;
+    nodes[parentId]!.rightId = rightIdx < ids.length ? ids[rightIdx] ?? null : null;
   }
 
   return { nodes, rootId: ids[0] ?? null };
