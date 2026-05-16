@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`singlyTraverse > trace > trace matches snapshot for [1,2,3,4] 1`] = `
+"algorithmId: singly-traverse
+steps: 5
+finalResult: [1,2,3,4]
+
+step 0: line=1 narration="Initialize curr to head (value = 1)."
+  vars: curr="1"
+  nodes: {"n0":{"id":"n0","value":1,"nextId":"n1"},"n1":{"id":"n1","value":2,"nextId":"n2"},"n2":{"id":"n2","value":3,"nextId":"n3"},"n3":{"id":"n3","value":4,"nextId":null}}
+  headId: n0
+  tailId: n3
+  pointers: [[object Object]]
+  doubly: false
+step 1: line=4 narration="Move curr to next node (value = 2)."
+  vars: curr="2"
+  nodes: {"n0":{"id":"n0","value":1,"nextId":"n1"},"n1":{"id":"n1","value":2,"nextId":"n2"},"n2":{"id":"n2","value":3,"nextId":"n3"},"n3":{"id":"n3","value":4,"nextId":null}}
+  headId: n0
+  tailId: n3
+  pointers: [[object Object]]
+  doubly: false
+step 2: line=4 narration="Move curr to next node (value = 3)."
+  vars: curr="3"
+  nodes: {"n0":{"id":"n0","value":1,"nextId":"n1"},"n1":{"id":"n1","value":2,"nextId":"n2"},"n2":{"id":"n2","value":3,"nextId":"n3"},"n3":{"id":"n3","value":4,"nextId":null}}
+  headId: n0
+  tailId: n3
+  pointers: [[object Object]]
+  doubly: false
+step 3: line=4 narration="Move curr to next node (value = 4)."
+  vars: curr="4"
+  nodes: {"n0":{"id":"n0","value":1,"nextId":"n1"},"n1":{"id":"n1","value":2,"nextId":"n2"},"n2":{"id":"n2","value":3,"nextId":"n3"},"n3":{"id":"n3","value":4,"nextId":null}}
+  headId: n0
+  tailId: n3
+  pointers: [[object Object]]
+  doubly: false
+step 4: line=2 narration="curr is null — traversal complete."
+  vars: curr="null"
+  nodes: {"n0":{"id":"n0","value":1,"nextId":"n1"},"n1":{"id":"n1","value":2,"nextId":"n2"},"n2":{"id":"n2","value":3,"nextId":"n3"},"n3":{"id":"n3","value":4,"nextId":null}}
+  headId: n0
+  tailId: n3
+  pointers: [[object Object]]
+  doubly: false"
+`;
