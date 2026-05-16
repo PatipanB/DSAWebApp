@@ -70,3 +70,27 @@ export interface LinkedListSnapshot {
   pointers: { name: string; nodeId: string | null; color: 'cyan' | 'amber' | 'rose' }[];
   doubly: boolean;
 }
+
+export interface TreeNode {
+  id: string;
+  value: number;
+  leftId: string | null;
+  rightId: string | null;
+}
+
+export interface TreeSnapshot {
+  nodes: Record<string, TreeNode>;
+  rootId: string | null;
+  current: string | null;
+  visited: string[];
+  callStack?: string[];
+  queue?: string[];
+}
+
+export interface BSTSnapshot extends TreeSnapshot {
+  comparingWith?: string;
+  comparingValue?: number;
+  inserted?: string;
+  deletedNode?: string;
+  replacementNode?: string;
+}

@@ -122,3 +122,39 @@ export interface DoublyTraverseInput {
 export const DEFAULT_DOUBLY_TRAVERSE_INPUT: DoublyTraverseInput = {
   values: [1, 2, 3, 4],
 };
+
+export interface TreeTraversalInput {
+  values: (number | null)[];
+}
+
+export const DEFAULT_TREE_TRAVERSAL_INPUT: TreeTraversalInput = {
+  values: [1, 2, 3, 4, 5, null, 6],
+};
+
+export interface BSTInsertInput {
+  values: number[];
+}
+
+export const DEFAULT_BST_INSERT_INPUT: BSTInsertInput = {
+  values: [5, 3, 7, 1, 4, 6, 8],
+};
+
+export interface BSTSearchInput {
+  treeValues: number[];
+  target: number;
+}
+
+export const DEFAULT_BST_SEARCH_INPUT: BSTSearchInput = {
+  treeValues: [5, 3, 7, 1, 4, 6, 8],
+  target: 4,
+};
+
+export interface BSTDeleteInput {
+  treeValues: number[];
+  target: number;
+}
+
+export const DEFAULT_BST_DELETE_INPUT: BSTDeleteInput = {
+  treeValues: [5, 3, 7, 1, 4, 6, 8],
+  target: 3,
+};
