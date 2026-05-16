@@ -98,3 +98,27 @@ export interface DynamicWindowInput {
 export const DEFAULT_DYNAMIC_WINDOW_INPUT: DynamicWindowInput = {
   s: 'abcabcbb',
 };
+
+export interface SinglyTraverseInput {
+  values: number[];
+}
+
+export const DEFAULT_SINGLY_TRAVERSE_INPUT: SinglyTraverseInput = {
+  values: [1, 2, 3, 4],
+};
+
+export interface SinglyInsertDeleteInput {
+  values: number[];
+}
+
+export const DEFAULT_SINGLY_INSERT_DELETE_INPUT: SinglyInsertDeleteInput = {
+  values: [1, 2, 3, 4],
+};
+
+export interface DoublyTraverseInput {
+  values: number[];
+}
+
+export const DEFAULT_DOUBLY_TRAVERSE_INPUT: DoublyTraverseInput = {
+  values: [1, 2, 3, 4],
+};

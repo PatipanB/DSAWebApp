@@ -55,3 +55,18 @@ export interface StringWindowSnapshot {
   currentLen: number;
   phase: 'init' | 'shrink' | 'expand' | 'done';
 }
+
+export interface LinkedNode {
+  id: string;
+  value: number;
+  nextId: string | null;
+  prevId?: string | null;
+}
+
+export interface LinkedListSnapshot {
+  nodes: Record<string, LinkedNode>;
+  headId: string | null;
+  tailId?: string | null;
+  pointers: { name: string; nodeId: string | null; color: 'cyan' | 'amber' | 'rose' }[];
+  doubly: boolean;
+}
