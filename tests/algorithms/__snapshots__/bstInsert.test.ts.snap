@@ -1,0 +1,144 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bstInsert > trace matches snapshot 1`] = `
+"algorithmId: bst-insert
+steps: 17
+finalResult: [1,3,4,5,6,7,8]
+
+step 0: line=2 narration="Insert 5 as root"
+  vars: inserting=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"}}
+  rootId: n0
+  current: n0
+  visited: []
+  inserted: n0
+  comparingValue: 5
+step 1: line=3 narration="Compare 3 < 5 — go left"
+  vars: inserting=3, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 3
+step 2: line=2 narration="Insert 3 as left child of 5"
+  vars: inserting=3, parent=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"}}
+  rootId: n0
+  current: n1
+  visited: []
+  inserted: n1
+  comparingValue: 3
+step 3: line=3 narration="Compare 7 > 5 — go right"
+  vars: inserting=7, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 7
+step 4: line=2 narration="Insert 7 as right child of 5"
+  vars: inserting=7, parent=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"}}
+  rootId: n0
+  current: n2
+  visited: []
+  inserted: n2
+  comparingValue: 7
+step 5: line=3 narration="Compare 1 < 5 — go left"
+  vars: inserting=1, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 1
+step 6: line=3 narration="Compare 1 < 3 — go left"
+  vars: inserting=1, comparing=3
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n1
+  visited: []
+  comparingWith: n1
+  comparingValue: 1
+step 7: line=2 narration="Insert 1 as left child of 3"
+  vars: inserting=1, parent=3
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n3
+  visited: []
+  inserted: n3
+  comparingValue: 1
+step 8: line=3 narration="Compare 4 < 5 — go left"
+  vars: inserting=4, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 4
+step 9: line=3 narration="Compare 4 > 3 — go right"
+  vars: inserting=4, comparing=3
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n1
+  visited: []
+  comparingWith: n1
+  comparingValue: 4
+step 10: line=2 narration="Insert 4 as right child of 3"
+  vars: inserting=4, parent=3
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n4
+  visited: []
+  inserted: n4
+  comparingValue: 4
+step 11: line=3 narration="Compare 6 > 5 — go right"
+  vars: inserting=6, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 6
+step 12: line=3 narration="Compare 6 < 7 — go left"
+  vars: inserting=6, comparing=7
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n2
+  visited: []
+  comparingWith: n2
+  comparingValue: 6
+step 13: line=2 narration="Insert 6 as left child of 7"
+  vars: inserting=6, parent=7
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n5
+  visited: []
+  inserted: n5
+  comparingValue: 6
+step 14: line=3 narration="Compare 8 > 5 — go right"
+  vars: inserting=8, comparing=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 8
+step 15: line=3 narration="Compare 8 > 7 — go right"
+  vars: inserting=8, comparing=7
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n2
+  visited: []
+  comparingWith: n2
+  comparingValue: 8
+step 16: line=2 narration="Insert 8 as right child of 7"
+  vars: inserting=8, parent=7
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n6
+  visited: []
+  inserted: n6
+  comparingValue: 8"
+`;

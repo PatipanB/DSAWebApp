@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bstSearch > trace matches snapshot 1`] = `
+"algorithmId: bst-search
+steps: 3
+finalResult: true
+
+step 0: line=4 narration="4 < 5 — go left"
+  vars: target=4, current=5
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  comparingWith: n0
+  comparingValue: 4
+step 1: line=4 narration="4 > 3 — go right"
+  vars: target=4, current=3
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n1
+  visited: []
+  comparingWith: n1
+  comparingValue: 4
+step 2: line=3 narration="Found 4 at node — search successful"
+  vars: target=4, current=4, found=true
+  nodes: {"n0":{"id":"n0","value":5,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":3,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":7,"leftId":"n5","rightId":"n6"},"n3":{"id":"n3","value":1,"leftId":null,"rightId":null},"n4":{"id":"n4","value":4,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null},"n6":{"id":"n6","value":8,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n4
+  visited: [n4]
+  comparingWith: n4
+  comparingValue: 4"
+`;
