@@ -1,0 +1,92 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`postorder > trace matches snapshot 1`] = `
+"algorithmId: postorder
+steps: 12
+finalResult: [4,5,2,6,3,1]
+
+step 0: line=1 narration="Enter postorder(1)"
+  vars: current=1, depth=1
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: []
+  callStack: [postorder(1)]
+step 1: line=1 narration="Enter postorder(2)"
+  vars: current=2, depth=2
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n1
+  visited: []
+  callStack: [postorder(1),postorder(2)]
+step 2: line=1 narration="Enter postorder(4)"
+  vars: current=4, depth=3
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n3
+  visited: []
+  callStack: [postorder(1),postorder(2),postorder(4)]
+step 3: line=5 narration="Visit 4 — both children done, add to output"
+  vars: current=4, visitedCount=1
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n3
+  visited: [n3]
+  callStack: [postorder(1),postorder(2)]
+step 4: line=1 narration="Enter postorder(5)"
+  vars: current=5, depth=3
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n4
+  visited: [n3]
+  callStack: [postorder(1),postorder(2),postorder(5)]
+step 5: line=5 narration="Visit 5 — both children done, add to output"
+  vars: current=5, visitedCount=2
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n4
+  visited: [n3,n4]
+  callStack: [postorder(1),postorder(2)]
+step 6: line=5 narration="Visit 2 — both children done, add to output"
+  vars: current=2, visitedCount=3
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n1
+  visited: [n3,n4,n1]
+  callStack: [postorder(1)]
+step 7: line=1 narration="Enter postorder(3)"
+  vars: current=3, depth=2
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n2
+  visited: [n3,n4,n1]
+  callStack: [postorder(1),postorder(3)]
+step 8: line=1 narration="Enter postorder(6)"
+  vars: current=6, depth=3
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n5
+  visited: [n3,n4,n1]
+  callStack: [postorder(1),postorder(3),postorder(6)]
+step 9: line=5 narration="Visit 6 — both children done, add to output"
+  vars: current=6, visitedCount=4
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n5
+  visited: [n3,n4,n1,n5]
+  callStack: [postorder(1),postorder(3)]
+step 10: line=5 narration="Visit 3 — both children done, add to output"
+  vars: current=3, visitedCount=5
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n2
+  visited: [n3,n4,n1,n5,n2]
+  callStack: [postorder(1)]
+step 11: line=5 narration="Visit 1 — both children done, add to output"
+  vars: current=1, visitedCount=6
+  nodes: {"n0":{"id":"n0","value":1,"leftId":"n1","rightId":"n2"},"n1":{"id":"n1","value":2,"leftId":"n3","rightId":"n4"},"n2":{"id":"n2","value":3,"leftId":null,"rightId":"n5"},"n3":{"id":"n3","value":4,"leftId":null,"rightId":null},"n4":{"id":"n4","value":5,"leftId":null,"rightId":null},"n5":{"id":"n5","value":6,"leftId":null,"rightId":null}}
+  rootId: n0
+  current: n0
+  visited: [n3,n4,n1,n5,n2,n0]
+  callStack: []"
+`;
