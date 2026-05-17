@@ -288,4 +288,16 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
       hint: 'Monotonic deque — front is window max, stale front is evicted when out of window.',
     },
   ],
+  graph: [
+    { title: 'Number of Islands', slug: 'number-of-islands', difficulty: 'beginner', hint: 'Grid BFS/DFS on connected components — defaults exactly fit.' },
+    { title: 'Max Area of Island', slug: 'max-area-of-island', difficulty: 'beginner', hint: 'Same DFS with a size counter.' },
+    { title: 'Clone Graph', slug: 'clone-graph', difficulty: 'beginner', hint: 'Adjacency-list BFS with a "visited → cloned" map shown.' },
+    { title: 'Flood Fill', slug: 'flood-fill', difficulty: 'beginner', hint: 'Grid BFS/DFS recoloring cells.' },
+    { title: 'Rotting Oranges', slug: 'rotting-oranges', difficulty: 'beginner', hint: 'Multi-source BFS — frontier expands from multiple cells simultaneously.' },
+    { title: 'Pacific Atlantic Water Flow', slug: 'pacific-atlantic-water-flow', difficulty: 'advanced', hint: 'Two BFS passes from opposite borders; intersection highlighted.' },
+    { title: 'Course Schedule', slug: 'course-schedule', difficulty: 'advanced', hint: 'Topological sort with in-degree counter (extension topic).' },
+    { title: 'Word Ladder', slug: 'word-ladder', difficulty: 'advanced', hint: 'Adjacency BFS where edges connect strings differing by one letter.' },
+    { title: 'Network Delay Time', slug: 'network-delay-time', difficulty: 'advanced', hint: 'Dijkstra (weighted) — extension; the adjacency visualizer can show distance labels.' },
+    { title: 'Alien Dictionary', slug: 'alien-dictionary', difficulty: 'advanced', hint: 'Topological sort over inferred character edges.' },
+  ],
 };

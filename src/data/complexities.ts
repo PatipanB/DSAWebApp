@@ -96,4 +96,24 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(h)',
     notes: 'Two-children deletion finds the inorder successor in O(h) then removes it in O(h).',
   },
+  'bfs-grid': {
+    time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
+    space: 'O(V)',
+    notes: 'V = rows×cols cells. Queue holds frontier cells — at most O(V) in the worst case.',
+  },
+  'dfs-grid': {
+    time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
+    space: 'O(V)',
+    notes: 'Stack depth = longest DFS path, up to O(V) for a maze-like grid.',
+  },
+  'bfs-adjacency': {
+    time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
+    space: 'O(V)',
+    notes: 'V = nodes, E = edges. Each node enqueued once; each edge examined once.',
+  },
+  'dfs-adjacency': {
+    time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
+    space: 'O(V)',
+    notes: 'Stack depth = longest DFS path, up to O(V) in a path graph.',
+  },
 };

@@ -94,3 +94,34 @@ export interface BSTSnapshot extends TreeSnapshot {
   deletedNode?: string;
   replacementNode?: string;
 }
+
+export type GridCell = 'open' | 'wall' | 'start' | 'end' | 'visited' | 'frontier' | 'path' | 'current';
+
+export interface GridSnapshot {
+  rows: number;
+  cols: number;
+  cells: GridCell[][];
+  current?: [number, number];
+}
+
+export interface GraphNode {
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+}
+
+export interface GraphEdge {
+  from: string;
+  to: string;
+}
+
+export interface AdjacencySnapshot {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  startId: string;
+  visited: string[];
+  frontier: string[];
+  current: string | null;
+  edgeStates: Record<string, 'idle' | 'traversed' | 'tree'>;
+}

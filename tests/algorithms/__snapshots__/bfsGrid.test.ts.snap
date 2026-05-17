@@ -1,0 +1,338 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bfsGrid > trace > matches snapshot for DEFAULT_GRID_INPUT 1`] = `
+"algorithmId: bfs-grid
+steps: 55
+finalResult: true
+
+step 0: line=6 narration="Dequeue (0,0) — start cell, add neighbors to frontier"
+  vars: current="[0,0]", frontier="", visited=1
+  rows: 8
+  cols: 8
+  cells: [current,open,open,open,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,0]
+step 1: line=6 narration="Dequeue (1,0) — mark visited, explore neighbors"
+  vars: current="[1,0]", frontier="[0,1]", visited=3
+  rows: 8
+  cols: 8
+  cells: [start,frontier,open,open,open,open,open,open,current,open,open,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [1,0]
+step 2: line=6 narration="Dequeue (0,1) — mark visited, explore neighbors"
+  vars: current="[0,1]", frontier="[2,0],[1,1]", visited=5
+  rows: 8
+  cols: 8
+  cells: [start,current,open,open,open,open,open,open,visited,frontier,open,wall,open,open,open,open,frontier,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,1]
+step 3: line=6 narration="Dequeue (2,0) — mark visited, explore neighbors"
+  vars: current="[2,0]", frontier="[1,1],[0,2]", visited=6
+  rows: 8
+  cols: 8
+  cells: [start,visited,frontier,open,open,open,open,open,visited,frontier,open,wall,open,open,open,open,current,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,0]
+step 4: line=6 narration="Dequeue (1,1) — mark visited, explore neighbors"
+  vars: current="[1,1]", frontier="[0,2],[3,0],[2,1]", visited=8
+  rows: 8
+  cols: 8
+  cells: [start,visited,frontier,open,open,open,open,open,visited,current,open,wall,open,open,open,open,visited,frontier,open,wall,open,open,open,open,frontier,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [1,1]
+step 5: line=6 narration="Dequeue (0,2) — mark visited, explore neighbors"
+  vars: current="[0,2]", frontier="[3,0],[2,1],[1,2]", visited=9
+  rows: 8
+  cols: 8
+  cells: [start,visited,current,open,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,frontier,open,wall,open,open,open,open,frontier,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,2]
+step 6: line=6 narration="Dequeue (3,0) — mark visited, explore neighbors"
+  vars: current="[3,0]", frontier="[2,1],[1,2],[0,3]", visited=10
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,frontier,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,frontier,open,wall,open,open,open,open,current,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [3,0]
+step 7: line=6 narration="Dequeue (2,1) — mark visited, explore neighbors"
+  vars: current="[2,1]", frontier="[1,2],[0,3],[4,0],[3,1]", visited=12
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,frontier,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,current,open,wall,open,open,open,open,visited,frontier,open,wall,wall,wall,open,open,frontier,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,1]
+step 8: line=6 narration="Dequeue (1,2) — mark visited, explore neighbors"
+  vars: current="[1,2]", frontier="[0,3],[4,0],[3,1],[2,2]", visited=13
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,frontier,open,open,open,open,visited,visited,current,wall,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,frontier,open,wall,wall,wall,open,open,frontier,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [1,2]
+step 9: line=6 narration="Dequeue (0,3) — mark visited, explore neighbors"
+  vars: current="[0,3]", frontier="[4,0],[3,1],[2,2]", visited=13
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,current,open,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,frontier,open,wall,wall,wall,open,open,frontier,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,3]
+step 10: line=6 narration="Dequeue (4,0) — mark visited, explore neighbors"
+  vars: current="[4,0]", frontier="[3,1],[2,2],[0,4]", visited=14
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,frontier,open,wall,wall,wall,open,open,current,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [4,0]
+step 11: line=6 narration="Dequeue (3,1) — mark visited, explore neighbors"
+  vars: current="[3,1]", frontier="[2,2],[0,4],[5,0],[4,1]", visited=16
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,open,open,open,open,visited,current,open,wall,wall,wall,open,open,visited,frontier,open,open,wall,open,open,open,frontier,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [3,1]
+step 12: line=6 narration="Dequeue (2,2) — mark visited, explore neighbors"
+  vars: current="[2,2]", frontier="[0,4],[5,0],[4,1],[3,2]", visited=17
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,current,wall,open,open,open,open,visited,visited,frontier,wall,wall,wall,open,open,visited,frontier,open,open,wall,open,open,open,frontier,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,2]
+step 13: line=6 narration="Dequeue (0,4) — mark visited, explore neighbors"
+  vars: current="[0,4]", frontier="[5,0],[4,1],[3,2]", visited=17
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,current,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,wall,wall,open,open,visited,frontier,open,open,wall,open,open,open,frontier,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,4]
+step 14: line=6 narration="Dequeue (5,0) — mark visited, explore neighbors"
+  vars: current="[5,0]", frontier="[4,1],[3,2],[1,4],[0,5]", visited=19
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,wall,wall,open,open,visited,frontier,open,open,wall,open,open,open,current,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [5,0]
+step 15: line=6 narration="Dequeue (4,1) — mark visited, explore neighbors"
+  vars: current="[4,1]", frontier="[3,2],[1,4],[0,5],[6,0],[5,1]", visited=21
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,frontier,wall,wall,wall,open,open,visited,current,open,open,wall,open,open,open,visited,frontier,wall,wall,wall,open,open,open,frontier,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [4,1]
+step 16: line=6 narration="Dequeue (3,2) — mark visited, explore neighbors"
+  vars: current="[3,2]", frontier="[1,4],[0,5],[6,0],[5,1],[4,2]", visited=22
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,current,wall,wall,wall,open,open,visited,visited,frontier,open,wall,open,open,open,visited,frontier,wall,wall,wall,open,open,open,frontier,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [3,2]
+step 17: line=6 narration="Dequeue (1,4) — mark visited, explore neighbors"
+  vars: current="[1,4]", frontier="[0,5],[6,0],[5,1],[4,2]", visited=22
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,wall,current,open,open,open,visited,visited,visited,wall,open,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,frontier,open,wall,open,open,open,visited,frontier,wall,wall,wall,open,open,open,frontier,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [1,4]
+step 18: line=6 narration="Dequeue (0,5) — mark visited, explore neighbors"
+  vars: current="[0,5]", frontier="[6,0],[5,1],[4,2],[2,4],[1,5]", visited=24
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,current,open,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,frontier,open,wall,open,open,open,visited,frontier,wall,wall,wall,open,open,open,frontier,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,5]
+step 19: line=6 narration="Dequeue (6,0) — mark visited, explore neighbors"
+  vars: current="[6,0]", frontier="[5,1],[4,2],[2,4],[1,5],[0,6]", visited=25
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,frontier,open,wall,open,open,open,visited,frontier,wall,wall,wall,open,open,open,current,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [6,0]
+step 20: line=6 narration="Dequeue (5,1) — mark visited, explore neighbors"
+  vars: current="[5,1]", frontier="[4,2],[2,4],[1,5],[0,6],[7,0],[6,1]", visited=27
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,frontier,open,wall,open,open,open,visited,current,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,frontier,open,open,open,open,open,open,end]
+  current: [5,1]
+step 21: line=6 narration="Dequeue (4,2) — mark visited, explore neighbors"
+  vars: current="[4,2]", frontier="[2,4],[1,5],[0,6],[7,0],[6,1]", visited=27
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,frontier,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,current,open,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,frontier,open,open,open,open,open,open,end]
+  current: [4,2]
+step 22: line=6 narration="Dequeue (2,4) — mark visited, explore neighbors"
+  vars: current="[2,4]", frontier="[1,5],[0,6],[7,0],[6,1],[4,3]", visited=28
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,current,open,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,frontier,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,frontier,open,open,open,open,open,open,end]
+  current: [2,4]
+step 23: line=6 narration="Dequeue (1,5) — mark visited, explore neighbors"
+  vars: current="[1,5]", frontier="[0,6],[7,0],[6,1],[4,3],[2,5]", visited=29
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,wall,visited,current,open,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,frontier,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,frontier,open,open,open,open,open,open,end]
+  current: [1,5]
+step 24: line=6 narration="Dequeue (0,6) — mark visited, explore neighbors"
+  vars: current="[0,6]", frontier="[7,0],[6,1],[4,3],[2,5],[1,6]", visited=30
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,current,open,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,frontier,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,frontier,open,open,open,open,open,open,end]
+  current: [0,6]
+step 25: line=6 narration="Dequeue (7,0) — mark visited, explore neighbors"
+  vars: current="[7,0]", frontier="[6,1],[4,3],[2,5],[1,6],[0,7]", visited=31
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,frontier,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,frontier,open,open,open,open,open,open,current,open,open,open,open,open,open,end]
+  current: [7,0]
+step 26: line=6 narration="Dequeue (6,1) — mark visited, explore neighbors"
+  vars: current="[6,1]", frontier="[4,3],[2,5],[1,6],[0,7],[7,1]", visited=32
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,frontier,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,current,open,open,open,open,open,open,visited,frontier,open,open,open,open,open,end]
+  current: [6,1]
+step 27: line=6 narration="Dequeue (4,3) — mark visited, explore neighbors"
+  vars: current="[4,3]", frontier="[2,5],[1,6],[0,7],[7,1],[6,2]", visited=33
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,visited,frontier,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,current,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,frontier,open,open,open,open,open,visited,frontier,open,open,open,open,open,end]
+  current: [4,3]
+step 28: line=6 narration="Dequeue (2,5) — mark visited, explore neighbors"
+  vars: current="[2,5]", frontier="[1,6],[0,7],[7,1],[6,2]", visited=33
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,visited,current,open,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,frontier,open,open,open,open,open,visited,frontier,open,open,open,open,open,end]
+  current: [2,5]
+step 29: line=6 narration="Dequeue (1,6) — mark visited, explore neighbors"
+  vars: current="[1,6]", frontier="[0,7],[7,1],[6,2],[2,6]", visited=34
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,current,open,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,frontier,open,open,open,open,open,visited,frontier,open,open,open,open,open,end]
+  current: [1,6]
+step 30: line=6 narration="Dequeue (0,7) — mark visited, explore neighbors"
+  vars: current="[0,7]", frontier="[7,1],[6,2],[2,6],[1,7]", visited=35
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,current,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,frontier,open,open,open,open,open,visited,frontier,open,open,open,open,open,end]
+  current: [0,7]
+step 31: line=6 narration="Dequeue (7,1) — mark visited, explore neighbors"
+  vars: current="[7,1]", frontier="[6,2],[2,6],[1,7]", visited=35
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,frontier,open,open,open,open,open,visited,current,open,open,open,open,open,end]
+  current: [7,1]
+step 32: line=6 narration="Dequeue (6,2) — mark visited, explore neighbors"
+  vars: current="[6,2]", frontier="[2,6],[1,7],[7,2]", visited=36
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,frontier,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,current,open,open,open,open,open,visited,visited,frontier,open,open,open,open,end]
+  current: [6,2]
+step 33: line=6 narration="Dequeue (2,6) — mark visited, explore neighbors"
+  vars: current="[2,6]", frontier="[1,7],[7,2],[6,3]", visited=37
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,visited,visited,current,open,visited,visited,visited,wall,wall,wall,open,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,frontier,open,open,open,open,visited,visited,frontier,open,open,open,open,end]
+  current: [2,6]
+step 34: line=6 narration="Dequeue (1,7) — mark visited, explore neighbors"
+  vars: current="[1,7]", frontier="[7,2],[6,3],[3,6],[2,7]", visited=39
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,current,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,wall,wall,frontier,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,frontier,open,open,open,open,visited,visited,frontier,open,open,open,open,end]
+  current: [1,7]
+step 35: line=6 narration="Dequeue (7,2) — mark visited, explore neighbors"
+  vars: current="[7,2]", frontier="[6,3],[3,6],[2,7]", visited=39
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,wall,wall,frontier,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,frontier,open,open,open,open,visited,visited,current,open,open,open,open,end]
+  current: [7,2]
+step 36: line=6 narration="Dequeue (6,3) — mark visited, explore neighbors"
+  vars: current="[6,3]", frontier="[3,6],[2,7],[7,3]", visited=40
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,wall,wall,frontier,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,current,open,open,open,open,visited,visited,visited,frontier,open,open,open,end]
+  current: [6,3]
+step 37: line=6 narration="Dequeue (3,6) — mark visited, explore neighbors"
+  vars: current="[3,6]", frontier="[2,7],[7,3],[6,4]", visited=41
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,frontier,visited,visited,visited,wall,wall,wall,current,open,visited,visited,visited,visited,wall,open,open,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,visited,frontier,open,open,open,visited,visited,visited,frontier,open,open,open,end]
+  current: [3,6]
+step 38: line=6 narration="Dequeue (2,7) — mark visited, explore neighbors"
+  vars: current="[2,7]", frontier="[7,3],[6,4],[4,6],[3,7]", visited=43
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,current,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,open,frontier,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,visited,frontier,open,open,open,visited,visited,visited,frontier,open,open,open,end]
+  current: [2,7]
+step 39: line=6 narration="Dequeue (7,3) — mark visited, explore neighbors"
+  vars: current="[7,3]", frontier="[6,4],[4,6],[3,7]", visited=43
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,open,frontier,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,visited,frontier,open,open,open,visited,visited,visited,current,open,open,open,end]
+  current: [7,3]
+step 40: line=6 narration="Dequeue (6,4) — mark visited, explore neighbors"
+  vars: current="[6,4]", frontier="[4,6],[3,7],[7,4]", visited=44
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,open,frontier,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,visited,current,open,open,open,visited,visited,visited,visited,frontier,open,open,end]
+  current: [6,4]
+step 41: line=6 narration="Dequeue (4,6) — mark visited, explore neighbors"
+  vars: current="[4,6]", frontier="[3,7],[7,4],[6,5]", visited=45
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,open,current,open,visited,visited,wall,wall,wall,open,open,open,visited,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,visited,frontier,open,open,end]
+  current: [4,6]
+step 42: line=6 narration="Dequeue (3,7) — mark visited, explore neighbors"
+  vars: current="[3,7]", frontier="[7,4],[6,5],[5,6],[4,5],[4,7]", visited=48
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,current,visited,visited,visited,visited,wall,frontier,visited,frontier,visited,visited,wall,wall,wall,open,frontier,open,visited,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,visited,frontier,open,open,end]
+  current: [3,7]
+step 43: line=6 narration="Dequeue (7,4) — mark visited, explore neighbors"
+  vars: current="[7,4]", frontier="[6,5],[5,6],[4,5],[4,7]", visited=48
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,frontier,visited,frontier,visited,visited,wall,wall,wall,open,frontier,open,visited,visited,visited,visited,visited,frontier,open,open,visited,visited,visited,visited,current,open,open,end]
+  current: [7,4]
+step 44: line=6 narration="Dequeue (6,5) — mark visited, explore neighbors"
+  vars: current="[6,5]", frontier="[5,6],[4,5],[4,7],[7,5]", visited=49
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,frontier,visited,frontier,visited,visited,wall,wall,wall,open,frontier,open,visited,visited,visited,visited,visited,current,open,open,visited,visited,visited,visited,visited,frontier,open,end]
+  current: [6,5]
+step 45: line=6 narration="Dequeue (5,6) — mark visited, explore neighbors"
+  vars: current="[5,6]", frontier="[4,5],[4,7],[7,5],[5,5],[6,6]", visited=51
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,frontier,visited,frontier,visited,visited,wall,wall,wall,frontier,current,open,visited,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,visited,visited,frontier,open,end]
+  current: [5,6]
+step 46: line=6 narration="Dequeue (4,5) — mark visited, explore neighbors"
+  vars: current="[4,5]", frontier="[4,7],[7,5],[5,5],[6,6],[5,7]", visited=52
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,current,visited,frontier,visited,visited,wall,wall,wall,frontier,visited,frontier,visited,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,visited,visited,frontier,open,end]
+  current: [4,5]
+step 47: line=6 narration="Dequeue (4,7) — mark visited, explore neighbors"
+  vars: current="[4,7]", frontier="[7,5],[5,5],[6,6],[5,7]", visited=52
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,current,visited,visited,wall,wall,wall,frontier,visited,frontier,visited,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,visited,visited,frontier,open,end]
+  current: [4,7]
+step 48: line=6 narration="Dequeue (7,5) — mark visited, explore neighbors"
+  vars: current="[7,5]", frontier="[5,5],[6,6],[5,7]", visited=52
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,frontier,visited,frontier,visited,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,visited,visited,current,open,end]
+  current: [7,5]
+step 49: line=6 narration="Dequeue (5,5) — mark visited, explore neighbors"
+  vars: current="[5,5]", frontier="[6,6],[5,7],[7,6]", visited=53
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,current,visited,frontier,visited,visited,visited,visited,visited,visited,frontier,open,visited,visited,visited,visited,visited,visited,frontier,end]
+  current: [5,5]
+step 50: line=6 narration="Dequeue (6,6) — mark visited, explore neighbors"
+  vars: current="[6,6]", frontier="[5,7],[7,6]", visited=53
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,frontier,visited,visited,visited,visited,visited,visited,current,open,visited,visited,visited,visited,visited,visited,frontier,end]
+  current: [6,6]
+step 51: line=6 narration="Dequeue (5,7) — mark visited, explore neighbors"
+  vars: current="[5,7]", frontier="[7,6],[6,7]", visited=54
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,current,visited,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,visited,visited,visited,frontier,end]
+  current: [5,7]
+step 52: line=6 narration="Dequeue (7,6) — mark visited, explore neighbors"
+  vars: current="[7,6]", frontier="[6,7]", visited=54
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,visited,visited,visited,visited,visited,visited,current,end]
+  current: [7,6]
+step 53: line=6 narration="Dequeue (6,7) — mark visited, explore neighbors"
+  vars: current="[6,7]", frontier="[7,7]", visited=55
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,visited,visited,visited,visited,visited,visited,visited,end]
+  current: [6,7]
+step 54: line=6 narration="Dequeue (7,7) — reached the end!"
+  vars: current="[7,7]", frontier="", visited=55
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,wall,wall,wall,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current]
+  current: [7,7]"
+`;

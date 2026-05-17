@@ -1,0 +1,284 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`dfsGrid > trace > matches snapshot for DEFAULT_GRID_INPUT 1`] = `
+"algorithmId: dfs-grid
+steps: 46
+finalResult: true
+
+step 0: line=5 narration="Pop (0,0) — start, push unvisited neighbors"
+  vars: current="[0,0]", stackDepth=0, callStack="", visited=1
+  rows: 8
+  cols: 8
+  cells: [current,open,open,open,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,0]
+step 1: line=5 narration="Pop (0,1) — explore, push neighbors"
+  vars: current="[0,1]", stackDepth=1, callStack="[1,0]", visited=2
+  rows: 8
+  cols: 8
+  cells: [start,current,open,open,open,open,open,open,frontier,open,open,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,1]
+step 2: line=5 narration="Pop (0,2) — explore, push neighbors"
+  vars: current="[0,2]", stackDepth=2, callStack="[1,0], [1,1]", visited=3
+  rows: 8
+  cols: 8
+  cells: [start,visited,current,open,open,open,open,open,frontier,frontier,open,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,2]
+step 3: line=5 narration="Pop (0,3) — explore, push neighbors"
+  vars: current="[0,3]", stackDepth=3, callStack="[1,0], [1,1], [1,2]", visited=4
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,current,open,open,open,open,frontier,frontier,frontier,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,3]
+step 4: line=5 narration="Pop (0,4) — explore, push neighbors"
+  vars: current="[0,4]", stackDepth=3, callStack="[1,0], [1,1], [1,2]", visited=5
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,current,open,open,open,frontier,frontier,frontier,wall,open,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,4]
+step 5: line=5 narration="Pop (0,5) — explore, push neighbors"
+  vars: current="[0,5]", stackDepth=4, callStack="[1,0], [1,1], [1,2], [1,4]", visited=6
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,current,open,open,frontier,frontier,frontier,wall,frontier,open,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,5]
+step 6: line=5 narration="Pop (0,6) — explore, push neighbors"
+  vars: current="[0,6]", stackDepth=5, callStack="[1,0], [1,1], [1,2], [1,4], [1,5]", visited=7
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,current,open,frontier,frontier,frontier,wall,frontier,frontier,open,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,6]
+step 7: line=5 narration="Pop (0,7) — explore, push neighbors"
+  vars: current="[0,7]", stackDepth=6, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6]", visited=8
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,current,frontier,frontier,frontier,wall,frontier,frontier,frontier,open,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [0,7]
+step 8: line=5 narration="Pop (1,7) — explore, push neighbors"
+  vars: current="[1,7]", stackDepth=6, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6]", visited=9
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,current,open,open,open,wall,open,open,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [1,7]
+step 9: line=5 narration="Pop (2,7) — explore, push neighbors"
+  vars: current="[2,7]", stackDepth=6, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6]", visited=10
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,open,open,open,current,open,open,open,wall,wall,wall,open,open,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,7]
+step 10: line=5 narration="Pop (2,6) — explore, push neighbors"
+  vars: current="[2,6]", stackDepth=7, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7]", visited=11
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,open,open,current,visited,open,open,open,wall,wall,wall,open,frontier,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,6]
+step 11: line=5 narration="Pop (2,5) — explore, push neighbors"
+  vars: current="[2,5]", stackDepth=8, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [3,6]", visited=12
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,open,current,visited,visited,open,open,open,wall,wall,wall,frontier,frontier,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,5]
+step 12: line=5 narration="Pop (2,4) — explore, push neighbors"
+  vars: current="[2,4]", stackDepth=8, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [3,6]", visited=13
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,current,visited,visited,visited,open,open,open,wall,wall,wall,frontier,frontier,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [2,4]
+step 13: line=5 narration="Pop (3,6) — explore, push neighbors"
+  vars: current="[3,6]", stackDepth=7, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7]", visited=14
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,current,frontier,open,open,open,open,wall,open,open,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [3,6]
+step 14: line=5 narration="Pop (4,6) — explore, push neighbors"
+  vars: current="[4,6]", stackDepth=7, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7]", visited=15
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,open,current,open,open,open,wall,wall,wall,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [4,6]
+step 15: line=5 narration="Pop (4,7) — explore, push neighbors"
+  vars: current="[4,7]", stackDepth=9, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5]", visited=16
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,current,open,open,wall,wall,wall,open,frontier,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [4,7]
+step 16: line=5 narration="Pop (5,7) — explore, push neighbors"
+  vars: current="[5,7]", stackDepth=9, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5]", visited=17
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,open,frontier,current,open,open,open,open,open,open,open,open,open,open,open,open,open,open,open,end]
+  current: [5,7]
+step 17: line=5 narration="Pop (6,7) — explore, push neighbors"
+  vars: current="[6,7]", stackDepth=9, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5]", visited=18
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,open,frontier,visited,open,open,open,open,open,open,open,current,open,open,open,open,open,open,open,end]
+  current: [6,7]
+step 18: line=5 narration="Pop (6,6) — explore, push neighbors"
+  vars: current="[6,6]", stackDepth=10, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7]", visited=19
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,open,frontier,visited,open,open,open,open,open,open,current,visited,open,open,open,open,open,open,open,end]
+  current: [6,6]
+step 19: line=5 narration="Pop (6,5) — explore, push neighbors"
+  vars: current="[6,5]", stackDepth=11, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6]", visited=20
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,open,frontier,visited,open,open,open,open,open,current,visited,visited,open,open,open,open,open,open,frontier,end]
+  current: [6,5]
+step 20: line=5 narration="Pop (6,4) — explore, push neighbors"
+  vars: current="[6,4]", stackDepth=13, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5]", visited=21
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,frontier,frontier,visited,open,open,open,open,current,visited,visited,visited,open,open,open,open,open,frontier,frontier,end]
+  current: [6,4]
+step 21: line=5 narration="Pop (6,3) — explore, push neighbors"
+  vars: current="[6,3]", stackDepth=14, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4]", visited=22
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,frontier,frontier,visited,open,open,open,current,visited,visited,visited,visited,open,open,open,open,frontier,frontier,frontier,end]
+  current: [6,3]
+step 22: line=5 narration="Pop (6,2) — explore, push neighbors"
+  vars: current="[6,2]", stackDepth=15, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3]", visited=23
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,frontier,frontier,visited,open,open,current,visited,visited,visited,visited,visited,open,open,open,frontier,frontier,frontier,frontier,end]
+  current: [6,2]
+step 23: line=5 narration="Pop (6,1) — explore, push neighbors"
+  vars: current="[6,1]", stackDepth=16, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2]", visited=24
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,open,wall,wall,wall,frontier,frontier,visited,open,current,visited,visited,visited,visited,visited,visited,open,open,frontier,frontier,frontier,frontier,frontier,end]
+  current: [6,1]
+step 24: line=5 narration="Pop (6,0) — explore, push neighbors"
+  vars: current="[6,0]", stackDepth=18, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1]", visited=25
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,open,frontier,wall,wall,wall,frontier,frontier,visited,current,visited,visited,visited,visited,visited,visited,visited,open,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [6,0]
+step 25: line=5 narration="Pop (7,0) — explore, push neighbors"
+  vars: current="[7,0]", stackDepth=19, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [5,0]", visited=26
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,frontier,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [7,0]
+step 26: line=5 narration="Pop (5,0) — explore, push neighbors"
+  vars: current="[5,0]", stackDepth=18, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1]", visited=27
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,open,open,open,open,wall,frontier,visited,visited,current,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [5,0]
+step 27: line=5 narration="Pop (4,0) — explore, push neighbors"
+  vars: current="[4,0]", stackDepth=18, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1]", visited=28
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,open,open,open,wall,wall,wall,visited,frontier,current,open,open,open,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [4,0]
+step 28: line=5 narration="Pop (4,1) — explore, push neighbors"
+  vars: current="[4,1]", stackDepth=19, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0]", visited=29
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,frontier,open,open,wall,wall,wall,visited,frontier,visited,current,open,open,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [4,1]
+step 29: line=5 narration="Pop (4,2) — explore, push neighbors"
+  vars: current="[4,2]", stackDepth=20, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1]", visited=30
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,frontier,frontier,open,wall,wall,wall,visited,frontier,visited,visited,current,open,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [4,2]
+step 30: line=5 narration="Pop (4,3) — explore, push neighbors"
+  vars: current="[4,3]", stackDepth=21, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1], [3,2]", visited=31
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,frontier,frontier,frontier,wall,wall,wall,visited,frontier,visited,visited,visited,current,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [4,3]
+step 31: line=5 narration="Pop (3,2) — explore, push neighbors"
+  vars: current="[3,2]", stackDepth=20, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1]", visited=32
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,open,wall,visited,visited,visited,visited,frontier,frontier,current,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [3,2]
+step 32: line=5 narration="Pop (2,2) — explore, push neighbors"
+  vars: current="[2,2]", stackDepth=20, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1]", visited=33
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,open,current,wall,visited,visited,visited,visited,frontier,frontier,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [2,2]
+step 33: line=5 narration="Pop (2,1) — explore, push neighbors"
+  vars: current="[2,1]", stackDepth=20, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1]", visited=34
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,open,current,visited,wall,visited,visited,visited,visited,frontier,frontier,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [2,1]
+step 34: line=5 narration="Pop (2,0) — explore, push neighbors"
+  vars: current="[2,0]", stackDepth=20, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0], [3,1]", visited=35
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,current,visited,visited,wall,visited,visited,visited,visited,frontier,frontier,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [2,0]
+step 35: line=5 narration="Pop (3,1) — explore, push neighbors"
+  vars: current="[3,1]", stackDepth=19, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1], [3,0]", visited=36
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,frontier,current,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [3,1]
+step 36: line=5 narration="Pop (3,0) — explore, push neighbors"
+  vars: current="[3,0]", stackDepth=18, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1], [7,1]", visited=37
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,current,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,frontier,end]
+  current: [3,0]
+step 37: line=5 narration="Pop (7,1) — explore, push neighbors"
+  vars: current="[7,1]", stackDepth=17, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2], [5,1]", visited=38
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,frontier,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,frontier,frontier,frontier,frontier,end]
+  current: [7,1]
+step 38: line=5 narration="Pop (5,1) — explore, push neighbors"
+  vars: current="[5,1]", stackDepth=16, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3], [7,2]", visited=39
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,current,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,frontier,frontier,end]
+  current: [5,1]
+step 39: line=5 narration="Pop (7,2) — explore, push neighbors"
+  vars: current="[7,2]", stackDepth=15, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4], [7,3]", visited=40
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,frontier,frontier,frontier,end]
+  current: [7,2]
+step 40: line=5 narration="Pop (7,3) — explore, push neighbors"
+  vars: current="[7,3]", stackDepth=14, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5], [7,4]", visited=41
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,frontier,frontier,end]
+  current: [7,3]
+step 41: line=5 narration="Pop (7,4) — explore, push neighbors"
+  vars: current="[7,4]", stackDepth=13, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5], [7,5]", visited=42
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,frontier,end]
+  current: [7,4]
+step 42: line=5 narration="Pop (7,5) — explore, push neighbors"
+  vars: current="[7,5]", stackDepth=12, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6], [5,5]", visited=43
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,frontier,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,frontier,end]
+  current: [7,5]
+step 43: line=5 narration="Pop (5,5) — explore, push neighbors"
+  vars: current="[5,5]", stackDepth=11, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7], [7,6]", visited=44
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,current,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,frontier,end]
+  current: [5,5]
+step 44: line=5 narration="Pop (7,6) — explore, push neighbors"
+  vars: current="[7,6]", stackDepth=10, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5], [7,7]", visited=45
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current,end]
+  current: [7,6]
+step 45: line=5 narration="Pop (7,7) — reached the end!"
+  vars: current="[7,7]", stackDepth=9, callStack="[1,0], [1,1], [1,2], [1,4], [1,5], [1,6], [3,7], [5,6], [4,5]", visited=46
+  rows: 8
+  cols: 8
+  cells: [start,visited,visited,visited,visited,visited,visited,visited,frontier,frontier,frontier,wall,frontier,frontier,frontier,visited,visited,visited,visited,wall,visited,visited,visited,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,wall,frontier,visited,visited,visited,visited,wall,wall,wall,visited,frontier,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,visited,current]
+  current: [7,7]"
+`;

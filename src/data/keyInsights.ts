@@ -37,4 +37,12 @@ export const KEY_INSIGHTS: Partial<Record<AlgorithmId, string>> = {
     'At every node, the BST invariant halves the search space: go left if target < current, right if larger — O(log n) on balanced trees.',
   'bst-delete':
     'Three cases: leaf → remove directly; one child → replace with it; two children → swap with inorder successor (leftmost in right subtree) then delete the successor.',
+  'bfs-grid':
+    'BFS explores the grid in rings — every cell at distance d is visited before any cell at distance d+1. This guarantees the shortest path (fewest steps) when one exists.',
+  'dfs-grid':
+    'DFS plunges as deep as possible before backtracking — it finds A path, not necessarily the shortest. The call stack grows with depth, making recursion depth visible.',
+  'bfs-adjacency':
+    'BFS on an adjacency list visits each node exactly once (level by level). Tree edges form the BFS shortest-path tree; all other examined edges are cross or back edges.',
+  'dfs-adjacency':
+    'DFS on a graph discovers tree edges (first-time visits) and back/cross edges (already-seen neighbors). The call stack mirrors the current DFS path from the start node.',
 };

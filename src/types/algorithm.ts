@@ -1,3 +1,5 @@
+import type { GridCell, GraphNode, GraphEdge } from '@/types/snapshots';
+
 export type AlgorithmId =
   | 'two-pointers'
   | 'sliding-window'
@@ -157,4 +159,64 @@ export interface BSTDeleteInput {
 export const DEFAULT_BST_DELETE_INPUT: BSTDeleteInput = {
   treeValues: [5, 3, 7, 1, 4, 6, 8],
   target: 3,
+};
+
+export interface GridInput {
+  rows: number;
+  cols: number;
+  cells: GridCell[][];
+  start: [number, number];
+  end: [number, number];
+}
+
+export const DEFAULT_GRID_INPUT: GridInput = {
+  rows: 8,
+  cols: 8,
+  start: [0, 0],
+  end: [7, 7],
+  cells: (() => {
+    const grid: GridCell[][] = Array.from({ length: 8 }, () => Array(8).fill('open') as GridCell[]);
+    // mark start/end
+    grid[0]![0] = 'start';
+    grid[7]![7] = 'end';
+    // simple wall pattern (L-shaped blocker in the middle)
+    grid[1]![3] = 'wall';
+    grid[2]![3] = 'wall';
+    grid[3]![3] = 'wall';
+    grid[3]![4] = 'wall';
+    grid[3]![5] = 'wall';
+    grid[5]![2] = 'wall';
+    grid[5]![3] = 'wall';
+    grid[5]![4] = 'wall';
+    grid[4]![4] = 'wall';
+    return grid;
+  })(),
+};
+
+export interface AdjacencyInput {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  startId: string;
+}
+
+export const DEFAULT_ADJACENCY_INPUT: AdjacencyInput = {
+  startId: 'n0',
+  nodes: [
+    { id: 'n0', label: 'A', x: 80,  y: 80  },
+    { id: 'n1', label: 'B', x: 220, y: 60  },
+    { id: 'n2', label: 'C', x: 340, y: 140 },
+    { id: 'n3', label: 'D', x: 80,  y: 220 },
+    { id: 'n4', label: 'E', x: 220, y: 280 },
+    { id: 'n5', label: 'F', x: 340, y: 300 },
+  ],
+  edges: [
+    { from: 'n0', to: 'n1' },
+    { from: 'n0', to: 'n3' },
+    { from: 'n1', to: 'n2' },
+    { from: 'n1', to: 'n4' },
+    { from: 'n2', to: 'n5' },
+    { from: 'n3', to: 'n4' },
+    { from: 'n4', to: 'n5' },
+    { from: 'n2', to: 'n3' },
+  ],
 };

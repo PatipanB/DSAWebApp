@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`dfsAdjacency > trace > matches snapshot for DEFAULT_ADJACENCY_INPUT 1`] = `
+"algorithmId: dfs-adjacency
+steps: 6
+finalResult: ["A","D","C","F","E","B"]
+
+step 0: line=6 narration="Enter A — push neighbors onto stack"
+  vars: current="A", callStack="B, D", visited=3
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3]
+  frontier: [n1,n3]
+  current: n0
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"idle","n2-n1":"idle","n1-n4":"idle","n4-n1":"idle","n2-n5":"idle","n5-n2":"idle","n3-n4":"idle","n4-n3":"idle","n4-n5":"idle","n5-n4":"idle","n2-n3":"idle","n3-n2":"idle"}
+step 1: line=6 narration="Enter D — exploring depth first"
+  vars: current="D", callStack="B, E, C", visited=5
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3,n4,n2]
+  frontier: [n1,n4,n2]
+  current: n3
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"idle","n2-n1":"idle","n1-n4":"idle","n4-n1":"idle","n2-n5":"idle","n5-n2":"idle","n3-n4":"tree","n4-n3":"tree","n4-n5":"idle","n5-n4":"idle","n2-n3":"tree","n3-n2":"tree"}
+step 2: line=6 narration="Enter C — exploring depth first"
+  vars: current="C", callStack="B, E, F", visited=6
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3,n4,n2,n5]
+  frontier: [n1,n4,n5]
+  current: n2
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"traversed","n2-n1":"traversed","n1-n4":"idle","n4-n1":"idle","n2-n5":"tree","n5-n2":"tree","n3-n4":"tree","n4-n3":"tree","n4-n5":"idle","n5-n4":"idle","n2-n3":"tree","n3-n2":"tree"}
+step 3: line=6 narration="Enter F — exploring depth first"
+  vars: current="F", callStack="B, E", visited=6
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3,n4,n2,n5]
+  frontier: [n1,n4]
+  current: n5
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"traversed","n2-n1":"traversed","n1-n4":"idle","n4-n1":"idle","n2-n5":"tree","n5-n2":"tree","n3-n4":"tree","n4-n3":"tree","n4-n5":"traversed","n5-n4":"traversed","n2-n3":"tree","n3-n2":"tree"}
+step 4: line=6 narration="Enter E — exploring depth first"
+  vars: current="E", callStack="B", visited=6
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3,n4,n2,n5]
+  frontier: [n1]
+  current: n4
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"traversed","n2-n1":"traversed","n1-n4":"traversed","n4-n1":"traversed","n2-n5":"tree","n5-n2":"tree","n3-n4":"tree","n4-n3":"tree","n4-n5":"traversed","n5-n4":"traversed","n2-n3":"tree","n3-n2":"tree"}
+step 5: line=6 narration="Enter B — leaf node, DFS backtracks"
+  vars: current="B", callStack="", visited=6
+  nodes: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  edges: [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  startId: n0
+  visited: [n0,n1,n3,n4,n2,n5]
+  frontier: []
+  current: n1
+  edgeStates: {"n0-n1":"tree","n1-n0":"tree","n0-n3":"tree","n3-n0":"tree","n1-n2":"traversed","n2-n1":"traversed","n1-n4":"traversed","n4-n1":"traversed","n2-n5":"tree","n5-n2":"tree","n3-n4":"tree","n4-n3":"tree","n4-n5":"traversed","n5-n4":"traversed","n2-n3":"tree","n3-n2":"tree"}"
+`;
