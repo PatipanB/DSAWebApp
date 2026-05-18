@@ -55,8 +55,6 @@ export function SortingPage() {
   const [run, setRun] = useState<AlgorithmRun<unknown> | null>(
     () => bubbleSort(DEFAULT_SORTING_INPUT) as AlgorithmRun<unknown>,
   );
-  const [parseError, setParseError] = useState<string | null>(null);
-
   const runner = useAlgorithmRun(run);
   useKeyboardControls(runner);
 
@@ -66,7 +64,6 @@ export function SortingPage() {
   const handleAlgorithmChange = useCallback(
     (id: SortingAlgoId) => {
       setActiveId(id);
-      setParseError(null);
       runner.reset();
       setRun(buildRun(id));
     },
@@ -74,7 +71,6 @@ export function SortingPage() {
   );
 
   const handleRun = useCallback(() => {
-    setParseError(null);
     runner.reset();
     setRun(buildRun(activeId));
   }, [activeId, runner]);
@@ -110,6 +106,12 @@ export function SortingPage() {
     });
     return () => intervals.forEach(clearInterval);
   }, [raceMode]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (raceMode !== 'playing') return;
+    const allDone = raceRuns.every((run, i) => (raceIndices[i] ?? 0) >= run.steps.length - 1);
+    if (allDone) setRaceMode('idle');
+  }, [raceIndices, raceMode]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleRacePlay = useCallback(() => setRaceMode('playing'), []);
   const handleRacePause = useCallback(() => setRaceMode('paused'), []);
@@ -179,9 +181,9 @@ export function SortingPage() {
               </div>
             </div>
 
-            <InputPanel onRun={handleRun} error={parseError}>
+            <InputPanel onRun={handleRun} error={null}>
               <p className="text-xs text-text-muted font-mono">
-                Enter comma-separated numbers, e.g. 5,2,8,1,9
+                Click Run to reset to default input: [5, 2, 8, 1, 9, 3, 7, 4, 6]
               </p>
             </InputPanel>
 
