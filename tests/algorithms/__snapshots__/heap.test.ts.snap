@@ -1,0 +1,155 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`heapSort > trace matches snapshot 1`] = `
+"algorithmId: heap-sort
+steps: 21
+finalResult: [1,2,3,4,5,6,7,8,9]
+
+step 0: line=15 narration="Heapify (build): swap arr[3]=6 and arr[8]=1"
+  vars: phase="build", heapSize=9, swaps=1
+  values: [5,2,8,6,9,3,7,4,1]
+  comparing: []
+  swapped: [3,8]
+  sorted: []
+  heapBoundary: 9
+step 1: line=15 narration="Heapify (build): swap arr[1]=9 and arr[4]=2"
+  vars: phase="build", heapSize=9, swaps=1
+  values: [5,9,8,6,2,3,7,4,1]
+  comparing: []
+  swapped: [1,4]
+  sorted: []
+  heapBoundary: 9
+step 2: line=15 narration="Heapify (build): swap arr[0]=9 and arr[1]=5"
+  vars: phase="build", heapSize=9, swaps=1
+  values: [9,5,8,6,2,3,7,4,1]
+  comparing: []
+  swapped: [0,1]
+  sorted: []
+  heapBoundary: 9
+step 3: line=15 narration="Heapify (build): swap arr[1]=6 and arr[3]=5"
+  vars: phase="build", heapSize=9, swaps=1
+  values: [9,6,8,5,2,3,7,4,1]
+  comparing: []
+  swapped: [1,3]
+  sorted: []
+  heapBoundary: 9
+step 4: line=6 narration="Extract: swap root arr[0]=1 with arr[8]=9, index 8 is now sorted"
+  vars: phase="extract", heapSize=8, swaps=1
+  values: [1,6,8,5,2,3,7,4,9]
+  comparing: []
+  swapped: [0,8]
+  sorted: [8]
+  heapBoundary: 8
+step 5: line=15 narration="Heapify (extract): swap arr[0]=8 and arr[2]=1"
+  vars: phase="extract", heapSize=8, swaps=1
+  values: [8,6,1,5,2,3,7,4,9]
+  comparing: []
+  swapped: [0,2]
+  sorted: [8]
+  heapBoundary: 8
+step 6: line=15 narration="Heapify (extract): swap arr[2]=7 and arr[6]=1"
+  vars: phase="extract", heapSize=8, swaps=1
+  values: [8,6,7,5,2,3,1,4,9]
+  comparing: []
+  swapped: [2,6]
+  sorted: [8]
+  heapBoundary: 8
+step 7: line=6 narration="Extract: swap root arr[0]=4 with arr[7]=8, index 7 is now sorted"
+  vars: phase="extract", heapSize=7, swaps=1
+  values: [4,6,7,5,2,3,1,8,9]
+  comparing: []
+  swapped: [0,7]
+  sorted: [8,7]
+  heapBoundary: 7
+step 8: line=15 narration="Heapify (extract): swap arr[0]=7 and arr[2]=4"
+  vars: phase="extract", heapSize=7, swaps=1
+  values: [7,6,4,5,2,3,1,8,9]
+  comparing: []
+  swapped: [0,2]
+  sorted: [8,7]
+  heapBoundary: 7
+step 9: line=6 narration="Extract: swap root arr[0]=1 with arr[6]=7, index 6 is now sorted"
+  vars: phase="extract", heapSize=6, swaps=1
+  values: [1,6,4,5,2,3,7,8,9]
+  comparing: []
+  swapped: [0,6]
+  sorted: [8,7,6]
+  heapBoundary: 6
+step 10: line=15 narration="Heapify (extract): swap arr[0]=6 and arr[1]=1"
+  vars: phase="extract", heapSize=6, swaps=1
+  values: [6,1,4,5,2,3,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [8,7,6]
+  heapBoundary: 6
+step 11: line=15 narration="Heapify (extract): swap arr[1]=5 and arr[3]=1"
+  vars: phase="extract", heapSize=6, swaps=1
+  values: [6,5,4,1,2,3,7,8,9]
+  comparing: []
+  swapped: [1,3]
+  sorted: [8,7,6]
+  heapBoundary: 6
+step 12: line=6 narration="Extract: swap root arr[0]=3 with arr[5]=6, index 5 is now sorted"
+  vars: phase="extract", heapSize=5, swaps=1
+  values: [3,5,4,1,2,6,7,8,9]
+  comparing: []
+  swapped: [0,5]
+  sorted: [8,7,6,5]
+  heapBoundary: 5
+step 13: line=15 narration="Heapify (extract): swap arr[0]=5 and arr[1]=3"
+  vars: phase="extract", heapSize=5, swaps=1
+  values: [5,3,4,1,2,6,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [8,7,6,5]
+  heapBoundary: 5
+step 14: line=6 narration="Extract: swap root arr[0]=2 with arr[4]=5, index 4 is now sorted"
+  vars: phase="extract", heapSize=4, swaps=1
+  values: [2,3,4,1,5,6,7,8,9]
+  comparing: []
+  swapped: [0,4]
+  sorted: [8,7,6,5,4]
+  heapBoundary: 4
+step 15: line=15 narration="Heapify (extract): swap arr[0]=4 and arr[2]=2"
+  vars: phase="extract", heapSize=4, swaps=1
+  values: [4,3,2,1,5,6,7,8,9]
+  comparing: []
+  swapped: [0,2]
+  sorted: [8,7,6,5,4]
+  heapBoundary: 4
+step 16: line=6 narration="Extract: swap root arr[0]=1 with arr[3]=4, index 3 is now sorted"
+  vars: phase="extract", heapSize=3, swaps=1
+  values: [1,3,2,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,3]
+  sorted: [8,7,6,5,4,3]
+  heapBoundary: 3
+step 17: line=15 narration="Heapify (extract): swap arr[0]=3 and arr[1]=1"
+  vars: phase="extract", heapSize=3, swaps=1
+  values: [3,1,2,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [8,7,6,5,4,3]
+  heapBoundary: 3
+step 18: line=6 narration="Extract: swap root arr[0]=2 with arr[2]=3, index 2 is now sorted"
+  vars: phase="extract", heapSize=2, swaps=1
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,2]
+  sorted: [8,7,6,5,4,3,2]
+  heapBoundary: 2
+step 19: line=6 narration="Extract: swap root arr[0]=1 with arr[1]=2, index 1 is now sorted"
+  vars: phase="extract", heapSize=1, swaps=1
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [8,7,6,5,4,3,2,1]
+  heapBoundary: 1
+step 20: line=1 narration="Heap sort complete — array is fully sorted"
+  vars: phase="extract", heapSize=0, swaps=0
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: []
+  sorted: [8,7,6,5,4,3,2,1,0]
+  heapBoundary: 0"
+`;
