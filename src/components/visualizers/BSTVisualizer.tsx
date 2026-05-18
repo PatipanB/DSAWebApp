@@ -27,9 +27,10 @@ function computePositions(
 
 interface Props {
   snapshot: BSTSnapshot | null;
+  showInvariant?: boolean;
 }
 
-export function BSTVisualizer({ snapshot }: Props) {
+export function BSTVisualizer({ snapshot, showInvariant = false }: Props) {
   if (snapshot == null || snapshot.rootId == null) {
     return (
       <div className="flex items-center justify-center h-full text-text-muted font-mono text-sm">
@@ -54,8 +55,41 @@ export function BSTVisualizer({ snapshot }: Props) {
           .join(' ')
       : null;
 
+  const rootNode = nodes[rootId];
+  const leftChildPos = rootNode?.leftId ? positions[rootNode.leftId] : null;
+  const rightChildPos = rootNode?.rightId ? positions[rootNode.rightId] : null;
+
   return (
     <svg width={width} height={height} className="mx-auto" role="img" aria-label="BST visualization">
+      {/* BST invariant labels — shown only on first step */}
+      {showInvariant && leftChildPos && (
+        <text
+          x={leftChildPos.x - NODE_RADIUS - 4}
+          y={leftChildPos.y}
+          textAnchor="end"
+          dominantBaseline="central"
+          fill="#64748b"
+          fontSize={10}
+          fontFamily="JetBrains Mono Variable, monospace"
+          opacity={0.7}
+        >
+          {'< root'}
+        </text>
+      )}
+      {showInvariant && rightChildPos && (
+        <text
+          x={rightChildPos.x + NODE_RADIUS + 4}
+          y={rightChildPos.y}
+          textAnchor="start"
+          dominantBaseline="central"
+          fill="#64748b"
+          fontSize={10}
+          fontFamily="JetBrains Mono Variable, monospace"
+          opacity={0.7}
+        >
+          {'> root'}
+        </text>
+      )}
       {searchPolyline != null && (
         <polyline
           data-testid="search-path"

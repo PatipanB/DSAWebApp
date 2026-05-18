@@ -125,7 +125,7 @@ export function BSTPage() {
           data-testid="visualizer-slot"
           className="min-h-64 bg-bg-surface border border-border-subtle rounded-2xl flex items-center justify-center overflow-auto p-4"
         >
-          <BSTVisualizer snapshot={bstSnap} />
+          <BSTVisualizer snapshot={bstSnap} showInvariant={stepIndex === 0} />
         </div>
 
         <StepNarration narration={currentStep?.narration} />
