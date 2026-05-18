@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fibonacci > trace matches snapshot 1`] = `
+"algorithmId: fibonacci
+steps: 8
+finalResult: 21
+
+step 0: line=3 narration="Initialize dp[0]=0, dp[1]=1"
+  table: [0,1,,,,,,,]
+  current: [0,1]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 1: line=5 narration="dp[2] = dp[1] + dp[0] = 1"
+  vars: i=2, dp[i-1]=1, dp[i-2]=0, dp[i]=1
+  table: [0,1,1,,,,,,]
+  current: [0,2]
+  reading: [0,1,0,0]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 2: line=5 narration="dp[3] = dp[2] + dp[1] = 2"
+  vars: i=3, dp[i-1]=1, dp[i-2]=1, dp[i]=2
+  table: [0,1,1,2,,,,,]
+  current: [0,3]
+  reading: [0,2,0,1]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 3: line=5 narration="dp[4] = dp[3] + dp[2] = 3"
+  vars: i=4, dp[i-1]=2, dp[i-2]=1, dp[i]=3
+  table: [0,1,1,2,3,,,,]
+  current: [0,4]
+  reading: [0,3,0,2]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 4: line=5 narration="dp[5] = dp[4] + dp[3] = 5"
+  vars: i=5, dp[i-1]=3, dp[i-2]=2, dp[i]=5
+  table: [0,1,1,2,3,5,,,]
+  current: [0,5]
+  reading: [0,4,0,3]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 5: line=5 narration="dp[6] = dp[5] + dp[4] = 8"
+  vars: i=6, dp[i-1]=5, dp[i-2]=3, dp[i]=8
+  table: [0,1,1,2,3,5,8,,]
+  current: [0,6]
+  reading: [0,5,0,4]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 6: line=5 narration="dp[7] = dp[6] + dp[5] = 13"
+  vars: i=7, dp[i-1]=8, dp[i-2]=5, dp[i]=13
+  table: [0,1,1,2,3,5,8,13,]
+  current: [0,7]
+  reading: [0,6,0,5]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+step 7: line=5 narration="dp[8] = dp[7] + dp[6] = 21"
+  vars: i=8, dp[i-1]=13, dp[i-2]=8, dp[i]=21
+  table: [0,1,1,2,3,5,8,13,21]
+  current: [0,8]
+  reading: [0,7,0,6]
+  colLabels: [0,1,2,3,4,5,6,7,8]
+  answer: 21"
+`;
