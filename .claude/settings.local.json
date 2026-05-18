@@ -37,7 +37,15 @@
       "WebFetch(domain:neetcode.io)",
       "Bash(npx tsc *)",
       "Bash(npx eslint *)",
-      "Bash(npx vite *)"
+      "Bash(npx vite *)",
+      "Skill(andrej-karpathy-skills:karpathy-guidelines)",
+      "Bash(npm test *)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Skill(superpowers:verification-before-completion)",
+      "Bash(echo \"Exit: $?\")",
+      "Skill(superpowers:systematic-debugging)",
+      "Bash(pnpm vitest *)"
     ]
   }
 }
