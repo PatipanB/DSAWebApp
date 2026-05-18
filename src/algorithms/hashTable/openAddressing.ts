@@ -12,7 +12,7 @@ DISPLAYED SNIPPET (line numbers reference this):
 5:      while (slots[idx] !== null) {
 6:        idx = (idx + 1) % size;
 7:      }
-8:      slots[idx] = { key, value, hash: idx };
+8:      slots[idx] = { key, value, hash: initialHash };
 9:    }
 10:   return slots;
 11: }
@@ -42,8 +42,10 @@ export function openAddressing(input: HashTableInput): AlgorithmRun<OpenAddressi
       variables: { key, initialHash, probeSteps: probeSequence.length - 1 },
     });
 
-    // Step 2: probe while occupied (line 6)
-    while (slots[idx] !== null) {
+    // Step 2: probe while occupied (line 6) — guard against full table
+    let probeGuard = 0;
+    while (slots[idx] !== null && probeGuard < size) {
+      probeGuard++;
       const nextIdx = (idx + 1) % size;
       probeSequence.push(nextIdx);
       idx = nextIdx;

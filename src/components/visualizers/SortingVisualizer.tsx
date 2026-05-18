@@ -20,6 +20,7 @@ function barColorClass(state: BarState): string {
     case 'sorted':    return 'bg-status-success';
     case 'swapped':   return 'bg-status-danger';
     case 'comparing': return 'bg-status-warn';
+    case 'pivot':     return 'bg-bg-elevated';
     default:          return 'bg-bg-elevated';
   }
 }

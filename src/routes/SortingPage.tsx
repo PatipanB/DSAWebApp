@@ -215,7 +215,7 @@ export function SortingPage() {
               <button
                 onClick={handleRacePlay}
                 disabled={raceMode === 'playing'}
-                className="px-4 py-2 rounded-lg bg-accent-primary text-white text-sm font-mono disabled:opacity-40 hover:opacity-90 transition"
+                className="px-4 py-2 rounded-lg bg-accent-primary text-bg-base text-sm font-mono disabled:opacity-40 hover:opacity-90 transition"
               >
                 Play
               </button>

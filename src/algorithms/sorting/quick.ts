@@ -63,21 +63,23 @@ export function quickSort(input: SortingInput): AlgorithmRun<SortingSnapshot> {
 
       if (arr[j]! <= pivotVal) {
         i++;
-        // Swap step (line 13)
         [arr[i], arr[j]] = [arr[j]!, arr[i]!];
-        r.push({
-          line: 13,
-          narration: `Swap arr[${i}]=${arr[i]} and arr[${j}]=${arr[j]}`,
-          snapshot: {
-            values: [...arr],
-            comparing: [],
-            swapped: [i, j],
-            sorted: [...sorted],
-            pivot: rv,
-            subarray: { start: l, end: rv },
-          },
-          variables: { pivot: pivotVal, i, j },
-        });
+        if (i !== j) {
+          // Swap step (line 13) — skip self-swap
+          r.push({
+            line: 13,
+            narration: `Swap arr[${i}]=${arr[i]} and arr[${j}]=${arr[j]}`,
+            snapshot: {
+              values: [...arr],
+              comparing: [],
+              swapped: [i, j],
+              sorted: [...sorted],
+              pivot: rv,
+              subarray: { start: l, end: rv },
+            },
+            variables: { pivot: pivotVal, i, j },
+          });
+        }
       }
     }
 
