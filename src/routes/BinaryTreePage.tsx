@@ -107,6 +107,10 @@ export function BinaryTreePage() {
   const currentVars = currentStep?.variables;
   const treeSnap = (currentStep?.snapshot as TreeSnapshot | undefined) ?? null;
   const callStack = treeSnap?.callStack;
+  const bfsQueue =
+    activeId === 'level-order' && treeSnap?.queue != null
+      ? treeSnap.queue.map((id) => treeSnap.nodes[id]?.value ?? '?')
+      : null;
   const totalSteps = run?.steps.length ?? 0;
   const complexityEntry = COMPLEXITIES[activeId];
 
@@ -162,6 +166,27 @@ export function BinaryTreePage() {
             {complexityEntry && <ComplexityBadge entry={complexityEntry} />}
             <VariableInspector variables={currentVars} />
             <CallStackPanel callStack={callStack} />
+            {bfsQueue != null && (
+              <div data-testid="bfs-queue-panel" className="bg-bg-surface border border-border-subtle rounded-xl p-4 flex flex-col gap-2">
+                <p className="text-xs font-mono text-text-muted uppercase tracking-wider">BFS Queue</p>
+                {bfsQueue.length === 0 ? (
+                  <p className="text-xs font-mono text-text-muted">empty</p>
+                ) : (
+                  <div className="flex items-center gap-1 flex-wrap">
+                    {bfsQueue.map((val, idx) => (
+                      <span
+                        key={idx}
+                        data-testid={`bfs-queue-item-${idx}`}
+                        className="px-2 py-1 rounded-md bg-bg-elevated border border-border-subtle text-xs font-mono text-text-primary"
+                      >
+                        {String(val)}
+                      </span>
+                    ))}
+                    <span className="text-xs font-mono text-text-muted ml-1">← front</span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </main>
