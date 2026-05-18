@@ -4,6 +4,7 @@ export interface ComplexityEntry {
   time: { best: string; average: string; worst: string };
   space: string;
   notes?: string;
+  notationNotes?: string;
 }
 
 export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
@@ -45,6 +46,7 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
     space: 'O(min(n, k))',
     notes: 'Each character enters and leaves the window at most once. k = size of character set.',
+    notationNotes: 'k = character set size (e.g. 26 for lowercase letters). Window never grows larger than k.',
   },
   'singly-traverse': {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
@@ -65,56 +67,67 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'h = tree height; O(log n) balanced, O(n) skewed. Space is the recursion call stack.',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed (e.g. sorted insertion order).',
   },
   'preorder': {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'Same as inorder — every node is visited exactly once regardless of traversal order.',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed.',
   },
   'postorder': {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'Useful when children must be processed before parent (e.g., deleting a tree).',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed.',
   },
   'level-order': {
     time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
     space: 'O(w)',
     notes: 'w = max width of the tree. Queue holds at most one full level at a time.',
+    notationNotes: 'w = max width of tree. Queue holds at most one full level at a time.',
   },
   'bst-insert': {
     time: { best: 'O(log n)', average: 'O(log n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'Worst case O(n) on a degenerate (sorted-input) tree. Balanced BST guarantees O(log n).',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed (e.g. sorted insertion order).',
   },
   'bst-search': {
     time: { best: 'O(1)', average: 'O(log n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'Best case: target is root. Worst: degenerate tree — every node is visited.',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed.',
   },
   'bst-delete': {
     time: { best: 'O(log n)', average: 'O(log n)', worst: 'O(n)' },
     space: 'O(h)',
     notes: 'Two-children deletion finds the inorder successor in O(h) then removes it in O(h).',
+    notationNotes: 'h = tree height. O(log n) if balanced, O(n) if skewed.',
   },
   'bfs-grid': {
     time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
     space: 'O(V)',
     notes: 'V = rows×cols cells. Queue holds frontier cells — at most O(V) in the worst case.',
+    notationNotes: 'V = vertices (cells), E = edges (4-neighbor connections). Queue ≤ O(V).',
   },
   'dfs-grid': {
     time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
     space: 'O(V)',
     notes: 'Stack depth = longest DFS path, up to O(V) for a maze-like grid.',
+    notationNotes: 'V = vertices (cells), E = edges. Stack depth = longest DFS path.',
   },
   'bfs-adjacency': {
     time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
     space: 'O(V)',
     notes: 'V = nodes, E = edges. Each node enqueued once; each edge examined once.',
+    notationNotes: 'V = nodes, E = edges. Queue holds at most all nodes once.',
   },
   'dfs-adjacency': {
     time: { best: 'O(V+E)', average: 'O(V+E)', worst: 'O(V+E)' },
     space: 'O(V)',
     notes: 'Stack depth = longest DFS path, up to O(V) in a path graph.',
+    notationNotes: 'V = nodes, E = edges. Call stack depth = longest path in graph.',
   },
   'bubble-sort': {
     time: { best: 'O(n)', average: 'O(n²)', worst: 'O(n²)' },
@@ -154,10 +167,12 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     time: { best: 'O(nW)', average: 'O(nW)', worst: 'O(nW)' },
     space: 'O(nW)',
     notes: 'n = item count, W = capacity. Space reducible to O(W) with 1D rolling array.',
+    notationNotes: 'n = number of items, W = knapsack capacity. Table is (n+1)×(W+1).',
   },
   'lcs': {
     time: { best: 'O(mn)', average: 'O(mn)', worst: 'O(mn)' },
     space: 'O(mn)',
     notes: 'm and n are lengths of the two strings.',
+    notationNotes: 'm = length of string A, n = length of string B. Table is (m+1)×(n+1).',
   },
 };

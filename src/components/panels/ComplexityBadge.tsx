@@ -1,4 +1,5 @@
 import { cn } from '@/utils/classNames';
+import { Tooltip } from '@/components/primitives/Tooltip';
 import type { ComplexityEntry } from '@/data/complexities';
 
 interface BadgeProps {
@@ -52,7 +53,13 @@ export function ComplexityBadge({ entry }: Props) {
 
       <div>
         <p className="text-xs text-text-muted mb-1.5">Space</p>
-        <TimeBadge label="Space" value={entry.space} />
+        {entry.notationNotes ? (
+          <Tooltip label={entry.notationNotes}>
+            <TimeBadge label="Space" value={entry.space} />
+          </Tooltip>
+        ) : (
+          <TimeBadge label="Space" value={entry.space} />
+        )}
       </div>
 
       {entry.notes && (
