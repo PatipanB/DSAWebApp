@@ -9,6 +9,8 @@ interface PrefsState {
   setCodeLanguage: (l: 'ts' | 'py') => void;
   visitedTopics: TopicId[];
   markVisited: (id: TopicId) => void;
+  learningMode: boolean;
+  setLearningMode: (v: boolean) => void;
 }
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
@@ -25,6 +27,8 @@ export const usePrefsStore = create<PrefsState>()(
         set((s) =>
           s.visitedTopics.includes(id) ? s : { visitedTopics: [...s.visitedTopics, id] }
         ),
+      learningMode: false,
+      setLearningMode: (v) => set({ learningMode: v }),
     }),
     { name: 'dsa-prefs' },
   ),

@@ -17,4 +17,6 @@ export interface TopicMeta {
   path: `/${string}`;
   number: number;
   emoji: string;
+  prereqs?: TopicId[];
+  estimatedMinutes?: number;
 }
