@@ -93,6 +93,7 @@ export interface BSTSnapshot extends TreeSnapshot {
   inserted?: string;
   deletedNode?: string;
   replacementNode?: string;
+  searchPath?: string[];
 }
 
 export type GridCell = 'open' | 'wall' | 'start' | 'end' | 'visited' | 'frontier' | 'path' | 'current';

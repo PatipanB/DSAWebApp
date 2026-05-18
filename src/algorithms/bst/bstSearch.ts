@@ -42,14 +42,16 @@ export function bstSearch(input: BSTSearchInput): AlgorithmRun<BSTSnapshot> {
   const r = createRunBuilder<BSTSnapshot>('bst-search', input);
   const { target } = input;
   let curr: string | null = rootId;
+  const searchPath: string[] = [];
 
   while (curr !== null) {
     const node = nodes[curr]!;
+    searchPath.push(curr);
     if (node.value === target) {
       r.push({
         line: 3,
         narration: `Found ${target} at node — search successful`,
-        snapshot: { nodes, rootId, current: curr, visited: [curr], comparingWith: curr, comparingValue: target },
+        snapshot: { nodes, rootId, current: curr, visited: [curr], comparingWith: curr, comparingValue: target, searchPath: [...searchPath] },
         variables: { target, current: node.value, found: true },
       });
       return r.build(true);
@@ -58,7 +60,7 @@ export function bstSearch(input: BSTSearchInput): AlgorithmRun<BSTSnapshot> {
     r.push({
       line: 4,
       narration: `${target} ${target < node.value ? '<' : '>'} ${node.value} — go ${direction}`,
-      snapshot: { nodes, rootId, current: curr, visited: [], comparingWith: curr, comparingValue: target },
+      snapshot: { nodes, rootId, current: curr, visited: [], comparingWith: curr, comparingValue: target, searchPath: [...searchPath] },
       variables: { target, current: node.value },
     });
     curr = target < node.value ? node.leftId : node.rightId;
@@ -67,7 +69,7 @@ export function bstSearch(input: BSTSearchInput): AlgorithmRun<BSTSnapshot> {
   r.push({
     line: 2,
     narration: `Reached null — ${target} not found`,
-    snapshot: { nodes, rootId, current: null, visited: [], comparingValue: target },
+    snapshot: { nodes, rootId, current: null, visited: [], comparingValue: target, searchPath: [...searchPath] },
     variables: { target, found: false },
   });
   return r.build(false);

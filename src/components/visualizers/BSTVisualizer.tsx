@@ -38,15 +38,35 @@ export function BSTVisualizer({ snapshot }: Props) {
     );
   }
 
-  const { nodes, rootId, current, visited, comparingWith, inserted, deletedNode, replacementNode } = snapshot;
+  const { nodes, rootId, current, visited, comparingWith, inserted, deletedNode, replacementNode, searchPath } = snapshot;
   const positions = computePositions(rootId, nodes);
   const xs = Object.values(positions).map((p) => p.x);
   const ys = Object.values(positions).map((p) => p.y);
   const width = xs.length ? Math.max(...xs) + 60 : 200;
   const height = ys.length ? Math.max(...ys) + 60 : 120;
 
+  const searchPolyline =
+    searchPath != null && searchPath.length > 1
+      ? searchPath
+          .map((id) => positions[id])
+          .filter((p): p is Position => p != null)
+          .map((p) => `${p.x},${p.y}`)
+          .join(' ')
+      : null;
+
   return (
     <svg width={width} height={height} className="mx-auto" role="img" aria-label="BST visualization">
+      {searchPolyline != null && (
+        <polyline
+          data-testid="search-path"
+          points={searchPolyline}
+          fill="none"
+          stroke="#fbbf24"
+          strokeWidth={2}
+          strokeDasharray="5 3"
+          opacity={0.6}
+        />
+      )}
       {Object.values(nodes).flatMap((node) => {
         const pos = positions[node.id];
         if (!pos) return [];
