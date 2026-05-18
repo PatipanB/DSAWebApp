@@ -1,0 +1,272 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`quickSort > trace matches snapshot 1`] = `
+"algorithmId: quick-sort
+steps: 33
+finalResult: [1,2,3,4,5,6,7,8,9]
+
+step 0: line=11 narration="Compare arr[0]=5 with pivot=6"
+  vars: pivot=6, i=-1, j=0
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: [0,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 1: line=13 narration="Swap arr[0]=5 and arr[0]=5"
+  vars: pivot=6, i=0, j=0
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: []
+  swapped: [0,0]
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 2: line=11 narration="Compare arr[1]=2 with pivot=6"
+  vars: pivot=6, i=0, j=1
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: [1,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 3: line=13 narration="Swap arr[1]=2 and arr[1]=2"
+  vars: pivot=6, i=1, j=1
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: []
+  swapped: [1,1]
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 4: line=11 narration="Compare arr[2]=8 with pivot=6"
+  vars: pivot=6, i=1, j=2
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: [2,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 5: line=11 narration="Compare arr[3]=1 with pivot=6"
+  vars: pivot=6, i=1, j=3
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: [3,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 6: line=13 narration="Swap arr[2]=1 and arr[3]=8"
+  vars: pivot=6, i=2, j=3
+  values: [5,2,1,8,9,3,7,4,6]
+  comparing: []
+  swapped: [2,3]
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 7: line=11 narration="Compare arr[4]=9 with pivot=6"
+  vars: pivot=6, i=2, j=4
+  values: [5,2,1,8,9,3,7,4,6]
+  comparing: [4,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 8: line=11 narration="Compare arr[5]=3 with pivot=6"
+  vars: pivot=6, i=2, j=5
+  values: [5,2,1,8,9,3,7,4,6]
+  comparing: [5,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 9: line=13 narration="Swap arr[3]=3 and arr[5]=8"
+  vars: pivot=6, i=3, j=5
+  values: [5,2,1,3,9,8,7,4,6]
+  comparing: []
+  swapped: [3,5]
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 10: line=11 narration="Compare arr[6]=7 with pivot=6"
+  vars: pivot=6, i=3, j=6
+  values: [5,2,1,3,9,8,7,4,6]
+  comparing: [6,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 11: line=11 narration="Compare arr[7]=4 with pivot=6"
+  vars: pivot=6, i=3, j=7
+  values: [5,2,1,3,9,8,7,4,6]
+  comparing: [7,8]
+  swapped: []
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 12: line=13 narration="Swap arr[4]=4 and arr[7]=9"
+  vars: pivot=6, i=4, j=7
+  values: [5,2,1,3,4,8,7,9,6]
+  comparing: []
+  swapped: [4,7]
+  sorted: []
+  pivot: 8
+  subarray: {"start":0,"end":8}
+step 13: line=16 narration="Place pivot 6 at index 5"
+  vars: pivot=6, i=4, j=8
+  values: [5,2,1,3,4,6,7,9,8]
+  comparing: []
+  swapped: [5,8]
+  sorted: [5]
+  pivot: 5
+  subarray: {"start":0,"end":8}
+step 14: line=11 narration="Compare arr[6]=7 with pivot=8"
+  vars: pivot=8, i=5, j=6
+  values: [5,2,1,3,4,6,7,9,8]
+  comparing: [6,8]
+  swapped: []
+  sorted: [5]
+  pivot: 8
+  subarray: {"start":6,"end":8}
+step 15: line=13 narration="Swap arr[6]=7 and arr[6]=7"
+  vars: pivot=8, i=6, j=6
+  values: [5,2,1,3,4,6,7,9,8]
+  comparing: []
+  swapped: [6,6]
+  sorted: [5]
+  pivot: 8
+  subarray: {"start":6,"end":8}
+step 16: line=11 narration="Compare arr[7]=9 with pivot=8"
+  vars: pivot=8, i=6, j=7
+  values: [5,2,1,3,4,6,7,9,8]
+  comparing: [7,8]
+  swapped: []
+  sorted: [5]
+  pivot: 8
+  subarray: {"start":6,"end":8}
+step 17: line=16 narration="Place pivot 8 at index 7"
+  vars: pivot=8, i=6, j=8
+  values: [5,2,1,3,4,6,7,8,9]
+  comparing: []
+  swapped: [7,8]
+  sorted: [5,7]
+  pivot: 7
+  subarray: {"start":6,"end":8}
+step 18: line=11 narration="Compare arr[0]=5 with pivot=4"
+  vars: pivot=4, i=-1, j=0
+  values: [5,2,1,3,4,6,7,8,9]
+  comparing: [0,4]
+  swapped: []
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 19: line=11 narration="Compare arr[1]=2 with pivot=4"
+  vars: pivot=4, i=-1, j=1
+  values: [5,2,1,3,4,6,7,8,9]
+  comparing: [1,4]
+  swapped: []
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 20: line=13 narration="Swap arr[0]=2 and arr[1]=5"
+  vars: pivot=4, i=0, j=1
+  values: [2,5,1,3,4,6,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 21: line=11 narration="Compare arr[2]=1 with pivot=4"
+  vars: pivot=4, i=0, j=2
+  values: [2,5,1,3,4,6,7,8,9]
+  comparing: [2,4]
+  swapped: []
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 22: line=13 narration="Swap arr[1]=1 and arr[2]=5"
+  vars: pivot=4, i=1, j=2
+  values: [2,1,5,3,4,6,7,8,9]
+  comparing: []
+  swapped: [1,2]
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 23: line=11 narration="Compare arr[3]=3 with pivot=4"
+  vars: pivot=4, i=1, j=3
+  values: [2,1,5,3,4,6,7,8,9]
+  comparing: [3,4]
+  swapped: []
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 24: line=13 narration="Swap arr[2]=3 and arr[3]=5"
+  vars: pivot=4, i=2, j=3
+  values: [2,1,3,5,4,6,7,8,9]
+  comparing: []
+  swapped: [2,3]
+  sorted: [5,7,6,8]
+  pivot: 4
+  subarray: {"start":0,"end":4}
+step 25: line=16 narration="Place pivot 4 at index 3"
+  vars: pivot=4, i=2, j=4
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [3,4]
+  sorted: [5,7,6,8,3]
+  pivot: 3
+  subarray: {"start":0,"end":4}
+step 26: line=11 narration="Compare arr[0]=2 with pivot=3"
+  vars: pivot=3, i=-1, j=0
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: [0,2]
+  swapped: []
+  sorted: [5,7,6,8,3,4]
+  pivot: 2
+  subarray: {"start":0,"end":2}
+step 27: line=13 narration="Swap arr[0]=2 and arr[0]=2"
+  vars: pivot=3, i=0, j=0
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,0]
+  sorted: [5,7,6,8,3,4]
+  pivot: 2
+  subarray: {"start":0,"end":2}
+step 28: line=11 narration="Compare arr[1]=1 with pivot=3"
+  vars: pivot=3, i=0, j=1
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [5,7,6,8,3,4]
+  pivot: 2
+  subarray: {"start":0,"end":2}
+step 29: line=13 narration="Swap arr[1]=1 and arr[1]=1"
+  vars: pivot=3, i=1, j=1
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [1,1]
+  sorted: [5,7,6,8,3,4]
+  pivot: 2
+  subarray: {"start":0,"end":2}
+step 30: line=16 narration="Place pivot 3 at index 2"
+  vars: pivot=3, i=1, j=2
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [2,2]
+  sorted: [5,7,6,8,3,4,2]
+  pivot: 2
+  subarray: {"start":0,"end":2}
+step 31: line=11 narration="Compare arr[0]=2 with pivot=1"
+  vars: pivot=1, i=-1, j=0
+  values: [2,1,3,4,5,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [5,7,6,8,3,4,2]
+  pivot: 1
+  subarray: {"start":0,"end":1}
+step 32: line=16 narration="Place pivot 1 at index 0"
+  vars: pivot=1, i=-1, j=1
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [5,7,6,8,3,4,2,0]
+  pivot: 0
+  subarray: {"start":0,"end":1}"
+`;
