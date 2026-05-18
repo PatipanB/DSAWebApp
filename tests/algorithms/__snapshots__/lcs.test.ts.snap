@@ -1,0 +1,302 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`lcs > trace matches snapshot 1`] = `
+"algorithmId: lcs
+steps: 48
+finalResult: "BDAB"
+
+step 0: line=9 narration="a[0]='A' !== b[0]='B', dp[1][1] = max(dp[0][1], dp[1][0]) = 0"
+  table: [0,0,0,0,0,0,0,0,0,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,1]
+  reading: [0,1,1,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 1: line=9 narration="a[0]='A' !== b[1]='D', dp[1][2] = max(dp[0][2], dp[1][1]) = 0"
+  table: [0,0,0,0,0,0,0,0,0,0,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,2]
+  reading: [0,2,1,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 2: line=9 narration="a[0]='A' !== b[2]='C', dp[1][3] = max(dp[0][3], dp[1][2]) = 0"
+  table: [0,0,0,0,0,0,0,0,0,0,0,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,3]
+  reading: [0,3,1,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 3: line=7 narration="a[0]='A' === b[3]='A', dp[1][4] = dp[0][3] + 1 = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,4]
+  reading: [0,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 4: line=9 narration="a[0]='A' !== b[4]='B', dp[1][5] = max(dp[0][5], dp[1][4]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,5]
+  reading: [0,5,1,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 5: line=7 narration="a[0]='A' === b[5]='A', dp[1][6] = dp[0][5] + 1 = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [1,6]
+  reading: [0,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 6: line=7 narration="a[1]='B' === b[0]='B', dp[2][1] = dp[1][0] + 1 = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,1]
+  reading: [1,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 7: line=9 narration="a[1]='B' !== b[1]='D', dp[2][2] = max(dp[1][2], dp[2][1]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,2]
+  reading: [1,2,2,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 8: line=9 narration="a[1]='B' !== b[2]='C', dp[2][3] = max(dp[1][3], dp[2][2]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,3]
+  reading: [1,3,2,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 9: line=9 narration="a[1]='B' !== b[3]='A', dp[2][4] = max(dp[1][4], dp[2][3]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,4]
+  reading: [1,4,2,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 10: line=7 narration="a[1]='B' === b[4]='B', dp[2][5] = dp[1][4] + 1 = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,5]
+  reading: [1,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 11: line=9 narration="a[1]='B' !== b[5]='A', dp[2][6] = max(dp[1][6], dp[2][5]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [2,6]
+  reading: [1,6,2,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 12: line=9 narration="a[2]='C' !== b[0]='B', dp[3][1] = max(dp[2][1], dp[3][0]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,1]
+  reading: [2,1,3,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 13: line=9 narration="a[2]='C' !== b[1]='D', dp[3][2] = max(dp[2][2], dp[3][1]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,2]
+  reading: [2,2,3,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 14: line=7 narration="a[2]='C' === b[2]='C', dp[3][3] = dp[2][2] + 1 = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,3]
+  reading: [2,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 15: line=9 narration="a[2]='C' !== b[3]='A', dp[3][4] = max(dp[2][4], dp[3][3]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,4]
+  reading: [2,4,3,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 16: line=9 narration="a[2]='C' !== b[4]='B', dp[3][5] = max(dp[2][5], dp[3][4]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,5]
+  reading: [2,5,3,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 17: line=9 narration="a[2]='C' !== b[5]='A', dp[3][6] = max(dp[2][6], dp[3][5]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [3,6]
+  reading: [2,6,3,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 18: line=7 narration="a[3]='B' === b[0]='B', dp[4][1] = dp[3][0] + 1 = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,1]
+  reading: [3,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 19: line=9 narration="a[3]='B' !== b[1]='D', dp[4][2] = max(dp[3][2], dp[4][1]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,2]
+  reading: [3,2,4,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 20: line=9 narration="a[3]='B' !== b[2]='C', dp[4][3] = max(dp[3][3], dp[4][2]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,3]
+  reading: [3,3,4,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 21: line=9 narration="a[3]='B' !== b[3]='A', dp[4][4] = max(dp[3][4], dp[4][3]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,4]
+  reading: [3,4,4,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 22: line=7 narration="a[3]='B' === b[4]='B', dp[4][5] = dp[3][4] + 1 = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,5]
+  reading: [3,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 23: line=9 narration="a[3]='B' !== b[5]='A', dp[4][6] = max(dp[3][6], dp[4][5]) = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,,,,,,,0,,,,,,,0,,,,,,]
+  current: [4,6]
+  reading: [3,6,4,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 24: line=9 narration="a[4]='D' !== b[0]='B', dp[5][1] = max(dp[4][1], dp[5][0]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,,,,,,0,,,,,,,0,,,,,,]
+  current: [5,1]
+  reading: [4,1,5,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 25: line=7 narration="a[4]='D' === b[1]='D', dp[5][2] = dp[4][1] + 1 = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,,,,,0,,,,,,,0,,,,,,]
+  current: [5,2]
+  reading: [4,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 26: line=9 narration="a[4]='D' !== b[2]='C', dp[5][3] = max(dp[4][3], dp[5][2]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,,,,0,,,,,,,0,,,,,,]
+  current: [5,3]
+  reading: [4,3,5,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 27: line=9 narration="a[4]='D' !== b[3]='A', dp[5][4] = max(dp[4][4], dp[5][3]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,,,0,,,,,,,0,,,,,,]
+  current: [5,4]
+  reading: [4,4,5,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 28: line=9 narration="a[4]='D' !== b[4]='B', dp[5][5] = max(dp[4][5], dp[5][4]) = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,,0,,,,,,,0,,,,,,]
+  current: [5,5]
+  reading: [4,5,5,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 29: line=9 narration="a[4]='D' !== b[5]='A', dp[5][6] = max(dp[4][6], dp[5][5]) = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,,,,,,,0,,,,,,]
+  current: [5,6]
+  reading: [4,6,5,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 30: line=9 narration="a[5]='A' !== b[0]='B', dp[6][1] = max(dp[5][1], dp[6][0]) = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,,,,,,0,,,,,,]
+  current: [6,1]
+  reading: [5,1,6,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 31: line=9 narration="a[5]='A' !== b[1]='D', dp[6][2] = max(dp[5][2], dp[6][1]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,,,,,0,,,,,,]
+  current: [6,2]
+  reading: [5,2,6,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 32: line=9 narration="a[5]='A' !== b[2]='C', dp[6][3] = max(dp[5][3], dp[6][2]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,,,,0,,,,,,]
+  current: [6,3]
+  reading: [5,3,6,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 33: line=7 narration="a[5]='A' === b[3]='A', dp[6][4] = dp[5][3] + 1 = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,,,0,,,,,,]
+  current: [6,4]
+  reading: [5,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 34: line=9 narration="a[5]='A' !== b[4]='B', dp[6][5] = max(dp[5][5], dp[6][4]) = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,,0,,,,,,]
+  current: [6,5]
+  reading: [5,5,6,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 35: line=7 narration="a[5]='A' === b[5]='A', dp[6][6] = dp[5][5] + 1 = 4"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,,,,,,]
+  current: [6,6]
+  reading: [5,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 36: line=7 narration="a[6]='B' === b[0]='B', dp[7][1] = dp[6][0] + 1 = 1"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,,,,,]
+  current: [7,1]
+  reading: [6,0]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 37: line=9 narration="a[6]='B' !== b[1]='D', dp[7][2] = max(dp[6][2], dp[7][1]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,,,,]
+  current: [7,2]
+  reading: [6,2,7,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 38: line=9 narration="a[6]='B' !== b[2]='C', dp[7][3] = max(dp[6][3], dp[7][2]) = 2"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,,,]
+  current: [7,3]
+  reading: [6,3,7,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 39: line=9 narration="a[6]='B' !== b[3]='A', dp[7][4] = max(dp[6][4], dp[7][3]) = 3"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,,]
+  current: [7,4]
+  reading: [6,4,7,3]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 40: line=7 narration="a[6]='B' === b[4]='B', dp[7][5] = dp[6][4] + 1 = 4"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,]
+  current: [7,5]
+  reading: [6,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 41: line=9 narration="a[6]='B' !== b[5]='A', dp[7][6] = max(dp[6][6], dp[7][5]) = 4"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [7,6]
+  reading: [6,6,7,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+step 42: line=14 narration="dp[7][5]=4 >= dp[6][6]=4, move left"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [7,6]
+  traceback: []
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4
+step 43: line=12 narration="a[6]='B' === b[4]='B', add [7,5] to path"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [7,5]
+  traceback: [7,5]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4
+step 44: line=12 narration="a[5]='A' === b[3]='A', add [6,4] to path"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [6,4]
+  traceback: [7,5,6,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4
+step 45: line=14 narration="dp[5][2]=2 >= dp[4][3]=2, move left"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [5,3]
+  traceback: [7,5,6,4]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4
+step 46: line=12 narration="a[4]='D' === b[1]='D', add [5,2] to path"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [5,2]
+  traceback: [7,5,6,4,5,2]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4
+step 47: line=12 narration="a[3]='B' === b[0]='B', add [4,1] to path"
+  table: [0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1,1,2,2,0,1,1,2,2,2,2,0,1,1,2,2,3,3,0,1,2,2,2,3,3,0,1,2,2,3,3,4,0,1,2,2,3,4,4]
+  current: [4,1]
+  traceback: [7,5,6,4,5,2,4,1]
+  rowLabels: [,A,B,C,B,D,A,B]
+  colLabels: [,B,D,C,A,B,A]
+  answer: 4"
+`;
