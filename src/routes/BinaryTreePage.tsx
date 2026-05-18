@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { BinaryTreeVisualizer } from '@/components/visualizers/BinaryTreeVisualizer';
 import { PlaybackControls } from '@/components/controls/PlaybackControls';
@@ -26,6 +26,7 @@ import { COMPLEXITIES } from '@/data/complexities';
 import { DEFAULT_TREE_TRAVERSAL_INPUT } from '@/types/algorithm';
 import type { TreeSnapshot } from '@/types/snapshots';
 import type { AlgorithmRun } from '@/engine/types';
+import { cn } from '@/utils/classNames';
 
 const ALGO_TABS = [
   { id: 'inorder' as const, label: 'Inorder' },
@@ -68,6 +69,7 @@ export function BinaryTreePage() {
     inorder(DEFAULT_TREE_TRAVERSAL_INPUT) as AlgorithmRun<unknown>,
   );
   const [parseError, setParseError] = useState<string | null>(null);
+  const [compareMode, setCompareMode] = useState(false);
 
   const runner = useAlgorithmRun(run);
   useKeyboardControls(runner);
@@ -121,6 +123,21 @@ export function BinaryTreePage() {
   const totalSteps = run?.steps.length ?? 0;
   const complexityEntry = COMPLEXITIES[activeId];
 
+  const compareData = useMemo(() => {
+    const parsed = parseTreeInput(treeInput);
+    const values = parsed ?? DEFAULT_TREE_TRAVERSAL_INPUT.values;
+    const inorderRun = inorder({ values });
+    const preorderRun = preorder({ values });
+    const postorderRun = postorder({ values });
+    const endSnap = (inorderRun.steps[inorderRun.steps.length - 1]?.snapshot as TreeSnapshot) ?? null;
+    return {
+      inorder: inorderRun.finalResult as number[],
+      preorder: preorderRun.finalResult as number[],
+      postorder: postorderRun.finalResult as number[],
+      endSnap,
+    };
+  }, [treeInput]);
+
   return (
     <div className="flex h-full overflow-hidden">
       <main className="flex-1 overflow-y-auto p-8 flex flex-col gap-6">
@@ -129,29 +146,77 @@ export function BinaryTreePage() {
         <AlgorithmTabs tabs={ALGO_TABS} selectedId={activeId} onSelect={handleAlgorithmChange} />
         <AlgorithmIntroCard algorithmId={activeId} stepIndex={stepIndex} />
 
-        <div
-          data-testid="visualizer-slot"
-          className="min-h-64 bg-bg-surface border border-border-subtle rounded-2xl flex items-center justify-center overflow-auto p-4"
+        <button
+          onClick={() => setCompareMode((v) => !v)}
+          className={cn(
+            'px-4 py-2 rounded-lg text-sm font-mono border transition self-start',
+            compareMode
+              ? 'bg-accent-primary text-bg-base border-accent-primary'
+              : 'bg-bg-elevated text-text-secondary border-border-strong hover:text-text-primary',
+          )}
         >
-          <BinaryTreeVisualizer snapshot={treeSnap} />
-        </div>
+          {compareMode ? 'Back to Step' : 'Compare All 3'}
+        </button>
 
-        <StepNarration narration={currentStep?.narration} />
-
-        <div className="flex flex-col gap-3">
-          <ProgressBar stepIndex={stepIndex} totalSteps={totalSteps} />
-          <div className="flex items-center gap-6 flex-wrap">
-            <PlaybackControls
-              runnerState={runnerState}
-              onPlay={() => runner.play()}
-              onPause={() => runner.pause()}
-              onStepBack={() => runner.stepBack()}
-              onStepForward={() => runner.stepForward()}
-              onReset={() => runner.reset()}
-            />
-            <SpeedSlider runner={runner} />
+        {compareMode ? (
+          <div
+            data-testid="compare-mode-slot"
+            className="bg-bg-surface border border-border-subtle rounded-2xl overflow-auto p-4"
+          >
+            <div className="flex gap-4 w-full items-start">
+              {(
+                [
+                  { label: 'Inorder', order: compareData.inorder },
+                  { label: 'Preorder', order: compareData.preorder },
+                  { label: 'Postorder', order: compareData.postorder },
+                ] as const
+              ).map(({ label, order }) => (
+                <div key={label} className="flex flex-col gap-2 items-center flex-1 min-w-0">
+                  <p className="text-sm font-mono font-bold text-text-muted">{label}</p>
+                  <div className="w-full overflow-auto">
+                    <BinaryTreeVisualizer snapshot={compareData.endSnap} />
+                  </div>
+                  <div className="flex items-center gap-1 flex-wrap justify-center">
+                    {order.map((val, idx) => (
+                      <span
+                        key={idx}
+                        className="text-xs font-mono bg-bg-elevated border border-border-subtle rounded px-1.5 py-0.5 text-text-primary"
+                      >
+                        {idx + 1}. {val}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <div
+            data-testid="visualizer-slot"
+            className="min-h-64 bg-bg-surface border border-border-subtle rounded-2xl flex items-center justify-center overflow-auto p-4"
+          >
+            <BinaryTreeVisualizer snapshot={treeSnap} />
+          </div>
+        )}
+
+        {!compareMode && <StepNarration narration={currentStep?.narration} />}
+
+        {!compareMode && (
+          <div className="flex flex-col gap-3">
+            <ProgressBar stepIndex={stepIndex} totalSteps={totalSteps} />
+            <div className="flex items-center gap-6 flex-wrap">
+              <PlaybackControls
+                runnerState={runnerState}
+                onPlay={() => runner.play()}
+                onPause={() => runner.pause()}
+                onStepBack={() => runner.stepBack()}
+                onStepForward={() => runner.stepForward()}
+                onReset={() => runner.reset()}
+              />
+              <SpeedSlider runner={runner} />
+            </div>
+          </div>
+        )}
 
         <InputPanel onRun={handleRun} error={parseError}>
           <div className="flex flex-col gap-1">
