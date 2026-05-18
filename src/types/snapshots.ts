@@ -125,3 +125,14 @@ export interface AdjacencySnapshot {
   current: string | null;
   edgeStates: Record<string, 'idle' | 'traversed' | 'tree'>;
 }
+
+export interface SortingSnapshot {
+  values: number[];
+  comparing: number[];
+  swapped: number[];
+  sorted: number[];
+  pivot?: number;
+  subarray?: { start: number; end: number };
+  auxArray?: number[];
+  heapBoundary?: number;
+}

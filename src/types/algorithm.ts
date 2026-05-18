@@ -220,3 +220,11 @@ export const DEFAULT_ADJACENCY_INPUT: AdjacencyInput = {
     { from: 'n2', to: 'n3' },
   ],
 };
+
+export interface SortingInput {
+  values: number[];
+}
+
+export const DEFAULT_SORTING_INPUT: SortingInput = {
+  values: [5, 2, 8, 1, 9, 3, 7, 4, 6],
+};
