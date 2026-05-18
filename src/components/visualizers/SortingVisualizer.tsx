@@ -40,12 +40,27 @@ export function SortingVisualizer({ snapshot, label }: Props) {
           const colorClass = barColorClass(state);
           const pivotClass = snapshot.pivot === i ? ' ring-2 ring-accent-secondary ring-inset' : '';
 
+          const heapDimClass =
+            snapshot.heapBoundary != null &&
+            i >= snapshot.heapBoundary &&
+            state !== 'sorted'
+              ? ' opacity-40'
+              : '';
+
+          const subarrayRingClass =
+            snapshot.subarray != null &&
+            i >= snapshot.subarray.start &&
+            i <= snapshot.subarray.end &&
+            state === 'idle'
+              ? ' ring-1 ring-border-strong'
+              : '';
+
           return (
             <div
               key={i}
               data-testid={`sorting-bar-${i}`}
               data-state={state}
-              className={`flex-1 rounded-t-sm transition-colors duration-150 ${colorClass}${pivotClass}`}
+              className={`flex-1 rounded-t-sm transition-colors duration-150 ${colorClass}${pivotClass}${heapDimClass}${subarrayRingClass}`}
               style={{ height: `${(value / maxValue) * 100}%` }}
             />
           );

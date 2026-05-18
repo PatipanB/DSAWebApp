@@ -29,6 +29,8 @@ export function mergeSort(input: SortingInput): AlgorithmRun<SortingSnapshot> {
   const arr = [...input.values];
   const n = arr.length;
 
+  const globalSortedSet = new Set<number>();
+
   function merge(l: number, mid: number, right: number): void {
     const left = arr.slice(l, mid + 1);
     const rightArr = arr.slice(mid + 1, right + 1);
@@ -48,7 +50,7 @@ export function mergeSort(input: SortingInput): AlgorithmRun<SortingSnapshot> {
             values: [...arr],
             comparing: [i + l, j + mid + 1],
             swapped: [k],
-            sorted: [],
+            sorted: [...globalSortedSet],
             subarray: { start: l, end: right },
             auxArray: [...auxArray],
           },
@@ -64,7 +66,7 @@ export function mergeSort(input: SortingInput): AlgorithmRun<SortingSnapshot> {
             values: [...arr],
             comparing: [i + l, j + mid + 1],
             swapped: [k],
-            sorted: [],
+            sorted: [...globalSortedSet],
             subarray: { start: l, end: right },
             auxArray: [...auxArray],
           },
@@ -94,6 +96,9 @@ export function mergeSort(input: SortingInput): AlgorithmRun<SortingSnapshot> {
     sort(l, mid);
     sort(mid + 1, right);
     merge(l, mid, right);
+    for (let idx = l; idx <= right; idx++) {
+      globalSortedSet.add(idx);
+    }
   }
 
   sort(0, n - 1);
