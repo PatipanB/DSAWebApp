@@ -13,8 +13,9 @@ function computePositions(
   const positions: Record<string, Position> = {};
   let xCounter = 0;
   function dfs(nodeId: string | null, depth: number): void {
-    if (nodeId === null) return;
-    const node = nodes[nodeId]!;
+    if (nodeId == null) return;
+    const node = nodes[nodeId];
+    if (node == null) return;
     dfs(node.leftId, depth + 1);
     positions[nodeId] = { x: xCounter * H_SPACING + 40, y: depth * V_SPACING + 40 };
     xCounter++;
@@ -29,7 +30,7 @@ interface Props {
 }
 
 export function BSTVisualizer({ snapshot }: Props) {
-  if (snapshot === null || snapshot.rootId === null) {
+  if (snapshot == null || snapshot.rootId == null) {
     return (
       <div className="flex items-center justify-center h-full text-text-muted font-mono text-sm">
         empty tree

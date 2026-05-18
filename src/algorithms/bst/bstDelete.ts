@@ -62,6 +62,10 @@ function findSuccParent(
   return curr;
 }
 
+function deepCopyNodes(nodes: Record<string, TreeNode>): Record<string, TreeNode> {
+  return Object.fromEntries(Object.entries(nodes).map(([k, v]) => [k, { ...v }]));
+}
+
 function bstInorder(nodes: Record<string, TreeNode>, rootId: string | null): number[] {
   const result: number[] = [];
   function dfs(id: string | null) {
@@ -90,7 +94,7 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
     r.push({
       line: target < node.value ? 3 : 5,
       narration: `${target} ${target < node.value ? '<' : '>'} ${node.value} — go ${direction}`,
-      snapshot: { nodes: { ...nodes }, rootId, current: curr, visited: [], comparingWith: curr, comparingValue: target },
+      snapshot: { nodes: deepCopyNodes(nodes), rootId, current: curr, visited: [], comparingWith: curr, comparingValue: target },
       variables: { target, current: node.value },
     });
     parent = curr;
@@ -102,7 +106,7 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
     r.push({
       line: 2,
       narration: `${target} not found in BST`,
-      snapshot: { nodes: { ...nodes }, rootId, current: null, visited: [] },
+      snapshot: { nodes: deepCopyNodes(nodes), rootId, current: null, visited: [] },
     });
     return r.build(bstInorder(nodes, rootId));
   }
@@ -114,7 +118,7 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
     r.push({
       line: 8,
       narration: `Node ${target} is a leaf — remove it`,
-      snapshot: { nodes: { ...nodes }, rootId, current: curr, visited: [], deletedNode: curr, comparingValue: target },
+      snapshot: { nodes: deepCopyNodes(nodes), rootId, current: curr, visited: [], deletedNode: curr, comparingValue: target },
     });
     if (parent === null) {
       delete nodes[curr];
@@ -132,7 +136,7 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
     r.push({
       line: targetNode.leftId === null ? 9 : 8,
       narration: `Node ${target} has one child — replace with it`,
-      snapshot: { nodes: { ...nodes }, rootId, current: curr, visited: [], deletedNode: curr, replacementNode: child, comparingValue: target },
+      snapshot: { nodes: deepCopyNodes(nodes), rootId, current: curr, visited: [], deletedNode: curr, replacementNode: child, comparingValue: target },
     });
     if (parent === null) {
       rootId = child;
@@ -152,13 +156,13 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
   r.push({
     line: 10,
     narration: `Node ${target} has two children — finding inorder successor (leftmost in right subtree)`,
-    snapshot: { nodes: { ...nodes }, rootId, current: succId, visited: [], comparingWith: succId, comparingValue: target },
+    snapshot: { nodes: deepCopyNodes(nodes), rootId, current: succId, visited: [], comparingWith: succId, comparingValue: target },
   });
 
   r.push({
     line: 11,
     narration: `Replace ${target} with successor value ${succNode.value}`,
-    snapshot: { nodes: { ...nodes }, rootId, current: curr, visited: [], deletedNode: curr, replacementNode: succId, comparingValue: target },
+    snapshot: { nodes: deepCopyNodes(nodes), rootId, current: curr, visited: [], deletedNode: curr, replacementNode: succId, comparingValue: target },
   });
 
   targetNode.value = succNode.value;
@@ -173,7 +177,7 @@ export function bstDelete(input: BSTDeleteInput): AlgorithmRun<BSTSnapshot> {
   r.push({
     line: 12,
     narration: `Delete successor ${succNode.value} from right subtree`,
-    snapshot: { nodes: { ...nodes }, rootId, current: curr, visited: [], comparingValue: target },
+    snapshot: { nodes: deepCopyNodes(nodes), rootId, current: curr, visited: [], comparingValue: target },
   });
 
   delete nodes[succId];
