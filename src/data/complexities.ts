@@ -136,4 +136,28 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(1)',
     notes: 'In-place and not stable. Build-heap is O(n); each of n extractions is O(log n).',
   },
+  'chaining': {
+    time: { best: 'O(1)', average: 'O(1)', worst: 'O(n)' },
+    space: 'O(n)',
+    notes: 'Worst case when all keys hash to the same bucket (all collide).',
+  },
+  'open-addressing': {
+    time: { best: 'O(1)', average: 'O(1)', worst: 'O(n)' },
+    space: 'O(n)',
+    notes: 'Performance degrades as load factor approaches 1; rehash at ~70% capacity.',
+  },
+  'fibonacci': {
+    time: { best: 'O(n)', average: 'O(n)', worst: 'O(n)' },
+    space: 'O(n)',
+  },
+  'knapsack-01': {
+    time: { best: 'O(nW)', average: 'O(nW)', worst: 'O(nW)' },
+    space: 'O(nW)',
+    notes: 'n = item count, W = capacity. Space reducible to O(W) with 1D rolling array.',
+  },
+  'lcs': {
+    time: { best: 'O(mn)', average: 'O(mn)', worst: 'O(mn)' },
+    space: 'O(mn)',
+    notes: 'm and n are lengths of the two strings.',
+  },
 };

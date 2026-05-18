@@ -53,4 +53,14 @@ export const KEY_INSIGHTS: Partial<Record<AlgorithmId, string>> = {
     'Pick a pivot, partition elements smaller to the left and larger to the right, then sort each side — pivot lands in its final position after partition.',
   'heap-sort':
     'Build a max-heap so the largest element is always at the root, then repeatedly extract it to the end — heapify keeps the invariant.',
+  'chaining':
+    'Each bucket is a linked list — collisions just append to the chain, so insertion is always O(1) regardless of other keys in the bucket.',
+  'open-addressing':
+    'All entries live in the array itself — a collision means "probe the next slot." Load factor must stay below 1 or the table fills up.',
+  'fibonacci':
+    'Instead of recalculating fib(n-1) and fib(n-2) repeatedly, store each result once — the table fills left to right in a single pass.',
+  'knapsack-01':
+    'Each cell dp[i][w] answers: "best value using first i items with weight limit w." The recurrence chooses take-or-skip for item i.',
+  'lcs':
+    'dp[i][j] = length of the longest common subsequence of a[0..i-1] and b[0..j-1]. The traceback retraces the optimal path.',
 };
