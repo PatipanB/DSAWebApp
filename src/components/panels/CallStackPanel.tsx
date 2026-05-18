@@ -9,7 +9,10 @@ export function CallStackPanel({ callStack }: Props) {
 
   return (
     <div className="rounded-lg border border-border-subtle bg-bg-surface p-3">
-      <p className="text-xs font-mono text-text-muted mb-2 uppercase tracking-widest">Call Stack</p>
+      <p className="text-xs font-mono text-text-muted uppercase tracking-widest">Call Stack</p>
+      <p className="text-xs text-text-muted font-mono mt-0.5 mb-2">
+        Recursion depth — each frame is an active function call
+      </p>
       <div className="flex flex-col-reverse gap-1">
         {callStack.map((frame, i) => {
           const isCurrent = i === callStack.length - 1;

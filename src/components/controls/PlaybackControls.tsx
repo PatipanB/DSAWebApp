@@ -15,53 +15,58 @@ export function PlaybackControls({ runnerState, onPlay, onPause, onStepBack, onS
   const isDone = runnerState === 'done';
 
   return (
-    <div className="flex items-center gap-2" role="group" aria-label="Playback controls">
-      <Button
-        variant="ghost"
-        size="sm"
-        aria-label="Reset"
-        onClick={onReset}
-      >
-        ↩ Reset
-      </Button>
-      <Button
-        variant="ghost"
-        size="sm"
-        aria-label="Step back"
-        onClick={onStepBack}
-        disabled={runnerState === 'idle'}
-      >
-        ⏮ Step back
-      </Button>
-      {isPlaying ? (
+    <div className="flex flex-col items-center gap-2" role="group" aria-label="Playback controls">
+      <div className="flex items-center gap-2">
         <Button
-          variant="primary"
-          size="md"
-          aria-label="Pause"
-          onClick={onPause}
+          variant="ghost"
+          size="sm"
+          aria-label="Reset"
+          onClick={onReset}
         >
-          ⏸ Pause
+          ↩ Reset
         </Button>
-      ) : (
         <Button
-          variant="primary"
-          size="md"
-          aria-label="Play"
-          onClick={onPlay}
+          variant="ghost"
+          size="sm"
+          aria-label="Step back"
+          onClick={onStepBack}
+          disabled={runnerState === 'idle'}
+        >
+          ⏮ Step back
+        </Button>
+        {isPlaying ? (
+          <Button
+            variant="primary"
+            size="md"
+            aria-label="Pause"
+            onClick={onPause}
+          >
+            ⏸ Pause
+          </Button>
+        ) : (
+          <Button
+            variant="primary"
+            size="md"
+            aria-label="Play"
+            onClick={onPlay}
+            disabled={isDone}
+          >
+            ▶ Play
+          </Button>
+        )}
+        <Button
+          variant="ghost"
+          size="sm"
+          aria-label="Step forward"
+          onClick={onStepForward}
           disabled={isDone}
         >
-          ▶ Play
+          ⏭ Step forward
         </Button>
-      )}
-      <Button
-        variant="ghost"
-        size="sm"
-        aria-label="Step forward"
-        onClick={onStepForward}
-        disabled={isDone}
-      >
-        ⏭ Step forward
-      </Button>
+      </div>
+      <p className="text-xs text-text-muted font-mono">
+        space ▶&nbsp;&nbsp;← → step&nbsp;&nbsp;R reset
+      </p>
     </div>
   );
 }
