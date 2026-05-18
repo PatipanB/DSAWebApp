@@ -228,3 +228,45 @@ export interface SortingInput {
 export const DEFAULT_SORTING_INPUT: SortingInput = {
   values: [5, 2, 8, 1, 9, 3, 7, 4, 6],
 };
+
+export interface HashTableInput {
+  entries: { key: string; value: string }[];
+  bucketCount: number;
+}
+
+export const DEFAULT_HASH_TABLE_INPUT: HashTableInput = {
+  bucketCount: 7,
+  entries: [
+    { key: 'apple',  value: '🍎' },
+    { key: 'banana', value: '🍌' },
+    { key: 'cherry', value: '🍒' },
+    { key: 'date',   value: '🌴' },
+    { key: 'elder',  value: '🫐' },
+    { key: 'fig',    value: '🍇' },
+  ],
+};
+
+export interface FibonacciInput {
+  n: number;
+}
+
+export const DEFAULT_FIBONACCI_INPUT: FibonacciInput = { n: 8 };
+
+export interface KnapsackInput {
+  weights: number[];
+  values: number[];
+  capacity: number;
+}
+
+export const DEFAULT_KNAPSACK_INPUT: KnapsackInput = {
+  weights: [2, 3, 4, 5],
+  values: [3, 4, 5, 6],
+  capacity: 5,
+};
+
+export interface LCSInput {
+  a: string;
+  b: string;
+}
+
+export const DEFAULT_LCS_INPUT: LCSInput = { a: 'ABCBDAB', b: 'BDCABA' };

@@ -136,3 +136,35 @@ export interface SortingSnapshot {
   auxArray?: number[];
   heapBoundary?: number;
 }
+
+export interface HashEntry {
+  key: string;
+  value: string;
+  hash: number;
+  tombstone?: boolean;
+}
+
+export interface ChainingSnapshot {
+  buckets: HashEntry[][];
+  size: number;
+  inserting?: HashEntry;
+  hashingKey?: string;
+  collisionAt?: number;
+}
+
+export interface OpenAddressingSnapshot {
+  slots: (HashEntry | null)[];
+  inserting?: HashEntry;
+  probeIndex?: number;
+  probeSequence?: number[];
+}
+
+export interface DPSnapshot {
+  table: (number | null)[][];
+  current?: [number, number];
+  reading?: [number, number][];
+  rowLabels?: string[];
+  colLabels?: string[];
+  answer?: number;
+  traceback?: [number, number][];
+}
