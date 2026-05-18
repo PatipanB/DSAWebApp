@@ -1,0 +1,320 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bubbleSort > trace matches snapshot 1`] = `
+"algorithmId: bubble-sort
+steps: 52
+finalResult: [1,2,3,4,5,6,7,8,9]
+
+step 0: line=4 narration="Compare values[0]=5 and values[1]=2"
+  vars: i=0, j=0, values[j]=5, values[j+1]=2
+  values: [5,2,8,1,9,3,7,4,6]
+  comparing: [0,1]
+  swapped: []
+  sorted: []
+step 1: line=5 narration="Swap values[0] and values[1] → now 2 < 5"
+  vars: i=0, j=0, values[j]=2, values[j+1]=5
+  values: [2,5,8,1,9,3,7,4,6]
+  comparing: []
+  swapped: [0,1]
+  sorted: []
+step 2: line=4 narration="Compare values[1]=5 and values[2]=8"
+  vars: i=0, j=1, values[j]=5, values[j+1]=8
+  values: [2,5,8,1,9,3,7,4,6]
+  comparing: [1,2]
+  swapped: []
+  sorted: []
+step 3: line=4 narration="Compare values[2]=8 and values[3]=1"
+  vars: i=0, j=2, values[j]=8, values[j+1]=1
+  values: [2,5,8,1,9,3,7,4,6]
+  comparing: [2,3]
+  swapped: []
+  sorted: []
+step 4: line=5 narration="Swap values[2] and values[3] → now 1 < 8"
+  vars: i=0, j=2, values[j]=1, values[j+1]=8
+  values: [2,5,1,8,9,3,7,4,6]
+  comparing: []
+  swapped: [2,3]
+  sorted: []
+step 5: line=4 narration="Compare values[3]=8 and values[4]=9"
+  vars: i=0, j=3, values[j]=8, values[j+1]=9
+  values: [2,5,1,8,9,3,7,4,6]
+  comparing: [3,4]
+  swapped: []
+  sorted: []
+step 6: line=4 narration="Compare values[4]=9 and values[5]=3"
+  vars: i=0, j=4, values[j]=9, values[j+1]=3
+  values: [2,5,1,8,9,3,7,4,6]
+  comparing: [4,5]
+  swapped: []
+  sorted: []
+step 7: line=5 narration="Swap values[4] and values[5] → now 3 < 9"
+  vars: i=0, j=4, values[j]=3, values[j+1]=9
+  values: [2,5,1,8,3,9,7,4,6]
+  comparing: []
+  swapped: [4,5]
+  sorted: []
+step 8: line=4 narration="Compare values[5]=9 and values[6]=7"
+  vars: i=0, j=5, values[j]=9, values[j+1]=7
+  values: [2,5,1,8,3,9,7,4,6]
+  comparing: [5,6]
+  swapped: []
+  sorted: []
+step 9: line=5 narration="Swap values[5] and values[6] → now 7 < 9"
+  vars: i=0, j=5, values[j]=7, values[j+1]=9
+  values: [2,5,1,8,3,7,9,4,6]
+  comparing: []
+  swapped: [5,6]
+  sorted: []
+step 10: line=4 narration="Compare values[6]=9 and values[7]=4"
+  vars: i=0, j=6, values[j]=9, values[j+1]=4
+  values: [2,5,1,8,3,7,9,4,6]
+  comparing: [6,7]
+  swapped: []
+  sorted: []
+step 11: line=5 narration="Swap values[6] and values[7] → now 4 < 9"
+  vars: i=0, j=6, values[j]=4, values[j+1]=9
+  values: [2,5,1,8,3,7,4,9,6]
+  comparing: []
+  swapped: [6,7]
+  sorted: []
+step 12: line=4 narration="Compare values[7]=9 and values[8]=6"
+  vars: i=0, j=7, values[j]=9, values[j+1]=6
+  values: [2,5,1,8,3,7,4,9,6]
+  comparing: [7,8]
+  swapped: []
+  sorted: []
+step 13: line=5 narration="Swap values[7] and values[8] → now 6 < 9"
+  vars: i=0, j=7, values[j]=6, values[j+1]=9
+  values: [2,5,1,8,3,7,4,6,9]
+  comparing: []
+  swapped: [7,8]
+  sorted: []
+step 14: line=4 narration="Compare values[0]=2 and values[1]=5"
+  vars: i=1, j=0, values[j]=2, values[j+1]=5
+  values: [2,5,1,8,3,7,4,6,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8]
+step 15: line=4 narration="Compare values[1]=5 and values[2]=1"
+  vars: i=1, j=1, values[j]=5, values[j+1]=1
+  values: [2,5,1,8,3,7,4,6,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8]
+step 16: line=5 narration="Swap values[1] and values[2] → now 1 < 5"
+  vars: i=1, j=1, values[j]=1, values[j+1]=5
+  values: [2,1,5,8,3,7,4,6,9]
+  comparing: []
+  swapped: [1,2]
+  sorted: [8]
+step 17: line=4 narration="Compare values[2]=5 and values[3]=8"
+  vars: i=1, j=2, values[j]=5, values[j+1]=8
+  values: [2,1,5,8,3,7,4,6,9]
+  comparing: [2,3]
+  swapped: []
+  sorted: [8]
+step 18: line=4 narration="Compare values[3]=8 and values[4]=3"
+  vars: i=1, j=3, values[j]=8, values[j+1]=3
+  values: [2,1,5,8,3,7,4,6,9]
+  comparing: [3,4]
+  swapped: []
+  sorted: [8]
+step 19: line=5 narration="Swap values[3] and values[4] → now 3 < 8"
+  vars: i=1, j=3, values[j]=3, values[j+1]=8
+  values: [2,1,5,3,8,7,4,6,9]
+  comparing: []
+  swapped: [3,4]
+  sorted: [8]
+step 20: line=4 narration="Compare values[4]=8 and values[5]=7"
+  vars: i=1, j=4, values[j]=8, values[j+1]=7
+  values: [2,1,5,3,8,7,4,6,9]
+  comparing: [4,5]
+  swapped: []
+  sorted: [8]
+step 21: line=5 narration="Swap values[4] and values[5] → now 7 < 8"
+  vars: i=1, j=4, values[j]=7, values[j+1]=8
+  values: [2,1,5,3,7,8,4,6,9]
+  comparing: []
+  swapped: [4,5]
+  sorted: [8]
+step 22: line=4 narration="Compare values[5]=8 and values[6]=4"
+  vars: i=1, j=5, values[j]=8, values[j+1]=4
+  values: [2,1,5,3,7,8,4,6,9]
+  comparing: [5,6]
+  swapped: []
+  sorted: [8]
+step 23: line=5 narration="Swap values[5] and values[6] → now 4 < 8"
+  vars: i=1, j=5, values[j]=4, values[j+1]=8
+  values: [2,1,5,3,7,4,8,6,9]
+  comparing: []
+  swapped: [5,6]
+  sorted: [8]
+step 24: line=4 narration="Compare values[6]=8 and values[7]=6"
+  vars: i=1, j=6, values[j]=8, values[j+1]=6
+  values: [2,1,5,3,7,4,8,6,9]
+  comparing: [6,7]
+  swapped: []
+  sorted: [8]
+step 25: line=5 narration="Swap values[6] and values[7] → now 6 < 8"
+  vars: i=1, j=6, values[j]=6, values[j+1]=8
+  values: [2,1,5,3,7,4,6,8,9]
+  comparing: []
+  swapped: [6,7]
+  sorted: [8]
+step 26: line=4 narration="Compare values[0]=2 and values[1]=1"
+  vars: i=2, j=0, values[j]=2, values[j+1]=1
+  values: [2,1,5,3,7,4,6,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7]
+step 27: line=5 narration="Swap values[0] and values[1] → now 1 < 2"
+  vars: i=2, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,5,3,7,4,6,8,9]
+  comparing: []
+  swapped: [0,1]
+  sorted: [8,7]
+step 28: line=4 narration="Compare values[1]=2 and values[2]=5"
+  vars: i=2, j=1, values[j]=2, values[j+1]=5
+  values: [1,2,5,3,7,4,6,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8,7]
+step 29: line=4 narration="Compare values[2]=5 and values[3]=3"
+  vars: i=2, j=2, values[j]=5, values[j+1]=3
+  values: [1,2,5,3,7,4,6,8,9]
+  comparing: [2,3]
+  swapped: []
+  sorted: [8,7]
+step 30: line=5 narration="Swap values[2] and values[3] → now 3 < 5"
+  vars: i=2, j=2, values[j]=3, values[j+1]=5
+  values: [1,2,3,5,7,4,6,8,9]
+  comparing: []
+  swapped: [2,3]
+  sorted: [8,7]
+step 31: line=4 narration="Compare values[3]=5 and values[4]=7"
+  vars: i=2, j=3, values[j]=5, values[j+1]=7
+  values: [1,2,3,5,7,4,6,8,9]
+  comparing: [3,4]
+  swapped: []
+  sorted: [8,7]
+step 32: line=4 narration="Compare values[4]=7 and values[5]=4"
+  vars: i=2, j=4, values[j]=7, values[j+1]=4
+  values: [1,2,3,5,7,4,6,8,9]
+  comparing: [4,5]
+  swapped: []
+  sorted: [8,7]
+step 33: line=5 narration="Swap values[4] and values[5] → now 4 < 7"
+  vars: i=2, j=4, values[j]=4, values[j+1]=7
+  values: [1,2,3,5,4,7,6,8,9]
+  comparing: []
+  swapped: [4,5]
+  sorted: [8,7]
+step 34: line=4 narration="Compare values[5]=7 and values[6]=6"
+  vars: i=2, j=5, values[j]=7, values[j+1]=6
+  values: [1,2,3,5,4,7,6,8,9]
+  comparing: [5,6]
+  swapped: []
+  sorted: [8,7]
+step 35: line=5 narration="Swap values[5] and values[6] → now 6 < 7"
+  vars: i=2, j=5, values[j]=6, values[j+1]=7
+  values: [1,2,3,5,4,6,7,8,9]
+  comparing: []
+  swapped: [5,6]
+  sorted: [8,7]
+step 36: line=4 narration="Compare values[0]=1 and values[1]=2"
+  vars: i=3, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,3,5,4,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7,6]
+step 37: line=4 narration="Compare values[1]=2 and values[2]=3"
+  vars: i=3, j=1, values[j]=2, values[j+1]=3
+  values: [1,2,3,5,4,6,7,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8,7,6]
+step 38: line=4 narration="Compare values[2]=3 and values[3]=5"
+  vars: i=3, j=2, values[j]=3, values[j+1]=5
+  values: [1,2,3,5,4,6,7,8,9]
+  comparing: [2,3]
+  swapped: []
+  sorted: [8,7,6]
+step 39: line=4 narration="Compare values[3]=5 and values[4]=4"
+  vars: i=3, j=3, values[j]=5, values[j+1]=4
+  values: [1,2,3,5,4,6,7,8,9]
+  comparing: [3,4]
+  swapped: []
+  sorted: [8,7,6]
+step 40: line=5 narration="Swap values[3] and values[4] → now 4 < 5"
+  vars: i=3, j=3, values[j]=4, values[j+1]=5
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: []
+  swapped: [3,4]
+  sorted: [8,7,6]
+step 41: line=4 narration="Compare values[4]=5 and values[5]=6"
+  vars: i=3, j=4, values[j]=5, values[j+1]=6
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [4,5]
+  swapped: []
+  sorted: [8,7,6]
+step 42: line=4 narration="Compare values[0]=1 and values[1]=2"
+  vars: i=4, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7,6,5]
+step 43: line=4 narration="Compare values[1]=2 and values[2]=3"
+  vars: i=4, j=1, values[j]=2, values[j+1]=3
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8,7,6,5]
+step 44: line=4 narration="Compare values[2]=3 and values[3]=4"
+  vars: i=4, j=2, values[j]=3, values[j+1]=4
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [2,3]
+  swapped: []
+  sorted: [8,7,6,5]
+step 45: line=4 narration="Compare values[3]=4 and values[4]=5"
+  vars: i=4, j=3, values[j]=4, values[j+1]=5
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [3,4]
+  swapped: []
+  sorted: [8,7,6,5]
+step 46: line=4 narration="Compare values[0]=1 and values[1]=2"
+  vars: i=5, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7,6,5,4]
+step 47: line=4 narration="Compare values[1]=2 and values[2]=3"
+  vars: i=5, j=1, values[j]=2, values[j+1]=3
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8,7,6,5,4]
+step 48: line=4 narration="Compare values[2]=3 and values[3]=4"
+  vars: i=5, j=2, values[j]=3, values[j+1]=4
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [2,3]
+  swapped: []
+  sorted: [8,7,6,5,4]
+step 49: line=4 narration="Compare values[0]=1 and values[1]=2"
+  vars: i=6, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7,6,5,4,3]
+step 50: line=4 narration="Compare values[1]=2 and values[2]=3"
+  vars: i=6, j=1, values[j]=2, values[j+1]=3
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [1,2]
+  swapped: []
+  sorted: [8,7,6,5,4,3]
+step 51: line=4 narration="Compare values[0]=1 and values[1]=2"
+  vars: i=7, j=0, values[j]=1, values[j+1]=2
+  values: [1,2,3,4,5,6,7,8,9]
+  comparing: [0,1]
+  swapped: []
+  sorted: [8,7,6,5,4,3,2]"
+`;
