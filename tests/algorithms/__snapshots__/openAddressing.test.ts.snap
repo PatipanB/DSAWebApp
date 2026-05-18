@@ -1,0 +1,74 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`openAddressing > trace matches snapshot 1`] = `
+"algorithmId: open-addressing
+steps: 12
+finalResult: [{"key":"banana","value":"🍌","hash":0},{"key":"cherry","value":"🍒","hash":1},{"key":"date","value":"🌴","hash":2},{"key":"elder","value":"🫐","hash":3},{"key":"fig","value":"🍇","hash":4},null,{"key":"apple","value":"🍎","hash":6}]
+
+step 0: line=4 narration="Hash 'apple' → slot 6"
+  vars: key="apple", initialHash=6, probeSteps=0
+  slots: [,,,,,,]
+  inserting: {"key":"apple","value":"🍎","hash":6}
+  probeIndex: 6
+  probeSequence: [6]
+step 1: line=8 narration="Place apple at slot 6"
+  vars: key="apple", initialHash=6, probeSteps=0
+  slots: [,,,,,,[object Object]]
+  probeIndex: 6
+  probeSequence: [6]
+step 2: line=4 narration="Hash 'banana' → slot 0"
+  vars: key="banana", initialHash=0, probeSteps=0
+  slots: [,,,,,,[object Object]]
+  inserting: {"key":"banana","value":"🍌","hash":0}
+  probeIndex: 0
+  probeSequence: [0]
+step 3: line=8 narration="Place banana at slot 0"
+  vars: key="banana", initialHash=0, probeSteps=0
+  slots: [[object Object],,,,,,[object Object]]
+  probeIndex: 0
+  probeSequence: [0]
+step 4: line=4 narration="Hash 'cherry' → slot 1"
+  vars: key="cherry", initialHash=1, probeSteps=0
+  slots: [[object Object],,,,,,[object Object]]
+  inserting: {"key":"cherry","value":"🍒","hash":1}
+  probeIndex: 1
+  probeSequence: [1]
+step 5: line=8 narration="Place cherry at slot 1"
+  vars: key="cherry", initialHash=1, probeSteps=0
+  slots: [[object Object],[object Object],,,,,[object Object]]
+  probeIndex: 1
+  probeSequence: [1]
+step 6: line=4 narration="Hash 'date' → slot 2"
+  vars: key="date", initialHash=2, probeSteps=0
+  slots: [[object Object],[object Object],,,,,[object Object]]
+  inserting: {"key":"date","value":"🌴","hash":2}
+  probeIndex: 2
+  probeSequence: [2]
+step 7: line=8 narration="Place date at slot 2"
+  vars: key="date", initialHash=2, probeSteps=0
+  slots: [[object Object],[object Object],[object Object],,,,[object Object]]
+  probeIndex: 2
+  probeSequence: [2]
+step 8: line=4 narration="Hash 'elder' → slot 3"
+  vars: key="elder", initialHash=3, probeSteps=0
+  slots: [[object Object],[object Object],[object Object],,,,[object Object]]
+  inserting: {"key":"elder","value":"🫐","hash":3}
+  probeIndex: 3
+  probeSequence: [3]
+step 9: line=8 narration="Place elder at slot 3"
+  vars: key="elder", initialHash=3, probeSteps=0
+  slots: [[object Object],[object Object],[object Object],[object Object],,,[object Object]]
+  probeIndex: 3
+  probeSequence: [3]
+step 10: line=4 narration="Hash 'fig' → slot 4"
+  vars: key="fig", initialHash=4, probeSteps=0
+  slots: [[object Object],[object Object],[object Object],[object Object],,,[object Object]]
+  inserting: {"key":"fig","value":"🍇","hash":4}
+  probeIndex: 4
+  probeSequence: [4]
+step 11: line=8 narration="Place fig at slot 4"
+  vars: key="fig", initialHash=4, probeSteps=0
+  slots: [[object Object],[object Object],[object Object],[object Object],[object Object],,[object Object]]
+  probeIndex: 4
+  probeSequence: [4]"
+`;
