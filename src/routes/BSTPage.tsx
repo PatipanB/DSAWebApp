@@ -9,6 +9,7 @@ import { InputPanel } from '@/components/controls/InputPanel';
 import { StepNarration } from '@/components/panels/StepNarration';
 import { VariableInspector } from '@/components/panels/VariableInspector';
 import { KeyInsightCallout } from '@/components/panels/KeyInsightCallout';
+import { AlgorithmIntroCard } from '@/components/panels/AlgorithmIntroCard';
 import { CodePanel } from '@/components/panels/CodePanel';
 import { ComplexityBadge } from '@/components/panels/ComplexityBadge';
 import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
@@ -112,6 +113,7 @@ export function BSTPage() {
         <TopicHeader topicId="bst" />
         <KeyInsightCallout algorithmId={activeId} />
         <AlgorithmTabs tabs={ALGO_TABS} selectedId={activeId} onSelect={handleAlgorithmChange} />
+        <AlgorithmIntroCard algorithmId={activeId} stepIndex={stepIndex} />
 
         <div
           data-testid="visualizer-slot"

@@ -11,6 +11,7 @@ import { StepNarration } from '@/components/panels/StepNarration';
 import { VariableInspector } from '@/components/panels/VariableInspector';
 import { CallStackPanel } from '@/components/panels/CallStackPanel';
 import { KeyInsightCallout } from '@/components/panels/KeyInsightCallout';
+import { AlgorithmIntroCard } from '@/components/panels/AlgorithmIntroCard';
 import { CodePanel } from '@/components/panels/CodePanel';
 import { ComplexityBadge } from '@/components/panels/ComplexityBadge';
 import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
@@ -179,6 +180,7 @@ export function GraphPage() {
             onSelect={handleAdjAlgorithmChange}
           />
         )}
+        <AlgorithmIntroCard algorithmId={activeAlgoId} stepIndex={stepIndex} />
 
         <div
           data-testid="visualizer-slot"
