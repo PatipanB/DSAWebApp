@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`chaining > trace matches snapshot 1`] = `
+"algorithmId: chaining
+steps: 12
+finalResult: [[{"key":"banana","value":"🍌","hash":0}],[{"key":"cherry","value":"🍒","hash":1}],[{"key":"date","value":"🌴","hash":2}],[{"key":"elder","value":"🫐","hash":3}],[{"key":"fig","value":"🍇","hash":4}],[],[{"key":"apple","value":"🍎","hash":6}]]
+
+step 0: line=4 narration="Hashing key 'apple': charCode(a)=97, 97 % 7 = 6"
+  vars: key="apple", hash=6, bucket=6, size=0
+  buckets: [,,,,,,]
+  size: 0
+  hashingKey: apple
+  inserting: {"key":"apple","value":"🍎","hash":6}
+step 1: line=9 narration="Insert apple→🍎 into bucket 6"
+  vars: key="apple", hash=6, bucket=6, size=1
+  buckets: [,,,,,,[object Object]]
+  size: 1
+step 2: line=4 narration="Hashing key 'banana': charCode(b)=98, 98 % 7 = 0"
+  vars: key="banana", hash=0, bucket=0, size=1
+  buckets: [,,,,,,[object Object]]
+  size: 1
+  hashingKey: banana
+  inserting: {"key":"banana","value":"🍌","hash":0}
+step 3: line=9 narration="Insert banana→🍌 into bucket 0"
+  vars: key="banana", hash=0, bucket=0, size=2
+  buckets: [[object Object],,,,,,[object Object]]
+  size: 2
+step 4: line=4 narration="Hashing key 'cherry': charCode(c)=99, 99 % 7 = 1"
+  vars: key="cherry", hash=1, bucket=1, size=2
+  buckets: [[object Object],,,,,,[object Object]]
+  size: 2
+  hashingKey: cherry
+  inserting: {"key":"cherry","value":"🍒","hash":1}
+step 5: line=9 narration="Insert cherry→🍒 into bucket 1"
+  vars: key="cherry", hash=1, bucket=1, size=3
+  buckets: [[object Object],[object Object],,,,,[object Object]]
+  size: 3
+step 6: line=4 narration="Hashing key 'date': charCode(d)=100, 100 % 7 = 2"
+  vars: key="date", hash=2, bucket=2, size=3
+  buckets: [[object Object],[object Object],,,,,[object Object]]
+  size: 3
+  hashingKey: date
+  inserting: {"key":"date","value":"🌴","hash":2}
+step 7: line=9 narration="Insert date→🌴 into bucket 2"
+  vars: key="date", hash=2, bucket=2, size=4
+  buckets: [[object Object],[object Object],[object Object],,,,[object Object]]
+  size: 4
+step 8: line=4 narration="Hashing key 'elder': charCode(e)=101, 101 % 7 = 3"
+  vars: key="elder", hash=3, bucket=3, size=4
+  buckets: [[object Object],[object Object],[object Object],,,,[object Object]]
+  size: 4
+  hashingKey: elder
+  inserting: {"key":"elder","value":"🫐","hash":3}
+step 9: line=9 narration="Insert elder→🫐 into bucket 3"
+  vars: key="elder", hash=3, bucket=3, size=5
+  buckets: [[object Object],[object Object],[object Object],[object Object],,,[object Object]]
+  size: 5
+step 10: line=4 narration="Hashing key 'fig': charCode(f)=102, 102 % 7 = 4"
+  vars: key="fig", hash=4, bucket=4, size=5
+  buckets: [[object Object],[object Object],[object Object],[object Object],,,[object Object]]
+  size: 5
+  hashingKey: fig
+  inserting: {"key":"fig","value":"🍇","hash":4}
+step 11: line=9 narration="Insert fig→🍇 into bucket 4"
+  vars: key="fig", hash=4, bucket=4, size=6
+  buckets: [[object Object],[object Object],[object Object],[object Object],[object Object],,[object Object]]
+  size: 6"
+`;
