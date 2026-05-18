@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { TOPICS } from '@/data/topics';
+import { usePrefsStore } from '@/store/prefsStore';
 
 export function HomePage() {
+  const visitedTopics = usePrefsStore((s) => s.visitedTopics);
+
   return (
     <section className="p-8">
       <div className="mb-8">
@@ -23,6 +26,9 @@ export function HomePage() {
               <span className="font-mono text-text-muted text-sm">#{String(t.number).padStart(2, '0')}</span>
               <span className="text-2xl">{t.emoji}</span>
               <span className="text-lg font-semibold text-text-primary">{t.title}</span>
+              {visitedTopics.includes(t.id) && (
+                <span className="ml-auto text-status-success text-xs font-mono">✓</span>
+              )}
             </div>
             <p className="text-sm text-text-secondary">{t.longDescription}</p>
             <span className="mt-auto text-sm font-mono text-accent-primary group-hover:translate-x-0.5 transition">Open →</span>

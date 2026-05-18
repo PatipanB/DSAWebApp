@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { LinkedListVisualizer } from '@/components/visualizers/LinkedListVisualizer';
 import { PlaybackControls } from '@/components/controls/PlaybackControls';
@@ -15,6 +15,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { singlyTraverse } from '@/algorithms/linkedList/singlyTraverse';
 import { singlyInsertDelete } from '@/algorithms/linkedList/singlyInsertDelete';
 import { doublyTraverse } from '@/algorithms/linkedList/doublyTraverse';
@@ -52,6 +53,11 @@ export function LinkedListPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('linked-list');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: LinkedListAlgorithmId) => {

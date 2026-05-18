@@ -16,6 +16,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { bubbleSort } from '@/algorithms/sorting/bubble';
 import { mergeSort } from '@/algorithms/sorting/merge';
 import { quickSort } from '@/algorithms/sorting/quick';
@@ -61,6 +62,11 @@ export function SortingPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('sorting');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: SortingAlgoId) => {

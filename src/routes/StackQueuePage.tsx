@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { StackVisualizer } from '@/components/visualizers/StackVisualizer';
 import { QueueVisualizer } from '@/components/visualizers/QueueVisualizer';
@@ -16,6 +16,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { balancedBrackets } from '@/algorithms/stackQueue/balancedBrackets';
 import { monotonicStack } from '@/algorithms/stackQueue/monotonicStack';
 import { queueDemo } from '@/algorithms/stackQueue/queueDemo';
@@ -57,6 +58,11 @@ export function StackQueuePage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('stack-queue');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: StackQueueAlgorithmId) => {

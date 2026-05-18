@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { DPTableVisualizer } from '@/components/visualizers/DPTableVisualizer';
 import { PlaybackControls } from '@/components/controls/PlaybackControls';
@@ -16,6 +16,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { fibonacci } from '@/algorithms/dp/fibonacci';
 import { knapsack01 } from '@/algorithms/dp/knapsack01';
 import { lcs } from '@/algorithms/dp/lcs';
@@ -51,6 +52,11 @@ export function DPPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('dp');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: DPAlgoId) => {

@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { ArrayVisualizer } from '@/components/visualizers/ArrayVisualizer';
 import { PlaybackControls } from '@/components/controls/PlaybackControls';
@@ -16,6 +16,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { twoPointers } from '@/algorithms/arrays/twoPointers';
 import { slidingWindow } from '@/algorithms/arrays/slidingWindow';
 import { arrayOps } from '@/algorithms/arrays/arrayOps';
@@ -63,6 +64,11 @@ export function ArraysPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('arrays');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: ArraysAlgorithmId) => {

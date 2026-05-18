@@ -45,7 +45,9 @@
       "Skill(superpowers:verification-before-completion)",
       "Bash(echo \"Exit: $?\")",
       "Skill(superpowers:systematic-debugging)",
-      "Bash(pnpm vitest *)"
+      "Bash(pnpm vitest *)",
+      "Bash(xargs ls -la)",
+      "Bash(xargs cat)"
     ]
   }
 }

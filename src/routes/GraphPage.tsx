@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { GraphGridVisualizer } from '@/components/visualizers/GraphGridVisualizer';
 import { GraphAdjacencyVisualizer } from '@/components/visualizers/GraphAdjacencyVisualizer';
@@ -18,6 +18,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { bfsGrid } from '@/algorithms/graph/bfsGrid';
 import { dfsGrid } from '@/algorithms/graph/dfsGrid';
 import { bfsAdjacency } from '@/algorithms/graph/bfsAdjacency';
@@ -73,6 +74,11 @@ export function GraphPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('graph');
+  }, [stepIndex, markVisited]);
 
   const handleModeToggle = useCallback(() => {
     setViewMode((prev) => {

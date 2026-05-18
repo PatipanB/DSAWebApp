@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { TopicHeader } from '@/components/panels/TopicHeader';
 import { BSTVisualizer } from '@/components/visualizers/BSTVisualizer';
 import { PlaybackControls } from '@/components/controls/PlaybackControls';
@@ -16,6 +16,7 @@ import { ProblemsSidebar } from '@/components/panels/ProblemsSidebar';
 import { useAlgorithmRun } from '@/engine/useAlgorithmRun';
 import { useKeyboardControls } from '@/hooks/useKeyboardControls';
 import { useRunStore } from '@/store/runStore';
+import { usePrefsStore } from '@/store/prefsStore';
 import { bstInsert } from '@/algorithms/bst/bstInsert';
 import { bstSearch } from '@/algorithms/bst/bstSearch';
 import { bstDelete } from '@/algorithms/bst/bstDelete';
@@ -55,6 +56,11 @@ export function BSTPage() {
 
   const stepIndex = useRunStore((s) => s.stepIndex);
   const runnerState = useRunStore((s) => s.runnerState);
+  const markVisited = usePrefsStore((s) => s.markVisited);
+
+  useEffect(() => {
+    if (stepIndex > 0) markVisited('bst');
+  }, [stepIndex, markVisited]);
 
   const handleAlgorithmChange = useCallback(
     (id: BSTAlgorithmId) => {
