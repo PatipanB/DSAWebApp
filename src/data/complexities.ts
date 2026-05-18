@@ -116,4 +116,24 @@ export const COMPLEXITIES: Partial<Record<AlgorithmId, ComplexityEntry>> = {
     space: 'O(V)',
     notes: 'Stack depth = longest DFS path, up to O(V) in a path graph.',
   },
+  'bubble-sort': {
+    time: { best: 'O(n)', average: 'O(n²)', worst: 'O(n²)' },
+    space: 'O(1)',
+    notes: 'Best case when array is already sorted — no swaps in any pass.',
+  },
+  'merge-sort': {
+    time: { best: 'O(n log n)', average: 'O(n log n)', worst: 'O(n log n)' },
+    space: 'O(n)',
+    notes: 'Requires O(n) auxiliary array for merging. Stable sort.',
+  },
+  'quick-sort': {
+    time: { best: 'O(n log n)', average: 'O(n log n)', worst: 'O(n²)' },
+    space: 'O(log n)',
+    notes: 'Worst case on already-sorted input with last-element pivot. Randomized pivot avoids this.',
+  },
+  'heap-sort': {
+    time: { best: 'O(n log n)', average: 'O(n log n)', worst: 'O(n log n)' },
+    space: 'O(1)',
+    notes: 'In-place and not stable. Build-heap is O(n); each of n extractions is O(log n).',
+  },
 };

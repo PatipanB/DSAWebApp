@@ -45,4 +45,12 @@ export const KEY_INSIGHTS: Partial<Record<AlgorithmId, string>> = {
     'BFS on an adjacency list visits each node exactly once (level by level). Tree edges form the BFS shortest-path tree; all other examined edges are cross or back edges.',
   'dfs-adjacency':
     'DFS on a graph discovers tree edges (first-time visits) and back/cross edges (already-seen neighbors). The call stack mirrors the current DFS path from the start node.',
+  'bubble-sort':
+    'Each pass "bubbles" the largest unsorted element to its final position — after k passes, the last k elements are sorted.',
+  'merge-sort':
+    'Divide the array in half recursively until single elements, then merge sorted halves — merging two sorted arrays is O(n).',
+  'quick-sort':
+    'Pick a pivot, partition elements smaller to the left and larger to the right, then sort each side — pivot lands in its final position after partition.',
+  'heap-sort':
+    'Build a max-heap so the largest element is always at the root, then repeatedly extract it to the end — heapify keeps the invariant.',
 };

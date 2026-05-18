@@ -31,7 +31,7 @@ describe('ProblemsSidebar', () => {
   });
 
   it('renders nothing for a topic with no problems yet', () => {
-    const { container } = render(<ProblemsSidebar topicId="sorting" />);
+    const { container } = render(<ProblemsSidebar topicId="unknown-topic" />);
     expect(container.firstChild).toBeNull();
   });
 });

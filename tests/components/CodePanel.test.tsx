@@ -27,7 +27,7 @@ describe('CodePanel', () => {
   });
 
   it('renders nothing when algorithmId has no snippet', () => {
-    const { container } = render(<CodePanel algorithmId="bubble-sort" currentLine={1} />);
+    const { container } = render(<CodePanel algorithmId="unknown-algo" currentLine={1} />);
     expect(container.firstChild).toBeNull();
   });
 });

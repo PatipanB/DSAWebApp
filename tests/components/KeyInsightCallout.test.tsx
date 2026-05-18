@@ -10,7 +10,7 @@ describe('KeyInsightCallout', () => {
   });
 
   it('renders nothing for an algorithmId with no insight', () => {
-    const { container } = render(<KeyInsightCallout algorithmId="bubble-sort" />);
+    const { container } = render(<KeyInsightCallout algorithmId="unknown-algo" />);
     expect(container.firstChild).toBeNull();
   });
 

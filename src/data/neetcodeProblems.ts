@@ -288,6 +288,18 @@ export const NEETCODE_PROBLEMS: Partial<Record<TopicId, Problem[]>> = {
       hint: 'Monotonic deque — front is window max, stale front is evicted when out of window.',
     },
   ],
+  sorting: [
+    { title: 'Sort an Array', slug: 'sort-an-array', difficulty: 'beginner', hint: 'Use the merge or quick visualizer to understand the implementation.' },
+    { title: 'Sort Colors', slug: 'sort-colors', difficulty: 'beginner', hint: 'Three-pointer Dutch-flag — overlays cleanly on the array visualizer.' },
+    { title: 'Merge Sorted Array', slug: 'merge-sorted-array', difficulty: 'beginner', hint: "Reverse two-pointer merge — watch how merge sort's merge step works." },
+    { title: 'Height Checker', slug: 'height-checker', difficulty: 'beginner', hint: 'Sort + compare original vs sorted positions.' },
+    { title: 'Relative Sort Array', slug: 'relative-sort-array', difficulty: 'beginner', hint: 'Custom comparator — bucket by order list, then sort tail.' },
+    { title: 'Kth Largest Element in an Array', slug: 'kth-largest-element-in-an-array', difficulty: 'advanced', hint: "Use the heap visualizer's heapify + extract loop or quickselect." },
+    { title: 'Merge Intervals', slug: 'merge-intervals', difficulty: 'advanced', hint: 'Sort phase visualized, then linear scan with current/last interval highlighted.' },
+    { title: 'Largest Number', slug: 'largest-number', difficulty: 'advanced', hint: 'Quicksort with a custom string-concat comparator.' },
+    { title: 'Count of Smaller Numbers After Self', slug: 'count-of-smaller-numbers-after-self', difficulty: 'advanced', hint: 'Merge sort with index tracking — auxiliary panel shows counts.' },
+    { title: 'Reverse Pairs', slug: 'reverse-pairs', difficulty: 'advanced', hint: 'Modified merge sort — pair counter shown in inspector.' },
+  ],
   graph: [
     { title: 'Number of Islands', slug: 'number-of-islands', difficulty: 'beginner', hint: 'Grid BFS/DFS on connected components — defaults exactly fit.' },
     { title: 'Max Area of Island', slug: 'max-area-of-island', difficulty: 'beginner', hint: 'Same DFS with a size counter.' },
