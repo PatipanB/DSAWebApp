@@ -8,7 +8,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
-  resolve: { alias: { '@': path.resolve(__dirname, './src') } },
+  resolve: {
+    alias: { '@': path.resolve(__dirname, './src') },
+    dedupe: ['react', 'react-dom'],
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
+  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],

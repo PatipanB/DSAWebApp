@@ -24,8 +24,10 @@ function buildRouter(initial: string) {
 
 describe('routing', () => {
   it('home page → arrays page sets topicStore', async () => {
-    render(<RouterProvider router={buildRouter('/')} />);
-    await userEvent.click(screen.getByRole('link', { name: /Open Arrays/ }));
+    const { container } = render(<RouterProvider router={buildRouter('/')} />);
+    const arraysLink = container.querySelector('a[href="/arrays"]');
+    expect(arraysLink).not.toBeNull();
+    await userEvent.click(arraysLink!);
     await waitFor(() => expect(screen.getByTestId('visualizer-slot')).toBeInTheDocument());
     expect(useTopicStore.getState().selectedTopicId).toBe('arrays');
   });

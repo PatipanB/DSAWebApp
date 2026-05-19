@@ -27,7 +27,7 @@ export const usePrefsStore = create<PrefsState>()(
         set((s) =>
           s.visitedTopics.includes(id) ? s : { visitedTopics: [...s.visitedTopics, id] }
         ),
-      learningMode: false,
+      learningMode: true,
       setLearningMode: (v) => set({ learningMode: v }),
     }),
     { name: 'dsa-prefs' },

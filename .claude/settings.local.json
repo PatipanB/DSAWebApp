@@ -47,7 +47,10 @@
       "Skill(superpowers:systematic-debugging)",
       "Bash(pnpm vitest *)",
       "Bash(xargs ls -la)",
-      "Bash(xargs cat)"
+      "Bash(xargs cat)",
+      "Bash(python3 -m json.tool)",
+      "Bash(md5 /Users/patipanb/Obsidian/DSAWebApp/node_modules/.vite/deps/react.js)",
+      "Bash(shasum /Users/patipanb/Obsidian/DSAWebApp/node_modules/.vite/deps/react.js)"
     ]
   }
 }

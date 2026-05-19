@@ -5,17 +5,17 @@ import { HomePage } from '@/routes/HomePage';
 import { TOPICS } from '@/data/topics';
 
 describe('HomePage', () => {
-  it('renders a card for every topic with a link to its path', () => {
-    render(<MemoryRouter><HomePage /></MemoryRouter>);
+  it('renders a link for every topic in the guided-path default view', () => {
+    const { container } = render(<MemoryRouter><HomePage /></MemoryRouter>);
     for (const t of TOPICS) {
-      const link = screen.getByRole('link', { name: new RegExp(t.title) });
-      expect(link).toHaveAttribute('href', t.path);
+      const link = container.querySelector(`a[href="${t.path}"]`);
+      expect(link).not.toBeNull();
     }
   });
-  it('shows the long description for each card', () => {
+  it('shows the short description for each topic in the guided-path default view', () => {
     render(<MemoryRouter><HomePage /></MemoryRouter>);
     for (const t of TOPICS) {
-      expect(screen.getByText(t.longDescription)).toBeInTheDocument();
+      expect(screen.getByText(t.shortDescription)).toBeInTheDocument();
     }
   });
 });
